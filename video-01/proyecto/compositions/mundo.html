@@ -216,7 +216,7 @@
     <div id="glow"></div>
   </div>
   <script>
-    const DATA = {"D":48.625,"FY":960,"cam0":{"cx":1000,"cy":1040,"z":1.14},"moves":[{"t0":0,"t1":0.6,"cx":1000,"cy":1030,"z":1,"ease":"out","arc":0},{"t0":1.82,"t1":2.37,"cx":1000,"cy":1020,"z":1.05,"ease":"inOut","arc":0},{"t0":3.2,"t1":3.75,"cx":1000,"cy":2540,"z":1,"ease":"inOut","arc":0.35},{"t0":6.152,"t1":6.702,"cx":1000,"cy":2390,"z":1.06,"ease":"inOut","arc":0},{"t0":7,"t1":7.4,"cx":1000,"cy":1790,"z":0.36,"ease":"inOut","arc":0},{"t0":7.45,"t1":8.05,"cx":2600,"cy":2540,"z":1,"ease":"inOut","arc":0.25},{"t0":8.203,"t1":8.903,"cx":2600,"cy":2410,"z":1.04,"ease":"inOut","arc":0}],"chars":[{"id":"pro","poses":[[0,"run"],[0.62,"idle"],[1.77,"point"],[2.485,"cheer"],[3.05,"run"]],"mood":[[0,0.7],[2.485,1]],"off":0.3},{"id":"adA","poses":[[0,"idle"],[5.987,"run"]],"mood":[[0,0.5],[5.987,0.9]],"off":0.9},{"id":"adB","poses":[[0,"idle"],[6.107,"run"]],"mood":[[0,0.5],[5.987,0.9]],"off":1.7},{"id":"adC","poses":[[0,"idle"],[5.577,"sit"]],"mood":[[0,0.5],[5.527,-0.8]],"off":2.4},{"id":"pro2","poses":[[0,"run"]],"mood":[[0,0.9]],"off":0.6}],"float":[]};
+    const DATA = {"D":47.251,"FY":960,"cam0":{"cx":1000,"cy":1040,"z":1.14},"moves":[{"t0":0,"t1":0.6,"cx":1000,"cy":1030,"z":1,"ease":"out","arc":0},{"t0":1.75,"t1":2.3,"cx":1000,"cy":1020,"z":1.05,"ease":"inOut","arc":0},{"t0":3.015,"t1":3.565,"cx":1000,"cy":2540,"z":1,"ease":"inOut","arc":0.35},{"t0":5.972,"t1":6.522,"cx":1000,"cy":2390,"z":1.06,"ease":"inOut","arc":0},{"t0":6.822,"t1":7.222,"cx":1000,"cy":1790,"z":0.36,"ease":"inOut","arc":0},{"t0":7.279,"t1":7.879,"cx":2600,"cy":2540,"z":1,"ease":"inOut","arc":0.25},{"t0":7.994,"t1":8.694,"cx":2600,"cy":2410,"z":1.04,"ease":"inOut","arc":0}],"chars":[{"id":"pro","poses":[[0,"run"],[0.62,"idle"],[1.7,"point"],[2.395,"cheer"],[2.915,"run"]],"mood":[[0,0.7],[2.395,1]],"off":0.3},{"id":"adA","poses":[[0,"idle"],[5.812,"run"]],"mood":[[0,0.5],[5.812,0.9]],"off":0.9},{"id":"adB","poses":[[0,"idle"],[5.932,"run"]],"mood":[[0,0.5],[5.812,0.9]],"off":1.7},{"id":"adC","poses":[[0,"idle"],[5.422,"sit"]],"mood":[[0,0.5],[5.372,-0.8]],"off":2.4},{"id":"pro2","poses":[[0,"run"]],"mood":[[0,0.9]],"off":0.6}],"float":[]};
     // Motor del mundo: se ejecuta en cada fotograma a partir del tiempo t.
 // Cámara, personajes articulados, rejilla con paralaje y desenfoque de viaje.
 // Recibe DATA = { D, FY, cam0, moves, chars } desde el generador.
@@ -382,35 +382,35 @@
 
     const tl = gsap.timeline({ paused: true });
     const clock = { t: 0 };
-    tl.fromTo(clock, { t: 0 }, { t: 48.625, duration: 48.625, ease: "none", onUpdate: () => window.__mundoRender(clock.t) }, 0);
-    tl.fromTo("#camino1m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, 3.15);
-    tl.fromTo("#camino2m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, 7.45);
+    tl.fromTo(clock, { t: 0 }, { t: 47.251, duration: 47.251, ease: "none", onUpdate: () => window.__mundoRender(clock.t) }, 0);
+    tl.fromTo("#camino1m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, 2.965);
+    tl.fromTo("#camino2m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, 7.279);
     tl.fromTo("#s1-reloj",{scale:1.45,rotation:-8},{scale:1,rotation:0,duration:0.55,ease:"back.out(2.2)"},0);
     tl.fromTo("#pro",{x:-330},{x:0,duration:0.62,ease:"power3.out"},0);
-    tl.fromTo("#pro",{x:0},{x:1100,duration:0.6,ease:"power2.in",immediateRender:false},3.05);
-    tl.to("#pro",{opacity:0,duration:0.2},3.6);
+    tl.fromTo("#pro",{x:0},{x:1100,duration:0.6,ease:"power2.in",immediateRender:false},2.915);
+    tl.to("#pro",{opacity:0,duration:0.2},3.465);
     tl.fromTo("#roll0-0",{y:0},{y:-1320,duration:0.9,ease:"power3.out"},0);
     tl.fromTo("#roll0-1",{y:0},{y:-1200,duration:1.02,ease:"power3.out"},0);
     tl.fromTo("#roll0-3",{y:0},{y:-1200,duration:1.26,ease:"power3.out"},0);
     tl.fromTo("#roll0-4",{y:0},{y:-1200,duration:1.38,ease:"power3.out"},0);
-    tl.fromTo("#s1-aro",{strokeDashoffset:1457.7},{strokeDashoffset:0,duration:1.29,ease:"power2.inOut"},0);
-    tl.to("#s1-aro",{stroke:"#22c55e",duration:0.3},1.87);
-    tl.fromTo("#s1-reloj",{scale:1},{scale:1.08,duration:0.16,yoyo:true,repeat:1,ease:"power2.out",immediateRender:false},1.87);
-    tl.fromTo("#s1-sol",{opacity:0,scale:0.4},{opacity:1,scale:1,duration:0.3,ease:"back.out(2)"},2.435);
-    tl.fromTo("#s1-sol",{x:-330,y:0},{keyframes:[{x:-233,y:-233},{x:0,y:-330},{x:233,y:-233},{x:330,y:0}],duration:1.075,ease:"none"},2.435);
-    tl.fromTo("#s1-sol",{rotation:0},{rotation:180,duration:1.2,ease:"none"},2.485);
-    tl.fromTo("#s1-tag",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},2.635);
-    tl.fromTo("#adA",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},3.912);
-    tl.fromTo("#adB",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},4.317);
-    tl.fromTo("#adC",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},4.562);
-    tl.fromTo("#s2-sofa",{opacity:0,x:260},{opacity:1,x:0,duration:0.4,ease:"power3.out"},5.377);
-    tl.fromTo("#adC",{filter:"grayscale(0) brightness(1)"},{filter:"grayscale(1) brightness(0.62)",duration:0.5,ease:"power2.out"},5.527);
-    tl.fromTo("#s2-panel",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.5,ease:"back.out(1.8)"},6.192);
-    tl.fromTo("#roll1-0",{y:0},{y:-2210,duration:0.8,ease:"power3.out"},6.202);
-    tl.fromTo("#roll1-1",{y:0},{y:-1870,duration:0.92,ease:"power3.out"},6.202);
-    tl.fromTo("#pro2",{x:-900},{x:0,duration:0.9,ease:"power3.out"},7.293);
-    tl.fromTo("#s3-sueno",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},8.223);
-    tl.fromTo("#s3-graf",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.7,ease:"power2.out"},8.453);
+    tl.fromTo("#s1-aro",{strokeDashoffset:1457.7},{strokeDashoffset:0,duration:1.265,ease:"power2.inOut"},0);
+    tl.to("#s1-aro",{stroke:"#22c55e",duration:0.3},1.8);
+    tl.fromTo("#s1-reloj",{scale:1},{scale:1.08,duration:0.16,yoyo:true,repeat:1,ease:"power2.out",immediateRender:false},1.8);
+    tl.fromTo("#s1-sol",{opacity:0,scale:0.4},{opacity:1,scale:1,duration:0.3,ease:"back.out(2)"},2.345);
+    tl.fromTo("#s1-sol",{x:-330,y:0},{keyframes:[{x:-233,y:-233},{x:0,y:-330},{x:233,y:-233},{x:330,y:0}],duration:1.02,ease:"none"},2.345);
+    tl.fromTo("#s1-sol",{rotation:0},{rotation:180,duration:1.2,ease:"none"},2.395);
+    tl.fromTo("#s1-tag",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},2.49);
+    tl.fromTo("#adA",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},3.782);
+    tl.fromTo("#adB",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},4.172);
+    tl.fromTo("#adC",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},4.437);
+    tl.fromTo("#s2-sofa",{opacity:0,x:260},{opacity:1,x:0,duration:0.4,ease:"power3.out"},5.222);
+    tl.fromTo("#adC",{filter:"grayscale(0) brightness(1)"},{filter:"grayscale(1) brightness(0.62)",duration:0.5,ease:"power2.out"},5.372);
+    tl.fromTo("#s2-panel",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.5,ease:"back.out(1.8)"},6.022);
+    tl.fromTo("#roll1-0",{y:0},{y:-2210,duration:0.8,ease:"power3.out"},6.022);
+    tl.fromTo("#roll1-1",{y:0},{y:-1870,duration:0.92,ease:"power3.out"},6.022);
+    tl.fromTo("#pro2",{x:-900},{x:0,duration:0.9,ease:"power3.out"},7.119);
+    tl.fromTo("#s3-sueno",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},8.014);
+    tl.fromTo("#s3-graf",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.7,ease:"power2.out"},8.244);
     window.__mundoRender(0);
     window.__timelines["mundo"] = tl;
   </script>

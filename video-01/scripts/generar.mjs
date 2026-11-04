@@ -140,6 +140,11 @@ const segs = [];
 
 // ======================= ESCENA 1 · GANCHO (10 minutos) =======================
 const S1 = { x: 1000, y: 1000 };
+// Momentos clave, siempre atados a palabras de la voz
+const SALE1 = E("entero") - 0.15;          // el Pro se va corriendo
+const VIAJE1 = E("entero") - 0.05;         // cámara: escena 1 → 2
+const ALEJA2 = P("suficiente") + 0.6;      // cámara: plano general del gancho
+const VIAJE2 = P("moverte") + 0.06;        // cámara: escena 2 → 3
 const reloj = roller("00:00", 120, C.ink);
 world.push(`
   <div id="s1-reloj" class="abs" style="left:${S1.x - 290}px;top:${S1.y - 380}px;width:580px;height:580px">
@@ -160,15 +165,15 @@ world.push(`
 `);
 world.push(character("pro", 640, 1490, LOOK.pro, {
   scale: 0.95,
-  poses: [[0, "run"], [0.62, "idle"], [P("cambiar") - 0.1, "point"], [P("dia") , "cheer"], [3.05, "run"]],
+  poses: [[0, "run"], [0.62, "idle"], [P("cambiar") - 0.1, "point"], [P("dia"), "cheer"], [SALE1, "run"]],
   mood: [[0, 0.7], [P("dia"), 1]],
   off: 0.3,
 }));
 // Arranque: el reloj ya está en pantalla en el fotograma 0 y golpea
 tw(`tl.fromTo("#s1-reloj",{scale:1.45,rotation:-8},{scale:1,rotation:0,duration:0.55,ease:"back.out(2.2)"},0);`);
 tw(`tl.fromTo("#pro",{x:-330},{x:0,duration:0.62,ease:"power3.out"},0);`);
-tw(`tl.fromTo("#pro",{x:0},{x:1100,duration:0.6,ease:"power2.in",immediateRender:false},3.05);`);
-tw(`tl.to("#pro",{opacity:0,duration:0.2},3.6);`);
+tw(`tl.fromTo("#pro",{x:0},{x:1100,duration:0.6,ease:"power2.in",immediateRender:false},${r(SALE1)});`);
+tw(`tl.to("#pro",{opacity:0,duration:0.2},${r(SALE1 + 0.55)});`);
 rollTo(reloj, "10:00", 120, P("diez"), 0.9);
 tw(`tl.fromTo("#s1-aro",{strokeDashoffset:${(2 * Math.PI * 232).toFixed(1)}},{strokeDashoffset:0,duration:${r(E("minutos") - P("diez") + 0.5)},ease:"power2.inOut"},${r(P("diez"))});`);
 tw(`tl.to("#s1-aro",{stroke:"${C.good}",duration:0.3},${r(P("cambiar"))});`);
@@ -223,7 +228,7 @@ tw(`tl.fromTo("#s3-graf",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.7
 
 // ---------- Camino entre escenas ----------
 pathTo(S1.x, S1.y + 380, 0, 0);
-pathTo(S2.x, S2.y - 560, 3.2, 3.75);
+pathTo(S2.x, S2.y - 560, VIAJE1, VIAJE1 + 0.55);
 pathTo(S2.x, S2.y - 560, 0, 0);
 const pathD = "M" + pathPts.map((p) => p.join(" ")).join("L");
 
@@ -234,10 +239,10 @@ const pathPts2 = [[S2.x + 470, S2.y + 80], [S3.x - 470, S3.y + 80]];
 const cam0 = { cx: S1.x, cy: S1.y + 40, z: 1.14 };
 cam(0, 0.6, S1.x, S1.y + 30, 1.0, "out");
 cam(P("cambiar") - 0.05, P("cambiar") + 0.5, S1.x, S1.y + 20, 1.05, "inOut");
-cam(3.2, 3.75, S2.x, S2.y + 40, 1.0, "inOut", 0.35);                   // viaje 1 → 2
+cam(VIAJE1, VIAJE1 + 0.55, S2.x, S2.y + 40, 1.0, "inOut", 0.35);                   // viaje 1 → 2
 cam(P("suficiente") - 0.25, P("suficiente") + 0.3, S2.x, S2.y - 110, 1.06, "inOut"); // acerca al dato
-cam(7.0, 7.4, S2.x, (S1.y + S2.y) / 2 + 40, 0.36, "inOut");            // se aleja: bloque entero
-cam(7.45, 8.05, S3.x, S3.y + 40, 1.0, "inOut", 0.25);                  // viaje 2 → 3
+cam(ALEJA2, ALEJA2 + 0.4, S2.x, (S1.y + S2.y) / 2 + 40, 0.36, "inOut");            // se aleja: bloque entero
+cam(VIAJE2, VIAJE2 + 0.6, S3.x, S3.y + 40, 1.0, "inOut", 0.25);                  // viaje 2 → 3
 cam(P("dormir") - 0.1, P("dormir") + 0.6, S3.x, S3.y - 90, 1.04, "inOut");
 
 // Dibujado del camino según viaja la cámara
@@ -291,8 +296,8 @@ const mundo = `<template>
     const tl = gsap.timeline({ paused: true });
     const clock = { t: 0 };
     tl.fromTo(clock, { t: 0 }, { t: ${D}, duration: ${D}, ease: "none", onUpdate: () => window.__mundoRender(clock.t) }, 0);
-    tl.fromTo("#camino1m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, 3.15);
-    tl.fromTo("#camino2m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, 7.45);
+    tl.fromTo("#camino1m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, ${r(VIAJE1 - 0.05)});
+    tl.fromTo("#camino2m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, ${r(VIAJE2)});
     ${T.join("\n    ")}
     window.__mundoRender(0);
     window.__timelines["mundo"] = tl;

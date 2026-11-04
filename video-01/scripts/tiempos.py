@@ -10,11 +10,11 @@ import json, re
 import numpy as np, soundfile as sf, librosa
 from kokoro_onnx import Kokoro
 
-SPEED = 0.9
+SPEED = 0.95  # la misma que scripts/voz.py
 CACHE = "/root/.cache/hyperframes/tts"
 HOP = 120  # 5 ms a 24 kHz
 k = Kokoro(f"{CACHE}/models/kokoro-v1.0.onnx", f"{CACHE}/voices/voices-v1.0.bin")
-voz, sr = sf.read("voz.wav", dtype="float32")
+voz, sr = sf.read("voz-raw.wav", dtype="float32")  # sin procesar, a 24 kHz
 frases = json.load(open("voz-frases.json", encoding="utf-8"))
 
 

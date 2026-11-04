@@ -1,10 +1,10 @@
 """Genera voz.wav frase a frase con Kokoro (em_alex) y pausas de 0,25 s.
 Uso: python3 scripts/voz.py [velocidad]   -> voz.wav + voz-frases.json"""
-import json, re, sys
+import json, re, subprocess, sys
 import numpy as np, soundfile as sf
 from kokoro_onnx import Kokoro
 
-SPEED = float(sys.argv[1]) if len(sys.argv) > 1 else 0.9
+SPEED = float(sys.argv[1]) if len(sys.argv) > 1 else 0.95
 GAP = 0.19  # + 0,03 s de cola en cada lado = 0,25 s de silencio real
 CACHE = "/root/.cache/hyperframes/tts"
 k = Kokoro(f"{CACHE}/models/kokoro-v1.0.onnx", f"{CACHE}/voices/voices-v1.0.bin")
@@ -25,6 +25,14 @@ for i, f in enumerate(frases):
     partes.append(audio); t += d
     if i < len(frases) - 1:
         partes.append(np.zeros(int(GAP * sr), dtype=audio.dtype)); t += GAP
-sf.write("voz.wav", np.concatenate(partes), sr)
+sf.write("voz-raw.wav", np.concatenate(partes), sr)
+# Limpieza: más cuerpo y claridad, compresión suave y volumen de Shorts (-14 LUFS).
+# No cambia los tiempos.
+FILTRO = ("highpass=f=75,equalizer=f=140:t=q:w=1:g=2,equalizer=f=320:t=q:w=1.2:g=-2.5,"
+          "equalizer=f=3200:t=q:w=1.4:g=3,equalizer=f=9000:t=q:w=1:g=1.5,"
+          "acompressor=threshold=-20dB:ratio=3:attack=5:release=80:makeup=2,"
+          "loudnorm=I=-14:TP=-1.5:LRA=7")
+subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "voz-raw.wav", "-af", FILTRO,
+                "-ar", "48000", "voz.wav"], check=True)
 json.dump(meta, open("voz-frases.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(f"{len(frases)} frases, {t:.2f} s")
