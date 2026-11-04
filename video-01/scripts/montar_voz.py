@@ -37,23 +37,37 @@ TOMAS = [
     (66.86, 70.99, P_, "En un estudio, el 91 % de quienes lo aplican"),  # fuera: «Vale, te repito…»
     (71.50, 75.94, P_FRASE, "hacen ejercicio cada semana, frente a menos del 40 % del resto."),
     (76.33, 77.58, 0.16, "La disciplina no se tiene,"),
-    (78.35, 79.07, P_FRASE, "se diseña."),
-    (82.62, 86.12, P_FRASE, "Escribe en los comentarios una frase y ya tendrás tu plan."),  # fuera: «Para ello está este modelo»
-    (86.22, 87.36, P_LEMA, "Sígueme para más."),
-    (87.42, 92.96, 1.4, "Y recuerda: cada día podemos ser 0,0001 % mejor."),
+    (78.35, 79.07, 0.3, "se diseña."),
+    # Cierre nuevo (grabacion/cierre.m4a)
+    (4.82, 6.30, P_, "No necesitas un gran cambio.", "cierre"),
+    (6.62, 7.62, P_LEMA, "Solo no parar.", "cierre"),
+    (7.98, 12.90, 0.3, "Cada día, un 0,0001 % mejor.", "cierre"),
+    (13.30, 14.62, 1.6, "Nos vemos mañana.", "cierre"),            # fuera: «en el día»
 ]
 # Cómo se pronuncian los números (para emparejar con lo que reconoce Parakeet)
 DICHO = {"91": "noventa y uno por ciento", "40": "cuarenta por ciento", "00001": "cero coma cero cero cero uno por ciento"}
 
 norm = lambda s: re.sub(r"[^a-zñ0-9]", "", s.lower().translate(str.maketrans("áéíóúü", "aeiouu")))
 
-subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", SRC, "-ac", "1", "-ar", str(SR), "grabacion/fuente.wav"], check=True)
-y, _ = sf.read("grabacion/fuente.wav", dtype="float32")
-rms = librosa.feature.rms(y=y, hop_length=240, frame_length=960)[0]
+FUENTES = {"principal": SRC, "cierre": "grabacion/cierre.m4a"}
+AUDIO, RMS = {}, {}
+for nombre, ruta in FUENTES.items():
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", ruta, "-ac", "1", "-ar", str(SR), f"grabacion/fuente-{nombre}.wav"], check=True)
+    AUDIO[nombre], _ = sf.read(f"grabacion/fuente-{nombre}.wav", dtype="float32")
+    RMS[nombre] = librosa.feature.rms(y=AUDIO[nombre], hop_length=240, frame_length=960)[0]
 
-def tranquilo(t, ventana=0.08):
+def tranquilo(t, fuente, ventana=0.08):
+    rms = RMS[fuente]
     a, b = max(int((t - ventana) * SR / 240), 0), min(int((t + ventana) * SR / 240), len(rms) - 1)
     return (a + int(np.argmin(rms[a:b + 1]))) * 240 / SR
+
+def igualar(x, objetivo=-20.0):
+    """Lleva la voz de la toma a un mismo volumen, para que todas las tomas suenen igual."""
+    r = librosa.feature.rms(y=x, hop_length=240, frame_length=960)[0]
+    voz = r[20 * np.log10(r + 1e-9) > -45]
+    if not len(voz): return x
+    actual = 20 * np.log10(np.sqrt((voz ** 2).mean()) + 1e-9)
+    return x * (10 ** ((objetivo - actual) / 20))
 
 def acortar_silencios(x, umbral=-46, maximo=0.28, deja=0.22):
     r = librosa.feature.rms(y=x, hop_length=240, frame_length=960)[0]
@@ -81,12 +95,16 @@ def fade(x, ms=12):
     x[:n] *= w; x[-n:] *= w[::-1]; return x
 
 piezas, t = [], 0.0
-for a, b, pausa, texto in TOMAS:
-    a, b = tranquilo(a - 0.06), tranquilo(b + 0.08)
-    x = fade(recortar_bordes(acortar_silencios(y[int(a * SR):int(b * SR)])))
+for toma in TOMAS:
+    a, b, pausa, texto = toma[:4]
+    fuente = toma[4] if len(toma) > 4 else "principal"
+    a, b = tranquilo(a - 0.06, fuente), tranquilo(b + 0.08, fuente)
+    y = AUDIO[fuente]
+    x = fade(igualar(recortar_bordes(acortar_silencios(y[int(a * SR):int(b * SR)]))))
     piezas.append((t, x, texto))
     t += len(x) / SR + pausa
 v = np.zeros(int(t * SR) + 1, np.float32)
+v = v
 for t0, x, _ in piezas: v[int(t0 * SR):int(t0 * SR) + len(x)] = x
 sf.write("voz-limpia.wav", v, SR)
 

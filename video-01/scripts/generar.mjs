@@ -424,41 +424,29 @@ tw(`tl.fromTo("#nov10-band",{opacity:0},{opacity:1,duration:0.3},${r(P("disena")
 tw(`tl.to("#s10-sf",{filter:"drop-shadow(0 0 26px ${C.good}aa)",duration:0.4},${r(P("disena") + 0.1)});`);
 burst(S10.x, S10.y - 290, P("disena") + 0.15, [C.good, "#86efac", "#ffffff", "#facc15"], { count: 44, radius: 480 });
 
-// ======================= ESCENA 11 · Comentarios + seguir =======================
-world.push(`<div id="s11-caja" class="abs glass" style="left:${S11.x - 440}px;top:${S11.y - 500}px;width:880px;height:400px;padding:34px 40px;display:flex;flex-direction:column;gap:22px">
-    <div style="display:flex;align-items:center;gap:14px">${icon("chat-circle-dots", 54, "#fff")}<span class="lbl" style="font-size:44px;color:#fff">Comentarios</span></div>
-    <div id="s11-campo" style="display:flex;align-items:center;gap:18px;padding:18px 22px;border-radius:26px;background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.25)">
-      <div class="center" style="width:74px;height:74px;border-radius:37px;background:${C.novato};flex:none">${icon("user", 46, "#fff")}</div>
-      <div style="flex:1;font-size:40px;font-weight:700;color:#fff;white-space:nowrap">${typed("Si a las 7, voy a entrenar", P("escribe") + 0.15, E("frase", 2) - 0.05)}</div>
-      <div id="s11-enviar" class="center" style="width:74px;height:74px;border-radius:37px;background:${C.good};flex:none">${icon("paper-plane-tilt", 42, "#04130a")}</div>
-    </div>
-    <div id="s11-publicado" style="display:flex;align-items:center;gap:12px;font-size:34px;font-weight:900;color:${C.good}">${icon("check-circle", 42, C.good)} Publicado: ya tienes tu plan
-      <span id="s11-like" style="margin-left:auto;display:flex;align-items:center;gap:8px;color:#f43f5e">${icon("heart", 46, "#f43f5e")}1</span></div>
+// ======================= ESCENA 11 · «No necesitas un gran cambio. Solo no parar.» =======================
+world.push(`
+  <div id="s11-gran" class="abs center comic" style="left:${S11.x - 400}px;top:${S11.y - 560}px;width:800px;height:200px;background:#fff;font-size:96px;font-weight:900;color:#0b1020;letter-spacing:-.03em"><div class="halftone"></div><span style="position:relative">GRAN CAMBIO</span></div>
+  <div id="s11-frase" class="abs center" style="left:${S11.x - 480}px;top:${S11.y - 250}px;width:960px;height:150px;gap:30px;font-size:120px;font-weight:900;letter-spacing:-.04em;color:#fff">
+    <span id="s11-w0" style="display:inline-block">SOLO</span><span id="s11-w1" style="display:inline-block">NO</span><span id="s11-w2" style="display:inline-block;color:${C.good};text-shadow:0 0 30px ${C.good}88">PARAR</span>
   </div>
-  <div id="s11-boton" class="abs center pill" style="left:${S11.x - 270}px;top:${S11.y - 50}px;width:540px;height:140px;background:${C.bad};color:#fff;font-size:60px">
-    <span id="s11-seguir" class="abs center" style="inset:0;gap:16px">${icon("user-plus", 64, "#fff")} SEGUIR</span>
-    <span id="s11-siguiendo" class="abs center" style="inset:0;gap:16px;opacity:0">${icon("check-fat", 60, "#fff")} SIGUIENDO</span>
-  </div>
-  <div id="s11-cursor" class="abs" style="left:${S11.x + 200}px;top:${S11.y + 50}px;width:90px;height:90px">${icon("cursor", 90, "#fff")}</div>`);
-world.push(character("nov11", S11.x - 200, S11.y + 500, { ...LOOK.novato, shirt: C.novato, stripes: false, band: "#ffffff" }, {
-  scale: 0.8, off: 0.9, poses: [[0, "idle"], [P("sigueme") + 0.4, "cheer"]], mood: [[0, 1]],
+  <svg class="abs" data-layout-ignore width="1100" height="40" style="left:${S11.x - 550}px;top:${S11.y + 490}px" overflow="visible"><path id="s11-huella" d="M0 20H1100" stroke="${C.good}" stroke-opacity=".7" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 34" fill="none"/></svg>
+`);
+neonStrike("s11-tacha", S11.x - 380, S11.y - 466, 760, C.bad, P("cambio") + 0.05, -6);
+world.push(character("nov11", S11.x - 180, S11.y + 480, { ...LOOK.novato, shirt: C.novato, stripes: false, band: "#ffffff" }, {
+  scale: 0.8, off: 0.9, poses: [[0, "walk"]], mood: [[0, 0.9]],
 }));
-world.push(character("pro11", S11.x + 200, S11.y + 500, LOOK.pro, {
-  scale: 0.8, off: 1.8, poses: [[0, "idle"], [P("sigueme"), "point"]], mood: [[0, 1]],
+world.push(character("pro11", S11.x + 180, S11.y + 480, LOOK.pro, {
+  scale: 0.8, off: 1.8, poses: [[0, "walk"]], mood: [[0, 1]],
 }));
-pop("#s11-caja", P("escribe") - 0.1, 0.45);
-pop("#nov11", P("escribe"), 0.4);
-pop("#pro11", P("escribe") + 0.08, 0.4);
-tw(`tl.fromTo("#s11-enviar",{scale:1},{scale:0.8,duration:0.08,yoyo:true,repeat:1,immediateRender:false},${r(E("frase", 2) + 0.05)});`);
-tw(`tl.to("#s11-campo",{backgroundColor:"rgba(34,197,94,.22)",borderColor:"rgba(34,197,94,.8)",duration:0.3},${r(E("frase", 2) + 0.15)});`);
-tw(`tl.fromTo("#s11-publicado",{opacity:0,y:16},{opacity:1,y:0,duration:0.3,ease:"power2.out"},${r(P("tendras") - 0.1)});`);
-tw(`tl.fromTo("#s11-like",{scale:0},{scale:1,duration:0.35,ease:"back.out(3)"},${r(P("plan", 3))});`);
-pop("#s11-boton", P("sigueme") - 0.2, 0.45);
-tw(`tl.fromTo("#s11-cursor",{x:260,y:300,opacity:0},{x:0,y:0,opacity:1,duration:0.35,ease:"power3.out"},${r(P("sigueme"))});`);
-tw(`tl.fromTo("#s11-boton",{scale:1},{scale:0.92,duration:0.08,yoyo:true,repeat:1,immediateRender:false},${r(P("sigueme") + 0.4)});`);
-tw(`tl.to("#s11-boton",{backgroundColor:"#334155",duration:0.25},${r(P("sigueme") + 0.45)});`);
-tw(`tl.to("#s11-seguir",{opacity:0,duration:0.15},${r(P("sigueme") + 0.45)});`);
-tw(`tl.to("#s11-siguiendo",{opacity:1,duration:0.2},${r(P("sigueme") + 0.5)});`);
+pop("#s11-gran", P("gran") - 0.2, 0.4);
+tw(`tl.to("#s11-gran",{opacity:0.3,scale:0.92,duration:0.3},${r(P("solo") - 0.1)});`);
+[P("solo"), P("no", 6), P("parar")].forEach((t, i) =>
+  tw(`tl.fromTo("#s11-w${i}",{opacity:0,y:60,scale:${i === 2 ? 1.6 : 1}},{opacity:1,y:0,scale:1,duration:0.3,ease:"${i === 2 ? "power4.out" : "back.out(2)"}"},${r(t - 0.04)});`));
+pop("#nov11", P("no", 5) - 0.1, 0.4);
+pop("#pro11", P("no", 5), 0.4);
+// Las huellas avanzan sin parar bajo los personajes
+tw(`tl.fromTo("#s11-huella",{strokeDashoffset:0},{strokeDashoffset:-360,duration:4,ease:"none"},${r(P("no", 5) - 0.3)});`);
 
 // ======================= ESCENA 12 · Cierre con el logo de la marca (opción B: «Escalón») =======================
 const S12 = { x: 1000, y: 8800 };
@@ -472,14 +460,16 @@ world.push(`
     <div class="lbl" style="font-size:112px;color:#04130a;letter-spacing:-.05em;line-height:1;white-space:nowrap">${typed("0,0001%", P("00001") - 0.05, P("mejor") - 0.15)}</div>
     <div id="s12-tag" class="lbl" style="font-size:32px;color:#04130a;letter-spacing:.32em">CADA DÍA</div>
   </div>
+  <div id="s12-adios" class="abs center pill" style="left:${S12.x - 280}px;top:${S12.y + 360}px;width:560px;height:96px;border:4px solid rgba(255,255,255,.35);color:#fff;font-size:44px;letter-spacing:.06em">NOS VEMOS MAÑANA</div>
   <div id="s12-mejor" class="abs center" style="left:${S12.x - 480}px;top:${S12.y + 150}px;width:960px;height:180px;font-size:170px;font-weight:900;color:${C.good};letter-spacing:-.04em;text-shadow:0 0 30px ${C.good}88">MEJOR</div>
 `);
-tw(`tl.fromTo("#s12-logo",{scale:0,rotation:-120},{scale:1,rotation:0,duration:0.6,ease:"back.out(1.6)"},${r(P("recuerda") - 0.15)});`);
-[P("cada", 3), P("dia", 2), P("podemos"), P("ser")].forEach((t, i) =>
+tw(`tl.fromTo("#s12-logo",{scale:0,rotation:-120},{scale:1,rotation:0,duration:0.6,ease:"back.out(1.6)"},${r(P("cada", 3) - 0.15)});`);
+[P("cada", 3), P("dia", 2), P("00001") - 0.2, P("mejor") - 0.3].forEach((t, i) =>
   tw(`tl.fromTo("#s12-b${i}",{scaleY:0},{scaleY:1,duration:0.35,ease:"back.out(2.2)"},${r(t)});`));
 tw(`tl.fromTo("#s12-tag",{opacity:0,y:16,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.3,ease:"power3.out"},${r(P("cada", 3))});`);
 tw(`tl.fromTo("#s12-mejor",{scale:3,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"power4.out"},${r(P("mejor") - 0.05)});`);
 tw(`tl.fromTo("#s12-logo",{scale:1},{scale:1.08,duration:0.15,yoyo:true,repeat:1,ease:"power2.out",immediateRender:false},${r(P("mejor"))});`);
+pop("#s12-adios", P("nos") - 0.05, 0.4);
 burst(S12.x, S12.y - 210, P("mejor") + 0.05, [C.good, "#86efac", "#ffffff", "#facc15"], { count: 56, radius: 560 });
 
 // ======================= CÁMARA Y CAMINO =======================
@@ -513,9 +503,9 @@ cam(P("disena") - 0.05, P("disena") + 0.12, S10.x, S10.y - 50, 1.07, "out");
 cam(P("disena") + 0.2, P("disena") + 0.5, S10.x, S10.y - 30, 1.0);
 const V11 = E("disena") + 0.05;
 cam(V11, V11 + 0.5, S11.x, S11.y - 20, 1.0, "inOut", 0.3);
-cam(P("sigueme") + 0.4, P("sigueme") + 0.52, S11.x, S11.y - 20, 1.05, "out");
-cam(P("sigueme") + 0.55, P("sigueme") + 0.9, S11.x, S11.y - 20, 1.0);
-const V12 = P("recuerda") - 0.4;
+cam(P("parar") - 0.05, P("parar") + 0.12, S11.x, S11.y - 20, 1.05, "out");
+cam(P("parar") + 0.2, P("parar") + 0.5, S11.x, S11.y - 20, 1.0);
+const V12 = P("cada", 3) - 0.45;
 cam(V12, V12 + 0.55, S12.x, S12.y - 40, 1.0, "inOut", 0.3);
 cam(P("mejor") - 0.05, P("mejor") + 0.12, S12.x, S12.y - 60, 1.07, "out");
 cam(P("mejor") + 0.2, P("mejor") + 0.6, S12.x, S12.y - 40, 1.0);
@@ -575,16 +565,15 @@ sfx("whoosh-short", P("tiene") + 0.05, 0.4);
 sfx("typing", P("se", 5) - 0.2, 0.3);
 sfx("impact-bass-1", P("disena"), 0.85);
 sfx("sparkle", P("disena") + 0.1, 0.5);
-sfx("typing", P("escribe") + 0.15, 0.3);
-sfx("click", E("frase", 2) + 0.05, 0.5);
-sfx("notification", P("tendras") - 0.1, 0.3);
-sfx("pop", P("plan", 3), 0.4);
-sfx("pop", P("sigueme") - 0.2, 0.45);
-sfx("click", P("sigueme") + 0.4, 0.6);
-sfx("chime", P("sigueme") + 0.5, 0.3);
+sfx("pop", P("gran") - 0.2, 0.45);
+sfx("whoosh-short", P("cambio") + 0.05, 0.45);
+sfx("pop", P("solo"), 0.35);
+sfx("pop", P("no", 6), 0.35);
+sfx("impact-bass-1", P("parar"), 0.55);
 sfx("whoosh", V12, 0.55);
-sfx("whoosh-short", P("recuerda") - 0.15, 0.45);
-[P("cada", 3), P("dia", 2), P("podemos"), P("ser")].forEach((t) => sfx("click-soft", t, 0.45));
+sfx("whoosh-short", P("cada", 3) - 0.15, 0.45);
+[P("cada", 3), P("dia", 2), P("00001") - 0.2, P("mejor") - 0.3].forEach((t) => sfx("click-soft", t, 0.45));
+sfx("chime", P("nos") + 0.05, 0.4);
 sfx("typing", P("00001") - 0.05, 0.3);
 sfx("impact-bass-1", P("mejor"), 0.85);
 sfx("sparkle", P("mejor") + 0.1, 0.5);

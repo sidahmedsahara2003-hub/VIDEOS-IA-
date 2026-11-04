@@ -151,40 +151,40 @@
   "text": "y",
   "start": 6.405,
   "frase": 1,
-  "end": 6.538
+  "end": 6.586
  },
  {
   "i": 22,
   "text": "no",
-  "start": 6.538,
+  "start": 6.586,
   "frase": 1,
-  "end": 6.672
+  "end": 6.767
  },
  {
   "i": 23,
   "text": "es",
-  "start": 6.672,
+  "start": 6.767,
   "frase": 1,
-  "end": 6.805
+  "end": 6.948
  },
  {
   "i": 24,
   "text": "por",
-  "start": 6.805,
+  "start": 6.948,
   "frase": 1,
-  "end": 6.965
+  "end": 7.129
  },
  {
   "i": 25,
   "text": "pereza.",
-  "start": 6.965,
+  "start": 7.129,
   "frase": 1,
-  "end": 7.79
+  "end": 7.63
  },
  {
   "i": 26,
   "text": "La",
-  "start": 7.79,
+  "start": 7.63,
   "frase": 2,
   "end": 8.03
  },
@@ -396,12 +396,12 @@
   "text": "lo",
   "start": 17.99,
   "frase": 4,
-  "end": 18.15
+  "end": 18.07
  },
  {
   "i": 57,
   "text": "acabas",
-  "start": 18.15,
+  "start": 18.07,
   "frase": 4,
   "end": 18.47
  },
@@ -599,19 +599,19 @@
   "text": "Por",
   "start": 28.045,
   "frase": 7,
-  "end": 28.205
+  "end": 28.125
  },
  {
   "i": 86,
   "text": "ejemplo:",
-  "start": 28.205,
+  "start": 28.125,
   "frase": 7,
-  "end": 28.605
+  "end": 28.525
  },
  {
   "i": 87,
   "text": "si",
-  "start": 28.605,
+  "start": 28.525,
   "frase": 7,
   "end": 28.765
  },
@@ -669,12 +669,12 @@
   "text": "voy",
   "start": 30.775,
   "frase": 7,
-  "end": 31.015
+  "end": 31.095
  },
  {
   "i": 96,
   "text": "a",
-  "start": 31.015,
+  "start": 31.095,
   "frase": 7,
   "end": 31.175
  },
@@ -725,12 +725,12 @@
   "text": "de",
   "start": 34.86,
   "frase": 8,
-  "end": 34.94
+  "end": 35.02
  },
  {
   "i": 104,
   "text": "quienes",
-  "start": 34.94,
+  "start": 35.02,
   "frase": 8,
   "end": 35.34
  },
@@ -872,160 +872,118 @@
   "text": "diseña.",
   "start": 42.36,
   "frase": 9,
-  "end": 43.095
+  "end": 43.26
  },
  {
   "i": 125,
-  "text": "Escribe",
-  "start": 43.095,
+  "text": "No",
+  "start": 43.408,
   "frase": 10,
-  "end": 43.655
+  "end": 43.612
  },
  {
   "i": 126,
-  "text": "en",
-  "start": 43.655,
+  "text": "necesitas",
+  "start": 43.612,
   "frase": 10,
   "end": 43.815
  },
  {
   "i": 127,
-  "text": "los",
+  "text": "un",
   "start": 43.815,
   "frase": 10,
   "end": 43.975
  },
  {
   "i": 128,
-  "text": "comentarios",
+  "text": "gran",
   "start": 43.975,
   "frase": 10,
-  "end": 44.535
+  "end": 44.135
  },
  {
   "i": 129,
-  "text": "una",
-  "start": 44.535,
+  "text": "cambio.",
+  "start": 44.135,
   "frase": 10,
-  "end": 44.695
+  "end": 44.74
  },
  {
   "i": 130,
-  "text": "frase",
-  "start": 44.695,
-  "frase": 10,
-  "end": 45.095
+  "text": "Solo",
+  "start": 44.74,
+  "frase": 11,
+  "end": 44.98
  },
  {
   "i": 131,
-  "text": "y",
-  "start": 45.095,
-  "frase": 10,
-  "end": 45.255
+  "text": "no",
+  "start": 44.98,
+  "frase": 11,
+  "end": 45.15
  },
  {
   "i": 132,
-  "text": "ya",
-  "start": 45.255,
-  "frase": 10,
-  "end": 45.495
+  "text": "parar.",
+  "start": 45.15,
+  "frase": 11,
+  "end": 46.05
  },
  {
   "i": 133,
-  "text": "tendrás",
-  "start": 45.495,
-  "frase": 10,
-  "end": 45.895
+  "text": "Cada",
+  "start": 46.05,
+  "frase": 12,
+  "end": 46.29
  },
  {
   "i": 134,
-  "text": "tu",
-  "start": 45.895,
-  "frase": 10,
-  "end": 46.055
+  "text": "día,",
+  "start": 46.29,
+  "frase": 12,
+  "end": 46.69
  },
  {
   "i": 135,
-  "text": "plan.",
-  "start": 46.055,
-  "frase": 10,
-  "end": 46.52
+  "text": "un",
+  "start": 46.69,
+  "frase": 12,
+  "end": 47.09
  },
  {
   "i": 136,
-  "text": "Sígueme",
-  "start": 46.52,
-  "frase": 11,
-  "end": 47.0
+  "text": "0,0001 %",
+  "start": 47.09,
+  "frase": 12,
+  "end": 47.99
  },
  {
   "i": 137,
-  "text": "para",
-  "start": 47.0,
-  "frase": 11,
-  "end": 47.16
+  "text": "mejor.",
+  "start": 49.65,
+  "frase": 12,
+  "end": 50.385
  },
  {
   "i": 138,
-  "text": "más.",
-  "start": 47.16,
-  "frase": 11,
-  "end": 47.9
+  "text": "Nos",
+  "start": 50.385,
+  "frase": 13,
+  "end": 50.545
  },
  {
   "i": 139,
-  "text": "Y",
-  "start": 47.9,
-  "frase": 12,
-  "end": 48.06
+  "text": "vemos",
+  "start": 50.545,
+  "frase": 13,
+  "end": 50.785
  },
  {
   "i": 140,
-  "text": "recuerda:",
-  "start": 48.06,
-  "frase": 12,
-  "end": 48.7
- },
- {
-  "i": 141,
-  "text": "cada",
-  "start": 48.7,
-  "frase": 12,
-  "end": 48.94
- },
- {
-  "i": 142,
-  "text": "día",
-  "start": 48.94,
-  "frase": 12,
-  "end": 49.18
- },
- {
-  "i": 143,
-  "text": "podemos",
-  "start": 49.18,
-  "frase": 12,
-  "end": 49.66
- },
- {
-  "i": 144,
-  "text": "ser",
-  "start": 49.66,
-  "frase": 12,
-  "end": 50.14
- },
- {
-  "i": 145,
-  "text": "0,0001 %",
-  "start": 50.14,
-  "frase": 12,
-  "end": 51.04
- },
- {
-  "i": 146,
-  "text": "mejor.",
-  "start": 52.78,
-  "frase": 12,
-  "end": 53.17
+  "text": "mañana.",
+  "start": 50.785,
+  "frase": 13,
+  "end": 51.505
  }
 ]

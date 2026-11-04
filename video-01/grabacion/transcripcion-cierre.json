@@ -1,0 +1,172 @@
+[
+ {
+  "bloque": 0,
+  "start": 2.65,
+  "end": 6.27,
+  "texto": "se diseña, no necesita un gran cambio.",
+  "palabras": [
+   {
+    "text": "se",
+    "start": 4.02,
+    "end": 4.26
+   },
+   {
+    "text": "diseña,",
+    "start": 4.26,
+    "end": 4.9
+   },
+   {
+    "text": "no",
+    "start": 4.9,
+    "end": 5.06
+   },
+   {
+    "text": "necesita",
+    "start": 5.06,
+    "end": 5.62
+   },
+   {
+    "text": "un",
+    "start": 5.62,
+    "end": 5.78
+   },
+   {
+    "text": "gran",
+    "start": 5.78,
+    "end": 5.94
+   },
+   {
+    "text": "cambio.",
+    "start": 5.94,
+    "end": 6.27
+   }
+  ]
+ },
+ {
+  "bloque": 1,
+  "start": 6.76,
+  "end": 7.48,
+  "texto": "Solo no para aquí.",
+  "palabras": [
+   {
+    "text": "Solo",
+    "start": 6.69,
+    "end": 7.01
+   },
+   {
+    "text": "no",
+    "start": 7.01,
+    "end": 7.17
+   },
+   {
+    "text": "para",
+    "start": 7.17,
+    "end": 7.41
+   },
+   {
+    "text": "aquí.",
+    "start": 7.41,
+    "end": 7.48
+   }
+  ]
+ },
+ {
+  "bloque": 2,
+  "start": 8.13,
+  "end": 11.16,
+  "texto": "cada día un cero coma cero cero cero",
+  "palabras": [
+   {
+    "text": "cada",
+    "start": 8.14,
+    "end": 8.46
+   },
+   {
+    "text": "día",
+    "start": 8.46,
+    "end": 8.94
+   },
+   {
+    "text": "un",
+    "start": 8.94,
+    "end": 9.42
+   },
+   {
+    "text": "cero",
+    "start": 9.42,
+    "end": 9.9
+   },
+   {
+    "text": "coma",
+    "start": 9.9,
+    "end": 10.22
+   },
+   {
+    "text": "cero",
+    "start": 10.22,
+    "end": 10.54
+   },
+   {
+    "text": "cero",
+    "start": 10.54,
+    "end": 10.86
+   },
+   {
+    "text": "cero",
+    "start": 10.86,
+    "end": 11.16
+   }
+  ]
+ },
+ {
+  "bloque": 3,
+  "start": 11.81,
+  "end": 12.78,
+  "texto": "Uno por ciento mejor.",
+  "palabras": [
+   {
+    "text": "Uno",
+    "start": 11.82,
+    "end": 12.06
+   },
+   {
+    "text": "por",
+    "start": 12.06,
+    "end": 12.22
+   },
+   {
+    "text": "ciento",
+    "start": 12.22,
+    "end": 12.54
+   },
+   {
+    "text": "mejor.",
+    "start": 12.54,
+    "end": 12.78
+   }
+  ]
+ },
+ {
+  "bloque": 4,
+  "start": 13.5,
+  "end": 15.21,
+  "texto": "Nos veo mañana.",
+  "palabras": [
+   {
+    "text": "Nos",
+    "start": 13.51,
+    "end": 13.67
+   },
+   {
+    "text": "veo",
+    "start": 13.67,
+    "end": 13.99
+   },
+   {
+    "text": "mañana.",
+    "start": 13.99,
+    "end": 15.21
+   }
+  ]
+ }
+]

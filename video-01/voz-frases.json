@@ -61,20 +61,26 @@
  },
  {
   "i": 10,
-  "texto": "Escribe en los comentarios una frase y ya tendrás tu plan.",
-  "start": 43.095,
-  "end": 46.3
+  "texto": "No necesitas un gran cambio.",
+  "start": 43.175,
+  "end": 44.52
  },
  {
   "i": 11,
-  "texto": "Sígueme para más.",
-  "start": 46.52,
-  "end": 47.35
+  "texto": "Solo no parar.",
+  "start": 44.66,
+  "end": 45.42
  },
  {
   "i": 12,
-  "texto": "Y recuerda: cada día podemos ser 0,0001 % mejor.",
-  "start": 47.9,
-  "end": 54.57
+  "texto": "Cada día, un 0,0001 % mejor.",
+  "start": 45.97,
+  "end": 50.005
+ },
+ {
+  "i": 13,
+  "texto": "Nos vemos mañana.",
+  "start": 50.305,
+  "end": 53.105
  }
 ]
