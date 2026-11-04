@@ -6,28 +6,44 @@
       linear-gradient(90deg, rgba(255,255,255,.055) 2px, transparent 2px); }
     #glow { position:absolute; left:-20%; right:-20%; bottom:-520px; height:1100px;
       background: radial-gradient(closest-side, rgba(34,197,94,.30), rgba(34,197,94,.10) 55%, transparent); }
-    #world { position:absolute; left:0; top:0; width:4000px; height:4000px; transform-origin:0 0; }
+    #world { position:absolute; left:0; top:0; width:6000px; height:9000px; transform-origin:0 0; }
     .abs { position:absolute; }
     .center { display:flex; align-items:center; justify-content:center; }
     .card { background:#ffffff; border-radius:44px; display:flex; align-items:center; justify-content:center; box-shadow:0 30px 80px rgba(0,0,0,.45); }
     .pill { border-radius:999px; font-weight:900; letter-spacing:-.01em; }
     .lbl { font-weight:900; letter-spacing:-.02em; }
     .char { position:absolute; }
+    .cell { border-radius:16px; background:#e2e8f0; }
+    .clg { width:58px; height:58px; border-radius:12px; background:#e2e8f0; }
     .roller { display:flex; align-items:flex-start; letter-spacing:-.04em; font-variant-numeric: tabular-nums; }
     .rcol { display:inline-block; overflow:hidden; }
     .rstrip { display:block; }
     .rstrip div { height:1em; }
     .rsep { display:inline-block; }
-    #camino { fill:none; stroke:rgba(255,255,255,.28); stroke-width:14; stroke-linecap:round; stroke-dasharray:22 26; }
+    .camino { fill:none; stroke:rgba(255,255,255,.28); stroke-width:14; stroke-linecap:round; stroke-dasharray:22 26; }
   </style>
   <div id="root" data-composition-id="mundo" data-width="1080" data-height="1920">
     <div id="bg"></div>
     <div id="world">
-      <svg class="abs" width="4000" height="4000" style="left:0;top:0" overflow="visible">
-        <defs><mask id="m1"><path id="camino1m" d="M1000 1380L1000 1940" stroke="#fff" stroke-width="30" fill="none" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></mask>
-              <mask id="m2"><path id="camino2m" d="M1470 2580L2130 2580" stroke="#fff" stroke-width="30" fill="none" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></mask></defs>
-        <path id="camino" d="M1000 1380L1000 1940" mask="url(#m1)"/>
-        <path id="camino-b" d="M1470 2580L2130 2580" mask="url(#m2)" style="fill:none;stroke:rgba(255,255,255,.28);stroke-width:14;stroke-linecap:round;stroke-dasharray:22 26"/>
+      <svg class="abs" width="6000" height="9000" style="left:0;top:0" overflow="visible">
+        <mask id="camino0m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="camino0d" d="M1000 1700L1000 1800" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <path class="camino" d="M1000 1700L1000 1800" mask="url(#camino0m)"/>
+        <mask id="camino1m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="camino1d" d="M1560 2500L2040 2500" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <path class="camino" d="M1560 2500L2040 2500" mask="url(#camino1m)"/>
+        <mask id="camino2m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="camino2d" d="M2600 3200L2600 3300" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <path class="camino" d="M2600 3200L2600 3300" mask="url(#camino2m)"/>
+        <mask id="camino3m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="camino3d" d="M3160 4000L3640 4000" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <path class="camino" d="M3160 4000L3640 4000" mask="url(#camino3m)"/>
+        <mask id="camino4m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="camino4d" d="M4200 4700L4200 4900" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <path class="camino" d="M4200 4700L4200 4900" mask="url(#camino4m)"/>
+        <mask id="camino5m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="camino5d" d="M3640 5600L3160 5600" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <path class="camino" d="M3640 5600L3160 5600" mask="url(#camino5m)"/>
+        <mask id="camino6m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="camino6d" d="M2040 5600L1560 5600" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <path class="camino" d="M2040 5600L1560 5600" mask="url(#camino6m)"/>
+        <mask id="camino7m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="camino7d" d="M1000 6300L1000 6500" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <path class="camino" d="M1000 6300L1000 6500" mask="url(#camino7m)"/>
+        <mask id="camino8m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="camino8d" d="M1560 7200L2040 7200" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <path class="camino" d="M1560 7200L2040 7200" mask="url(#camino8m)"/>
       </svg>
       
   <div id="s1-reloj" class="abs" style="left:710px;top:620px;width:580px;height:580px">
@@ -57,7 +73,7 @@
         <circle id="pro-armBE" r="16" fill="#cea983"/>
         <path id="pro-legF" stroke="#14532d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         <ellipse id="pro-legFE" rx="26" ry="14" fill="#f8fafc"/>
-        <g id="pro-torso" transform-origin="0 -170"><rect x="-54" y="-322" width="108" height="164" rx="48" fill="#22c55e"/>
+        <g id="pro-torso" transform-origin="0 -170"><rect id="pro-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#22c55e"/>
           
           
         </g>
@@ -65,7 +81,7 @@
           <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
           <circle r="64" fill="#f2c79a"/>
           <path d="M-64 -6C-66 -60 -20 -78 10 -72C52 -66 70 -36 64 -8C46 -34 10 -44 -20 -36C-40 -30 -52 -20 -64 -6Z" fill="#1f1611"/>
-          <rect x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff"/>
+          <rect id="pro-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="1"/>
           <ellipse id="pro-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
           <ellipse id="pro-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
           <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
@@ -97,7 +113,7 @@
         <circle id="adA-armBE" r="16" fill="#cea983"/>
         <path id="adA-legF" stroke="#1e3a8a" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         <ellipse id="adA-legFE" rx="26" ry="14" fill="#f8fafc"/>
-        <g id="adA-torso" transform-origin="0 -170"><rect x="-54" y="-322" width="108" height="164" rx="48" fill="#3b82f6"/>
+        <g id="adA-torso" transform-origin="0 -170"><rect id="adA-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#3b82f6"/>
           
           
         </g>
@@ -127,7 +143,7 @@
         <circle id="adB-armBE" r="16" fill="#cea983"/>
         <path id="adB-legF" stroke="#4c1d95" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         <ellipse id="adB-legFE" rx="26" ry="14" fill="#f8fafc"/>
-        <g id="adB-torso" transform-origin="0 -170"><rect x="-54" y="-322" width="108" height="164" rx="48" fill="#a855f7"/>
+        <g id="adB-torso" transform-origin="0 -170"><rect id="adB-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#a855f7"/>
           
           
         </g>
@@ -157,7 +173,7 @@
         <circle id="adC-armBE" r="16" fill="#cea983"/>
         <path id="adC-legF" stroke="#7f1d1d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         <ellipse id="adC-legFE" rx="26" ry="14" fill="#f8fafc"/>
-        <g id="adC-torso" transform-origin="0 -170"><rect x="-54" y="-322" width="108" height="164" rx="48" fill="#f43f5e"/>
+        <g id="adC-torso" transform-origin="0 -170"><rect id="adC-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#f43f5e"/>
           
           
         </g>
@@ -177,10 +193,22 @@
     </svg>
   </div>
 
-  <div id="s3-sueno" class="abs card" style="left:2160px;top:1955px;width:880px;height:190px;padding:0 34px;flex-direction:row;gap:28px;justify-content:flex-start">
+  <div id="s3-sueno" class="abs card" style="left:2160px;top:1895px;width:880px;height:190px;padding:0 34px;flex-direction:row;gap:28px;justify-content:flex-start">
     <div class="center" style="width:128px;height:128px;border-radius:36px;background:#6366f122;flex:none"><svg width="82" height="82" style="color:#6366f1"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M235.54,150.21a104.84,104.84,0,0,1-37,52.91A104,104,0,0,1,32,120,103.09,103.09,0,0,1,52.88,57.48a104.84,104.84,0,0,1,52.91-37,8,8,0,0,1,10,10,88.08,88.08,0,0,0,109.8,109.8,8,8,0,0,1,10,10Z"/></svg></div>
     <div class="lbl" style="font-size:58px;color:#0f172a;flex:1">Duermes mejor</div>
     <svg width="170" height="110" viewBox="0 0 170 110" style="flex:none"><path id="s3-graf" d="M6 96 L46 80 L82 84 L118 46 L162 14" fill="none" stroke="#22c55e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></svg>
+  </div>
+
+  <div id="s3-energia" class="abs card" style="left:2160px;top:2105px;width:880px;height:190px;padding:0 34px;flex-direction:row;gap:28px;justify-content:flex-start">
+    <div class="center" style="width:128px;height:128px;border-radius:36px;background:#f59e0b22;flex:none"><svg width="82" height="82" style="color:#f59e0b"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M213.85,125.46l-112,120a8,8,0,0,1-13.69-7l14.66-73.33L45.19,143.49a8,8,0,0,1-3-13l112-120a8,8,0,0,1,13.69,7L153.18,90.9l57.63,21.61a8,8,0,0,1,3,12.95Z"/></svg></div>
+    <div class="lbl" style="font-size:58px;color:#0f172a;flex:1">Más energía</div>
+    <svg width="170" height="90" viewBox="0 0 170 90" style="flex:none"><rect x="4" y="10" width="146" height="70" rx="16" fill="none" stroke="#0f172a" stroke-width="8"/><rect x="154" y="32" width="12" height="26" rx="4" fill="#0f172a"/><rect id="s3-bat" x="16" y="22" width="0" height="46" rx="8" fill="#22c55e"/></svg>
+  </div>
+
+  <div id="s3-humor" class="abs card" style="left:2160px;top:2315px;width:880px;height:190px;padding:0 34px;flex-direction:row;gap:28px;justify-content:flex-start">
+    <div class="center" style="width:128px;height:128px;border-radius:36px;background:#ec489922;flex:none"><svg width="82" height="82" style="color:#ec4899"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM92,96a12,12,0,1,1-12,12A12,12,0,0,1,92,96Zm82.92,60c-10.29,17.79-27.39,28-46.92,28s-36.63-10.2-46.92-28a8,8,0,1,1,13.84-8c7.47,12.91,19.21,20,33.08,20s25.61-7.1,33.08-20a8,8,0,1,1,13.84,8ZM164,120a12,12,0,1,1,12-12A12,12,0,0,1,164,120Z"/></svg></div>
+    <div class="lbl" style="font-size:58px;color:#0f172a;flex:1">Mejor humor</div>
+    <svg width="120" height="120" viewBox="0 0 120 120" style="flex:none"><circle cx="60" cy="60" r="54" fill="#facc15"/><circle cx="42" cy="48" r="7" fill="#0f172a"/><circle cx="78" cy="48" r="7" fill="#0f172a"/><path id="s3-boca" d="M36 80 Q60 80 84 80" stroke="#0f172a" stroke-width="8" stroke-linecap="round" fill="none"/></svg>
   </div>
 
   <div id="pro2" class="char" style="left:2432px;top:2526px;width:336px;height:416px">
@@ -193,7 +221,7 @@
         <circle id="pro2-armBE" r="16" fill="#cea983"/>
         <path id="pro2-legF" stroke="#14532d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         <ellipse id="pro2-legFE" rx="26" ry="14" fill="#f8fafc"/>
-        <g id="pro2-torso" transform-origin="0 -170"><rect x="-54" y="-322" width="108" height="164" rx="48" fill="#22c55e"/>
+        <g id="pro2-torso" transform-origin="0 -170"><rect id="pro2-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#22c55e"/>
           
           
         </g>
@@ -201,7 +229,7 @@
           <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
           <circle r="64" fill="#f2c79a"/>
           <path d="M-64 -6C-66 -60 -20 -78 10 -72C52 -66 70 -36 64 -8C46 -34 10 -44 -20 -36C-40 -30 -52 -20 -64 -6Z" fill="#1f1611"/>
-          <rect x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff"/>
+          <rect id="pro2-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="1"/>
           <ellipse id="pro2-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
           <ellipse id="pro2-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
           <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
@@ -212,11 +240,509 @@
       </g>
     </svg>
   </div>
+
+  <div id="s4-sofa" class="abs" style="left:2190px;top:4130px;width:360px;height:360px"><svg width="360" height="360" style="color:#475569"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M16,100V72A16,16,0,0,1,32,56h84a4,4,0,0,1,4,4v76H64a32,32,0,0,0-32-32H20A4,4,0,0,1,16,100Zm208,4h12a4,4,0,0,0,4-4V72a16,16,0,0,0-16-16H140a4,4,0,0,0-4,4v76h56A32,32,0,0,1,224,104Zm8,16h-8a16,16,0,0,0-16,16v8a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8v-8a16,16,0,0,0-16-16H24A16,16,0,0,0,8,136v32a16,16,0,0,0,16,16h8v15.73A8.18,8.18,0,0,0,39.47,208,8,8,0,0,0,48,200V184H208v15.73a8.17,8.17,0,0,0,7.47,8.25,8,8,0,0,0,8.53-8V184h8a16,16,0,0,0,16-16V136A16,16,0,0,0,232,120Z"/></svg></div>
+  <div id="s4-alarma" class="abs" style="left:2310px;top:3640px;width:120px;height:120px"><svg width="120" height="120" style="color:#ef4444"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M61.66,37.66l-32,32A8,8,0,0,1,18.34,58.34l32-32A8,8,0,0,1,61.66,37.66Zm176,20.68-32-32a8,8,0,0,0-11.32,11.32l32,32a8,8,0,0,0,11.32-11.32ZM224,136a96,96,0,1,1-96-96A96.11,96.11,0,0,1,224,136Zm-32,0a8,8,0,0,0-8-8H136V80a8,8,0,0,0-16,0v56a8,8,0,0,0,8,8h56A8,8,0,0,0,192,136Z"/></svg></div>
+  <div id="s4-vs" class="abs center" style="left:2400px;top:3580px;width:400px;height:300px;font-size:260px;font-weight:900;color:#fff;letter-spacing:-.06em;font-style:italic">VS</div>
+  <div id="s4-tn" class="abs center pill" style="left:2240px;top:4400px;width:260px;height:64px;background:#fb923c;color:#0b1020;font-size:34px">NOVATO</div>
+  <div id="s4-tp" class="abs center pill" style="left:2700px;top:4400px;width:260px;height:64px;background:#22c55e;color:#0b1020;font-size:34px">PRO</div>
+
+
+  <div id="nov0" class="char" style="left:2181px;top:3908px;width:378px;height:468px">
+    <svg width="378" height="468" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="nov0-rig">
+        <path id="nov0-legB" stroke="#923109" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="nov0-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="nov0-armB" stroke="#be8c57" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="nov0-armBE" r="16" fill="#cea983"/>
+        <path id="nov0-legF" stroke="#c2410c" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="nov0-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="nov0-torso" transform-origin="0 -170"><rect id="nov0-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#fdba74"/>
+          <path id="nov0-stripes" d="M-50 -280H50M-54 -240H54M-52 -200H52" stroke="#fecf9e" stroke-width="10"/>
+          
+        </g>
+        <g id="nov0-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-66 -2C-74 -40 -50 -62 -40 -58C-36 -86 0 -84 6 -70C20 -96 56 -80 52 -60C78 -60 74 -24 64 -4C50 -30 20 -44 -14 -40C-40 -36 -56 -20 -66 -2Z" fill="#7c2d12"/>
+          <rect id="nov0-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="0"/>
+          <ellipse id="nov0-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="nov0-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="nov0-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="nov0-armF" stroke="#fdba74" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="nov0-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+
+  <div id="pro0" class="char" style="left:2641px;top:3908px;width:378px;height:468px">
+    <svg width="378" height="468" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="pro0-rig">
+        <path id="pro0-legB" stroke="#0f3e22" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="pro0-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="pro0-armB" stroke="#1a9447" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="pro0-armBE" r="16" fill="#cea983"/>
+        <path id="pro0-legF" stroke="#14532d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="pro0-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="pro0-torso" transform-origin="0 -170"><rect id="pro0-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#22c55e"/>
+          
+          
+        </g>
+        <g id="pro0-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-64 -6C-66 -60 -20 -78 10 -72C52 -66 70 -36 64 -8C46 -34 10 -44 -20 -36C-40 -30 -52 -20 -64 -6Z" fill="#1f1611"/>
+          <rect id="pro0-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="1"/>
+          <ellipse id="pro0-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="pro0-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="pro0-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="pro0-armF" stroke="#22c55e" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="pro0-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+
+  <div id="d1-cab" class="abs" style="left:3800px;top:3300px;width:800px;height:120px;display:flex;align-items:center;gap:22px">
+    <div id="d1-num" class="center" style="width:120px;height:120px;border-radius:60px;background:#fff;color:#0f172a;font-size:76px;font-weight:900;flex:none">1</div>
+    <div id="d1-tema" class="lbl" style="font-size:58px;color:#fff">Cómo empezar</div>
+  </div>
+  <div class="abs" style="left:3800px;top:3998px;width:800px;height:4px;background:rgba(255,255,255,.14);border-radius:2px"></div>
+  <div id="d1-tn" class="abs center pill" style="left:3800px;top:3440px;width:230px;height:64px;background:#fb923c;color:#0b1020;font-size:34px">NOVATO</div>
+  <div id="d1-tp" class="abs center pill" style="left:3800px;top:4040px;width:230px;height:64px;background:#22c55e;color:#0b1020;font-size:34px">PRO</div>
+<div id="d1-cn" data-layout-allow-overlap class="abs card" style="left:4110px;top:3580px;width:500px;height:260px;flex-direction:column;gap:14px;"><div class="lbl" style="font-size:30px;color:#94a3b8;letter-spacing:.08em">TU SEMANA</div>
+      <div style="display:flex;gap:6px">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">L</div>
+        <div id="d1n-c0" class="cell center" style="width:60px;height:60px"><div id="d1n-i0" class="center" style="width:60px;height:60px"></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">M</div>
+        <div id="d1n-c1" class="cell center" style="width:60px;height:60px"><div id="d1n-i1" class="center" style="width:60px;height:60px"></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">X</div>
+        <div id="d1n-c2" class="cell center" style="width:60px;height:60px"><div id="d1n-i2" class="center" data-ic="x" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM181.66,170.34a8,8,0,0,1-11.32,11.32L128,139.31,85.66,181.66a8,8,0,0,1-11.32-11.32L116.69,128,74.34,85.66A8,8,0,0,1,85.66,74.34L128,116.69l42.34-42.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">J</div>
+        <div id="d1n-c3" class="cell center" style="width:60px;height:60px"><div id="d1n-i3" class="center" style="width:60px;height:60px"></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">V</div>
+        <div id="d1n-c4" class="cell center" style="width:60px;height:60px"><div id="d1n-i4" class="center" style="width:60px;height:60px"></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">S</div>
+        <div id="d1n-c5" class="cell center" style="width:60px;height:60px"><div id="d1n-i5" class="center" style="width:60px;height:60px"></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">D</div>
+        <div id="d1n-c6" class="cell center" style="width:60px;height:60px"><div id="d1n-i6" class="center" style="width:60px;height:60px"></div></div>
+      </div></div></div>
+<div id="d1-hora" class="abs center pill" style="left:4240px;top:3850px;width:240px;height:76px;background:#fb923c;color:#0b1020;font-size:40px">1 HORA</div>
+  <div id="d1-sello" data-layout-allow-overlap data-layout-allow-occlusion class="abs center" style="left:4160px;top:3650px;width:400px;height:120px;border:10px solid #ef4444;border-radius:24px;color:#ef4444;font-size:64px;font-weight:900;background:rgba(255,255,255,.9)">LO DEJA</div>
+  <div id="d1-gota" class="abs" style="left:3990px;top:3530px;width:60px;height:60px"><svg width="60" height="60" style="color:#38bdf8"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75Zm9.85,105.59a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"/></svg></div>
+
+  <div id="nov1" class="char" style="left:3792.5px;top:3570px;width:315px;height:390px">
+    <svg width="315" height="390" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="nov1-rig">
+        <path id="nov1-legB" stroke="#923109" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="nov1-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="nov1-armB" stroke="#be8c57" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="nov1-armBE" r="16" fill="#cea983"/>
+        <path id="nov1-legF" stroke="#c2410c" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="nov1-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="nov1-torso" transform-origin="0 -170"><rect id="nov1-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#fdba74"/>
+          <path id="nov1-stripes" d="M-50 -280H50M-54 -240H54M-52 -200H52" stroke="#fecf9e" stroke-width="10"/>
+          
+        </g>
+        <g id="nov1-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-66 -2C-74 -40 -50 -62 -40 -58C-36 -86 0 -84 6 -70C20 -96 56 -80 52 -60C78 -60 74 -24 64 -4C50 -30 20 -44 -14 -40C-40 -36 -56 -20 -66 -2Z" fill="#7c2d12"/>
+          <rect id="nov1-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="0"/>
+          <ellipse id="nov1-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="nov1-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="nov1-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="nov1-armF" stroke="#fdba74" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="nov1-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+<div id="d1-cp" class="abs card" style="left:4110px;top:4160px;width:500px;height:260px;flex-direction:column;gap:14px;"><div class="lbl" style="font-size:30px;color:#94a3b8;letter-spacing:.08em">TU SEMANA</div>
+      <div style="display:flex;gap:6px">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">L</div>
+        <div id="d1p-c0" class="cell center" style="width:60px;height:60px"><div id="d1p-i0" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">M</div>
+        <div id="d1p-c1" class="cell center" style="width:60px;height:60px"><div id="d1p-i1" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">X</div>
+        <div id="d1p-c2" class="cell center" style="width:60px;height:60px"><div id="d1p-i2" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">J</div>
+        <div id="d1p-c3" class="cell center" style="width:60px;height:60px"><div id="d1p-i3" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">V</div>
+        <div id="d1p-c4" class="cell center" style="width:60px;height:60px"><div id="d1p-i4" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">S</div>
+        <div id="d1p-c5" class="cell center" style="width:60px;height:60px"><div id="d1p-i5" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">D</div>
+        <div id="d1p-c6" class="cell center" style="width:60px;height:60px"><div id="d1p-i6" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div></div></div>
+<div id="d1-diez" class="abs center pill" style="left:4210px;top:4430px;width:300px;height:76px;background:#22c55e;color:#04130a;font-size:40px">10 MIN / DÍA</div>
+
+  <div id="pro1" class="char" style="left:3792.5px;top:4150px;width:315px;height:390px">
+    <svg width="315" height="390" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="pro1-rig">
+        <path id="pro1-legB" stroke="#0f3e22" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="pro1-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="pro1-armB" stroke="#1a9447" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="pro1-armBE" r="16" fill="#cea983"/>
+        <path id="pro1-legF" stroke="#14532d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="pro1-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="pro1-torso" transform-origin="0 -170"><rect id="pro1-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#22c55e"/>
+          
+          
+        </g>
+        <g id="pro1-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-64 -6C-66 -60 -20 -78 10 -72C52 -66 70 -36 64 -8C46 -34 10 -44 -20 -36C-40 -30 -52 -20 -64 -6Z" fill="#1f1611"/>
+          <rect id="pro1-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="1"/>
+          <ellipse id="pro1-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="pro1-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="pro1-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="pro1-armF" stroke="#22c55e" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="pro1-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+
+  <div id="d2-cab" class="abs" style="left:3800px;top:4900px;width:800px;height:120px;display:flex;align-items:center;gap:22px">
+    <div id="d2-num" class="center" style="width:120px;height:120px;border-radius:60px;background:#fff;color:#0f172a;font-size:76px;font-weight:900;flex:none">2</div>
+    <div id="d2-tema" class="lbl" style="font-size:58px;color:#fff">Cuándo hacerlo</div>
+  </div>
+  <div class="abs" style="left:3800px;top:5598px;width:800px;height:4px;background:rgba(255,255,255,.14);border-radius:2px"></div>
+  <div id="d2-tn" class="abs center pill" style="left:3800px;top:5040px;width:230px;height:64px;background:#fb923c;color:#0b1020;font-size:34px">NOVATO</div>
+  <div id="d2-tp" class="abs center pill" style="left:3800px;top:5640px;width:230px;height:64px;background:#22c55e;color:#0b1020;font-size:34px">PRO</div>
+<div id="d2-sofa" class="abs" style="left:3800px;top:5270px;width:300px;height:300px"><svg width="300" height="300" style="color:#475569"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M16,100V72A16,16,0,0,1,32,56h84a4,4,0,0,1,4,4v76H64a32,32,0,0,0-32-32H20A4,4,0,0,1,16,100Zm208,4h12a4,4,0,0,0,4-4V72a16,16,0,0,0-16-16H140a4,4,0,0,0-4,4v76h56A32,32,0,0,1,224,104Zm8,16h-8a16,16,0,0,0-16,16v8a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8v-8a16,16,0,0,0-16-16H24A16,16,0,0,0,8,136v32a16,16,0,0,0,16,16h8v15.73A8.18,8.18,0,0,0,39.47,208,8,8,0,0,0,48,200V184H208v15.73a8.17,8.17,0,0,0,7.47,8.25,8,8,0,0,0,8.53-8V184h8a16,16,0,0,0,16-16V136A16,16,0,0,0,232,120Z"/></svg></div>
+
+  <div id="nov2" class="char" style="left:3792.5px;top:5170px;width:315px;height:390px">
+    <svg width="315" height="390" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="nov2-rig">
+        <path id="nov2-legB" stroke="#923109" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="nov2-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="nov2-armB" stroke="#be8c57" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="nov2-armBE" r="16" fill="#cea983"/>
+        <path id="nov2-legF" stroke="#c2410c" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="nov2-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="nov2-torso" transform-origin="0 -170"><rect id="nov2-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#fdba74"/>
+          <path id="nov2-stripes" d="M-50 -280H50M-54 -240H54M-52 -200H52" stroke="#fecf9e" stroke-width="10"/>
+          
+        </g>
+        <g id="nov2-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-66 -2C-74 -40 -50 -62 -40 -58C-36 -86 0 -84 6 -70C20 -96 56 -80 52 -60C78 -60 74 -24 64 -4C50 -30 20 -44 -14 -40C-40 -36 -56 -20 -66 -2Z" fill="#7c2d12"/>
+          <rect id="nov2-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="0"/>
+          <ellipse id="nov2-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="nov2-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="nov2-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="nov2-armF" stroke="#fdba74" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="nov2-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+<div id="d2-cn" class="abs card" style="left:4110px;top:5185px;width:500px;height:230px;flex-direction:column;gap:14px;">
+    <div style="display:flex;align-items:center;gap:16px"><svg width="56" height="56" style="color:#fb923c" id="d2-reloj" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,75.64V40a16,16,0,0,0-16-16H72A16,16,0,0,0,56,40V76a16.07,16.07,0,0,0,6.4,12.8L114.67,128,62.4,167.2A16.07,16.07,0,0,0,56,180v36a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V180.36a16.09,16.09,0,0,0-6.35-12.77L141.27,128l52.38-39.59A16.09,16.09,0,0,0,200,75.64ZM184,40V64H72V40Zm0,176H72V180l56-42,56,42.35Z"/></svg><span class="lbl" style="font-size:44px;color:#0f172a">GANAS</span></div>
+    <div style="width:400px;height:44px;border-radius:22px;background:#e2e8f0;overflow:hidden"><div id="d2-barra" style="width:400px;height:44px;border-radius:22px;background:#fb923c;transform-origin:0 50%"></div></div></div>
+<div id="d2-cp" class="abs card" style="left:4110px;top:5690px;width:500px;height:380px;flex-direction:column;gap:14px;justify-content:flex-start;padding-top:30px">
+    <div style="display:flex;align-items:center;gap:14px;width:420px"><svg width="52" height="52" style="color:#22c55e"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM84,184a12,12,0,1,1,12-12A12,12,0,0,1,84,184Zm44,0a12,12,0,1,1,12-12A12,12,0,0,1,128,184Zm0-40a12,12,0,1,1,12-12A12,12,0,0,1,128,144Zm44,40a12,12,0,1,1,12-12A12,12,0,0,1,172,184Zm0-40a12,12,0,1,1,12-12A12,12,0,0,1,172,144Zm36-64H48V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24Z"/></svg><span class="lbl" style="font-size:42px;color:#0f172a">Agenda</span></div>
+    <div style="display:flex;align-items:center;gap:16px;width:420px;height:70px;border-top:3px solid #e2e8f0">
+      <span class="lbl" style="font-size:30px;color:#94a3b8;width:96px">17:00</span>
+      
+    </div><div style="display:flex;align-items:center;gap:16px;width:420px;height:70px;border-top:3px solid #e2e8f0">
+      <span class="lbl" style="font-size:30px;color:#94a3b8;width:96px">18:00</span>
+      <div id="d2-cita" style="flex:1;height:56px;border-radius:14px;background:#22c55e;color:#04130a;font-size:34px;font-weight:900;display:flex;align-items:center;padding-left:16px;transform-origin:0 50%"><span id="ty0-0">E</span><span id="ty0-1">n</span><span id="ty0-2">t</span><span id="ty0-3">r</span><span id="ty0-4">e</span><span id="ty0-5">n</span><span id="ty0-6">o</span></div>
+    </div><div style="display:flex;align-items:center;gap:16px;width:420px;height:70px;border-top:3px solid #e2e8f0">
+      <span class="lbl" style="font-size:30px;color:#94a3b8;width:96px">19:00</span>
+      
+    </div></div>
+<div id="d2-cursor" class="abs" style="left:4400px;top:5880px;width:80px;height:80px"><svg width="80" height="80" style="color:#0f172a"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.49,207.8,207.8,220.49a12,12,0,0,1-17,0l-56.57-56.57L115,214.08l-.13.33A15.84,15.84,0,0,1,100.26,224l-.78,0a15.82,15.82,0,0,1-14.41-11L32.8,52.92A15.95,15.95,0,0,1,52.92,32.8L213,85.07a16,16,0,0,1,1.41,29.8l-.33.13-50.16,19.27,56.57,56.56A12,12,0,0,1,220.49,207.8Z"/></svg></div>
+  <div id="d2-notif" class="abs" style="left:4130px;top:5650px;width:460px;height:84px;border-radius:22px;background:#1e293b;color:#fff;display:flex;align-items:center;gap:14px;padding:0 20px;box-shadow:0 20px 50px rgba(0,0,0,.5)"><svg width="46" height="46" style="color:#facc15"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,71.1a8,8,0,0,1-10.78-3.42,94.13,94.13,0,0,0-33.46-36.91,8,8,0,1,1,8.54-13.54,111.46,111.46,0,0,1,39.12,43.09A8,8,0,0,1,224,71.1ZM35.71,72a8,8,0,0,0,7.1-4.32A94.13,94.13,0,0,1,76.27,30.77a8,8,0,1,0-8.54-13.54A111.46,111.46,0,0,0,28.61,60.32,8,8,0,0,0,35.71,72Zm186.1,103.94A16,16,0,0,1,208,200H167.2a40,40,0,0,1-78.4,0H48a16,16,0,0,1-13.79-24.06C43.22,160.39,48,138.28,48,112a80,80,0,0,1,160,0C208,138.27,212.78,160.38,221.81,175.94ZM150.62,200H105.38a24,24,0,0,0,45.24,0Z"/></svg><span class="lbl" style="font-size:34px">18:00 · Entreno</span></div>
+
+  <div id="pro2b" class="char" style="left:3792.5px;top:5750px;width:315px;height:390px">
+    <svg width="315" height="390" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="pro2b-rig">
+        <path id="pro2b-legB" stroke="#0f3e22" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="pro2b-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="pro2b-armB" stroke="#1a9447" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="pro2b-armBE" r="16" fill="#cea983"/>
+        <path id="pro2b-legF" stroke="#14532d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="pro2b-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="pro2b-torso" transform-origin="0 -170"><rect id="pro2b-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#22c55e"/>
+          
+          
+        </g>
+        <g id="pro2b-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-64 -6C-66 -60 -20 -78 10 -72C52 -66 70 -36 64 -8C46 -34 10 -44 -20 -36C-40 -30 -52 -20 -64 -6Z" fill="#1f1611"/>
+          <rect id="pro2b-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="1"/>
+          <ellipse id="pro2b-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="pro2b-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="pro2b-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="pro2b-armF" stroke="#22c55e" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="pro2b-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+
+  <div id="d3-cab" class="abs" style="left:2200px;top:4900px;width:800px;height:120px;display:flex;align-items:center;gap:22px">
+    <div id="d3-num" class="center" style="width:120px;height:120px;border-radius:60px;background:#fff;color:#0f172a;font-size:76px;font-weight:900;flex:none">3</div>
+    <div id="d3-tema" class="lbl" style="font-size:58px;color:#fff">Mantener el ritmo</div>
+  </div>
+  <div class="abs" style="left:2200px;top:5598px;width:800px;height:4px;background:rgba(255,255,255,.14);border-radius:2px"></div>
+  <div id="d3-tn" class="abs center pill" style="left:2200px;top:5040px;width:230px;height:64px;background:#fb923c;color:#0b1020;font-size:34px">NOVATO</div>
+  <div id="d3-tp" class="abs center pill" style="left:2200px;top:5640px;width:230px;height:64px;background:#22c55e;color:#0b1020;font-size:34px">PRO</div>
+<div id="d3-cn" data-layout-allow-overlap data-layout-allow-overflow class="abs card" style="left:2510px;top:5195px;width:500px;height:230px;flex-direction:column;gap:14px;"><div class="lbl" style="font-size:30px;color:#94a3b8;letter-spacing:.08em">TU RACHA</div>
+      <div style="display:flex;gap:6px">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">L</div>
+        <div id="d3n-c0" class="cell center" style="width:60px;height:60px"><div id="d3n-i0" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">M</div>
+        <div id="d3n-c1" class="cell center" style="width:60px;height:60px"><div id="d3n-i1" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">X</div>
+        <div id="d3n-c2" class="cell center" style="width:60px;height:60px"><div id="d3n-i2" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">J</div>
+        <div id="d3n-c3" class="cell center" style="width:60px;height:60px"><div id="d3n-i3" class="center" data-ic="x" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM181.66,170.34a8,8,0,0,1-11.32,11.32L128,139.31,85.66,181.66a8,8,0,0,1-11.32-11.32L116.69,128,74.34,85.66A8,8,0,0,1,85.66,74.34L128,116.69l42.34-42.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">V</div>
+        <div id="d3n-c4" class="cell center" style="width:60px;height:60px"><div id="d3n-i4" class="center" style="width:60px;height:60px"></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">S</div>
+        <div id="d3n-c5" class="cell center" style="width:60px;height:60px"><div id="d3n-i5" class="center" style="width:60px;height:60px"></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">D</div>
+        <div id="d3n-c6" class="cell center" style="width:60px;height:60px"><div id="d3n-i6" class="center" style="width:60px;height:60px"></div></div>
+      </div></div></div>
+
+  <div id="nov3" class="char" style="left:2192.5px;top:5170px;width:315px;height:390px">
+    <svg width="315" height="390" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="nov3-rig">
+        <path id="nov3-legB" stroke="#923109" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="nov3-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="nov3-armB" stroke="#be8c57" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="nov3-armBE" r="16" fill="#cea983"/>
+        <path id="nov3-legF" stroke="#c2410c" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="nov3-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="nov3-torso" transform-origin="0 -170"><rect id="nov3-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#fdba74"/>
+          <path id="nov3-stripes" d="M-50 -280H50M-54 -240H54M-52 -200H52" stroke="#fecf9e" stroke-width="10"/>
+          
+        </g>
+        <g id="nov3-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-66 -2C-74 -40 -50 -62 -40 -58C-36 -86 0 -84 6 -70C20 -96 56 -80 52 -60C78 -60 74 -24 64 -4C50 -30 20 -44 -14 -40C-40 -36 -56 -20 -66 -2Z" fill="#7c2d12"/>
+          <rect id="nov3-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="0"/>
+          <ellipse id="nov3-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="nov3-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="nov3-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="nov3-armF" stroke="#fdba74" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="nov3-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+<div id="d3-cp" class="abs card" style="left:2510px;top:5745px;width:500px;height:230px;flex-direction:column;gap:14px;"><div class="lbl" style="font-size:30px;color:#94a3b8;letter-spacing:.08em">TU RACHA</div>
+      <div style="display:flex;gap:6px">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">L</div>
+        <div id="d3p-c0" class="cell center" style="width:60px;height:60px"><div id="d3p-i0" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">M</div>
+        <div id="d3p-c1" class="cell center" style="width:60px;height:60px"><div id="d3p-i1" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">X</div>
+        <div id="d3p-c2" class="cell center" style="width:60px;height:60px"><div id="d3p-i2" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">J</div>
+        <div id="d3p-c3" class="cell center" style="width:60px;height:60px"><div id="d3p-i3" class="center" data-ic="x" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM181.66,170.34a8,8,0,0,1-11.32,11.32L128,139.31,85.66,181.66a8,8,0,0,1-11.32-11.32L116.69,128,74.34,85.66A8,8,0,0,1,85.66,74.34L128,116.69l42.34-42.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">V</div>
+        <div id="d3p-c4" class="cell center" style="width:60px;height:60px"><div id="d3p-i4" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">S</div>
+        <div id="d3p-c5" class="cell center" style="width:60px;height:60px"><div id="d3p-i5" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div class="lbl" style="font-size:26px;color:#94a3b8">D</div>
+        <div id="d3p-c6" class="cell center" style="width:60px;height:60px"><div id="d3p-i6" class="center" data-ic="check" style="width:60px;height:60px"><svg width="38" height="38" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg></div></div>
+      </div></div></div>
+<div id="d3-regla" class="abs center pill" style="left:2540px;top:6005px;width:440px;height:80px;background:#22c55e;color:#04130a;font-size:40px">NUNCA 2 SEGUIDOS</div>
+
+  <div id="pro3" class="char" style="left:2192.5px;top:5750px;width:315px;height:390px">
+    <svg width="315" height="390" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="pro3-rig">
+        <path id="pro3-legB" stroke="#0f3e22" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="pro3-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="pro3-armB" stroke="#1a9447" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="pro3-armBE" r="16" fill="#cea983"/>
+        <path id="pro3-legF" stroke="#14532d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="pro3-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="pro3-torso" transform-origin="0 -170"><rect id="pro3-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#22c55e"/>
+          
+          
+        </g>
+        <g id="pro3-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-64 -6C-66 -60 -20 -78 10 -72C52 -66 70 -36 64 -8C46 -34 10 -44 -20 -36C-40 -30 -52 -20 -64 -6Z" fill="#1f1611"/>
+          <rect id="pro3-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="1"/>
+          <ellipse id="pro3-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="pro3-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="pro3-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="pro3-armF" stroke="#22c55e" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="pro3-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+
+  <div id="cl-cont" class="abs" style="left:600px;top:5180px;width:800px;height:270px;display:flex;align-items:flex-end;justify-content:center;gap:24px">
+    <div class="roller" style="font-size:260px;line-height:260px;color:#fff;font-weight:900"><span class="rcol" style="height:260px"><span class="rstrip" id="roll2-0"><div>0</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>0</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>0</div></span></span><span class="rcol" style="height:260px"><span class="rstrip" id="roll2-1"><div>0</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>0</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>0</div></span></span></div><span class="lbl" style="font-size:96px;color:#22c55e;line-height:200px">días</span>
+  </div>
+  <div id="cl-card" class="abs card" style="left:590px;top:5515px;width:820px;height:470px;flex-direction:column;gap:14px;"><div id="cl-grid" style="display:grid;grid-template-columns:repeat(11,58px);gap:10px"><div id="cl-g0" class="clg"></div><div id="cl-g1" class="clg"></div><div id="cl-g2" class="clg"></div><div id="cl-g3" class="clg"></div><div id="cl-g4" class="clg"></div><div id="cl-g5" class="clg"></div><div id="cl-g6" class="clg"></div><div id="cl-g7" class="clg"></div><div id="cl-g8" class="clg"></div><div id="cl-g9" class="clg"></div><div id="cl-g10" class="clg"></div><div id="cl-g11" class="clg"></div><div id="cl-g12" class="clg"></div><div id="cl-g13" class="clg"></div><div id="cl-g14" class="clg"></div><div id="cl-g15" class="clg"></div><div id="cl-g16" class="clg"></div><div id="cl-g17" class="clg"></div><div id="cl-g18" class="clg"></div><div id="cl-g19" class="clg"></div><div id="cl-g20" class="clg"></div><div id="cl-g21" class="clg"></div><div id="cl-g22" class="clg"></div><div id="cl-g23" class="clg"></div><div id="cl-g24" class="clg"></div><div id="cl-g25" class="clg"></div><div id="cl-g26" class="clg"></div><div id="cl-g27" class="clg"></div><div id="cl-g28" class="clg"></div><div id="cl-g29" class="clg"></div><div id="cl-g30" class="clg"></div><div id="cl-g31" class="clg"></div><div id="cl-g32" class="clg"></div><div id="cl-g33" class="clg"></div><div id="cl-g34" class="clg"></div><div id="cl-g35" class="clg"></div><div id="cl-g36" class="clg"></div><div id="cl-g37" class="clg"></div><div id="cl-g38" class="clg"></div><div id="cl-g39" class="clg"></div><div id="cl-g40" class="clg"></div><div id="cl-g41" class="clg"></div><div id="cl-g42" class="clg"></div><div id="cl-g43" class="clg"></div><div id="cl-g44" class="clg"></div><div id="cl-g45" class="clg"></div><div id="cl-g46" class="clg"></div><div id="cl-g47" class="clg"></div><div id="cl-g48" class="clg"></div><div id="cl-g49" class="clg"></div><div id="cl-g50" class="clg"></div><div id="cl-g51" class="clg"></div><div id="cl-g52" class="clg"></div><div id="cl-g53" class="clg"></div><div id="cl-g54" class="clg"></div><div id="cl-g55" class="clg"></div><div id="cl-g56" class="clg"></div><div id="cl-g57" class="clg"></div><div id="cl-g58" class="clg"></div><div id="cl-g59" class="clg"></div><div id="cl-g60" class="clg"></div><div id="cl-g61" class="clg"></div><div id="cl-g62" class="clg"></div><div id="cl-g63" class="clg"></div><div id="cl-g64" class="clg"></div><div id="cl-g65" class="clg"></div></div></div>
+  <div id="cl-auto" class="abs center pill" style="left:750px;top:6010px;width:500px;height:96px;background:#22c55e;color:#04130a;font-size:48px;gap:12px"><svg width="54" height="54" style="color:#04130a"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg> AUTOMÁTICO</div>
+
+<div id="fin-zapas" class="abs" style="left:910px;top:6900px;width:180px;height:180px"><svg width="180" height="180" style="color:#fb923c"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M228.65,129.11l-28.06-9.35a4,4,0,0,0-2.63,0l-43.23,15.72A8.14,8.14,0,0,1,152,136a8,8,0,0,1-7.71-5.88,8.17,8.17,0,0,1,5.22-9.73L168,113.67a2.54,2.54,0,0,0-.06-4.8,23.93,23.93,0,0,1-8.8-5.25,4,4,0,0,0-4.17-.91l-24.22,8.8a8,8,0,0,1-10.44-5.39,8.17,8.17,0,0,1,5.22-9.73L146,88.93a4,4,0,0,0,2.31-5.34l-3.06-7.16a4,4,0,0,0-5.05-2.19l-25.5,9.27a8,8,0,0,1-10.44-5.39,8.17,8.17,0,0,1,5.22-9.73l24-8.73a4,4,0,0,0,2.31-5.33L130.39,41.6s0-.07,0-.1A16,16,0,0,0,110.25,33L34.53,60.49A16.05,16.05,0,0,0,24,75.53V192a16,16,0,0,0,16,16H240a16,16,0,0,0,16-16V167.06A40,40,0,0,0,228.65,129.11ZM240,192H40V176H240Z"/></svg></div>
+  <div id="fin-hoy" class="abs center pill" style="left:730px;top:6730px;width:540px;height:110px;background:#fff;color:#0f172a;font-size:60px">EMPIEZA HOY</div>
+
+  <div id="novF" class="char" style="left:662px;top:7296px;width:336px;height:416px">
+    <svg width="336" height="416" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="novF-rig">
+        <path id="novF-legB" stroke="#923109" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="novF-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="novF-armB" stroke="#be8c57" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="novF-armBE" r="16" fill="#cea983"/>
+        <path id="novF-legF" stroke="#c2410c" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="novF-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="novF-torso" transform-origin="0 -170"><rect id="novF-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#fdba74"/>
+          <path id="novF-stripes" d="M-50 -280H50M-54 -240H54M-52 -200H52" stroke="#fecf9e" stroke-width="10"/>
+          
+        </g>
+        <g id="novF-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-66 -2C-74 -40 -50 -62 -40 -58C-36 -86 0 -84 6 -70C20 -96 56 -80 52 -60C78 -60 74 -24 64 -4C50 -30 20 -44 -14 -40C-40 -36 -56 -20 -66 -2Z" fill="#7c2d12"/>
+          <rect id="novF-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="0"/>
+          <ellipse id="novF-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="novF-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="novF-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="novF-armF" stroke="#fdba74" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="novF-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+
+  <div id="proF" class="char" style="left:1002px;top:7296px;width:336px;height:416px">
+    <svg width="336" height="416" viewBox="-210 -480 420 520" overflow="visible">
+      <ellipse cx="0" cy="6" rx="78" ry="12" fill="#000" opacity=".35"/>
+      <g id="proF-rig">
+        <path id="proF-legB" stroke="#0f3e22" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="proF-legBE" rx="26" ry="14" fill="#c6c8ca"/>
+        <path id="proF-armB" stroke="#1a9447" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="proF-armBE" r="16" fill="#cea983"/>
+        <path id="proF-legF" stroke="#14532d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <ellipse id="proF-legFE" rx="26" ry="14" fill="#f8fafc"/>
+        <g id="proF-torso" transform-origin="0 -170"><rect id="proF-shirt" x="-54" y="-322" width="108" height="164" rx="48" fill="#22c55e"/>
+          
+          
+        </g>
+        <g id="proF-head">
+          <rect x="-14" y="40" width="28" height="30" fill="#d5af88"/>
+          <circle r="64" fill="#f2c79a"/>
+          <path d="M-64 -6C-66 -60 -20 -78 10 -72C52 -66 70 -36 64 -8C46 -34 10 -44 -20 -36C-40 -30 -52 -20 -64 -6Z" fill="#1f1611"/>
+          <rect id="proF-band" x="-66" y="-30" width="132" height="18" rx="9" fill="#ffffff" opacity="1"/>
+          <ellipse id="proF-eyeL" cx="-6" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <ellipse id="proF-eyeR" cx="32" cy="-2" rx="8" ry="11" fill="#0b1020"/>
+          <circle cx="-26" cy="20" r="9" fill="#f87171" opacity=".35"/>
+          <path id="proF-mouth" stroke="#0b1020" stroke-width="7" stroke-linecap="round" fill="none"/>
+        </g>
+        <path id="proF-armF" stroke="#22c55e" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle id="proF-armFE" r="16" fill="#f2c79a"/>
+      </g>
+    </svg>
+  </div>
+<div id="cta-chat" class="abs card" style="left:2210px;top:6750px;width:780px;height:300px;flex-direction:column;gap:14px;">
+    <div style="display:flex;align-items:center;gap:16px;width:690px">
+      <div class="center" style="width:72px;height:72px;border-radius:36px;background:#e2e8f0"><svg width="46" height="46" style="color:#94a3b8"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M230.93,220a8,8,0,0,1-6.93,4H32a8,8,0,0,1-6.92-12c15.23-26.33,38.7-45.21,66.09-54.16a72,72,0,1,1,73.66,0c27.39,8.95,50.86,27.83,66.09,54.16A8,8,0,0,1,230.93,220Z"/></svg></div>
+      <span class="lbl" style="font-size:38px;color:#0f172a">Tu amigo</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px;width:690px;justify-content:flex-end">
+      <div id="cta-burbuja" style="padding:18px 26px;border-radius:28px 28px 8px 28px;background:#22c55e;color:#04130a;font-size:44px;font-weight:900;white-space:nowrap"><span id="ty1-0">¿</span><span id="ty1-1">E</span><span id="ty1-2">m</span><span id="ty1-3">p</span><span id="ty1-4">e</span><span id="ty1-5">z</span><span id="ty1-6">a</span><span id="ty1-7">m</span><span id="ty1-8">o</span><span id="ty1-9">s</span><span id="ty1-10">&nbsp;</span><span id="ty1-11">j</span><span id="ty1-12">u</span><span id="ty1-13">n</span><span id="ty1-14">t</span><span id="ty1-15">o</span><span id="ty1-16">s</span><span id="ty1-17">?</span></div>
+      <div id="cta-avion"><svg width="64" height="64" style="color:#22c55e"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M231.4,44.34s0,.1,0,.15l-58.2,191.94a15.88,15.88,0,0,1-14,11.51q-.69.06-1.38.06a15.86,15.86,0,0,1-14.42-9.15L107,164.15a4,4,0,0,1,.77-4.58l57.92-57.92a8,8,0,0,0-11.31-11.31L96.43,148.26a4,4,0,0,1-4.58.77L17.08,112.64a16,16,0,0,1,2.49-29.8l191.94-58.2.15,0A16,16,0,0,1,231.4,44.34Z"/></svg></div>
+    </div></div>
+
+  <div id="cta-boton" class="abs center pill" style="left:2330px;top:7130px;width:540px;height:140px;background:#ef4444;color:#fff;font-size:60px">
+    <span id="cta-seguir" class="abs center" style="inset:0;gap:16px"><svg width="64" height="64" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M256,136a8,8,0,0,1-8,8H232v16a8,8,0,0,1-16,0V144H200a8,8,0,0,1,0-16h16V112a8,8,0,0,1,16,0v16h16A8,8,0,0,1,256,136ZM144,157.68a68,68,0,1,0-71.9,0c-20.65,6.76-39.23,19.39-54.17,37.17A8,8,0,0,0,24,208H192a8,8,0,0,0,6.13-13.15C183.18,177.07,164.6,164.44,144,157.68Z"/></svg> SEGUIR</span>
+    <span id="cta-siguiendo" class="abs center" style="inset:0;gap:16px;opacity:0"><svg width="60" height="60" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.31,90.91l-128.4,128.4a16,16,0,0,1-22.62,0l-71.62-72a16,16,0,0,1,0-22.61l20-20a16,16,0,0,1,22.58,0L104,144.22l96.76-95.57a16,16,0,0,1,22.59,0l19.95,19.54A16,16,0,0,1,243.31,90.91Z"/></svg> SIGUIENDO</span>
+  </div>
+  <div id="cta-cursor" class="abs" style="left:2800px;top:7230px;width:90px;height:90px"><svg width="90" height="90" style="color:#fff"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.49,207.8,207.8,220.49a12,12,0,0,1-17,0l-56.57-56.57L115,214.08l-.13.33A15.84,15.84,0,0,1,100.26,224l-.78,0a15.82,15.82,0,0,1-14.41-11L32.8,52.92A15.95,15.95,0,0,1,52.92,32.8L213,85.07a16,16,0,0,1,1.41,29.8l-.33.13-50.16,19.27,56.57,56.56A12,12,0,0,1,220.49,207.8Z"/></svg></div>
     </div>
     <div id="glow"></div>
   </div>
   <script>
-    const DATA = {"D":47.251,"FY":960,"cam0":{"cx":1000,"cy":1040,"z":1.14},"moves":[{"t0":0,"t1":0.6,"cx":1000,"cy":1030,"z":1,"ease":"out","arc":0},{"t0":1.75,"t1":2.3,"cx":1000,"cy":1020,"z":1.05,"ease":"inOut","arc":0},{"t0":3.015,"t1":3.565,"cx":1000,"cy":2540,"z":1,"ease":"inOut","arc":0.35},{"t0":5.972,"t1":6.522,"cx":1000,"cy":2390,"z":1.06,"ease":"inOut","arc":0},{"t0":6.822,"t1":7.222,"cx":1000,"cy":1790,"z":0.36,"ease":"inOut","arc":0},{"t0":7.279,"t1":7.879,"cx":2600,"cy":2540,"z":1,"ease":"inOut","arc":0.25},{"t0":7.994,"t1":8.694,"cx":2600,"cy":2410,"z":1.04,"ease":"inOut","arc":0}],"chars":[{"id":"pro","poses":[[0,"run"],[0.62,"idle"],[1.7,"point"],[2.395,"cheer"],[2.915,"run"]],"mood":[[0,0.7],[2.395,1]],"off":0.3},{"id":"adA","poses":[[0,"idle"],[5.812,"run"]],"mood":[[0,0.5],[5.812,0.9]],"off":0.9},{"id":"adB","poses":[[0,"idle"],[5.932,"run"]],"mood":[[0,0.5],[5.812,0.9]],"off":1.7},{"id":"adC","poses":[[0,"idle"],[5.422,"sit"]],"mood":[[0,0.5],[5.372,-0.8]],"off":2.4},{"id":"pro2","poses":[[0,"run"]],"mood":[[0,0.9]],"off":0.6}],"float":[]};
+    const DATA = {"D":47.251,"FY":960,"cam0":{"cx":1000,"cy":1040,"z":1.14},"moves":[{"t0":0,"t1":0.6,"cx":1000,"cy":1030,"z":1,"ease":"out","arc":0},{"t0":1.75,"t1":2.3,"cx":1000,"cy":1020,"z":1.05,"ease":"inOut","arc":0},{"t0":3.015,"t1":3.565,"cx":1000,"cy":2540,"z":1,"ease":"inOut","arc":0.35},{"t0":5.972,"t1":6.522,"cx":1000,"cy":2390,"z":1.06,"ease":"inOut","arc":0},{"t0":6.822,"t1":7.222,"cx":1000,"cy":1790,"z":0.36,"ease":"inOut","arc":0},{"t0":7.279,"t1":7.879,"cx":2600,"cy":2410,"z":1,"ease":"inOut","arc":0.25},{"t0":9.729,"t1":10.329,"cx":2600,"cy":2420,"z":1.03,"ease":"inOut","arc":0},{"t0":11.459,"t1":12.009,"cx":2600,"cy":4040,"z":1,"ease":"inOut","arc":0.3},{"t0":14.755,"t1":14.925,"cx":2600,"cy":4040,"z":1.06,"ease":"out","arc":0},{"t0":15.25,"t1":15.55,"cx":2600,"cy":4040,"z":1,"ease":"inOut","arc":0},{"t0":15.254,"t1":15.804,"cx":4200,"cy":3940,"z":0.88,"ease":"inOut","arc":0.3},{"t0":16.331,"t1":16.781,"cx":4210,"cy":3730,"z":1.12,"ease":"inOut","arc":0},{"t0":19.671,"t1":20.171,"cx":4210,"cy":4290,"z":1.12,"ease":"inOut","arc":0},{"t0":21.895,"t1":22.245,"cx":4200,"cy":3940,"z":0.88,"ease":"inOut","arc":0},{"t0":22.295,"t1":22.845,"cx":4200,"cy":5540,"z":0.88,"ease":"inOut","arc":0.3},{"t0":23.269,"t1":23.719,"cx":4210,"cy":5330,"z":1.12,"ease":"inOut","arc":0},{"t0":25.384,"t1":25.884,"cx":4210,"cy":5890,"z":1.12,"ease":"inOut","arc":0},{"t0":27.454,"t1":27.804,"cx":4200,"cy":5540,"z":0.88,"ease":"inOut","arc":0},{"t0":27.854,"t1":28.404,"cx":2600,"cy":5540,"z":0.88,"ease":"inOut","arc":0.3},{"t0":28.859,"t1":29.309,"cx":2610,"cy":5330,"z":1.12,"ease":"inOut","arc":0},{"t0":31.534,"t1":32.034,"cx":2610,"cy":5890,"z":1.12,"ease":"inOut","arc":0},{"t0":34.737,"t1":35.087,"cx":2600,"cy":5540,"z":0.88,"ease":"inOut","arc":0},{"t0":35.359,"t1":35.909,"cx":2600,"cy":4100,"z":0.16,"ease":"inOut","arc":0},{"t0":36.024,"t1":36.624,"cx":1000,"cy":5640,"z":1,"ease":"inOut","arc":0},{"t0":39.589,"t1":39.739,"cx":1000,"cy":5640,"z":1.06,"ease":"out","arc":0},{"t0":39.789,"t1":40.189,"cx":1000,"cy":5640,"z":1,"ease":"inOut","arc":0},{"t0":40.18,"t1":40.73,"cx":1000,"cy":7240,"z":1,"ease":"inOut","arc":0.3},{"t0":41.88,"t1":43.633,"cx":2600,"cy":7240,"z":1,"ease":"inOut","arc":0},{"t0":46.413,"t1":46.563,"cx":2600,"cy":7240,"z":1.05,"ease":"out","arc":0},{"t0":46.613,"t1":47.063,"cx":2600,"cy":7240,"z":1,"ease":"inOut","arc":0}],"chars":[{"id":"pro","poses":[[0,"run"],[0.62,"idle"],[1.7,"point"],[2.395,"cheer"],[2.915,"run"]],"mood":[[0,0.7],[2.395,1]],"off":0.3},{"id":"adA","poses":[[0,"idle"],[5.812,"run"]],"mood":[[0,0.5],[5.812,0.9]],"off":0.9},{"id":"adB","poses":[[0,"idle"],[5.932,"run"]],"mood":[[0,0.5],[5.812,0.9]],"off":1.7},{"id":"adC","poses":[[0,"idle"],[5.422,"sit"]],"mood":[[0,0.5],[5.372,-0.8]],"off":2.4},{"id":"pro2","poses":[[0,"run"],[11.244,"cheer"]],"mood":[[0,0.9]],"off":0.6},{"id":"nov0","poses":[[0,"sit"],[12.009,"tired"],[12.714,"sit"],[14.22,"idle"]],"mood":[[0,-0.2],[12.009,-0.9],[14.32,0.2]],"off":1.1},{"id":"pro0","poses":[[0,"run"],[15.200000000000001,"idle"]],"mood":[[0,1]],"off":0.2},{"id":"nov1","poses":[[0,"idle"],[16.936,"run"],[18.726000000000003,"tired"]],"mood":[[0,0.3],[16.986,0.6],[18.626,-1]],"off":0.5},{"id":"pro1","poses":[[0,"idle"],[20.297,"walk"],[22.097,"cheer"]],"mood":[[0,0.8],[22.097,1]],"off":1.4},{"id":"nov2","poses":[[0,"sit"]],"mood":[[0,0],[24.984,-0.8]],"off":2.2},{"id":"pro2b","poses":[[0,"idle"],[25.919999999999998,"point"],[27.66,"cheer"]],"mood":[[0,0.8],[27.56,1]],"off":0.9},{"id":"nov3","poses":[[0,"walk"],[29.534000000000002,"idle"],[30.789,"tired"]],"mood":[[0,0.5],[29.484,-0.4],[30.789,-1]],"off":1.9},{"id":"pro3","poses":[[0,"walk"],[32.497,"point"],[34.537,"cheer"]],"mood":[[0,0.8],[34.537,1]],"off":2.6},{"id":"novF","poses":[[0,"idle"],[41.015,"cheer"],[41.78,"run"],[43.633,"idle"],[45.963,"cheer"]],"mood":[[0,0.1],[41.015,1]],"off":0.7},{"id":"proF","poses":[[0,"idle"],[41.78,"run"],[43.633,"idle"],[46.063,"point"]],"mood":[[0,0.9]],"off":1.6}],"float":[]};
     // Motor del mundo: se ejecuta en cada fotograma a partir del tiempo t.
 // Cámara, personajes articulados, rejilla con paralaje y desenfoque de viaje.
 // Recibe DATA = { D, FY, cam0, moves, chars } desde el generador.
@@ -383,8 +909,15 @@
     const tl = gsap.timeline({ paused: true });
     const clock = { t: 0 };
     tl.fromTo(clock, { t: 0 }, { t: 47.251, duration: 47.251, ease: "none", onUpdate: () => window.__mundoRender(clock.t) }, 0);
-    tl.fromTo("#camino1m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, 2.965);
-    tl.fromTo("#camino2m", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, 7.279);
+    tl.fromTo("#camino0d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"},2.965);
+    tl.fromTo("#camino1d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"},7.279);
+    tl.fromTo("#camino2d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"},11.459);
+    tl.fromTo("#camino3d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"},15.254);
+    tl.fromTo("#camino4d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"},22.295);
+    tl.fromTo("#camino5d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"},27.854);
+    tl.fromTo("#camino6d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"},35.974);
+    tl.fromTo("#camino7d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.6,ease:"power2.inOut"},40.18);
+    tl.fromTo("#camino8d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:1.753,ease:"power2.inOut"},41.88);
     tl.fromTo("#s1-reloj",{scale:1.45,rotation:-8},{scale:1,rotation:0,duration:0.55,ease:"back.out(2.2)"},0);
     tl.fromTo("#pro",{x:-330},{x:0,duration:0.62,ease:"power3.out"},0);
     tl.fromTo("#pro",{x:0},{x:1100,duration:0.6,ease:"power2.in",immediateRender:false},2.915);
@@ -411,6 +944,147 @@
     tl.fromTo("#pro2",{x:-900},{x:0,duration:0.9,ease:"power3.out"},7.119);
     tl.fromTo("#s3-sueno",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},8.014);
     tl.fromTo("#s3-graf",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.7,ease:"power2.out"},8.244);
+    tl.fromTo("#s3-energia",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},9.749);
+    tl.fromTo("#s3-bat",{attr:{width:0}},{attr:{width:122},duration:0.8,ease:"power2.out"},9.929);
+    tl.fromTo("#s3-humor",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},11.164);
+    tl.fromTo("#s3-boca",{attr:{d:"M36 80 Q60 80 84 80"}},{attr:{d:"M34 72 Q60 104 86 72"},duration:0.45,ease:"back.out(2)"},11.364);
+    tl.fromTo("#s4-alarma",{rotation:-14},{rotation:14,duration:0.08,repeat:9,yoyo:true,ease:"none"},12.009);
+    tl.fromTo("#s4-alarma",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},11.909);
+    tl.to("#s4-alarma",{opacity:0,scale:0.5,duration:0.2},12.964);
+    tl.to("#s4-sofa",{opacity:0,x:-200,duration:0.35,ease:"power2.in"},14.42);
+    tl.fromTo("#s4-tn",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},14.32);
+    tl.fromTo("#s4-vs",{scale:3,opacity:0,rotation:-12},{scale:1,opacity:1,rotation:0,duration:0.35,ease:"power4.out"},14.755);
+    tl.fromTo("#pro0",{x:700},{x:0,duration:0.45,ease:"power3.out"},14.7);
+    tl.fromTo("#s4-tp",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},15.15);
+    tl.fromTo("#d1-num",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},15.654);
+    tl.fromTo("#d1-tema",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.2,ease:"power2.out"},15.804);
+    tl.fromTo("#d1-tn",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},15.904);
+    tl.fromTo("#d1-tp",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},15.974);
+    tl.fromTo("#d1-cn",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},16.481);
+    tl.to("#d1n-c0",{backgroundColor:"#fb923c",duration:0.18},17.911);
+    tl.fromTo("#d1-hora",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"back.out(1.8)"},17.471);
+    tl.fromTo("#d1-gota",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},17.186);
+    tl.to("#d1-gota",{y:80,opacity:0,duration:0.6,ease:"power2.in"},17.586);
+    tl.to("#d1n-c2",{backgroundColor:"#ef4444",duration:0.18},18.626);
+    tl.fromTo("#d1n-i2",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},18.626);
+    tl.fromTo("#d1-sello",{scale:2.4,opacity:0,rotation:-4},{scale:1,opacity:1,rotation:-10,duration:0.3,ease:"power4.out"},19.281);
+    tl.fromTo("#d1-cp",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},20.012);
+    tl.to("#d1p-c0",{backgroundColor:"#22c55e",duration:0.18},21.062);
+    tl.fromTo("#d1p-i0",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},21.062);
+    tl.to("#d1p-c1",{backgroundColor:"#22c55e",duration:0.18},21.265);
+    tl.fromTo("#d1p-i1",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},21.265);
+    tl.to("#d1p-c2",{backgroundColor:"#22c55e",duration:0.18},21.469);
+    tl.fromTo("#d1p-i2",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},21.469);
+    tl.to("#d1p-c3",{backgroundColor:"#22c55e",duration:0.18},21.672);
+    tl.fromTo("#d1p-i3",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},21.672);
+    tl.to("#d1p-c4",{backgroundColor:"#22c55e",duration:0.18},21.875);
+    tl.fromTo("#d1p-i4",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},21.875);
+    tl.to("#d1p-c5",{backgroundColor:"#22c55e",duration:0.18},22.079);
+    tl.fromTo("#d1p-i5",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},22.079);
+    tl.to("#d1p-c6",{backgroundColor:"#22c55e",duration:0.18},22.282);
+    tl.fromTo("#d1p-i6",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},22.282);
+    tl.fromTo("#d1-diez",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"back.out(1.8)"},21.352);
+    tl.fromTo("#ty0-0",{opacity:0},{opacity:1,duration:0.01},26.59);
+    tl.fromTo("#ty0-1",{opacity:0},{opacity:1,duration:0.01},26.669);
+    tl.fromTo("#ty0-2",{opacity:0},{opacity:1,duration:0.01},26.747);
+    tl.fromTo("#ty0-3",{opacity:0},{opacity:1,duration:0.01},26.826);
+    tl.fromTo("#ty0-4",{opacity:0},{opacity:1,duration:0.01},26.904);
+    tl.fromTo("#ty0-5",{opacity:0},{opacity:1,duration:0.01},26.983);
+    tl.fromTo("#ty0-6",{opacity:0},{opacity:1,duration:0.01},27.061);
+    tl.fromTo("#d2-num",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},22.645);
+    tl.fromTo("#d2-tema",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.2,ease:"power2.out"},22.795);
+    tl.fromTo("#d2-tn",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},22.895);
+    tl.fromTo("#d2-tp",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},22.965);
+    tl.fromTo("#d2-cn",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},23.419);
+    tl.fromTo("#d2-barra",{scaleX:0},{scaleX:0.22,duration:1.06,ease:"power1.inOut"},23.924);
+    tl.to("#d2-barra",{scaleX:0,backgroundColor:"#ef4444",duration:0.3,ease:"power2.in"},24.984);
+    tl.fromTo("#d2-reloj",{rotation:0},{rotation:360,duration:1.81,ease:"power1.inOut"},23.924);
+    tl.fromTo("#d2-cp",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},25.68);
+    tl.fromTo("#d2-cursor",{x:180,y:220,opacity:0},{x:-60,y:-20,opacity:1,duration:0.4,ease:"power3.out"},25.77);
+    tl.fromTo("#d2-cursor",{scale:1},{scale:0.8,duration:0.08,yoyo:true,repeat:1,immediateRender:false},26.2);
+    tl.fromTo("#d2-cita",{scaleX:0},{scaleX:1,duration:0.25,ease:"power3.out"},26.22);
+    tl.to("#d2-cursor",{opacity:0,duration:0.2},27.24);
+    tl.fromTo("#d2-notif",{y:-160,opacity:0},{y:0,opacity:1,duration:0.4,ease:"back.out(1.6)"},27.46);
+    tl.fromTo("#d3-num",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},28.204);
+    tl.fromTo("#d3-tema",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.2,ease:"power2.out"},28.354);
+    tl.fromTo("#d3-tn",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},28.454);
+    tl.fromTo("#d3-tp",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},28.524);
+    tl.fromTo("#d3-cn",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},28.859);
+    tl.to("#d3n-c0",{backgroundColor:"#22c55e",duration:0.18},29.109);
+    tl.fromTo("#d3n-i0",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},29.109);
+    tl.to("#d3n-c1",{backgroundColor:"#22c55e",duration:0.18},29.229);
+    tl.fromTo("#d3n-i1",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},29.229);
+    tl.to("#d3n-c2",{backgroundColor:"#22c55e",duration:0.18},29.349);
+    tl.fromTo("#d3n-i2",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},29.349);
+    tl.to("#d3n-c3",{backgroundColor:"#ef4444",duration:0.18},29.484);
+    tl.fromTo("#d3n-i3",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},29.484);
+    tl.to("#d3n-c0",{y:260,rotation:-38,opacity:0,duration:0.55,ease:"power2.in"},30.789);
+    tl.to("#d3n-c1",{y:260,rotation:24,opacity:0,duration:0.55,ease:"power2.in"},30.839);
+    tl.to("#d3n-c2",{y:260,rotation:-16,opacity:0,duration:0.55,ease:"power2.in"},30.889);
+    tl.to("#d3n-c3",{y:260,rotation:42,opacity:0,duration:0.55,ease:"power2.in"},30.939);
+    tl.to("#d3n-c4",{y:260,rotation:-28,opacity:0,duration:0.55,ease:"power2.in"},30.989);
+    tl.to("#d3n-c5",{y:260,rotation:18,opacity:0,duration:0.55,ease:"power2.in"},31.039);
+    tl.to("#d3n-c6",{y:260,rotation:-44,opacity:0,duration:0.55,ease:"power2.in"},31.089);
+    tl.fromTo("#d3-cp",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},31.822);
+    tl.to("#d3p-c0",{backgroundColor:"#22c55e",duration:0.18},31.972);
+    tl.fromTo("#d3p-i0",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},31.972);
+    tl.to("#d3p-c1",{backgroundColor:"#22c55e",duration:0.18},32.092);
+    tl.fromTo("#d3p-i1",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},32.092);
+    tl.to("#d3p-c2",{backgroundColor:"#22c55e",duration:0.18},32.212);
+    tl.fromTo("#d3p-i2",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},32.212);
+    tl.to("#d3p-c3",{backgroundColor:"#cbd5e1",duration:0.18},32.597);
+    tl.fromTo("#d3p-i3",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},32.597);
+    tl.fromTo("#d3-regla",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"back.out(1.8)"},33.012);
+    tl.to("#d3p-c4",{backgroundColor:"#22c55e",duration:0.18},33.997);
+    tl.fromTo("#d3p-i4",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},33.997);
+    tl.to("#d3p-c5",{backgroundColor:"#22c55e",duration:0.18},34.312);
+    tl.fromTo("#d3p-i5",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},34.312);
+    tl.to("#d3p-c6",{backgroundColor:"#22c55e",duration:0.18},34.537);
+    tl.fromTo("#d3p-i6",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.8)"},34.537);
+    tl.fromTo("#cl-cont",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},36.474);
+    tl.fromTo("#cl-card",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},36.574);
+    tl.fromTo("#roll2-0",{y:0},{y:-4160,duration:0.9,ease:"power3.out"},37.544);
+    tl.fromTo("#roll2-1",{y:0},{y:-4160,duration:1.02,ease:"power3.out"},37.544);
+    tl.fromTo("#cl-grid .clg",{backgroundColor:"#e2e8f0"},{backgroundColor:"#22c55e",duration:0.1,stagger:0.041},36.874);
+    tl.fromTo("#cl-grid .clg",{scale:1},{scale:1.15,duration:0.12,yoyo:true,repeat:1,stagger:0.004,immediateRender:false},39.639);
+    tl.fromTo("#cl-auto",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},39.639);
+    tl.fromTo("#novF",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},40.43);
+    tl.fromTo("#proF",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},40.53);
+    tl.fromTo("#fin-hoy",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(1.8)"},40.58);
+    tl.to("#novF-shirt",{attr:{fill:"#fb923c"},duration:0.35},41.015);
+    tl.to("#novF-armF",{attr:{stroke:"#fb923c"},duration:0.35},41.015);
+    tl.to("#novF-stripes",{opacity:0,duration:0.3},41.015);
+    tl.fromTo("#novF-band",{opacity:0},{opacity:1,duration:0.3},41.015);
+    tl.fromTo("#fin-zapas",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"back.out(1.8)"},40.915);
+    tl.to("#fin-zapas",{x:-170,y:560,scale:0.3,opacity:0,duration:0.4,ease:"power2.in"},41.365);
+    tl.fromTo("#novF",{x:0},{x:1600,duration:1.753,ease:"power2.inOut",immediateRender:false},41.88);
+    tl.fromTo("#proF",{x:0},{x:1600,duration:1.753,ease:"power2.inOut",immediateRender:false},41.88);
+    tl.fromTo("#ty1-0",{opacity:0},{opacity:1,duration:0.01},43.833);
+    tl.fromTo("#ty1-1",{opacity:0},{opacity:1,duration:0.01},43.91);
+    tl.fromTo("#ty1-2",{opacity:0},{opacity:1,duration:0.01},43.986);
+    tl.fromTo("#ty1-3",{opacity:0},{opacity:1,duration:0.01},44.063);
+    tl.fromTo("#ty1-4",{opacity:0},{opacity:1,duration:0.01},44.14);
+    tl.fromTo("#ty1-5",{opacity:0},{opacity:1,duration:0.01},44.216);
+    tl.fromTo("#ty1-6",{opacity:0},{opacity:1,duration:0.01},44.293);
+    tl.fromTo("#ty1-7",{opacity:0},{opacity:1,duration:0.01},44.37);
+    tl.fromTo("#ty1-8",{opacity:0},{opacity:1,duration:0.01},44.446);
+    tl.fromTo("#ty1-9",{opacity:0},{opacity:1,duration:0.01},44.523);
+    tl.fromTo("#ty1-10",{opacity:0},{opacity:1,duration:0.01},44.6);
+    tl.fromTo("#ty1-11",{opacity:0},{opacity:1,duration:0.01},44.676);
+    tl.fromTo("#ty1-12",{opacity:0},{opacity:1,duration:0.01},44.753);
+    tl.fromTo("#ty1-13",{opacity:0},{opacity:1,duration:0.01},44.83);
+    tl.fromTo("#ty1-14",{opacity:0},{opacity:1,duration:0.01},44.906);
+    tl.fromTo("#ty1-15",{opacity:0},{opacity:1,duration:0.01},44.983);
+    tl.fromTo("#ty1-16",{opacity:0},{opacity:1,duration:0.01},45.06);
+    tl.fromTo("#ty1-17",{opacity:0},{opacity:1,duration:0.01},45.136);
+    tl.fromTo("#cta-chat",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},43.583);
+    tl.fromTo("#cta-avion",{x:0,y:0,opacity:1},{x:220,y:-160,opacity:0,duration:0.5,ease:"power2.in"},45.933);
+    tl.fromTo("#cta-boton",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.8)"},45.813);
+    tl.fromTo("#cta-cursor",{x:260,y:300,opacity:0},{x:0,y:0,opacity:1,duration:0.4,ease:"power3.out"},45.963);
+    tl.fromTo("#cta-boton",{scale:1},{scale:0.92,duration:0.08,yoyo:true,repeat:1,immediateRender:false},46.413);
+    tl.to("#cta-boton",{backgroundColor:"#334155",duration:0.25},46.463);
+    tl.to("#cta-seguir",{opacity:0,duration:0.15},46.463);
+    tl.to("#cta-siguiendo",{opacity:1,duration:0.2},46.513);
     window.__mundoRender(0);
     window.__timelines["mundo"] = tl;
   </script>
