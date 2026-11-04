@@ -149,8 +149,60 @@
     $(id + "-mouth").setAttribute("d", `M-14 24Q6 ${(24 + m * 16).toFixed(1)} 26 24`);
   }
 
+  // ---------- Panel split-flap (estilo aeropuerto) ----------
+  // DATA.flaps = [{ id, n, steps: [{ t, text, color }] }]: cada casilla avanza por el
+  // alfabeto hasta su letra nueva; cada solapa tarda FLIP s y las casillas salen escalonadas.
+  const ALPH = " ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÑ0123456789%¿?";
+  const FLIP = 0.045, STAG = 0.025;
+  const setTxt = (el, v) => { if (el.textContent !== v) el.textContent = v; };
+  function applyFlaps(t) {
+    for (const f of DATA.flaps) {
+      for (let i = 0; i < f.n; i++) {
+        let cur = " ", next = " ", p = 1, color = f.steps[0].color;
+        for (const st of f.steps) {
+          const target = (st.text.padEnd(f.n, " "))[i];
+          const t0 = st.first ? -1 : st.t + i * STAG;
+          if (t < t0) break;
+          const ib = ALPH.indexOf(target);
+          // Como mucho 8 solapas por casilla: arranca unas letras antes de la final
+          const k = st.first || cur === target ? 0 : 4 + ((i * 3 + ib) % 3);
+          const ia = (ib - k + ALPH.length) % ALPH.length;
+          const s = Math.floor((t - t0) / FLIP);
+          if (s >= k) { cur = target; next = target; p = 1; color = st.color; continue; }
+          const a = ALPH[(ia + s) % ALPH.length];
+          next = ALPH[(ia + s + 1) % ALPH.length];
+          cur = a; p = (t - t0 - s * FLIP) / FLIP; color = st.color;
+        }
+        const id = `${f.id}-${i}`;
+        setTxt($(id + "-tt"), p < 1 ? next : cur);   // mitad de arriba fija: la letra que viene
+        setTxt($(id + "-bt"), cur);                    // mitad de abajo fija: la letra actual
+        setTxt($(id + "-ft"), cur);                    // solapa que cae (arriba)
+        setTxt($(id + "-gt"), next);                   // solapa que llega (abajo)
+        const ft = $(id + "-f"), gb = $(id + "-g");
+        if (p >= 1) { ft.style.visibility = "hidden"; gb.style.visibility = "hidden"; }
+        else if (p < 0.5) { ft.style.visibility = "visible"; gb.style.visibility = "hidden"; ft.style.transform = `rotateX(${(-180 * p).toFixed(1)}deg)`; }
+        else { ft.style.visibility = "hidden"; gb.style.visibility = "visible"; gb.style.transform = `rotateX(${(180 * (1 - p)).toFixed(1)}deg)`; }
+        $(id).style.color = color;
+      }
+    }
+  }
+
+  // ---------- Fondo gradient mesh: manchas de color que derivan despacio ----------
+  const MESH = document.getElementById("mesh");
+  function applyMesh(t, c) {
+    if (!MESH) return;
+    const px = 80 * Math.sin(c.cx / 1400), py = 80 * Math.sin(c.cy / 1700);
+    const v = (a, b, ph) => (a + b * Math.sin(t * 0.35 + ph)).toFixed(1);
+    MESH.style.setProperty("--x1", `${v(22, 10, 0)}%`); MESH.style.setProperty("--y1", `${v(30, 8, 1)}%`);
+    MESH.style.setProperty("--x2", `${v(78, 9, 2)}%`); MESH.style.setProperty("--y2", `${v(62, 10, 3)}%`);
+    MESH.style.setProperty("--x3", `${v(45, 12, 4)}%`); MESH.style.setProperty("--y3", `${v(88, 6, 5)}%`);
+    MESH.style.transform = `translate(${px.toFixed(1)}px, ${py.toFixed(1)}px)`;
+  }
+
   function render(t) {
     applyCam(t);
+    applyMesh(t, camAt(t));
+    if (DATA.flaps) applyFlaps(t);
     for (const ch of DATA.chars) applyChar(ch, t);
     for (const f of DATA.float) {
       const el = $(f.id);

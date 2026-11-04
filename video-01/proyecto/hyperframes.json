@@ -9,5 +9,47 @@
   "media": {
     "autoProxy": true
   },
-  "authoringSkill": "hyperframes"
+  "authoringSkill": "hyperframes",
+  "registryItems": [
+    {
+      "name": "mesh-gradient-bg",
+      "type": "hyperframes:component",
+      "target": "compositions/components/mesh-gradient-bg.html"
+    },
+    {
+      "name": "split-flap-board",
+      "type": "hyperframes:block",
+      "target": "compositions/split-flap-board.html"
+    },
+    {
+      "name": "caption-particle-burst",
+      "type": "hyperframes:component",
+      "target": "compositions/components/caption-particle-burst.html"
+    },
+    {
+      "name": "halftone-field",
+      "type": "hyperframes:block",
+      "target": "compositions/halftone-field.html"
+    },
+    {
+      "name": "caption-neon-glow",
+      "type": "hyperframes:component",
+      "target": "compositions/components/caption-neon-glow.html"
+    },
+    {
+      "name": "particle-text-dissolve",
+      "type": "hyperframes:component",
+      "target": "compositions/components/particle-text-dissolve.html"
+    },
+    {
+      "name": "kinetic-type-swap",
+      "type": "hyperframes:component",
+      "target": "compositions/components/kinetic-type-swap.html"
+    },
+    {
+      "name": "halftone-dissolve",
+      "type": "hyperframes:component",
+      "target": "compositions/components/halftone-dissolve.html"
+    }
+  ]
 }

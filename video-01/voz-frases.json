@@ -1,104 +1,80 @@
 [
  {
   "i": 0,
-  "texto": "Diez minutos de deporte pueden cambiar tu día entero.",
+  "texto": "No te falta disciplina: te falta un plan.",
   "start": 0.0,
-  "end": 3.107
+  "end": 2.444
  },
  {
   "i": 1,
-  "texto": "Y casi uno de cada tres adultos no se mueve lo suficiente.",
-  "start": 3.297,
-  "end": 7.029
+  "texto": "Casi uno de cada tres adultos no se mueve lo suficiente, y no es por pereza.",
+  "start": 2.634,
+  "end": 7.289
  },
  {
   "i": 2,
-  "texto": "Moverte te hace dormir mejor, tener más energía y estar de mejor humor.",
-  "start": 7.219,
-  "end": 11.599
+  "texto": "La motivación sube y baja como una ola.",
+  "start": 7.479,
+  "end": 10.034
  },
  {
   "i": 3,
-  "texto": "Pero empezar cuesta.",
-  "start": 11.789,
-  "end": 13.185
+  "texto": "Tu cerebro elige el sofá, porque la recompensa del deporte llega tarde.",
+  "start": 10.224,
+  "end": 14.48
  },
  {
   "i": 4,
-  "texto": "Así que vamos: novato contra pro.",
-  "start": 13.375,
-  "end": 15.464
+  "texto": "Y si el plan es enorme, al tercer día lo dejas.",
+  "start": 14.67,
+  "end": 17.584
  },
  {
   "i": 5,
-  "texto": "Uno.",
-  "start": 15.654,
-  "end": 16.211
+  "texto": "El método que más funciona se llama intención de implementación.",
+  "start": 17.774,
+  "end": 21.581
  },
  {
   "i": 6,
-  "texto": "El novato corre una hora el lunes y el miércoles lo deja.",
-  "start": 16.401,
-  "end": 19.757
+  "texto": "Es una frase: si es tal hora, en tal sitio, entonces hago esto.",
+  "start": 21.771,
+  "end": 25.663
  },
  {
   "i": 7,
-  "texto": "El pro empieza con diez minutos al día.",
-  "start": 19.947,
-  "end": 22.455
+  "texto": "Por ejemplo: si son las siete, al salir del trabajo, camino diez minutos.",
+  "start": 25.853,
+  "end": 30.15
  },
  {
   "i": 8,
-  "texto": "Dos.",
-  "start": 22.645,
-  "end": 23.149
+  "texto": "En un estudio, el noventa y uno por ciento de quienes la escribieron hizo ejercicio cada semana, frente a menos del cuarenta del resto.",
+  "start": 30.34,
+  "end": 38.133
  },
  {
   "i": 9,
-  "texto": "El novato espera a tener ganas.",
-  "start": 23.339,
-  "end": 25.435
+  "texto": "La disciplina no se tiene.",
+  "start": 38.323,
+  "end": 39.969
  },
  {
   "i": 10,
-  "texto": "El pro lo apunta en la agenda, como una cita.",
-  "start": 25.625,
-  "end": 28.014
+  "texto": "Se diseña.",
+  "start": 40.159,
+  "end": 41.164
  },
  {
   "i": 11,
-  "texto": "Tres.",
-  "start": 28.204,
-  "end": 28.764
+  "texto": "Escribe tu frase en los comentarios, y ya tendrás tu plan.",
+  "start": 41.354,
+  "end": 44.753
  },
  {
   "i": 12,
-  "texto": "El novato falla un día y lo abandona todo.",
-  "start": 28.954,
-  "end": 31.587
- },
- {
-  "i": 13,
-  "texto": "El pro tiene una regla: nunca fallar dos días seguidos.",
-  "start": 31.777,
-  "end": 35.119
- },
- {
-  "i": 14,
-  "texto": "Y el dato clave: un hábito tarda unos sesenta y seis días en volverse automático.",
-  "start": 35.309,
-  "end": 40.34
- },
- {
-  "i": 15,
-  "texto": "Empieza hoy, y en unos dos meses te saldrá solo.",
-  "start": 40.53,
-  "end": 43.493
- },
- {
-  "i": 16,
-  "texto": "Mándaselo a quien vaya a empezar contigo, y sígueme para más.",
-  "start": 43.683,
-  "end": 47.251
+  "texto": "Sígueme para más.",
+  "start": 44.943,
+  "end": 46.107
  }
 ]

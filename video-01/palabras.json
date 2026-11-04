@@ -1,961 +1,954 @@
 [
  {
   "i": 0,
-  "text": "Diez",
+  "text": "No",
   "start": 0.0,
-  "end": 0.285,
+  "end": 0.22,
   "frase": 0
  },
  {
   "i": 1,
-  "text": "minutos",
-  "start": 0.285,
-  "end": 0.765,
+  "text": "te",
+  "start": 0.22,
+  "end": 0.325,
   "frase": 0
  },
  {
   "i": 2,
-  "text": "de",
-  "start": 0.765,
-  "end": 0.85,
+  "text": "falta",
+  "start": 0.325,
+  "end": 0.71,
   "frase": 0
  },
  {
   "i": 3,
-  "text": "deporte",
-  "start": 0.85,
-  "end": 1.38,
+  "text": "disciplina:",
+  "start": 0.71,
+  "end": 1.35,
   "frase": 0
  },
  {
   "i": 4,
-  "text": "pueden",
-  "start": 1.38,
-  "end": 1.8,
+  "text": "te",
+  "start": 1.35,
+  "end": 1.55,
   "frase": 0
  },
  {
   "i": 5,
-  "text": "cambiar",
-  "start": 1.8,
-  "end": 2.18,
+  "text": "falta",
+  "start": 1.55,
+  "end": 1.955,
   "frase": 0
  },
  {
   "i": 6,
-  "text": "tu",
-  "start": 2.18,
-  "end": 2.395,
+  "text": "un",
+  "start": 1.955,
+  "end": 2.05,
   "frase": 0
  },
  {
   "i": 7,
-  "text": "día",
-  "start": 2.395,
-  "end": 2.59,
+  "text": "plan.",
+  "start": 2.05,
+  "end": 2.435,
   "frase": 0
  },
  {
   "i": 8,
-  "text": "entero.",
-  "start": 2.59,
-  "end": 3.065,
-  "frase": 0
+  "text": "Casi",
+  "start": 2.634,
+  "end": 2.964,
+  "frase": 1
  },
  {
   "i": 9,
-  "text": "Y",
-  "start": 3.297,
-  "end": 3.392,
+  "text": "uno",
+  "start": 2.964,
+  "end": 3.199,
   "frase": 1
  },
  {
   "i": 10,
-  "text": "casi",
-  "start": 3.392,
-  "end": 3.782,
+  "text": "de",
+  "start": 3.199,
+  "end": 3.339,
   "frase": 1
  },
  {
   "i": 11,
-  "text": "uno",
-  "start": 3.782,
-  "end": 4.052,
+  "text": "cada",
+  "start": 3.339,
+  "end": 3.599,
   "frase": 1
  },
  {
   "i": 12,
-  "text": "de",
-  "start": 4.052,
-  "end": 4.172,
+  "text": "tres",
+  "start": 3.599,
+  "end": 3.914,
   "frase": 1
  },
  {
   "i": 13,
-  "text": "cada",
-  "start": 4.172,
-  "end": 4.437,
+  "text": "adultos",
+  "start": 3.914,
+  "end": 4.434,
   "frase": 1
  },
  {
   "i": 14,
-  "text": "tres",
-  "start": 4.437,
-  "end": 4.797,
+  "text": "no",
+  "start": 4.434,
+  "end": 4.634,
   "frase": 1
  },
  {
   "i": 15,
-  "text": "adultos",
-  "start": 4.797,
-  "end": 5.372,
+  "text": "se",
+  "start": 4.634,
+  "end": 4.799,
   "frase": 1
  },
  {
   "i": 16,
-  "text": "no",
-  "start": 5.372,
-  "end": 5.652,
+  "text": "mueve",
+  "start": 4.799,
+  "end": 5.074,
   "frase": 1
  },
  {
   "i": 17,
-  "text": "se",
-  "start": 5.652,
-  "end": 5.812,
+  "text": "lo",
+  "start": 5.074,
+  "end": 5.169,
   "frase": 1
  },
  {
   "i": 18,
-  "text": "mueve",
-  "start": 5.812,
-  "end": 6.142,
+  "text": "suficiente,",
+  "start": 5.169,
+  "end": 5.829,
   "frase": 1
  },
  {
   "i": 19,
-  "text": "lo",
-  "start": 6.142,
-  "end": 6.222,
+  "text": "y",
+  "start": 5.829,
+  "end": 5.894,
   "frase": 1
  },
  {
   "i": 20,
-  "text": "suficiente.",
-  "start": 6.222,
-  "end": 6.977,
+  "text": "no",
+  "start": 5.894,
+  "end": 6.464,
   "frase": 1
  },
  {
   "i": 21,
-  "text": "Moverte",
-  "start": 7.219,
-  "end": 7.664,
-  "frase": 2
+  "text": "es",
+  "start": 6.464,
+  "end": 6.609,
+  "frase": 1
  },
  {
   "i": 22,
-  "text": "te",
-  "start": 7.664,
-  "end": 7.784,
-  "frase": 2
+  "text": "por",
+  "start": 6.609,
+  "end": 6.789,
+  "frase": 1
  },
  {
   "i": 23,
-  "text": "hace",
-  "start": 7.784,
-  "end": 8.094,
-  "frase": 2
+  "text": "pereza.",
+  "start": 6.789,
+  "end": 7.269,
+  "frase": 1
  },
  {
   "i": 24,
-  "text": "dormir",
-  "start": 8.094,
-  "end": 8.464,
+  "text": "La",
+  "start": 7.479,
+  "end": 7.604,
   "frase": 2
  },
  {
   "i": 25,
-  "text": "mejor,",
-  "start": 8.464,
-  "end": 8.979,
+  "text": "motivación",
+  "start": 7.604,
+  "end": 8.184,
   "frase": 2
  },
  {
   "i": 26,
-  "text": "tener",
-  "start": 8.979,
-  "end": 9.549,
+  "text": "sube",
+  "start": 8.184,
+  "end": 8.779,
   "frase": 2
  },
  {
   "i": 27,
-  "text": "más",
-  "start": 9.549,
-  "end": 9.829,
+  "text": "y",
+  "start": 8.779,
+  "end": 8.894,
   "frase": 2
  },
  {
   "i": 28,
-  "text": "energía",
-  "start": 9.829,
-  "end": 10.369,
+  "text": "baja",
+  "start": 8.894,
+  "end": 9.234,
   "frase": 2
  },
  {
   "i": 29,
-  "text": "y",
-  "start": 10.369,
-  "end": 10.449,
+  "text": "como",
+  "start": 9.234,
+  "end": 9.459,
   "frase": 2
  },
  {
   "i": 30,
-  "text": "estar",
-  "start": 10.449,
-  "end": 10.804,
+  "text": "una",
+  "start": 9.459,
+  "end": 9.694,
   "frase": 2
  },
  {
   "i": 31,
-  "text": "de",
-  "start": 10.804,
-  "end": 10.879,
+  "text": "ola.",
+  "start": 9.694,
+  "end": 10.034,
   "frase": 2
  },
  {
   "i": 32,
-  "text": "mejor",
-  "start": 10.879,
-  "end": 11.244,
-  "frase": 2
+  "text": "Tu",
+  "start": 10.224,
+  "end": 10.334,
+  "frase": 3
  },
  {
   "i": 33,
-  "text": "humor.",
-  "start": 11.244,
-  "end": 11.559,
-  "frase": 2
+  "text": "cerebro",
+  "start": 10.334,
+  "end": 10.839,
+  "frase": 3
  },
  {
   "i": 34,
-  "text": "Pero",
-  "start": 11.789,
-  "end": 12.009,
+  "text": "elige",
+  "start": 10.839,
+  "end": 11.259,
   "frase": 3
  },
  {
   "i": 35,
-  "text": "empezar",
-  "start": 12.009,
-  "end": 12.564,
+  "text": "el",
+  "start": 11.259,
+  "end": 11.339,
   "frase": 3
  },
  {
   "i": 36,
-  "text": "cuesta.",
-  "start": 12.564,
-  "end": 13.184,
+  "text": "sofá,",
+  "start": 11.339,
+  "end": 11.869,
   "frase": 3
  },
  {
   "i": 37,
-  "text": "Así",
-  "start": 13.375,
-  "end": 13.635,
-  "frase": 4
+  "text": "porque",
+  "start": 11.869,
+  "end": 12.269,
+  "frase": 3
  },
  {
   "i": 38,
-  "text": "que",
-  "start": 13.635,
-  "end": 13.845,
-  "frase": 4
+  "text": "la",
+  "start": 12.269,
+  "end": 12.439,
+  "frase": 3
  },
  {
   "i": 39,
-  "text": "vamos:",
-  "start": 13.845,
-  "end": 14.32,
-  "frase": 4
+  "text": "recompensa",
+  "start": 12.439,
+  "end": 13.119,
+  "frase": 3
  },
  {
   "i": 40,
-  "text": "novato",
-  "start": 14.32,
-  "end": 14.805,
-  "frase": 4
+  "text": "del",
+  "start": 13.119,
+  "end": 13.264,
+  "frase": 3
  },
  {
   "i": 41,
-  "text": "contra",
-  "start": 14.805,
-  "end": 15.15,
-  "frase": 4
+  "text": "deporte",
+  "start": 13.264,
+  "end": 13.724,
+  "frase": 3
  },
  {
   "i": 42,
-  "text": "pro.",
-  "start": 15.15,
-  "end": 15.46,
-  "frase": 4
+  "text": "llega",
+  "start": 13.724,
+  "end": 14.054,
+  "frase": 3
  },
  {
   "i": 43,
-  "text": "Uno.",
-  "start": 15.654,
-  "end": 16.209,
-  "frase": 5
+  "text": "tarde.",
+  "start": 14.054,
+  "end": 14.474,
+  "frase": 3
  },
  {
   "i": 44,
-  "text": "El",
-  "start": 16.401,
-  "end": 16.531,
-  "frase": 6
+  "text": "Y",
+  "start": 14.67,
+  "end": 14.735,
+  "frase": 4
  },
  {
   "i": 45,
-  "text": "novato",
-  "start": 16.531,
-  "end": 16.986,
-  "frase": 6
+  "text": "si",
+  "start": 14.735,
+  "end": 14.88,
+  "frase": 4
  },
  {
   "i": 46,
-  "text": "corre",
-  "start": 16.986,
-  "end": 17.271,
-  "frase": 6
+  "text": "el",
+  "start": 14.88,
+  "end": 15.01,
+  "frase": 4
  },
  {
   "i": 47,
-  "text": "una",
-  "start": 17.271,
-  "end": 17.521,
-  "frase": 6
+  "text": "plan",
+  "start": 15.01,
+  "end": 15.27,
+  "frase": 4
  },
  {
   "i": 48,
-  "text": "hora",
-  "start": 17.521,
-  "end": 17.841,
-  "frase": 6
+  "text": "es",
+  "start": 15.27,
+  "end": 15.455,
+  "frase": 4
  },
  {
   "i": 49,
-  "text": "el",
-  "start": 17.841,
-  "end": 17.911,
-  "frase": 6
+  "text": "enorme,",
+  "start": 15.455,
+  "end": 16.08,
+  "frase": 4
  },
  {
   "i": 50,
-  "text": "lunes",
-  "start": 17.911,
-  "end": 18.441,
-  "frase": 6
+  "text": "al",
+  "start": 16.08,
+  "end": 16.345,
+  "frase": 4
  },
  {
   "i": 51,
-  "text": "y",
-  "start": 18.441,
-  "end": 18.511,
-  "frase": 6
+  "text": "tercer",
+  "start": 16.345,
+  "end": 16.715,
+  "frase": 4
  },
  {
   "i": 52,
-  "text": "el",
-  "start": 18.511,
-  "end": 18.626,
-  "frase": 6
+  "text": "día",
+  "start": 16.715,
+  "end": 16.99,
+  "frase": 4
  },
  {
   "i": 53,
-  "text": "miércoles",
-  "start": 18.626,
-  "end": 19.181,
-  "frase": 6
+  "text": "lo",
+  "start": 16.99,
+  "end": 17.125,
+  "frase": 4
  },
  {
   "i": 54,
-  "text": "lo",
-  "start": 19.181,
-  "end": 19.331,
-  "frase": 6
+  "text": "dejas.",
+  "start": 17.125,
+  "end": 17.56,
+  "frase": 4
  },
  {
   "i": 55,
-  "text": "deja.",
-  "start": 19.331,
-  "end": 19.721,
-  "frase": 6
+  "text": "El",
+  "start": 17.774,
+  "end": 17.879,
+  "frase": 5
  },
  {
   "i": 56,
-  "text": "El",
-  "start": 19.947,
-  "end": 20.062,
-  "frase": 7
+  "text": "método",
+  "start": 17.879,
+  "end": 18.269,
+  "frase": 5
  },
  {
   "i": 57,
-  "text": "pro",
-  "start": 20.062,
-  "end": 20.347,
-  "frase": 7
+  "text": "que",
+  "start": 18.269,
+  "end": 18.409,
+  "frase": 5
  },
  {
   "i": 58,
-  "text": "empieza",
-  "start": 20.347,
-  "end": 20.852,
-  "frase": 7
+  "text": "más",
+  "start": 18.409,
+  "end": 18.709,
+  "frase": 5
  },
  {
   "i": 59,
-  "text": "con",
-  "start": 20.852,
-  "end": 21.062,
-  "frase": 7
+  "text": "funciona",
+  "start": 18.709,
+  "end": 19.299,
+  "frase": 5
  },
  {
   "i": 60,
-  "text": "diez",
-  "start": 21.062,
-  "end": 21.402,
-  "frase": 7
+  "text": "se",
+  "start": 19.299,
+  "end": 19.694,
+  "frase": 5
  },
  {
   "i": 61,
-  "text": "minutos",
-  "start": 21.402,
-  "end": 21.912,
-  "frase": 7
+  "text": "llama",
+  "start": 19.694,
+  "end": 19.989,
+  "frase": 5
  },
  {
   "i": 62,
-  "text": "al",
-  "start": 21.912,
-  "end": 22.097,
-  "frase": 7
+  "text": "intención",
+  "start": 19.989,
+  "end": 20.604,
+  "frase": 5
  },
  {
   "i": 63,
-  "text": "día.",
-  "start": 22.097,
-  "end": 22.432,
-  "frase": 7
+  "text": "de",
+  "start": 20.604,
+  "end": 20.729,
+  "frase": 5
  },
  {
   "i": 64,
-  "text": "Dos.",
-  "start": 22.645,
-  "end": 23.145,
-  "frase": 8
+  "text": "implementación.",
+  "start": 20.729,
+  "end": 21.579,
+  "frase": 5
  },
  {
   "i": 65,
-  "text": "El",
-  "start": 23.339,
-  "end": 23.469,
-  "frase": 9
+  "text": "Es",
+  "start": 21.771,
+  "end": 21.911,
+  "frase": 6
  },
  {
   "i": 66,
-  "text": "novato",
-  "start": 23.469,
-  "end": 23.924,
-  "frase": 9
+  "text": "una",
+  "start": 21.911,
+  "end": 22.076,
+  "frase": 6
  },
  {
   "i": 67,
-  "text": "espera",
-  "start": 23.924,
-  "end": 24.499,
-  "frase": 9
+  "text": "frase:",
+  "start": 22.076,
+  "end": 22.641,
+  "frase": 6
  },
  {
   "i": 68,
-  "text": "a",
-  "start": 24.499,
-  "end": 24.649,
-  "frase": 9
+  "text": "si",
+  "start": 22.641,
+  "end": 22.851,
+  "frase": 6
  },
  {
   "i": 69,
-  "text": "tener",
-  "start": 24.649,
-  "end": 24.984,
-  "frase": 9
+  "text": "es",
+  "start": 22.851,
+  "end": 22.996,
+  "frase": 6
  },
  {
   "i": 70,
-  "text": "ganas.",
-  "start": 24.984,
-  "end": 25.434,
-  "frase": 9
+  "text": "tal",
+  "start": 22.996,
+  "end": 23.216,
+  "frase": 6
  },
  {
   "i": 71,
-  "text": "El",
-  "start": 25.625,
-  "end": 25.73,
-  "frase": 10
+  "text": "hora,",
+  "start": 23.216,
+  "end": 23.566,
+  "frase": 6
  },
  {
   "i": 72,
-  "text": "pro",
-  "start": 25.73,
-  "end": 25.965,
-  "frase": 10
+  "text": "en",
+  "start": 23.566,
+  "end": 23.706,
+  "frase": 6
  },
  {
   "i": 73,
-  "text": "lo",
-  "start": 25.965,
-  "end": 26.02,
-  "frase": 10
+  "text": "tal",
+  "start": 23.706,
+  "end": 23.926,
+  "frase": 6
  },
  {
   "i": 74,
-  "text": "apunta",
-  "start": 26.02,
-  "end": 26.445,
-  "frase": 10
+  "text": "sitio,",
+  "start": 23.926,
+  "end": 24.441,
+  "frase": 6
  },
  {
   "i": 75,
-  "text": "en",
-  "start": 26.445,
-  "end": 26.495,
-  "frase": 10
+  "text": "entonces",
+  "start": 24.441,
+  "end": 25.021,
+  "frase": 6
  },
  {
   "i": 76,
-  "text": "la",
-  "start": 26.495,
-  "end": 26.64,
-  "frase": 10
+  "text": "hago",
+  "start": 25.021,
+  "end": 25.301,
+  "frase": 6
  },
  {
   "i": 77,
-  "text": "agenda,",
-  "start": 26.64,
-  "end": 27.055,
-  "frase": 10
+  "text": "esto.",
+  "start": 25.301,
+  "end": 25.661,
+  "frase": 6
  },
  {
   "i": 78,
-  "text": "como",
-  "start": 27.055,
-  "end": 27.17,
-  "frase": 10
+  "text": "Por",
+  "start": 25.853,
+  "end": 26.028,
+  "frase": 7
  },
  {
   "i": 79,
-  "text": "una",
-  "start": 27.17,
-  "end": 27.56,
-  "frase": 10
+  "text": "ejemplo:",
+  "start": 26.028,
+  "end": 26.503,
+  "frase": 7
  },
  {
   "i": 80,
-  "text": "cita.",
-  "start": 27.56,
-  "end": 28.01,
-  "frase": 10
+  "text": "si",
+  "start": 26.503,
+  "end": 26.658,
+  "frase": 7
  },
  {
   "i": 81,
-  "text": "Tres.",
-  "start": 28.204,
-  "end": 28.764,
-  "frase": 11
+  "text": "son",
+  "start": 26.658,
+  "end": 26.858,
+  "frase": 7
  },
  {
   "i": 82,
-  "text": "El",
-  "start": 28.954,
-  "end": 29.059,
-  "frase": 12
+  "text": "las",
+  "start": 26.858,
+  "end": 26.993,
+  "frase": 7
  },
  {
   "i": 83,
-  "text": "novato",
-  "start": 29.059,
-  "end": 29.484,
-  "frase": 12
+  "text": "siete,",
+  "start": 26.993,
+  "end": 27.608,
+  "frase": 7
  },
  {
   "i": 84,
-  "text": "falla",
-  "start": 29.484,
-  "end": 29.864,
-  "frase": 12
+  "text": "al",
+  "start": 27.608,
+  "end": 27.773,
+  "frase": 7
  },
  {
   "i": 85,
-  "text": "un",
-  "start": 29.864,
-  "end": 30.014,
-  "frase": 12
+  "text": "salir",
+  "start": 27.773,
+  "end": 28.123,
+  "frase": 7
  },
  {
   "i": 86,
-  "text": "día",
-  "start": 30.014,
-  "end": 30.364,
-  "frase": 12
+  "text": "del",
+  "start": 28.123,
+  "end": 28.323,
+  "frase": 7
  },
  {
   "i": 87,
-  "text": "y",
-  "start": 30.364,
-  "end": 30.544,
-  "frase": 12
+  "text": "trabajo,",
+  "start": 28.323,
+  "end": 28.853,
+  "frase": 7
  },
  {
   "i": 88,
-  "text": "lo",
-  "start": 30.544,
-  "end": 30.789,
-  "frase": 12
+  "text": "camino",
+  "start": 28.853,
+  "end": 29.288,
+  "frase": 7
  },
  {
   "i": 89,
-  "text": "abandona",
-  "start": 30.789,
-  "end": 31.184,
-  "frase": 12
+  "text": "diez",
+  "start": 29.288,
+  "end": 29.623,
+  "frase": 7
  },
  {
   "i": 90,
-  "text": "todo.",
-  "start": 31.184,
-  "end": 31.584,
-  "frase": 12
+  "text": "minutos.",
+  "start": 29.623,
+  "end": 30.138,
+  "frase": 7
  },
  {
   "i": 91,
-  "text": "El",
-  "start": 31.777,
-  "end": 31.872,
-  "frase": 13
+  "text": "En",
+  "start": 30.34,
+  "end": 30.41,
+  "frase": 8
  },
  {
   "i": 92,
-  "text": "pro",
-  "start": 31.872,
-  "end": 32.117,
-  "frase": 13
+  "text": "un",
+  "start": 30.41,
+  "end": 30.56,
+  "frase": 8
  },
  {
   "i": 93,
-  "text": "tiene",
-  "start": 32.117,
-  "end": 32.392,
-  "frase": 13
+  "text": "estudio,",
+  "start": 30.56,
+  "end": 31.185,
+  "frase": 8
  },
  {
   "i": 94,
-  "text": "una",
-  "start": 32.392,
-  "end": 32.597,
-  "frase": 13
+  "text": "el",
+  "start": 31.185,
+  "end": 31.345,
+  "frase": 8
  },
  {
   "i": 95,
-  "text": "regla:",
-  "start": 32.597,
-  "end": 33.062,
-  "frase": 13
+  "text": "noventa",
+  "start": 31.345,
+  "end": 32.015,
+  "frase": 8
  },
  {
   "i": 96,
-  "text": "nunca",
-  "start": 33.062,
-  "end": 33.587,
-  "frase": 13
+  "text": "y",
+  "start": 32.015,
+  "end": 32.12,
+  "frase": 8
  },
  {
   "i": 97,
-  "text": "fallar",
-  "start": 33.587,
-  "end": 33.997,
-  "frase": 13
+  "text": "uno",
+  "start": 32.12,
+  "end": 32.36,
+  "frase": 8
  },
  {
   "i": 98,
-  "text": "dos",
-  "start": 33.997,
-  "end": 34.312,
-  "frase": 13
+  "text": "por",
+  "start": 32.36,
+  "end": 32.515,
+  "frase": 8
  },
  {
   "i": 99,
-  "text": "días",
-  "start": 34.312,
-  "end": 34.537,
-  "frase": 13
+  "text": "ciento",
+  "start": 32.515,
+  "end": 32.94,
+  "frase": 8
  },
  {
   "i": 100,
-  "text": "seguidos.",
-  "start": 34.537,
-  "end": 35.117,
-  "frase": 13
+  "text": "de",
+  "start": 32.94,
+  "end": 33.055,
+  "frase": 8
  },
  {
   "i": 101,
-  "text": "Y",
-  "start": 35.309,
-  "end": 35.359,
-  "frase": 14
+  "text": "quienes",
+  "start": 33.055,
+  "end": 33.33,
+  "frase": 8
  },
  {
   "i": 102,
-  "text": "el",
-  "start": 35.349,
-  "end": 35.559,
-  "frase": 14
+  "text": "la",
+  "start": 33.33,
+  "end": 33.4,
+  "frase": 8
  },
  {
   "i": 103,
-  "text": "dato",
-  "start": 35.559,
-  "end": 35.834,
-  "frase": 14
+  "text": "escribieron",
+  "start": 33.4,
+  "end": 33.95,
+  "frase": 8
  },
  {
   "i": 104,
-  "text": "clave:",
-  "start": 35.834,
-  "end": 36.434,
-  "frase": 14
+  "text": "hizo",
+  "start": 33.95,
+  "end": 34.265,
+  "frase": 8
  },
  {
   "i": 105,
-  "text": "un",
-  "start": 36.434,
-  "end": 36.574,
-  "frase": 14
+  "text": "ejercicio",
+  "start": 34.265,
+  "end": 34.875,
+  "frase": 8
  },
  {
   "i": 106,
-  "text": "hábito",
-  "start": 36.574,
-  "end": 36.959,
-  "frase": 14
+  "text": "cada",
+  "start": 34.875,
+  "end": 35.17,
+  "frase": 8
  },
  {
   "i": 107,
-  "text": "tarda",
-  "start": 36.959,
-  "end": 37.344,
-  "frase": 14
+  "text": "semana,",
+  "start": 35.17,
+  "end": 35.695,
+  "frase": 8
  },
  {
   "i": 108,
-  "text": "unos",
-  "start": 37.344,
-  "end": 37.644,
-  "frase": 14
+  "text": "frente",
+  "start": 35.695,
+  "end": 36.375,
+  "frase": 8
  },
  {
   "i": 109,
-  "text": "sesenta",
-  "start": 37.644,
-  "end": 38.079,
-  "frase": 14
+  "text": "a",
+  "start": 36.375,
+  "end": 36.56,
+  "frase": 8
  },
  {
   "i": 110,
-  "text": "y",
-  "start": 38.079,
-  "end": 38.154,
-  "frase": 14
+  "text": "menos",
+  "start": 36.56,
+  "end": 36.9,
+  "frase": 8
  },
  {
   "i": 111,
-  "text": "seis",
-  "start": 38.154,
-  "end": 38.584,
-  "frase": 14
+  "text": "del",
+  "start": 36.9,
+  "end": 37.07,
+  "frase": 8
  },
  {
   "i": 112,
-  "text": "días",
-  "start": 38.584,
-  "end": 38.959,
-  "frase": 14
+  "text": "cuarenta",
+  "start": 37.07,
+  "end": 37.545,
+  "frase": 8
  },
  {
   "i": 113,
-  "text": "en",
-  "start": 38.959,
-  "end": 39.119,
-  "frase": 14
+  "text": "del",
+  "start": 37.545,
+  "end": 37.7,
+  "frase": 8
  },
  {
   "i": 114,
-  "text": "volverse",
-  "start": 39.119,
-  "end": 39.589,
-  "frase": 14
+  "text": "resto.",
+  "start": 37.7,
+  "end": 38.13,
+  "frase": 8
  },
  {
   "i": 115,
-  "text": "automático.",
-  "start": 39.589,
-  "end": 40.314,
-  "frase": 14
+  "text": "La",
+  "start": 38.323,
+  "end": 38.443,
+  "frase": 9
  },
  {
   "i": 116,
-  "text": "Empieza",
-  "start": 40.53,
-  "end": 41.015,
-  "frase": 15
+  "text": "disciplina",
+  "start": 38.443,
+  "end": 39.158,
+  "frase": 9
  },
  {
   "i": 117,
-  "text": "hoy,",
-  "start": 41.015,
-  "end": 41.175,
-  "frase": 15
+  "text": "no",
+  "start": 39.158,
+  "end": 39.353,
+  "frase": 9
  },
  {
   "i": 118,
-  "text": "y",
-  "start": 41.175,
-  "end": 41.275,
-  "frase": 15
+  "text": "se",
+  "start": 39.353,
+  "end": 39.513,
+  "frase": 9
  },
  {
   "i": 119,
-  "text": "en",
-  "start": 41.275,
-  "end": 41.595,
-  "frase": 15
+  "text": "tiene.",
+  "start": 39.513,
+  "end": 39.968,
+  "frase": 9
  },
  {
   "i": 120,
-  "text": "unos",
-  "start": 41.595,
-  "end": 41.88,
-  "frase": 15
+  "text": "Se",
+  "start": 40.159,
+  "end": 40.379,
+  "frase": 10
  },
  {
   "i": 121,
-  "text": "dos",
-  "start": 41.88,
-  "end": 42.12,
-  "frase": 15
+  "text": "diseña.",
+  "start": 40.379,
+  "end": 41.149,
+  "frase": 10
  },
  {
   "i": 122,
-  "text": "meses",
-  "start": 42.12,
-  "end": 42.505,
-  "frase": 15
+  "text": "Escribe",
+  "start": 41.354,
+  "end": 41.819,
+  "frase": 11
  },
  {
   "i": 123,
-  "text": "te",
-  "start": 42.505,
-  "end": 42.625,
-  "frase": 15
+  "text": "tu",
+  "start": 41.819,
+  "end": 41.969,
+  "frase": 11
  },
  {
   "i": 124,
-  "text": "saldrá",
-  "start": 42.625,
-  "end": 43.05,
-  "frase": 15
+  "text": "frase",
+  "start": 41.969,
+  "end": 42.364,
+  "frase": 11
  },
  {
   "i": 125,
-  "text": "solo.",
-  "start": 43.05,
-  "end": 43.49,
-  "frase": 15
+  "text": "en",
+  "start": 42.364,
+  "end": 42.449,
+  "frase": 11
  },
  {
   "i": 126,
-  "text": "Mándaselo",
-  "start": 43.683,
-  "end": 44.193,
-  "frase": 16
+  "text": "los",
+  "start": 42.449,
+  "end": 42.654,
+  "frase": 11
  },
  {
   "i": 127,
-  "text": "a",
-  "start": 44.193,
-  "end": 44.343,
-  "frase": 16
+  "text": "comentarios,",
+  "start": 42.654,
+  "end": 43.394,
+  "frase": 11
  },
  {
   "i": 128,
-  "text": "quien",
-  "start": 44.343,
-  "end": 44.578,
-  "frase": 16
+  "text": "y",
+  "start": 43.394,
+  "end": 43.594,
+  "frase": 11
  },
  {
   "i": 129,
-  "text": "vaya",
-  "start": 44.578,
-  "end": 44.808,
-  "frase": 16
+  "text": "ya",
+  "start": 43.594,
+  "end": 43.779,
+  "frase": 11
  },
  {
   "i": 130,
-  "text": "a",
-  "start": 44.808,
-  "end": 44.913,
-  "frase": 16
+  "text": "tendrás",
+  "start": 43.779,
+  "end": 44.224,
+  "frase": 11
  },
  {
   "i": 131,
-  "text": "empezar",
-  "start": 44.913,
-  "end": 45.328,
-  "frase": 16
+  "text": "tu",
+  "start": 44.224,
+  "end": 44.349,
+  "frase": 11
  },
  {
   "i": 132,
-  "text": "contigo,",
-  "start": 45.328,
-  "end": 45.883,
-  "frase": 16
+  "text": "plan.",
+  "start": 44.349,
+  "end": 44.749,
+  "frase": 11
  },
  {
   "i": 133,
-  "text": "y",
-  "start": 45.883,
-  "end": 45.963,
-  "frase": 16
+  "text": "Sígueme",
+  "start": 44.943,
+  "end": 45.398,
+  "frase": 12
  },
  {
   "i": 134,
-  "text": "sígueme",
-  "start": 45.963,
-  "end": 46.663,
-  "frase": 16
+  "text": "para",
+  "start": 45.398,
+  "end": 45.628,
+  "frase": 12
  },
  {
   "i": 135,
-  "text": "para",
-  "start": 46.663,
-  "end": 46.873,
-  "frase": 16
- },
- {
-  "i": 136,
   "text": "más.",
-  "start": 46.873,
-  "end": 47.248,
-  "frase": 16
+  "start": 45.628,
+  "end": 46.103,
+  "frase": 12
  }
 ]
