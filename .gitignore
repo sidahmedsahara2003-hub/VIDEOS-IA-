@@ -7,3 +7,5 @@ video-01/proyecto/.hyperframes/
 video-01/proyecto/renders/
 voz-raw.wav
 video-01/musica.wav
+video-01/work-*/
+video-01/.*hf-transaction*/
