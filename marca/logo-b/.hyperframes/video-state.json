@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "historyId": "b711f15e-cf62-4986-9534-fd9aa7afc6ff",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "hyperframes.json": {
+      "hash": "8c1ae1ba802ee45af4acdb01fba41793c88b9c1e78d4ebede66d1e69521ab3f2",
+      "content": "/root/.cache/hyperframes/history/b711f15e-cf62-4986-9534-fd9aa7afc6ff/blobs/8c/8c1ae1ba802ee45af4acdb01fba41793c88b9c1e78d4ebede66d1e69521ab3f2"
+    },
+    "index.html": {
+      "hash": "c9d07a633efd4800d0bbd03635b55776943d5b45211661b0ba864dc415907ff2",
+      "content": "/root/.cache/hyperframes/history/b711f15e-cf62-4986-9534-fd9aa7afc6ff/blobs/c9/c9d07a633efd4800d0bbd03635b55776943d5b45211661b0ba864dc415907ff2"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "a6be1804-4436-4588-8111-e4045026a74b-0"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "a6be1804-4436-4588-8111-e4045026a74b-0",
+        "image": "/home/user/videos-ia-/marca/logo-b/snap/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1024,
+          "height": 1024,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793802465686,
+        "contentHash": "7f3732d63d7d0cd572d509979c3ce9ee1a5a367b553f82c8787c01f7bf1d30ab",
+        "revision": null,
+        "inputFingerprint": "b2adcb13b756cd3ec8515ec393c8e2b63f862609a98c7d3a23f38e07ebdc73dc",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}
