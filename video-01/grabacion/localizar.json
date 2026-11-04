@@ -1,0 +1,296 @@
+[
+ {
+  "i": 1,
+  "texto": "No te falta disciplina, te falta un plan.",
+  "candidatos": [
+   [
+    1.32,
+    3.68,
+    0.715
+   ],
+   [
+    1.32,
+    93.38,
+    0.715
+   ],
+   [
+    1.32,
+    72.57,
+    0.716
+   ]
+  ]
+ },
+ {
+  "i": 2,
+  "texto": "Casi uno de cada tres adultos no se mueve lo suficiente, y no es por pereza.",
+  "candidatos": [
+   [
+    4.39,
+    8.96,
+    0.671
+   ],
+   [
+    4.39,
+    72.16,
+    0.705
+   ],
+   [
+    4.39,
+    55.99,
+    0.709
+   ]
+  ]
+ },
+ {
+  "i": 3,
+  "texto": "La motivación sube y baja como una ola.",
+  "candidatos": [
+   [
+    9.75,
+    11.75,
+    0.696
+   ],
+   [
+    1.53,
+    2.87,
+    0.714
+   ],
+   [
+    9.75,
+    96.82,
+    0.717
+   ]
+  ]
+ },
+ {
+  "i": 4,
+  "texto": "Tu cerebro elige el sofá porque la recompensa del deporte llega tarde.",
+  "candidatos": [
+   [
+    12.59,
+    15.41,
+    0.634
+   ],
+   [
+    12.59,
+    16.92,
+    0.713
+   ],
+   [
+    12.59,
+    46.92,
+    0.715
+   ]
+  ]
+ },
+ {
+  "i": 5,
+  "texto": "Y si el plan es enorme, el tercer día lo dejas.",
+  "candidatos": [
+   [
+    41.75,
+    43.31,
+    0.704
+   ],
+   [
+    41.75,
+    72.17,
+    0.707
+   ],
+   [
+    41.75,
+    48.94,
+    0.719
+   ]
+  ]
+ },
+ {
+  "i": 6,
+  "texto": "El método que más funciona se llama intención de implementación.",
+  "candidatos": [
+   [
+    21.43,
+    24.64,
+    0.688
+   ],
+   [
+    21.43,
+    72.18,
+    0.717
+   ],
+   [
+    21.43,
+    42.68,
+    0.732
+   ]
+  ]
+ },
+ {
+  "i": 7,
+  "texto": "Es una frase: si a tal hora, en tal sitio, entonces hago esto.",
+  "candidatos": [
+   [
+    27.67,
+    29.74,
+    0.695
+   ],
+   [
+    4.32,
+    6.09,
+    0.709
+   ],
+   [
+    0.0,
+    2.67,
+    0.715
+   ]
+  ]
+ },
+ {
+  "i": 8,
+  "texto": "Por ejemplo: si son las siete, al salir de trabajar, voy a ir a entrenar.",
+  "candidatos": [
+   [
+    33.65,
+    36.68,
+    0.704
+   ],
+   [
+    6.85,
+    8.96,
+    0.711
+   ],
+   [
+    33.65,
+    44.9,
+    0.714
+   ]
+  ]
+ },
+ {
+  "i": 9,
+  "texto": "En un estudio, el noventa y uno por ciento de quienes lo escribieron hizo ejercicio cada semana, frente a menos del cuarenta por ciento del resto.",
+  "candidatos": [
+   [
+    40.36,
+    47.17,
+    0.648
+   ],
+   [
+    40.36,
+    44.9,
+    0.697
+   ],
+   [
+    40.36,
+    48.94,
+    0.71
+   ]
+  ]
+ },
+ {
+  "i": 10,
+  "texto": "La disciplina no se tiene, se diseña.",
+  "candidatos": [
+   [
+    47.6,
+    48.83,
+    0.653
+   ],
+   [
+    23.73,
+    24.78,
+    0.705
+   ],
+   [
+    47.6,
+    57.28,
+    0.714
+   ]
+  ]
+ },
+ {
+  "i": 11,
+  "texto": "Escribe tu frase en los comentarios y ya tendrás tu plan.",
+  "candidatos": [
+   [
+    51.42,
+    53.48,
+    0.632
+   ],
+   [
+    51.42,
+    72.53,
+    0.638
+   ],
+   [
+    42.67,
+    44.79,
+    0.697
+   ]
+  ]
+ },
+ {
+  "i": 12,
+  "texto": "Sígueme para más.",
+  "candidatos": [
+   [
+    54.0,
+    54.71,
+    0.588
+   ],
+   [
+    54.0,
+    73.66,
+    0.627
+   ],
+   [
+    22.62,
+    23.23,
+    0.633
+   ]
+  ]
+ },
+ {
+  "i": 13,
+  "texto": "Y recuerda: cada día podemos ser un cero coma cero cero cero uno por ciento mejor.",
+  "candidatos": [
+   [
+    92.01,
+    94.13,
+    0.705
+   ],
+   [
+    55.23,
+    58.97,
+    0.715
+   ],
+   [
+    55.23,
+    60.64,
+    0.719
+   ]
+  ]
+ },
+ {
+  "i": 14,
+  "texto": "Y de eso se trata.",
+  "candidatos": [
+   [
+    34.9,
+    35.35,
+    0.644
+   ],
+   [
+    34.9,
+    89.7,
+    0.645
+   ],
+   [
+    13.12,
+    13.74,
+    0.661
+   ]
+  ]
+ }
+]
