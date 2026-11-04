@@ -175,7 +175,7 @@ function flapBoard(id, n, steps, { w = 84, h = 132, gap = 8, size = 92 } = {}) {
         ${half("sf-top sf-flap", `${c}-ft`, `id="${c}-f"`)}${half("sf-bot sf-flap", `${c}-gt`, `id="${c}-g"`)}
         <div class="sf-axle"></div></div>`;
   };
-  return `<div id="${id}" class="sf-board" style="gap:${gap}px">${Array.from({ length: n }, (_, i) => cell(i)).join("")}</div>`;
+  return `<div id="${id}" class="sf-board" data-layout-allow-overflow data-layout-allow-occlusion style="gap:${gap}px">${Array.from({ length: n }, (_, i) => cell(i)).join("")}</div>`;
 }
 
 /** Explosión de partículas en (x, y) del mundo, en el momento t. Determinista (semilla). */
