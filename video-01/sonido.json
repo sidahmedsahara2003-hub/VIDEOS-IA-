@@ -297,13 +297,33 @@
    "vol": 0.55
   },
   {
-   "name": "pop",
-   "t": 47.96,
-   "vol": 0.4
+   "name": "whoosh-short",
+   "t": 47.91,
+   "vol": 0.45
+  },
+  {
+   "name": "click-soft",
+   "t": 48.7,
+   "vol": 0.45
+  },
+  {
+   "name": "click-soft",
+   "t": 48.94,
+   "vol": 0.45
+  },
+  {
+   "name": "click-soft",
+   "t": 49.18,
+   "vol": 0.45
+  },
+  {
+   "name": "click-soft",
+   "t": 49.66,
+   "vol": 0.45
   },
   {
    "name": "typing",
-   "t": 50.04,
+   "t": 50.09,
    "vol": 0.3
   },
   {

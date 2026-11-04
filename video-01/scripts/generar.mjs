@@ -460,29 +460,27 @@ tw(`tl.to("#s11-boton",{backgroundColor:"#334155",duration:0.25},${r(P("sigueme"
 tw(`tl.to("#s11-seguir",{opacity:0,duration:0.15},${r(P("sigueme") + 0.45)});`);
 tw(`tl.to("#s11-siguiendo",{opacity:1,duration:0.2},${r(P("sigueme") + 0.5)});`);
 
-// ======================= ESCENA 12 · El lema: «cada día un 0,0001 % mejor» =======================
+// ======================= ESCENA 12 · Cierre con el logo de la marca (opción B: «Escalón») =======================
 const S12 = { x: 1000, y: 8800 };
+const BARRAS = [52, 92, 138, 190];
 world.push(`
-  <div id="s12-tag" class="abs center pill" style="left:${S12.x - 200}px;top:${S12.y - 580}px;width:400px;height:76px;border:4px solid ${C.good};color:${C.good};font-size:36px;letter-spacing:.12em">NUESTRO LEMA</div>
-  <div id="s12-cada" class="abs center" style="left:${S12.x - 480}px;top:${S12.y - 470}px;width:960px;height:120px;font-size:104px;font-weight:900;color:#fff;letter-spacing:-.03em">CADA DÍA</div>
-  <div class="abs center" style="left:${S12.x - 480}px;top:${S12.y - 330}px;width:960px;height:160px">
-    ${flapBoard("s12-sf", 7, [{ t: 0, text: "       ", color: C.good }, { t: P("00001") - 0.1, text: "0,0001%", color: C.good }], { w: 110, h: 160, gap: 10, size: 116 })}
+  <div id="s12-logo" class="abs center" style="z-index:5;left:${S12.x - 290}px;top:${S12.y - 500}px;width:580px;height:580px;border-radius:50%;background:${C.good};flex-direction:column;gap:12px;
+      box-shadow:0 0 0 16px ${C.ground}, 0 0 0 26px ${C.good}, 0 0 80px ${C.good}55">
+    <div style="display:flex;align-items:flex-end;gap:16px;height:190px">
+      ${BARRAS.map((h, i) => `<div id="s12-b${i}" style="width:70px;height:${h}px;background:#04130a;border-radius:12px 12px 0 0;transform-origin:50% 100%"></div>`).join("")}
+    </div>
+    <div class="lbl" style="font-size:112px;color:#04130a;letter-spacing:-.05em;line-height:1;white-space:nowrap">${typed("0,0001%", P("00001") - 0.05, P("mejor") - 0.15)}</div>
+    <div id="s12-tag" class="lbl" style="font-size:32px;color:#04130a;letter-spacing:.32em">CADA DÍA</div>
   </div>
-  <div id="s12-mejor" class="abs center" style="left:${S12.x - 480}px;top:${S12.y - 140}px;width:960px;height:190px;font-size:180px;font-weight:900;color:${C.good};letter-spacing:-.04em;text-shadow:0 0 30px ${C.good}88">MEJOR</div>
+  <div id="s12-mejor" class="abs center" style="left:${S12.x - 480}px;top:${S12.y + 150}px;width:960px;height:180px;font-size:170px;font-weight:900;color:${C.good};letter-spacing:-.04em;text-shadow:0 0 30px ${C.good}88">MEJOR</div>
 `);
-world.push(character("nov12", S12.x - 190, S12.y + 500, { ...LOOK.novato, shirt: C.novato, stripes: false, band: "#ffffff" }, {
-  scale: 0.75, off: 0.4, poses: [[0, "walk"], [P("mejor"), "cheer"]], mood: [[0, 1]],
-}));
-world.push(character("pro12", S12.x + 190, S12.y + 500, LOOK.pro, {
-  scale: 0.75, off: 1.5, poses: [[0, "walk"], [P("mejor") + 0.1, "cheer"]], mood: [[0, 1]],
-}));
-pop("#s12-tag", P("recuerda") - 0.1, 0.4);
-tw(`tl.fromTo("#s12-cada",{opacity:0,filter:"blur(10px)",scale:1.2},{opacity:1,filter:"blur(0px)",scale:1,duration:0.3,ease:"power3.out"},${r(P("cada", 3) - 0.05)});`);
+tw(`tl.fromTo("#s12-logo",{scale:0,rotation:-120},{scale:1,rotation:0,duration:0.6,ease:"back.out(1.6)"},${r(P("recuerda") - 0.15)});`);
+[P("cada", 3), P("dia", 2), P("podemos"), P("ser")].forEach((t, i) =>
+  tw(`tl.fromTo("#s12-b${i}",{scaleY:0},{scaleY:1,duration:0.35,ease:"back.out(2.2)"},${r(t)});`));
+tw(`tl.fromTo("#s12-tag",{opacity:0,y:16,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.3,ease:"power3.out"},${r(P("cada", 3))});`);
 tw(`tl.fromTo("#s12-mejor",{scale:3,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"power4.out"},${r(P("mejor") - 0.05)});`);
-tw(`tl.to("#s12-sf",{filter:"drop-shadow(0 0 28px ${C.good}aa)",duration:0.4},${r(P("mejor"))});`);
-pop("#nov12", P("recuerda"), 0.4);
-pop("#pro12", P("recuerda") + 0.08, 0.4);
-burst(S12.x, S12.y - 60, P("mejor") + 0.1, [C.good, "#86efac", "#ffffff", "#facc15"], { count: 48, radius: 520 });
+tw(`tl.fromTo("#s12-logo",{scale:1},{scale:1.08,duration:0.15,yoyo:true,repeat:1,ease:"power2.out",immediateRender:false},${r(P("mejor"))});`);
+burst(S12.x, S12.y - 210, P("mejor") + 0.05, [C.good, "#86efac", "#ffffff", "#facc15"], { count: 56, radius: 560 });
 
 // ======================= CÁMARA Y CAMINO =======================
 const cam0 = { cx: S1.x, cy: S1.y - 60, z: 1.04 };
@@ -521,6 +519,7 @@ const V12 = P("recuerda") - 0.4;
 cam(V12, V12 + 0.55, S12.x, S12.y - 40, 1.0, "inOut", 0.3);
 cam(P("mejor") - 0.05, P("mejor") + 0.12, S12.x, S12.y - 60, 1.07, "out");
 cam(P("mejor") + 0.2, P("mejor") + 0.6, S12.x, S12.y - 40, 1.0);
+cam(P("mejor") + 0.6, D, S12.x, S12.y - 60, 1.04, "linear");
 
 link(S1, S2, VIAJE1 - 0.05);
 link(S2, S3, V3);
@@ -584,8 +583,9 @@ sfx("pop", P("sigueme") - 0.2, 0.45);
 sfx("click", P("sigueme") + 0.4, 0.6);
 sfx("chime", P("sigueme") + 0.5, 0.3);
 sfx("whoosh", V12, 0.55);
-sfx("pop", P("recuerda") - 0.1, 0.4);
-sfx("typing", P("00001") - 0.1, 0.3);
+sfx("whoosh-short", P("recuerda") - 0.15, 0.45);
+[P("cada", 3), P("dia", 2), P("podemos"), P("ser")].forEach((t) => sfx("click-soft", t, 0.45));
+sfx("typing", P("00001") - 0.05, 0.3);
 sfx("impact-bass-1", P("mejor"), 0.85);
 sfx("sparkle", P("mejor") + 0.1, 0.5);
 
