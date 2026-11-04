@@ -1,77 +1,64 @@
-# Cómo rehacer el vídeo «El deporte en tu día a día»
+# Cómo rehacer el vídeo «No te falta disciplina, te falta un plan»
 
-Short vertical (1080×1920, 30 fps, 47 s) hecho con HyperFrames. Todo se genera
-con scripts: si cambias una frase del guion o la voz, se rehace solo.
+Short vertical (1080×1920, 30 fps, unos 55 s) hecho con HyperFrames, con la voz del
+autor transformada. Todo se genera con scripts.
 
 ## Archivos
 
 | Archivo | Qué es |
 |---|---|
-| `guion.txt` | El texto que dice la voz (sin saltos de línea dentro de una frase) |
-| `scripts/voz.py` | Genera `voz.wav` con Kokoro (voz `em_alex`, velocidad 0,95), frase a frase con pausas de 0,25 s, y la limpia |
-| `scripts/tiempos.py` | Saca el momento exacto de cada palabra → `palabras.json` |
-| `scripts/generar.mjs` | Escribe la composición HyperFrames (`proyecto/`) y la lista de efectos (`sonido.json`) |
-| `scripts/runtime.js` | Motor de cada fotograma: cámara, personajes articulados, rejilla con paralaje |
-| `scripts/mezcla.py` | Música de fondo + efectos + voz → `proyecto/assets/mezcla.wav` a −14 LUFS |
-| `sonidos/` | Efectos de sonido (Pixabay, licencia libre; ver `CREDITOS-pixabay.md`) |
+| `grabacion/mi-voz-2.m4a` | La grabación original (la más limpia de las dos) |
+| `scripts/montar_voz.py` | Corta las tomas buenas, quita titubeos y silencios, saca el tiempo de cada palabra y transforma la voz → `voz.wav`, `palabras.json`, `guion.txt` |
+| `scripts/transformar.py` | Cambia el tono y el timbre de la voz (vocoder WORLD) y le da acabado de locutor |
+| `scripts/transcribir.py` | Transcribe una grabación entera con Parakeet (para ver qué se dice y dónde) |
+| `scripts/generar.mjs` + `scripts/runtime.js` | Escriben la composición HyperFrames (`proyecto/`) y la lista de efectos |
+| `scripts/mezcla.py` | Música + efectos + voz → `proyecto/assets/mezcla.wav` a −14 LUFS |
+| `sonidos/` | Efectos (Pixabay, licencia libre) |
+| `GUION-PARA-GRABAR.md` | El texto para grabar, con consejos |
 
 ## Requisitos (una vez)
 
 ```bash
-pip install kokoro-onnx soundfile librosa
-npm install --prefix scripts
-npx hyperframes skills
+pip install kokoro-onnx soundfile librosa pyworld "setuptools<81" sherpa-onnx
 ```
 
-`npx hyperframes tts` descarga el modelo de Kokoro la primera vez.
+```bash
+npm install --prefix scripts
+```
+
+Modelo de reconocimiento de voz Parakeet (se descarga de GitHub, unos 490 MB):
+
+```bash
+curl -L -o parakeet.tar.bz2 https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8.tar.bz2 && tar xjf parakeet.tar.bz2
+```
 
 ## Rehacerlo todo (desde la carpeta `video-01`)
 
 ```bash
-python3 scripts/voz.py
-python3 scripts/tiempos.py
-node scripts/generar.mjs
-python3 scripts/mezcla.py
+MODELO=/ruta/a/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8 python3 scripts/montar_voz.py
 ```
 
 ```bash
-cd proyecto && npx hyperframes check
+node scripts/generar.mjs && python3 scripts/mezcla.py
 ```
-
-Vídeo con subtítulos:
 
 ```bash
-cd proyecto && npx hyperframes render -q delivery -o ../video-FINAL.mp4
+cd proyecto && npx hyperframes check && npx hyperframes render -q delivery -o ../video-FINAL.mp4
 ```
 
-Vídeo sin subtítulos (vuelve a generar después la versión con subtítulos):
+Sin subtítulos (y después vuelve a generar la versión con subtítulos):
 
 ```bash
 node scripts/generar.mjs --sin-subtitulos && (cd proyecto && npx hyperframes render -q delivery -o ../video-SIN-SUBTITULOS.mp4) && node scripts/generar.mjs
 ```
 
-Prueba rápida de un tramo (por ejemplo, los primeros 9 s):
-
-```bash
-cd proyecto && npx hyperframes render --end 9 -o ../prueba.mp4
-```
-
 ## Si cambias algo
 
-- **Una frase del guion:** edita `guion.txt` y corre los cuatro scripts. Las animaciones
-  están atadas a palabras con `P("palabra", n)` (n = qué vez se dice). Si quitas una palabra
-  que usa una animación, `generar.mjs` avisa con el nombre de la palabra que falta.
-- **La velocidad de la voz:** cambia `SPEED` en `scripts/voz.py` **y** en `scripts/tiempos.py`.
-- **Colores, textos de las tarjetas o tiempos de cámara:** en `scripts/generar.mjs`
-  (paleta `C` al principio; cada escena tiene su bloque).
-- **Volumen de la música o de los efectos:** `volume=0.10` de la música en `scripts/mezcla.py`;
-  cada efecto tiene su volumen en el bloque «EFECTOS DE SONIDO» de `generar.mjs`.
-
-## Notas
-
-- Los tiempos de cada palabra no salen de una transcripción con Whisper, porque la red del
-  entorno bloqueaba huggingface.co. `tiempos.py` alinea cada frase con la misma voz dicha
-  palabra a palabra. El margen de error es de unos 0,06 s y las 137 palabras coinciden con el guion.
-- La música está generada por código en `mezcla.py`, porque las fuentes de música en línea
-  estaban bloqueadas. Si prefieres otra, guárdala como `musica.wav` y quita su generación en el script.
-- GSAP va dentro del proyecto (`proyecto/assets/gsap.min.js`) para que el render no dependa de internet.
+- **Otra grabación:** ponla en `grabacion/`, transcríbela con `scripts/transcribir.py` para ver
+  los tiempos de cada toma y actualiza la lista `TOMAS` de `scripts/montar_voz.py`
+  (inicio, fin, pausa y el texto que se dice).
+- **Cuánto cambia la voz:** `TONO` y `TIMBRE` al principio de `scripts/montar_voz.py`.
+  0,86 y 0,93 es la versión «media»; más cerca de 1 = más parecida a la voz original.
+- **Animaciones:** están atadas a palabras con `P("palabra", n)` en `scripts/generar.mjs`.
+  Si una palabra deja de decirse, el generador avisa con su nombre.
+- **El render tarda unos 35 minutos** por los desenfoques del fondo y el efecto cristal.

@@ -1,0 +1,1153 @@
+[
+ {
+  "bloque": 0,
+  "start": 0.08,
+  "end": 0.53,
+  "texto": "No te has falta.",
+  "palabras": [
+   {
+    "text": "No",
+    "start": 0.08,
+    "end": 0.24
+   },
+   {
+    "text": "te",
+    "start": 0.24,
+    "end": 0.32
+   },
+   {
+    "text": "has",
+    "start": 0.32,
+    "end": 0.48
+   },
+   {
+    "text": "falta.",
+    "start": 0.48,
+    "end": 0.53
+   }
+  ]
+ },
+ {
+  "bloque": 1,
+  "start": 0.68,
+  "end": 0.96,
+  "texto": "Falta isso.",
+  "palabras": [
+   {
+    "text": "Falta",
+    "start": 0.69,
+    "end": 0.93
+   },
+   {
+    "text": "isso.",
+    "start": 0.93,
+    "end": 0.96
+   }
+  ]
+ },
+ {
+  "bloque": 2,
+  "start": 1.21,
+  "end": 1.37,
+  "texto": "",
+  "palabras": []
+ },
+ {
+  "bloque": 3,
+  "start": 2.85,
+  "end": 3.33,
+  "texto": "Casi uno",
+  "palabras": [
+   {
+    "text": "Casi",
+    "start": 2.78,
+    "end": 3.1
+   },
+   {
+    "text": "uno",
+    "start": 3.1,
+    "end": 3.33
+   }
+  ]
+ },
+ {
+  "bloque": 4,
+  "start": 3.67,
+  "end": 4.71,
+  "texto": "de cada tres adultos.",
+  "palabras": [
+   {
+    "text": "de",
+    "start": 3.6,
+    "end": 3.84
+   },
+   {
+    "text": "cada",
+    "start": 3.84,
+    "end": 4.08
+   },
+   {
+    "text": "tres",
+    "start": 4.08,
+    "end": 4.32
+   },
+   {
+    "text": "adultos.",
+    "start": 4.32,
+    "end": 4.71
+   }
+  ]
+ },
+ {
+  "bloque": 5,
+  "start": 5.18,
+  "end": 5.85,
+  "texto": "No se mueven los",
+  "palabras": [
+   {
+    "text": "No",
+    "start": 5.11,
+    "end": 5.19
+   },
+   {
+    "text": "se",
+    "start": 5.19,
+    "end": 5.35
+   },
+   {
+    "text": "mueven",
+    "start": 5.35,
+    "end": 5.59
+   },
+   {
+    "text": "los",
+    "start": 5.59,
+    "end": 5.85
+   }
+  ]
+ },
+ {
+  "bloque": 6,
+  "start": 6.04,
+  "end": 6.21,
+  "texto": "Suficiente.",
+  "palabras": [
+   {
+    "text": "Suficiente.",
+    "start": 6.05,
+    "end": 6.21
+   }
+  ]
+ },
+ {
+  "bloque": 7,
+  "start": 7.11,
+  "end": 7.36,
+  "texto": "Yeah.",
+  "palabras": [
+   {
+    "text": "Yeah.",
+    "start": 7.12,
+    "end": 7.36
+   }
+  ]
+ },
+ {
+  "bloque": 8,
+  "start": 7.85,
+  "end": 8.53,
+  "texto": "La motivación",
+  "palabras": [
+   {
+    "text": "La",
+    "start": 7.78,
+    "end": 7.94
+   },
+   {
+    "text": "motivación",
+    "start": 7.94,
+    "end": 8.53
+   }
+  ]
+ },
+ {
+  "bloque": 9,
+  "start": 8.88,
+  "end": 9.4,
+  "texto": "Sube y baja.",
+  "palabras": [
+   {
+    "text": "Sube",
+    "start": 8.81,
+    "end": 9.21
+   },
+   {
+    "text": "y",
+    "start": 9.21,
+    "end": 9.29
+   },
+   {
+    "text": "baja.",
+    "start": 9.29,
+    "end": 9.4
+   }
+  ]
+ },
+ {
+  "bloque": 10,
+  "start": 9.82,
+  "end": 10.32,
+  "texto": "Como una ola.",
+  "palabras": [
+   {
+    "text": "Como",
+    "start": 9.75,
+    "end": 9.99
+   },
+   {
+    "text": "una",
+    "start": 9.99,
+    "end": 10.15
+   },
+   {
+    "text": "ola.",
+    "start": 10.15,
+    "end": 10.32
+   }
+  ]
+ },
+ {
+  "bloque": 11,
+  "start": 10.67,
+  "end": 11.2,
+  "texto": "Tu cerebro.",
+  "palabras": [
+   {
+    "text": "Tu",
+    "start": 10.6,
+    "end": 10.76
+   },
+   {
+    "text": "cerebro.",
+    "start": 10.76,
+    "end": 11.2
+   }
+  ]
+ },
+ {
+  "bloque": 12,
+  "start": 11.55,
+  "end": 12.23,
+  "texto": "Ellie Hell Sophar.",
+  "palabras": [
+   {
+    "text": "Ellie",
+    "start": 11.48,
+    "end": 11.72
+   },
+   {
+    "text": "Hell",
+    "start": 11.72,
+    "end": 11.96
+   },
+   {
+    "text": "Sophar.",
+    "start": 11.96,
+    "end": 12.23
+   }
+  ]
+ },
+ {
+  "bloque": 13,
+  "start": 12.5,
+  "end": 13.93,
+  "texto": "porque la recompensa del deporte",
+  "palabras": [
+   {
+    "text": "porque",
+    "start": 12.43,
+    "end": 12.67
+   },
+   {
+    "text": "la",
+    "start": 12.67,
+    "end": 12.83
+   },
+   {
+    "text": "recompensa",
+    "start": 12.83,
+    "end": 13.39
+   },
+   {
+    "text": "del",
+    "start": 13.39,
+    "end": 13.55
+   },
+   {
+    "text": "deporte",
+    "start": 13.55,
+    "end": 13.93
+   }
+  ]
+ },
+ {
+  "bloque": 14,
+  "start": 15.09,
+  "end": 15.45,
+  "texto": "",
+  "palabras": []
+ },
+ {
+  "bloque": 15,
+  "start": 15.58,
+  "end": 15.83,
+  "texto": "",
+  "palabras": []
+ },
+ {
+  "bloque": 16,
+  "start": 16.01,
+  "end": 16.53,
+  "texto": "es enorme",
+  "palabras": [
+   {
+    "text": "es",
+    "start": 16.02,
+    "end": 16.18
+   },
+   {
+    "text": "enorme",
+    "start": 16.18,
+    "end": 16.53
+   }
+  ]
+ },
+ {
+  "bloque": 17,
+  "start": 16.81,
+  "end": 17.54,
+  "texto": "Al tercer día.",
+  "palabras": [
+   {
+    "text": "Al",
+    "start": 16.74,
+    "end": 16.9
+   },
+   {
+    "text": "tercer",
+    "start": 16.9,
+    "end": 17.3
+   },
+   {
+    "text": "día.",
+    "start": 17.3,
+    "end": 17.54
+   }
+  ]
+ },
+ {
+  "bloque": 18,
+  "start": 17.88,
+  "end": 18.67,
+  "texto": "Lo acabas dejando.",
+  "palabras": [
+   {
+    "text": "Lo",
+    "start": 17.81,
+    "end": 17.97
+   },
+   {
+    "text": "acabas",
+    "start": 17.97,
+    "end": 18.45
+   },
+   {
+    "text": "dejando.",
+    "start": 18.45,
+    "end": 18.67
+   }
+  ]
+ },
+ {
+  "bloque": 19,
+  "start": 19.0,
+  "end": 19.95,
+  "texto": "El método que más funciona",
+  "palabras": [
+   {
+    "text": "El",
+    "start": 19.01,
+    "end": 19.09
+   },
+   {
+    "text": "método",
+    "start": 19.09,
+    "end": 19.41
+   },
+   {
+    "text": "que",
+    "start": 19.41,
+    "end": 19.57
+   },
+   {
+    "text": "más",
+    "start": 19.57,
+    "end": 19.73
+   },
+   {
+    "text": "funciona",
+    "start": 19.73,
+    "end": 19.95
+   }
+  ]
+ },
+ {
+  "bloque": 20,
+  "start": 20.08,
+  "end": 20.31,
+  "texto": "funciona.",
+  "palabras": [
+   {
+    "text": "funciona.",
+    "start": 20.09,
+    "end": 20.31
+   }
+  ]
+ },
+ {
+  "bloque": 21,
+  "start": 20.51,
+  "end": 20.85,
+  "texto": "Se llama",
+  "palabras": [
+   {
+    "text": "Se",
+    "start": 20.44,
+    "end": 20.6
+   },
+   {
+    "text": "llama",
+    "start": 20.6,
+    "end": 20.85
+   }
+  ]
+ },
+ {
+  "bloque": 22,
+  "start": 21.26,
+  "end": 22.21,
+  "texto": "Intención de implementar.",
+  "palabras": [
+   {
+    "text": "Intención",
+    "start": 21.27,
+    "end": 21.75
+   },
+   {
+    "text": "de",
+    "start": 21.75,
+    "end": 21.91
+   },
+   {
+    "text": "implementar.",
+    "start": 21.91,
+    "end": 22.21
+   }
+  ]
+ },
+ {
+  "bloque": 23,
+  "start": 22.91,
+  "end": 23.68,
+  "texto": "Es una frase.",
+  "palabras": [
+   {
+    "text": "Es",
+    "start": 22.92,
+    "end": 23.08
+   },
+   {
+    "text": "una",
+    "start": 23.08,
+    "end": 23.24
+   },
+   {
+    "text": "frase.",
+    "start": 23.24,
+    "end": 23.68
+   }
+  ]
+ },
+ {
+  "bloque": 24,
+  "start": 24.01,
+  "end": 24.55,
+  "texto": "Then let's say it.",
+  "palabras": [
+   {
+    "text": "Then",
+    "start": 23.94,
+    "end": 24.1
+   },
+   {
+    "text": "let's",
+    "start": 24.1,
+    "end": 24.26
+   },
+   {
+    "text": "say",
+    "start": 24.26,
+    "end": 24.58
+   },
+   {
+    "text": "it.",
+    "start": 24.58,
+    "end": 24.55
+   }
+  ]
+ },
+ {
+  "bloque": 25,
+  "start": 24.89,
+  "end": 25.53,
+  "texto": "Sia talora",
+  "palabras": [
+   {
+    "text": "Sia",
+    "start": 24.82,
+    "end": 25.14
+   },
+   {
+    "text": "talora",
+    "start": 25.14,
+    "end": 25.53
+   }
+  ]
+ },
+ {
+  "bloque": 26,
+  "start": 25.81,
+  "end": 26.41,
+  "texto": "En tal sitio.",
+  "palabras": [
+   {
+    "text": "En",
+    "start": 25.74,
+    "end": 25.9
+   },
+   {
+    "text": "tal",
+    "start": 25.9,
+    "end": 26.14
+   },
+   {
+    "text": "sitio.",
+    "start": 26.14,
+    "end": 26.41
+   }
+  ]
+ },
+ {
+  "bloque": 27,
+  "start": 26.64,
+  "end": 27.31,
+  "texto": "Entonces hago esto.",
+  "palabras": [
+   {
+    "text": "Entonces",
+    "start": 26.49,
+    "end": 26.97
+   },
+   {
+    "text": "hago",
+    "start": 26.97,
+    "end": 27.29
+   },
+   {
+    "text": "esto.",
+    "start": 27.29,
+    "end": 27.31
+   }
+  ]
+ },
+ {
+  "bloque": 28,
+  "start": 27.77,
+  "end": 28.06,
+  "texto": "For Hemp.",
+  "palabras": [
+   {
+    "text": "For",
+    "start": 27.7,
+    "end": 27.86
+   },
+   {
+    "text": "Hemp.",
+    "start": 27.86,
+    "end": 28.06
+   }
+  ]
+ },
+ {
+  "bloque": 29,
+  "start": 28.59,
+  "end": 29.16,
+  "texto": "",
+  "palabras": []
+ },
+ {
+  "bloque": 30,
+  "start": 29.67,
+  "end": 30.43,
+  "texto": "salir de trabajar",
+  "palabras": [
+   {
+    "text": "salir",
+    "start": 29.68,
+    "end": 30.0
+   },
+   {
+    "text": "de",
+    "start": 30.0,
+    "end": 30.16
+   },
+   {
+    "text": "trabajar",
+    "start": 30.16,
+    "end": 30.43
+   }
+  ]
+ },
+ {
+  "bloque": 31,
+  "start": 30.8,
+  "end": 31.03,
+  "texto": "Voy a entrar.",
+  "palabras": [
+   {
+    "text": "Voy",
+    "start": 30.73,
+    "end": 30.89
+   },
+   {
+    "text": "a",
+    "start": 30.89,
+    "end": 30.97
+   },
+   {
+    "text": "entrar.",
+    "start": 30.97,
+    "end": 31.03
+   }
+  ]
+ },
+ {
+  "bloque": 32,
+  "start": 31.18,
+  "end": 31.41,
+  "texto": "Entrar.",
+  "palabras": [
+   {
+    "text": "Entrar.",
+    "start": 31.19,
+    "end": 31.41
+   }
+  ]
+ },
+ {
+  "bloque": 33,
+  "start": 31.7,
+  "end": 31.96,
+  "texto": "En una",
+  "palabras": [
+   {
+    "text": "En",
+    "start": 31.63,
+    "end": 31.71
+   },
+   {
+    "text": "una",
+    "start": 31.71,
+    "end": 31.96
+   }
+  ]
+ },
+ {
+  "bloque": 34,
+  "start": 32.15,
+  "end": 32.45,
+  "texto": "Studio.",
+  "palabras": [
+   {
+    "text": "Studio.",
+    "start": 32.16,
+    "end": 32.45
+   }
+  ]
+ },
+ {
+  "bloque": 35,
+  "start": 32.8,
+  "end": 33.13,
+  "texto": "Donde",
+  "palabras": [
+   {
+    "text": "Donde",
+    "start": 32.73,
+    "end": 33.13
+   }
+  ]
+ },
+ {
+  "bloque": 36,
+  "start": 33.35,
+  "end": 33.69,
+  "texto": "N",
+  "palabras": [
+   {
+    "text": "N",
+    "start": 33.44,
+    "end": 33.69
+   }
+  ]
+ },
+ {
+  "bloque": 37,
+  "start": 33.82,
+  "end": 34.23,
+  "texto": "",
+  "palabras": []
+ },
+ {
+  "bloque": 38,
+  "start": 34.41,
+  "end": 34.97,
+  "texto": "de quién es.",
+  "palabras": [
+   {
+    "text": "de",
+    "start": 34.66,
+    "end": 34.74
+   },
+   {
+    "text": "quién",
+    "start": 34.74,
+    "end": 34.9
+   },
+   {
+    "text": "es.",
+    "start": 34.9,
+    "end": 34.97
+   }
+  ]
+ },
+ {
+  "bloque": 39,
+  "start": 35.24,
+  "end": 35.79,
+  "texto": "lo aplican",
+  "palabras": [
+   {
+    "text": "lo",
+    "start": 35.25,
+    "end": 35.41
+   },
+   {
+    "text": "aplican",
+    "start": 35.41,
+    "end": 35.79
+   }
+  ]
+ },
+ {
+  "bloque": 40,
+  "start": 36.06,
+  "end": 37.36,
+  "texto": "Hacen ejercicio cada semana.",
+  "palabras": [
+   {
+    "text": "Hacen",
+    "start": 35.99,
+    "end": 36.39
+   },
+   {
+    "text": "ejercicio",
+    "start": 36.39,
+    "end": 36.79
+   },
+   {
+    "text": "cada",
+    "start": 36.79,
+    "end": 37.03
+   },
+   {
+    "text": "semana.",
+    "start": 37.03,
+    "end": 37.36
+   }
+  ]
+ },
+ {
+  "bloque": 41,
+  "start": 37.71,
+  "end": 38.05,
+  "texto": "Frente.",
+  "palabras": [
+   {
+    "text": "Frente.",
+    "start": 37.64,
+    "end": 38.05
+   }
+  ]
+ },
+ {
+  "bloque": 42,
+  "start": 38.31,
+  "end": 39.61,
+  "texto": "a menos del cuarenta por ciento",
+  "palabras": [
+   {
+    "text": "a",
+    "start": 38.32,
+    "end": 38.4
+   },
+   {
+    "text": "menos",
+    "start": 38.4,
+    "end": 38.64
+   },
+   {
+    "text": "del",
+    "start": 38.64,
+    "end": 38.88
+   },
+   {
+    "text": "cuarenta",
+    "start": 38.88,
+    "end": 39.28
+   },
+   {
+    "text": "por",
+    "start": 39.28,
+    "end": 39.44
+   },
+   {
+    "text": "ciento",
+    "start": 39.44,
+    "end": 39.61
+   }
+  ]
+ },
+ {
+  "bloque": 43,
+  "start": 39.77,
+  "end": 40.1,
+  "texto": "de red.",
+  "palabras": [
+   {
+    "text": "de",
+    "start": 39.94,
+    "end": 40.1
+   },
+   {
+    "text": "red.",
+    "start": 40.1,
+    "end": 40.1
+   }
+  ]
+ },
+ {
+  "bloque": 44,
+  "start": 40.5,
+  "end": 41.59,
+  "texto": "La disciplina no se tiene.",
+  "palabras": [
+   {
+    "text": "La",
+    "start": 40.43,
+    "end": 40.59
+   },
+   {
+    "text": "disciplina",
+    "start": 40.59,
+    "end": 41.07
+   },
+   {
+    "text": "no",
+    "start": 41.07,
+    "end": 41.23
+   },
+   {
+    "text": "se",
+    "start": 41.23,
+    "end": 41.39
+   },
+   {
+    "text": "tiene.",
+    "start": 41.39,
+    "end": 41.59
+   }
+  ]
+ },
+ {
+  "bloque": 45,
+  "start": 41.89,
+  "end": 42.38,
+  "texto": "Se diseña.",
+  "palabras": [
+   {
+    "text": "Se",
+    "start": 41.82,
+    "end": 41.98
+   },
+   {
+    "text": "diseña.",
+    "start": 41.98,
+    "end": 42.38
+   }
+  ]
+ },
+ {
+  "bloque": 46,
+  "start": 43.01,
+  "end": 43.44,
+  "texto": "en los comentarios.",
+  "palabras": [
+   {
+    "text": "en",
+    "start": 43.18,
+    "end": 43.26
+   },
+   {
+    "text": "los",
+    "start": 43.26,
+    "end": 43.34
+   },
+   {
+    "text": "comentarios.",
+    "start": 43.34,
+    "end": 43.44
+   }
+  ]
+ },
+ {
+  "bloque": 47,
+  "start": 43.58,
+  "end": 44.75,
+  "texto": "comentarios una frase",
+  "palabras": [
+   {
+    "text": "comentarios",
+    "start": 43.67,
+    "end": 44.23
+   },
+   {
+    "text": "una",
+    "start": 44.23,
+    "end": 44.39
+   },
+   {
+    "text": "frase",
+    "start": 44.39,
+    "end": 44.75
+   }
+  ]
+ },
+ {
+  "bloque": 48,
+  "start": 45.22,
+  "end": 45.69,
+  "texto": "Y ya tendrás tu",
+  "palabras": [
+   {
+    "text": "Y",
+    "start": 45.15,
+    "end": 45.23
+   },
+   {
+    "text": "ya",
+    "start": 45.23,
+    "end": 45.31
+   },
+   {
+    "text": "tendrás",
+    "start": 45.31,
+    "end": 45.63
+   },
+   {
+    "text": "tu",
+    "start": 45.63,
+    "end": 45.69
+   }
+  ]
+ },
+ {
+  "bloque": 49,
+  "start": 45.82,
+  "end": 46.08,
+  "texto": "tu plan",
+  "palabras": [
+   {
+    "text": "tu",
+    "start": 45.83,
+    "end": 45.99
+   },
+   {
+    "text": "plan",
+    "start": 45.99,
+    "end": 46.08
+   }
+  ]
+ },
+ {
+  "bloque": 50,
+  "start": 46.38,
+  "end": 47.06,
+  "texto": "Sígueme para más.",
+  "palabras": [
+   {
+    "text": "Sígueme",
+    "start": 46.31,
+    "end": 46.79
+   },
+   {
+    "text": "para",
+    "start": 46.79,
+    "end": 47.03
+   },
+   {
+    "text": "más.",
+    "start": 47.03,
+    "end": 47.06
+   }
+  ]
+ },
+ {
+  "bloque": 51,
+  "start": 47.36,
+  "end": 47.86,
+  "texto": "Y recuerda.",
+  "palabras": [
+   {
+    "text": "Y",
+    "start": 47.29,
+    "end": 47.45
+   },
+   {
+    "text": "recuerda.",
+    "start": 47.45,
+    "end": 47.86
+   }
+  ]
+ },
+ {
+  "bloque": 52,
+  "start": 48.16,
+  "end": 49.2,
+  "texto": "Cada día podemos ser",
+  "palabras": [
+   {
+    "text": "Cada",
+    "start": 48.09,
+    "end": 48.41
+   },
+   {
+    "text": "día",
+    "start": 48.41,
+    "end": 48.65
+   },
+   {
+    "text": "podemos",
+    "start": 48.65,
+    "end": 48.97
+   },
+   {
+    "text": "ser",
+    "start": 48.97,
+    "end": 49.2
+   }
+  ]
+ },
+ {
+  "bloque": 53,
+  "start": 49.53,
+  "end": 49.88,
+  "texto": "Zero",
+  "palabras": [
+   {
+    "text": "Zero",
+    "start": 49.54,
+    "end": 49.88
+   }
+  ]
+ },
+ {
+  "bloque": 54,
+  "start": 50.16,
+  "end": 51.34,
+  "texto": "Coma zero zero zero.",
+  "palabras": [
+   {
+    "text": "Coma",
+    "start": 50.09,
+    "end": 50.41
+   },
+   {
+    "text": "zero",
+    "start": 50.41,
+    "end": 50.73
+   },
+   {
+    "text": "zero",
+    "start": 50.73,
+    "end": 50.97
+   },
+   {
+    "text": "zero.",
+    "start": 50.97,
+    "end": 51.34
+   }
+  ]
+ },
+ {
+  "bloque": 55,
+  "start": 51.6,
+  "end": 51.8,
+  "texto": "Uno per",
+  "palabras": [
+   {
+    "text": "Uno",
+    "start": 51.53,
+    "end": 51.69
+   },
+   {
+    "text": "per",
+    "start": 51.69,
+    "end": 51.8
+   }
+  ]
+ },
+ {
+  "bloque": 56,
+  "start": 52.05,
+  "end": 52.3,
+  "texto": "por siento mejor",
+  "palabras": [
+   {
+    "text": "por",
+    "start": 51.98,
+    "end": 52.06
+   },
+   {
+    "text": "siento",
+    "start": 52.06,
+    "end": 52.3
+   },
+   {
+    "text": "mejor",
+    "start": 52.3,
+    "end": 52.3
+   }
+  ]
+ }
+]

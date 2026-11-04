@@ -1,80 +1,80 @@
 [
  {
   "i": 0,
-  "texto": "No te falta disciplina: te falta un plan.",
+  "texto": "No te hace falta disciplina, te hace falta un plan.",
   "start": 0.0,
-  "end": 2.444
+  "end": 2.61
  },
  {
   "i": 1,
   "texto": "Casi uno de cada tres adultos no se mueve lo suficiente, y no es por pereza.",
-  "start": 2.634,
-  "end": 7.289
+  "start": 2.83,
+  "end": 7.41
  },
  {
   "i": 2,
   "texto": "La motivación sube y baja como una ola.",
-  "start": 7.479,
-  "end": 10.034
+  "start": 7.63,
+  "end": 10.49
  },
  {
   "i": 3,
-  "texto": "Tu cerebro elige el sofá, porque la recompensa del deporte llega tarde.",
-  "start": 10.224,
-  "end": 14.48
+  "texto": "Tu cerebro elige el sofá porque la recompensa del deporte llega más tarde.",
+  "start": 10.71,
+  "end": 14.995
  },
  {
   "i": 4,
-  "texto": "Y si el plan es enorme, al tercer día lo dejas.",
-  "start": 14.67,
-  "end": 17.584
+  "texto": "Y si el plan es enorme, al tercer día lo acabas dejando.",
+  "start": 15.215,
+  "end": 18.88
  },
  {
   "i": 5,
   "texto": "El método que más funciona se llama intención de implementación.",
-  "start": 17.774,
-  "end": 21.581
+  "start": 19.1,
+  "end": 22.835
  },
  {
   "i": 6,
-  "texto": "Es una frase: si es tal hora, en tal sitio, entonces hago esto.",
-  "start": 21.771,
-  "end": 25.663
+  "texto": "Es una frase donde se dice: si a tal hora, en tal sitio, entonces hago esto.",
+  "start": 23.055,
+  "end": 27.745
  },
  {
   "i": 7,
-  "texto": "Por ejemplo: si son las siete, al salir del trabajo, camino diez minutos.",
-  "start": 25.853,
-  "end": 30.15
+  "texto": "Por ejemplo: si a las siete, al salir de trabajar, voy a entrenar.",
+  "start": 27.965,
+  "end": 31.68
  },
  {
   "i": 8,
-  "texto": "En un estudio, el noventa y uno por ciento de quienes la escribieron hizo ejercicio cada semana, frente a menos del cuarenta del resto.",
-  "start": 30.34,
-  "end": 38.133
+  "texto": "En un estudio, el 91 % de quienes lo aplican hacen ejercicio cada semana, frente a menos del 40 % del resto.",
+  "start": 31.9,
+  "end": 40.52
  },
  {
   "i": 9,
-  "texto": "La disciplina no se tiene.",
-  "start": 38.323,
-  "end": 39.969
+  "texto": "La disciplina no se tiene, se diseña.",
+  "start": 40.74,
+  "end": 42.875
  },
  {
   "i": 10,
-  "texto": "Se diseña.",
-  "start": 40.159,
-  "end": 41.164
+  "texto": "Escribe en los comentarios una frase y ya tendrás tu plan.",
+  "start": 43.095,
+  "end": 46.3
  },
  {
   "i": 11,
-  "texto": "Escribe tu frase en los comentarios, y ya tendrás tu plan.",
-  "start": 41.354,
-  "end": 44.753
+  "texto": "Sígueme para más.",
+  "start": 46.52,
+  "end": 47.35
  },
  {
   "i": 12,
-  "texto": "Sígueme para más.",
-  "start": 44.943,
-  "end": 46.107
+  "texto": "Y recuerda: cada día podemos ser 0,0001 % mejor.",
+  "start": 47.9,
+  "end": 54.57
  }
 ]

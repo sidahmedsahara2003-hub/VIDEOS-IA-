@@ -152,7 +152,7 @@
   // ---------- Panel split-flap (estilo aeropuerto) ----------
   // DATA.flaps = [{ id, n, steps: [{ t, text, color }] }]: cada casilla avanza por el
   // alfabeto hasta su letra nueva; cada solapa tarda FLIP s y las casillas salen escalonadas.
-  const ALPH = " ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÑ0123456789%¿?<";
+  const ALPH = " ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÑ0123456789%¿?<,";
   const FLIP = 0.045, STAG = 0.025;
   const setTxt = (el, v) => { if (el.textContent !== v) el.textContent = v; };
   function applyFlaps(t) {

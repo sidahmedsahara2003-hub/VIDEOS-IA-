@@ -209,13 +209,13 @@ const VIAJE1 = E("plan") + 0.15;           // cámara: gancho → dato
 // ======================= ESCENA 1 · «No te falta disciplina: te falta un plan» =======================
 // Tipografía cinética: «NO TE FALTA» → el «NO» se va y queda «TE FALTA UN».
 world.push(`
-  <div id="s1-cab" class="abs center" style="left:${S1.x - 480}px;top:${S1.y - 520}px;width:960px;height:120px;gap:22px;font-size:86px;font-weight:900;letter-spacing:-.03em;color:#fff">
+  <div id="s1-cab" class="abs center" style="left:${S1.x - 480}px;top:${S1.y - 520}px;width:960px;height:120px;gap:20px;font-size:76px;font-weight:900;letter-spacing:-.03em;color:#fff">
     <span id="s1-no" style="display:inline-block;color:${C.bad}">NO</span>
-    <span id="s1-tefalta" style="display:inline-block">TE FALTA</span>
+    <span id="s1-tefalta" style="display:inline-block">TE HACE FALTA</span>
     <span id="s1-un" style="display:inline-block;color:${C.good}">UN</span>
   </div>
   <div class="abs center" style="left:${S1.x - 480}px;top:${S1.y - 360}px;width:960px;height:140px">
-    ${flapBoard("s1-sf", 10, [{ t: 0, text: "DISCIPLINA", color: "#ffffff" }, { t: P("un") - 0.15, text: "   PLAN", color: C.good }], { w: 78, gap: 8, size: 88 })}
+    ${flapBoard("s1-sf", 10, [{ t: 0, text: "DISCIPLINA", color: "#ffffff" }, { t: P("falta", 2) + 0.1, text: "   PLAN", color: C.good }], { w: 78, gap: 8, size: 88 })}
   </div>
   <div id="s1-sofa" class="abs" style="left:${S1.x - 190}px;top:${S1.y + 70}px;width:380px;height:380px">${icon("couch", 380, "#334155")}</div>
 `);
@@ -337,7 +337,7 @@ pop("#s4-der-tag", P("tarde") - 0.1, 0.35);
 world.push(comic("s5-panel", S5.x, S5.y - 160, 900, 620, `
   <div id="s5-enorme" class="center" style="position:absolute;left:150px;top:40px;width:600px;height:140px;background:${C.bad};border:7px solid #0b1020;border-radius:24px;font-size:88px;font-weight:900;color:#fff;letter-spacing:-.02em">2 H / DÍA</div>
   <div style="position:absolute;left:140px;top:240px;width:620px;height:250px;background:#fff;border:6px solid #0b1020;border-radius:26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px" data-layout-allow-overlap>${cells("s5c", DIAS, { title: "TU SEMANA", size: 66 })}</div>`, "#fed7aa"));
-world.push(`<div id="s5-sello" class="abs center" data-layout-allow-overlap data-layout-allow-occlusion style="left:${S5.x - 230}px;top:${S5.y - 120}px;width:460px;height:130px;border:10px solid ${C.bad};border-radius:24px;color:${C.bad};font-size:72px;font-weight:900;background:rgba(255,255,255,.92)">LO DEJAS</div>`);
+world.push(`<div id="s5-sello" class="abs center" data-layout-allow-overlap data-layout-allow-occlusion style="left:${S5.x - 230}px;top:${S5.y - 120}px;width:460px;height:130px;border:10px solid ${C.bad};border-radius:24px;color:${C.bad};font-size:60px;font-weight:900;background:rgba(255,255,255,.92)">LO ACABAS DEJANDO</div>`);
 world.push(character("nov5", S5.x, S5.y + 520, LOOK.novato, {
   scale: 0.75, off: 0.8, poses: [[0, "run"], [P("tercer"), "tired"]], mood: [[0, 0.6], [P("tercer"), -1]],
 }));
@@ -346,7 +346,7 @@ tw(`tl.fromTo("#s5-enorme",{scale:0.3,opacity:0},{scale:1,opacity:1,duration:0.4
 fillCell("s5c", 0, C.novato, "check", P("al") - 0.1);
 fillCell("s5c", 1, C.novato, "check", P("al") + 0.15);
 fillCell("s5c", 2, C.bad, "x", P("dia", 1));
-tw(`tl.fromTo("#s5-sello",{scale:2.4,opacity:0,rotation:-4},{scale:1,opacity:1,rotation:-9,duration:0.3,ease:"power4.out"},${r(P("dejas") - 0.05)});`);
+tw(`tl.fromTo("#s5-sello",{scale:2.4,opacity:0,rotation:-4},{scale:1,opacity:1,rotation:-9,duration:0.3,ease:"power4.out"},${r(P("dejando") - 0.05)});`);
 pop("#nov5", P("plan", 2), 0.4);
 
 // ======================= ESCENA 6-8 · El método (blueprint) =======================
@@ -365,13 +365,13 @@ world.push(`<div id="s6-plano" class="abs blueprint" style="left:${S6.x - 470}px
     <div id="s6-metodo" class="center" style="position:absolute;left:40px;top:40px;height:60px;gap:12px;color:#bfdbfe;font-family:'Space Mono',monospace;font-size:34px;font-weight:700">${icon("pencil-ruler", 46, "#bfdbfe")} MÉTODO Nº1</div>
     <div id="s6-titulo" style="position:absolute;left:40px;right:40px;top:120px;font-family:'Space Mono',monospace;font-weight:700;font-size:56px;line-height:1.1;color:#fff">${typed("INTENCIÓN DE IMPLEMENTACIÓN", P("intencion") - 0.05, E("implementacion") - 0.1)}</div>
     <div style="position:absolute;left:40px;top:330px;display:flex;flex-direction:column;gap:16px">
-      ${fila(0, "SI", "tal hora", "LAS 7:00")}${fila(1, "EN", "tal sitio", "AL SALIR DEL TRABAJO")}${fila(2, "ENTONCES", "hago esto", "CAMINO 10 MIN")}
+      ${fila(0, "SI", "tal hora", "LAS 7:00")}${fila(1, "EN", "tal sitio", "AL SALIR DE TRABAJAR")}${fila(2, "ENTONCES", "hago esto", "VOY A ENTRENAR")}
     </div>
   </div>`);
-pop("#s6-plano", P("el", 2) - 0.1, 0.5);
+pop("#s6-plano", P("el", 3) - 0.1, 0.5);
 tw(`tl.fromTo("#s6-metodo",{opacity:0,x:-40},{opacity:1,x:0,duration:0.3,ease:"power3.out"},${r(P("metodo"))});`);
 const tSlot = [P("si", 2), P("en"), P("entonces")];
-const fill = [["s6-ok0", "LAS 7:00", P("siete")], ["s6-ok1", "AL SALIR DEL TRABAJO", P("salir")], ["s6-ok2", "CAMINO 10 MIN", P("camino")]];
+const fill = [["s6-ok0", "LAS 7:00", P("siete")], ["s6-ok1", "AL SALIR DE TRABAJAR", P("salir")], ["s6-ok2", "VOY A ENTRENAR", P("voy")]];
 tSlot.forEach((t, i) => {
   tw(`tl.fromTo("#s6-kw${i}",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"back.out(2)"},${r(t - 0.05)});`);
   tw(`tl.fromTo("#s6-hueco${i}",{strokeDashoffset:1000,opacity:0},{strokeDashoffset:0,opacity:1,duration:0.45,ease:"power2.out"},${r(t + 0.05)});`);
@@ -381,22 +381,22 @@ fill.forEach(([id, txt, t], i) => {
   tw(`tl.to("#s6-ph${i}",{opacity:0,duration:0.12},${r(t - 0.05)});`);
   tw(`tl.fromTo("#${id}",{scaleX:0,opacity:0},{scaleX:1,opacity:1,duration:0.3,ease:"power3.out"},${r(t - 0.05)});`);
 });
-burst(S6.x + 150, S6.y + 300, P("minutos") + 0.1, [C.good, "#86efac", "#ffffff", "#93c5fd"], { count: 30, radius: 360 });
+burst(S6.x + 150, S6.y + 300, P("entrenar") + 0.1, [C.good, "#86efac", "#ffffff", "#93c5fd"], { count: 30, radius: 360 });
 
 // ======================= ESCENA 9 · El estudio: 91 % frente a menos del 40 % =======================
 world.push(`<div id="s9-panel" class="abs glass" style="left:${S9.x - 460}px;top:${S9.y - 520}px;width:920px;height:1000px">
     <div id="s9-cab" style="position:absolute;left:44px;top:36px;display:flex;align-items:center;gap:18px">${icon("flask", 70, "#93c5fd")}
       <div><div class="lbl" style="font-size:46px;color:#fff">UN ESTUDIO</div><div class="lbl" style="font-size:26px;color:#94a3b8">Milne, Orbell y Sheeran · 2002</div></div></div>
-    <div style="position:absolute;left:130px;top:190px">${flapBoard("s9-a", 3, [{ t: 0, text: "   ", color: C.good }, { t: P("noventa") - 0.1, text: "91%", color: C.good }], { w: 92, h: 140, gap: 6, size: 98 })}</div>
+    <div style="position:absolute;left:130px;top:190px">${flapBoard("s9-a", 3, [{ t: 0, text: "   ", color: C.good }, { t: P("91") - 0.1, text: "91%", color: C.good }], { w: 92, h: 140, gap: 6, size: 98 })}</div>
     <div style="position:absolute;left:520px;top:190px">${flapBoard("s9-b", 4, [{ t: 0, text: "    ", color: "#cbd5e1" }, { t: P("menos") - 0.1, text: "<40%", color: "#cbd5e1" }], { w: 72, h: 140, gap: 6, size: 86 })}</div>
     <div style="position:absolute;left:150px;top:360px;width:240px;height:460px;display:flex;align-items:flex-end"><div id="s9-barA" class="barra" style="height:${Math.round(460 * 0.91)}px;background:${C.good};box-shadow:0 0 18px ${C.good},0 0 50px ${C.good}88"></div></div>
     <div style="position:absolute;left:530px;top:360px;width:240px;height:460px;display:flex;align-items:flex-end"><div id="s9-barB" class="barra" style="height:${Math.round(460 * 0.38)}px;background:#64748b"></div></div>
-    <div id="s9-labA" class="center lbl" style="position:absolute;left:110px;top:840px;width:320px;height:110px;font-size:36px;color:#fff;text-align:center;line-height:1.1">ESCRIBIÓ<br>SU FRASE</div>
+    <div id="s9-labA" class="center lbl" style="position:absolute;left:110px;top:840px;width:320px;height:110px;font-size:36px;color:#fff;text-align:center;line-height:1.1">LO<br>APLICAN</div>
     <div id="s9-labB" class="center lbl" style="position:absolute;left:490px;top:840px;width:320px;height:110px;font-size:36px;color:#94a3b8;text-align:center;line-height:1.1">EL RESTO</div>
   </div>`);
 pop("#s9-panel", P("estudio") - 0.2, 0.45);
-tw(`tl.fromTo("#s9-barA",{scaleY:0},{scaleY:1,duration:1.1,ease:"power3.out"},${r(P("noventa"))});`);
-tw(`tl.fromTo("#s9-labA",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},${r(P("escribieron") - 0.1)});`);
+tw(`tl.fromTo("#s9-barA",{scaleY:0},{scaleY:1,duration:1.1,ease:"power3.out"},${r(P("91"))});`);
+tw(`tl.fromTo("#s9-labA",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},${r(P("aplican") - 0.1)});`);
 tw(`tl.fromTo("#s9-barB",{scaleY:0},{scaleY:1,duration:0.9,ease:"power3.out"},${r(P("menos"))});`);
 tw(`tl.fromTo("#s9-labB",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},${r(P("resto") - 0.1)});`);
 
@@ -404,7 +404,7 @@ tw(`tl.fromTo("#s9-labB",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},${r(P("re
 world.push(`
   <div id="s10-cab" class="abs center" style="left:${S10.x - 480}px;top:${S10.y - 520}px;width:960px;height:120px;font-size:90px;font-weight:900;color:#fff;letter-spacing:-.03em">NO SE TIENE</div>
   <div class="abs center" style="left:${S10.x - 480}px;top:${S10.y - 360}px;width:960px;height:140px">
-    ${flapBoard("s10-sf", 10, [{ t: 0, text: "DISCIPLINA", color: "#ffffff" }, { t: P("se", 4) - 0.2, text: "SE DISEÑA", color: C.good }], { w: 78, gap: 8, size: 88 })}
+    ${flapBoard("s10-sf", 10, [{ t: 0, text: "DISCIPLINA", color: "#ffffff" }, { t: P("se", 5) - 0.2, text: "SE DISEÑA", color: C.good }], { w: 78, gap: 8, size: 88 })}
   </div>`);
 neonStrike("s10-tacha", S10.x - 330, S10.y - 466, 660, C.bad, P("tiene") + 0.05);
 world.push(character("nov10", S10.x - 180, S10.y + 440, LOOK.novato, {
@@ -429,7 +429,7 @@ world.push(`<div id="s11-caja" class="abs glass" style="left:${S11.x - 440}px;to
     <div style="display:flex;align-items:center;gap:14px">${icon("chat-circle-dots", 54, "#fff")}<span class="lbl" style="font-size:44px;color:#fff">Comentarios</span></div>
     <div id="s11-campo" style="display:flex;align-items:center;gap:18px;padding:18px 22px;border-radius:26px;background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.25)">
       <div class="center" style="width:74px;height:74px;border-radius:37px;background:${C.novato};flex:none">${icon("user", 46, "#fff")}</div>
-      <div style="flex:1;font-size:40px;font-weight:700;color:#fff;white-space:nowrap">${typed("Si son las 7, camino 10 min", P("frase", 2), E("comentarios") - 0.1)}</div>
+      <div style="flex:1;font-size:40px;font-weight:700;color:#fff;white-space:nowrap">${typed("Si a las 7, voy a entrenar", P("escribe") + 0.15, E("frase", 2) - 0.05)}</div>
       <div id="s11-enviar" class="center" style="width:74px;height:74px;border-radius:37px;background:${C.good};flex:none">${icon("paper-plane-tilt", 42, "#04130a")}</div>
     </div>
     <div id="s11-publicado" style="display:flex;align-items:center;gap:12px;font-size:34px;font-weight:900;color:${C.good}">${icon("check-circle", 42, C.good)} Publicado: ya tienes tu plan
@@ -449,8 +449,8 @@ world.push(character("pro11", S11.x + 200, S11.y + 500, LOOK.pro, {
 pop("#s11-caja", P("escribe") - 0.1, 0.45);
 pop("#nov11", P("escribe"), 0.4);
 pop("#pro11", P("escribe") + 0.08, 0.4);
-tw(`tl.fromTo("#s11-enviar",{scale:1},{scale:0.8,duration:0.08,yoyo:true,repeat:1,immediateRender:false},${r(E("comentarios"))});`);
-tw(`tl.to("#s11-campo",{backgroundColor:"rgba(34,197,94,.22)",borderColor:"rgba(34,197,94,.8)",duration:0.3},${r(E("comentarios") + 0.1)});`);
+tw(`tl.fromTo("#s11-enviar",{scale:1},{scale:0.8,duration:0.08,yoyo:true,repeat:1,immediateRender:false},${r(E("frase", 2) + 0.05)});`);
+tw(`tl.to("#s11-campo",{backgroundColor:"rgba(34,197,94,.22)",borderColor:"rgba(34,197,94,.8)",duration:0.3},${r(E("frase", 2) + 0.15)});`);
 tw(`tl.fromTo("#s11-publicado",{opacity:0,y:16},{opacity:1,y:0,duration:0.3,ease:"power2.out"},${r(P("tendras") - 0.1)});`);
 tw(`tl.fromTo("#s11-like",{scale:0},{scale:1,duration:0.35,ease:"back.out(3)"},${r(P("plan", 3))});`);
 pop("#s11-boton", P("sigueme") - 0.2, 0.45);
@@ -459,6 +459,30 @@ tw(`tl.fromTo("#s11-boton",{scale:1},{scale:0.92,duration:0.08,yoyo:true,repeat:
 tw(`tl.to("#s11-boton",{backgroundColor:"#334155",duration:0.25},${r(P("sigueme") + 0.45)});`);
 tw(`tl.to("#s11-seguir",{opacity:0,duration:0.15},${r(P("sigueme") + 0.45)});`);
 tw(`tl.to("#s11-siguiendo",{opacity:1,duration:0.2},${r(P("sigueme") + 0.5)});`);
+
+// ======================= ESCENA 12 · El lema: «cada día un 0,0001 % mejor» =======================
+const S12 = { x: 1000, y: 8800 };
+world.push(`
+  <div id="s12-tag" class="abs center pill" style="left:${S12.x - 200}px;top:${S12.y - 580}px;width:400px;height:76px;border:4px solid ${C.good};color:${C.good};font-size:36px;letter-spacing:.12em">NUESTRO LEMA</div>
+  <div id="s12-cada" class="abs center" style="left:${S12.x - 480}px;top:${S12.y - 470}px;width:960px;height:120px;font-size:104px;font-weight:900;color:#fff;letter-spacing:-.03em">CADA DÍA</div>
+  <div class="abs center" style="left:${S12.x - 480}px;top:${S12.y - 330}px;width:960px;height:160px">
+    ${flapBoard("s12-sf", 7, [{ t: 0, text: "       ", color: C.good }, { t: P("00001") - 0.1, text: "0,0001%", color: C.good }], { w: 110, h: 160, gap: 10, size: 116 })}
+  </div>
+  <div id="s12-mejor" class="abs center" style="left:${S12.x - 480}px;top:${S12.y - 140}px;width:960px;height:190px;font-size:180px;font-weight:900;color:${C.good};letter-spacing:-.04em;text-shadow:0 0 30px ${C.good}88">MEJOR</div>
+`);
+world.push(character("nov12", S12.x - 190, S12.y + 500, { ...LOOK.novato, shirt: C.novato, stripes: false, band: "#ffffff" }, {
+  scale: 0.75, off: 0.4, poses: [[0, "walk"], [P("mejor"), "cheer"]], mood: [[0, 1]],
+}));
+world.push(character("pro12", S12.x + 190, S12.y + 500, LOOK.pro, {
+  scale: 0.75, off: 1.5, poses: [[0, "walk"], [P("mejor") + 0.1, "cheer"]], mood: [[0, 1]],
+}));
+pop("#s12-tag", P("recuerda") - 0.1, 0.4);
+tw(`tl.fromTo("#s12-cada",{opacity:0,filter:"blur(10px)",scale:1.2},{opacity:1,filter:"blur(0px)",scale:1,duration:0.3,ease:"power3.out"},${r(P("cada", 3) - 0.05)});`);
+tw(`tl.fromTo("#s12-mejor",{scale:3,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"power4.out"},${r(P("mejor") - 0.05)});`);
+tw(`tl.to("#s12-sf",{filter:"drop-shadow(0 0 28px ${C.good}aa)",duration:0.4},${r(P("mejor"))});`);
+pop("#nov12", P("recuerda"), 0.4);
+pop("#pro12", P("recuerda") + 0.08, 0.4);
+burst(S12.x, S12.y - 60, P("mejor") + 0.1, [C.good, "#86efac", "#ffffff", "#facc15"], { count: 48, radius: 520 });
 
 // ======================= CÁMARA Y CAMINO =======================
 const cam0 = { cx: S1.x, cy: S1.y - 60, z: 1.04 };
@@ -472,15 +496,15 @@ cam(V3, V3 + 0.55, S3.x, S3.y + 60, 1.0, "inOut", 0.3);
 cam(P("ola") - 0.1, P("ola") + 0.1, S3.x, S3.y + 60, 1.05, "out");
 cam(V4, V4 + 0.5, S4.x, S4.y - 40, 1.0, "inOut", 0.3);
 cam(V5, V5 + 0.5, S5.x, S5.y + 20, 1.0, "inOut", 0.3);
-cam(P("dejas") - 0.05, P("dejas") + 0.12, S5.x, S5.y + 20, 1.06, "out");
+cam(P("dejando") - 0.05, P("dejando") + 0.12, S5.x, S5.y + 20, 1.06, "out");
 // Fin del bloque «por qué cuesta»: se aleja para enseñarlo entero
-const A1 = E("dejas") - 0.15;
+const A1 = E("dejando") - 0.15;
 cam(A1, A1 + 0.35, 1800, 3280, 0.36);
 const V6 = P("metodo") - 0.25;
 cam(V6, V6 + 0.55, S6.x, S6.y + 20, 1.0, "inOut");
 cam(P("si", 2) - 0.2, P("si", 2) + 0.3, S6.x, S6.y + 60, 1.04);
 cam(P("siete") - 0.2, P("siete") + 0.3, S6.x, S6.y + 80, 1.06);
-const V9 = E("minutos") + 0.25;
+const V9 = E("entrenar") + 0.25;
 cam(V9, V9 + 0.55, S9.x, S9.y - 30, 1.0, "inOut", 0.3);
 // Antes del cierre: se aleja y enseña todo el camino recorrido
 const A2 = E("resto") - 0.1;
@@ -493,6 +517,10 @@ const V11 = E("disena") + 0.05;
 cam(V11, V11 + 0.5, S11.x, S11.y - 20, 1.0, "inOut", 0.3);
 cam(P("sigueme") + 0.4, P("sigueme") + 0.52, S11.x, S11.y - 20, 1.05, "out");
 cam(P("sigueme") + 0.55, P("sigueme") + 0.9, S11.x, S11.y - 20, 1.0);
+const V12 = P("recuerda") - 0.4;
+cam(V12, V12 + 0.55, S12.x, S12.y - 40, 1.0, "inOut", 0.3);
+cam(P("mejor") - 0.05, P("mejor") + 0.12, S12.x, S12.y - 60, 1.07, "out");
+cam(P("mejor") + 0.2, P("mejor") + 0.6, S12.x, S12.y - 40, 1.0);
 
 link(S1, S2, VIAJE1 - 0.05);
 link(S2, S3, V3);
@@ -502,6 +530,7 @@ link(S5, S6, V6);
 link(S6, S9, V9);
 link(S9, S10, V10);
 link(S10, S11, V11);
+link(S11, S12, V12);
 
 // ======================= EFECTOS DE SONIDO =======================
 const SFX = [];
@@ -509,7 +538,7 @@ const sfx = (name, t, vol = 1) => SFX.push({ name, t: r(Math.max(0, t)), vol });
 sfx("impact-bass-1", 0, 0.7);
 sfx("glitch-3", P("disciplina"), 0.25);
 sfx("whoosh-short", P("te", 2) - 0.05, 0.45);
-sfx("typing", P("un") - 0.15, 0.3);
+sfx("typing", P("falta", 2) + 0.1, 0.3);
 sfx("impact-bass-1", P("plan"), 0.6);
 sfx("sparkle", P("plan") + 0.2, 0.45);
 for (const t of [VIAJE1, V3, V4, V5, V6, V9, V10, V11]) sfx("whoosh", t, 0.55);
@@ -530,30 +559,35 @@ sfx("pop", P("enorme"), 0.5);
 sfx("click-soft", P("al") - 0.1, 0.4);
 sfx("click-soft", P("al") + 0.15, 0.4);
 sfx("error", P("dia", 1), 0.3);
-sfx("impact-bass-1", P("dejas") - 0.05, 0.45);
+sfx("impact-bass-1", P("dejando") - 0.05, 0.45);
 // Método (blueprint)
-sfx("pop", P("el", 2) - 0.1, 0.45);
+sfx("pop", P("el", 3) - 0.1, 0.45);
 sfx("typing", P("intencion") - 0.05, 0.35);
 tSlot.forEach((t) => sfx("pop", t - 0.05, 0.4));
 fill.forEach(([, , t]) => sfx("click", t - 0.05, 0.45));
-sfx("sparkle", P("minutos") + 0.1, 0.4);
+sfx("sparkle", P("entrenar") + 0.1, 0.4);
 // Estudio
 sfx("pop", P("estudio") - 0.2, 0.4);
-sfx("typing", P("noventa") - 0.1, 0.25);
-sfx("ping", P("noventa") + 0.3, 0.45);
+sfx("typing", P("91") - 0.1, 0.25);
+sfx("ping", P("91") + 0.3, 0.45);
 sfx("typing", P("menos") - 0.1, 0.2);
 // Cierre
 sfx("whoosh-short", P("tiene") + 0.05, 0.4);
-sfx("typing", P("se", 4) - 0.2, 0.3);
+sfx("typing", P("se", 5) - 0.2, 0.3);
 sfx("impact-bass-1", P("disena"), 0.85);
 sfx("sparkle", P("disena") + 0.1, 0.5);
-sfx("typing", P("frase", 2), 0.3);
-sfx("click", E("comentarios"), 0.5);
+sfx("typing", P("escribe") + 0.15, 0.3);
+sfx("click", E("frase", 2) + 0.05, 0.5);
 sfx("notification", P("tendras") - 0.1, 0.3);
 sfx("pop", P("plan", 3), 0.4);
 sfx("pop", P("sigueme") - 0.2, 0.45);
 sfx("click", P("sigueme") + 0.4, 0.6);
 sfx("chime", P("sigueme") + 0.5, 0.3);
+sfx("whoosh", V12, 0.55);
+sfx("pop", P("recuerda") - 0.1, 0.4);
+sfx("typing", P("00001") - 0.1, 0.3);
+sfx("impact-bass-1", P("mejor"), 0.85);
+sfx("sparkle", P("mejor") + 0.1, 0.5);
 
 // Iconos dentro de las casillas
 const ICON_SVG = { check: icon("check-fat", 38, "#fff"), x: icon("x", 38, "#fff") };
@@ -567,7 +601,7 @@ for (const { sel, ic } of iconFill) {
 const runtime = fs.readFileSync(path.join(HERE, "runtime.js"), "utf8");
 const DATA = { D, FY: 960, cam0, moves, chars, float: [], flaps };
 const linkSVG = links.map((l) => `
-        <mask id="${l.id}m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="9000"><path id="${l.id}d" d="M${l.x1} ${l.y1}L${l.x2} ${l.y2}" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
+        <mask id="${l.id}m" maskUnits="userSpaceOnUse" x="0" y="0" width="6000" height="10000"><path id="${l.id}d" d="M${l.x1} ${l.y1}L${l.x2} ${l.y2}" stroke="#fff" stroke-width="40" fill="none" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></mask>
         <path class="camino" d="M${l.x1} ${l.y1}L${l.x2} ${l.y2}" mask="url(#${l.id}m)"/>`).join("");
 const linkTL = links.map((l) => `tl.fromTo("#${l.id}d",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:${r(l.dur)},ease:"power2.inOut"},${r(l.t)});`).join("\n    ");
 
@@ -579,7 +613,7 @@ const mundo = `<template>
       linear-gradient(90deg, rgba(255,255,255,.055) 2px, transparent 2px); }
     #glow { position:absolute; left:-20%; right:-20%; bottom:-520px; height:1100px;
       background: radial-gradient(closest-side, rgba(34,197,94,.30), rgba(34,197,94,.10) 55%, transparent); }
-    #world { position:absolute; left:0; top:0; width:6000px; height:9000px; transform-origin:0 0; }
+    #world { position:absolute; left:0; top:0; width:6000px; height:10000px; transform-origin:0 0; }
     .abs { position:absolute; }
     .center { display:flex; align-items:center; justify-content:center; }
     .card { background:${C.card}; border-radius:44px; display:flex; align-items:center; justify-content:center; box-shadow:0 30px 80px rgba(0,0,0,.45); }
@@ -630,7 +664,7 @@ const mundo = `<template>
     <div id="mesh"></div>
     <div id="bg"></div>
     <div id="world">
-      <svg class="abs" width="6000" height="9000" style="left:0;top:0" overflow="visible">${linkSVG}
+      <svg class="abs" width="6000" height="10000" style="left:0;top:0" overflow="visible">${linkSVG}
       </svg>
       ${worldHTML}
     </div>
@@ -655,6 +689,7 @@ const KEY = {
   sofa: C.bad, tarde: C.bad, enorme: C.bad, dejas: C.bad, metodo: C.good, intencion: C.good, implementacion: C.good,
   frase: C.good, si: C.good, entonces: C.good, siete: C.good, trabajo: C.good, camino: C.good, diez: C.good,
   noventa: C.good, cuarenta: C.bad, tiene: C.bad, disena: C.good, escribe: C.good, comentarios: C.good, sigueme: C.good,
+  dejando: C.bad, entrenar: C.good, "91": C.good, "40": C.bad, "00001": C.good, mejor: C.good, recuerda: C.good, falta: C.bad, aplican: C.good,
 };
 const groups = [];
 let g = [];
