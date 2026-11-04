@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=1080, height=1240">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1240px;background:#0b0e14;font-family:Inter,sans-serif;overflow:hidden}
+#root{position:relative;width:1080px;height:1240px}
+.grid{position:absolute;left:30px;top:30px;display:grid;grid-template-columns:495px 495px;gap:30px}
+.op{display:flex;flex-direction:column;gap:14px}
+.tile{width:495px;height:495px;border-radius:40px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.lab{color:#fff;font-size:30px;font-weight:900}.lab span{color:#94a3b8;font-weight:700;font-size:24px;margin-left:8px}
+/* A · Panel split-flap */
+.a{background:#07090d}
+.a .row{display:flex;gap:6px}
+.a .c{width:56px;height:86px;border-radius:9px;background:linear-gradient(#2a2c33 50%,#16181d 50%);color:#fff;font-size:62px;font-weight:900;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 10px 20px rgba(0,0,0,.6)}
+.a .c::after{content:"";position:absolute;left:0;right:0;top:50%;height:3px;background:#000}
+.a .c.g{color:#22c55e;box-shadow:0 0 24px #22c55e66}
+.a .t{position:absolute;bottom:92px;left:0;right:0;text-align:center;color:#94a3b8;font-size:24px;font-weight:900;letter-spacing:.32em}
+/* B · Escalón */
+.b{background:radial-gradient(circle at 50% 40%,#1c3a28,#07090d 70%)}
+.b .disc{width:380px;height:380px;border-radius:50%;background:#22c55e;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;box-shadow:0 0 0 12px #0b0e14,0 0 0 18px #22c55e}
+.b .steps{display:flex;align-items:flex-end;gap:10px;height:110px}
+.b .steps i{display:block;width:44px;background:#04130a;border-radius:8px 8px 0 0}
+.b .num{font-size:76px;font-weight:900;color:#04130a;letter-spacing:-.04em;line-height:1}
+.b .tx{font-size:20px;font-weight:900;color:#04130a;letter-spacing:.3em}
+/* C · Neón */
+.c3{background:#05060a}
+.c3 .n{font-size:94px;font-weight:900;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:5px #bbf7d0;text-shadow:0 0 10px #22c55e,0 0 30px #22c55e,0 0 60px #22c55e}
+.c3 .sub{position:absolute;bottom:110px;left:0;right:0;text-align:center;font-family:'Space Mono',monospace;color:#86efac;font-size:26px;letter-spacing:.2em;text-shadow:0 0 12px #22c55e}
+.c3 .plus{position:absolute;top:92px;right:96px;color:#facc15;font-size:64px;font-weight:900;text-shadow:0 0 18px #facc15}
+/* D · El 1 que importa */
+.d{background:#f8fafc}
+.d .wrap{display:flex;flex-direction:column;align-items:center;line-height:.85;gap:14px}
+.d .small{font-size:70px;font-weight:900;color:#cbd5e1;letter-spacing:-.03em}
+.d .big{font-size:250px;font-weight:900;color:#0b0e14;letter-spacing:-.06em;display:flex;align-items:flex-start}
+.d .big b{color:#22c55e}
+.d .big small{font-size:110px;margin-top:20px;color:#0b0e14}
+.d .t{margin-top:22px;font-size:22px;font-weight:900;color:#0b0e14;letter-spacing:.32em}
+</style></head>
+<body><div id="root" data-composition-id="main" data-start="0" data-duration="1" data-width="1080" data-height="1240" data-no-timeline>
+<div class="grid">
+ <div class="op"><div class="tile a"><div class="row">
+   <div class="c">0</div><div class="c">,</div><div class="c">0</div><div class="c">0</div><div class="c">0</div><div class="c g">1</div><div class="c g">%</div></div>
+   <div class="t">CADA DÍA MEJOR</div></div>
+  <div class="lab">A · Panel<span>el split-flap del vídeo</span></div></div>
+ <div class="op"><div class="tile b"><div class="disc">
+   <div class="steps"><i style="height:30px"></i><i style="height:55px"></i><i style="height:80px"></i><i style="height:110px"></i></div>
+   <div class="num">0,0001%</div><div class="tx">CADA DÍA</div></div></div>
+  <div class="lab">B · Escalón<span>insignia que sube</span></div></div>
+ <div class="op"><div class="tile c3"><div class="plus">+</div><div class="n">0,0001%</div><div class="sub">MEJOR CADA DÍA</div></div>
+  <div class="lab">C · Neón<span>el estilo del vídeo</span></div></div>
+ <div class="op"><div class="tile d"><div class="wrap"><div class="small">0,000</div><div class="big"><b>1</b><small>%</small></div><div class="t">CADA DÍA MEJOR</div></div></div>
+  <div class="lab">D · El 1 que importa<span>minimalista</span></div></div>
+</div></div></body></html>

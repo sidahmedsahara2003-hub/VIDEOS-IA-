@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "historyId": "c6fc32e3-729e-496a-9406-076ef1836611",
+  "currentRevision": "4ea7e366-6889-498a-813e-c14680a23532",
+  "pendingChanges": false,
+  "files": {
+    "hyperframes.json": {
+      "hash": "8c1ae1ba802ee45af4acdb01fba41793c88b9c1e78d4ebede66d1e69521ab3f2",
+      "content": "/root/.cache/hyperframes/history/c6fc32e3-729e-496a-9406-076ef1836611/blobs/8c/8c1ae1ba802ee45af4acdb01fba41793c88b9c1e78d4ebede66d1e69521ab3f2"
+    },
+    "index.html": {
+      "hash": "936f516dcf460094e351eae0e2f3c6fcc51d63f7b2b031d1273cf8dee60ab570",
+      "content": "/root/.cache/hyperframes/history/c6fc32e3-729e-496a-9406-076ef1836611/blobs/93/936f516dcf460094e351eae0e2f3c6fcc51d63f7b2b031d1273cf8dee60ab570"
+    }
+  },
+  "revisions": {
+    "4ea7e366-6889-498a-813e-c14680a23532": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793801429448,
+      "endedAt": 1793801429449,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/c6fc32e3-729e-496a-9406-076ef1836611/blobs/26/2604fef296712c222b74a747ecbafa665a134d4f81b7ae213bc75b7541539869",
+          "after": "/root/.cache/hyperframes/history/c6fc32e3-729e-496a-9406-076ef1836611/blobs/93/936f516dcf460094e351eae0e2f3c6fcc51d63f7b2b031d1273cf8dee60ab570"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "9978dd79-88df-46ed-9889-8ce15f550230-0"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "9978dd79-88df-46ed-9889-8ce15f550230-0",
+        "image": "/home/user/videos-ia-/marca/logos/snap/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1080,
+          "height": 1240,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793801431092,
+        "contentHash": "d7ecdd039ff4568d263c5141c834ca0e202f23e00680351bd797830ef5e21788",
+        "revision": null,
+        "inputFingerprint": "0017e64cd0371a3322e35980a7b4deb1eabbe331dd172dbdb97dbce6495bbbc2",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}
