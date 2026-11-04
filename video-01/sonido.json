@@ -18,8 +18,8 @@
   },
   {
    "name": "typing",
-   "t": 2,
-   "vol": 0.25
+   "t": 1.805,
+   "vol": 0.3
   },
   {
    "name": "impact-bass-1",
@@ -35,6 +35,51 @@
    "name": "whoosh",
    "t": 2.585,
    "vol": 0.55
+  },
+  {
+   "name": "whoosh",
+   "t": 7.319,
+   "vol": 0.55
+  },
+  {
+   "name": "whoosh",
+   "t": 10.084,
+   "vol": 0.55
+  },
+  {
+   "name": "whoosh",
+   "t": 14.504,
+   "vol": 0.55
+  },
+  {
+   "name": "whoosh",
+   "t": 17.629,
+   "vol": 0.55
+  },
+  {
+   "name": "whoosh",
+   "t": 30.388,
+   "vol": 0.55
+  },
+  {
+   "name": "whoosh",
+   "t": 38.343,
+   "vol": 0.55
+  },
+  {
+   "name": "whoosh",
+   "t": 41.199,
+   "vol": 0.55
+  },
+  {
+   "name": "whoosh-short",
+   "t": 17.41,
+   "vol": 0.4
+  },
+  {
+   "name": "whoosh-short",
+   "t": 38.03,
+   "vol": 0.4
   },
   {
    "name": "pop",
@@ -70,6 +115,181 @@
    "name": "whoosh-short",
    "t": 6.839,
    "vol": 0.45
+  },
+  {
+   "name": "pop",
+   "t": 7.379,
+   "vol": 0.45
+  },
+  {
+   "name": "impact-bass-1",
+   "t": 9.644,
+   "vol": 0.5
+  },
+  {
+   "name": "pop",
+   "t": 10.284,
+   "vol": 0.4
+  },
+  {
+   "name": "click",
+   "t": 11.239,
+   "vol": 0.5
+  },
+  {
+   "name": "pop",
+   "t": 12.439,
+   "vol": 0.4
+  },
+  {
+   "name": "pop",
+   "t": 13.954,
+   "vol": 0.35
+  },
+  {
+   "name": "pop",
+   "t": 15.455,
+   "vol": 0.5
+  },
+  {
+   "name": "click-soft",
+   "t": 15.98,
+   "vol": 0.4
+  },
+  {
+   "name": "click-soft",
+   "t": 16.23,
+   "vol": 0.4
+  },
+  {
+   "name": "error",
+   "t": 16.715,
+   "vol": 0.3
+  },
+  {
+   "name": "impact-bass-1",
+   "t": 17.075,
+   "vol": 0.45
+  },
+  {
+   "name": "pop",
+   "t": 14.78,
+   "vol": 0.45
+  },
+  {
+   "name": "typing",
+   "t": 19.939,
+   "vol": 0.35
+  },
+  {
+   "name": "pop",
+   "t": 22.591,
+   "vol": 0.4
+  },
+  {
+   "name": "pop",
+   "t": 23.516,
+   "vol": 0.4
+  },
+  {
+   "name": "pop",
+   "t": 24.391,
+   "vol": 0.4
+  },
+  {
+   "name": "click",
+   "t": 26.943,
+   "vol": 0.45
+  },
+  {
+   "name": "click",
+   "t": 27.723,
+   "vol": 0.45
+  },
+  {
+   "name": "click",
+   "t": 28.803,
+   "vol": 0.45
+  },
+  {
+   "name": "sparkle",
+   "t": 29.723,
+   "vol": 0.4
+  },
+  {
+   "name": "pop",
+   "t": 30.36,
+   "vol": 0.4
+  },
+  {
+   "name": "typing",
+   "t": 31.245,
+   "vol": 0.25
+  },
+  {
+   "name": "ping",
+   "t": 31.645,
+   "vol": 0.45
+  },
+  {
+   "name": "typing",
+   "t": 36.46,
+   "vol": 0.2
+  },
+  {
+   "name": "whoosh-short",
+   "t": 39.563,
+   "vol": 0.4
+  },
+  {
+   "name": "typing",
+   "t": 39.959,
+   "vol": 0.3
+  },
+  {
+   "name": "impact-bass-1",
+   "t": 40.379,
+   "vol": 0.85
+  },
+  {
+   "name": "sparkle",
+   "t": 40.479,
+   "vol": 0.5
+  },
+  {
+   "name": "typing",
+   "t": 41.969,
+   "vol": 0.3
+  },
+  {
+   "name": "click",
+   "t": 43.394,
+   "vol": 0.5
+  },
+  {
+   "name": "notification",
+   "t": 43.679,
+   "vol": 0.3
+  },
+  {
+   "name": "pop",
+   "t": 44.349,
+   "vol": 0.4
+  },
+  {
+   "name": "pop",
+   "t": 44.743,
+   "vol": 0.45
+  },
+  {
+   "name": "click",
+   "t": 45.343,
+   "vol": 0.6
+  },
+  {
+   "name": "chime",
+   "t": 45.443,
+   "vol": 0.3
   }
  ]
 }

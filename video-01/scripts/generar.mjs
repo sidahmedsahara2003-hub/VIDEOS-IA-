@@ -132,7 +132,7 @@ function typed(text, t0, t1) {
   const letters = [...text];
   const step = (t1 - t0) / letters.length;
   letters.forEach((_, i) => tw(`tl.fromTo("#${id}-${i}",{opacity:0},{opacity:1,duration:0.01},${r(t0 + i * step)});`));
-  return letters.map((ch, i) => `<span id="${id}-${i}">${ch === " " ? "&nbsp;" : ch}</span>`).join("");
+  return letters.map((ch, i) => ch === " " ? `<span id="${id}-${i}"> </span>` : `<span id="${id}-${i}">${ch}</span>`).join("");
 }
 
 // Fila de casillas (semana o racha): ids `${id}-c${i}` y su icono `${id}-i${i}`.
@@ -171,8 +171,8 @@ function flapBoard(id, n, steps, { w = 84, h = 132, gap = 8, size = 92 } = {}) {
     const c = `${id}-${i}`;
     const half = (cls, tid, extra = "") => `<div class="sf-h ${cls}" ${extra}><span id="${tid}" class="sf-t" style="height:${h}px;line-height:${h}px"></span></div>`;
     return `<div id="${c}" class="sf-cell" style="width:${w}px;height:${h}px;font-size:${size}px">
-        ${half("sf-top", `${c}-tt`)}${half("sf-bot", `${c}-bt`)}
-        ${half("sf-top sf-flap", `${c}-ft`, `id="${c}-f"`)}${half("sf-bot sf-flap", `${c}-gt`, `id="${c}-g"`)}
+        ${half("sf-top", `${c}-tt`, "data-layout-allow-occlusion")}${half("sf-bot", `${c}-bt`, "data-layout-allow-occlusion")}
+        ${half("sf-top sf-flap", `${c}-ft`, `id="${c}-f" data-layout-allow-occlusion`)}${half("sf-bot sf-flap", `${c}-gt`, `id="${c}-g" data-layout-allow-occlusion`)}
         <div class="sf-axle"></div></div>`;
   };
   return `<div id="${id}" class="sf-board" data-layout-allow-overflow data-layout-allow-occlusion style="gap:${gap}px">${Array.from({ length: n }, (_, i) => cell(i)).join("")}</div>`;
@@ -265,6 +265,201 @@ pop("#s2-panel", P("lo") - 0.2, 0.5);
 pop("#s2-pereza", P("no", 3), 0.35);
 neonStrike("s2-tacha", S2.x + 280 - 185, S2.y + 76, 370, C.bad, P("pereza") + 0.05, -8);
 
+// ======================= ESTILO CÓMIC (halftone) =======================
+const comic = (id, x, y, w, h, inner, bg = "#fde047", extra = "") =>
+  `<div id="${id}" class="abs comic" style="left:${x - w / 2}px;top:${y - h / 2}px;width:${w}px;height:${h}px;background:${bg};${extra}"><div class="halftone"></div>${inner}</div>`;
+/** Globo de cómic tipo «¡ZAS!» (estrella SVG con texto). */
+function zas(id, x, y, text, color, t, size = 300) {
+  const pts = Array.from({ length: 24 }, (_, i) => {
+    const a = (i / 24) * Math.PI * 2, rr = i % 2 ? 0.62 : 1;
+    return `${(50 + Math.cos(a) * 50 * rr).toFixed(1)},${(50 + Math.sin(a) * 42 * rr).toFixed(1)}`;
+  }).join(" ");
+  world.push(`<div id="${id}" class="abs center" data-layout-ignore style="left:${x - size / 2}px;top:${y - size / 2}px;width:${size}px;height:${size}px">
+    <svg class="abs" width="${size}" height="${size}" viewBox="0 0 100 100" style="left:0;top:0"><polygon points="${pts}" fill="${color}" stroke="#0b1020" stroke-width="3" stroke-linejoin="round"/></svg>
+    <span style="position:relative;font-size:${size * 0.2}px;font-weight:900;color:#0b1020;transform:rotate(-8deg)">${text}</span></div>`);
+  tw(`tl.fromTo("#${id}",{scale:0,rotation:-30,opacity:0},{scale:1,rotation:0,opacity:1,duration:0.35,ease:"back.out(2.5)"},${r(t)});`);
+}
+
+const DIAS = ["L", "M", "X", "J", "V", "S", "D"];
+const S3 = { x: 2600, y: 2500 }, S4 = { x: 2600, y: 4000 }, S5 = { x: 1000, y: 4000 };
+const S6 = { x: 1000, y: 5600 }, S9 = { x: 2600, y: 5600 }, S10 = { x: 2600, y: 7200 }, S11 = { x: 1000, y: 7200 };
+
+// ======================= ESCENA 3 · La motivación sube y baja como una ola =======================
+world.push(comic("s3-panel", S3.x, S3.y - 130, 900, 560, `
+  <div class="lbl" style="position:absolute;left:44px;top:30px;font-size:54px;color:#0b1020">MOTIVACIÓN</div>
+  <svg style="position:absolute;left:40px;top:110px" width="820" height="400" viewBox="0 0 820 400">
+    <path d="M30 20V370H800" stroke="#0b1020" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path id="s3-ola" d="M40 330 C 200 320, 250 50, 380 50 C 510 50, 560 350, 790 340" stroke="#0b1020" stroke-width="16" fill="none"
+      stroke-linecap="round" pathLength="1" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>
+    <circle id="s3-punto" r="22" fill="${C.bad}" stroke="#0b1020" stroke-width="6" cx="40" cy="330"/>
+  </svg>`));
+zas("s3-zas", S3.x + 300, S3.y + 60, "¡PLOF!", C.bad, P("ola") - 0.05, 260);
+world.push(character("nov3", S3.x - 230, S3.y + 520, LOOK.novato, {
+  scale: 0.75, off: 1.2, poses: [[0, "idle"], [P("sube"), "cheer"], [P("baja") + 0.1, "tired"]], mood: [[0, 0.2], [P("sube"), 1], [P("baja"), -1]],
+}));
+pop("#s3-panel", P("la") - 0.1, 0.45);
+pop("#nov3", P("motivacion"), 0.4);
+tw(`tl.fromTo("#s3-ola",{strokeDashoffset:1.1},{strokeDashoffset:0.55,duration:${r(P("baja") - P("sube"))},ease:"power2.out"},${r(P("sube"))});`);
+tw(`tl.to("#s3-ola",{strokeDashoffset:0,duration:0.7,ease:"power2.in"},${r(P("baja"))});`);
+tw(`tl.fromTo("#s3-punto",{attr:{cx:40,cy:330}},{keyframes:[{attr:{cx:250,cy:160}},{attr:{cx:380,cy:50}}],duration:${r(P("baja") - P("sube"))},ease:"power2.out"},${r(P("sube"))});`);
+tw(`tl.to("#s3-punto",{keyframes:[{attr:{cx:560,cy:250}},{attr:{cx:790,cy:340}}],duration:0.7,ease:"power2.in"},${r(P("baja"))});`);
+
+// ======================= ESCENA 4 · El cerebro elige el sofá =======================
+const PANP = (id, dx, ic, color, tag, tagColor) => `
+  <div id="${id}" class="abs" style="left:${S4.x + dx - 130}px;top:${S4.y - 190}px;width:260px;height:300px">
+    <div style="position:absolute;left:128px;top:0;width:4px;height:150px;background:#0b1020"></div>
+    <div class="center" style="position:absolute;left:0;top:-6px;width:260px;height:160px">${icon(ic, 140, color)}</div>
+    <div style="position:absolute;left:10px;top:150px;width:240px;height:26px;border-radius:13px;background:#0b1020"></div>
+    <div id="${id}-tag" class="center pill" style="position:absolute;left:0;top:196px;width:260px;height:70px;background:${tagColor};color:#0b1020;font-size:34px;border:5px solid #0b1020">${tag}</div>
+  </div>`;
+world.push(comic("s4-panel", S4.x, S4.y - 40, 920, 960, `
+  <div id="s4-cerebro" class="center" style="position:absolute;left:300px;top:40px;width:320px;height:150px;gap:14px">${icon("brain", 110, "#ec4899")}<span class="lbl" style="font-size:40px;color:#0b1020;line-height:1">TU<br>CEREBRO</span></div>
+  <div style="position:absolute;left:448px;top:290px;width:24px;height:420px;background:#0b1020;border-radius:8px"></div>
+  <div style="position:absolute;left:330px;top:700px;width:260px;height:40px;background:#0b1020;border-radius:20px"></div>`, "#ffffff"));
+world.push(`<div id="s4-viga" class="abs" style="left:${S4.x - 320}px;top:${S4.y - 211}px;width:640px;height:22px;border-radius:11px;background:#0b1020"></div>`);
+world.push(PANP("s4-izq", -300, "couch", "#475569", "AHORA", C.good));
+world.push(PANP("s4-der", 300, "sneaker", C.novato, "EN SEMANAS", "#cbd5e1"));
+world.push(`<div id="s4-premio" class="abs" style="left:${S4.x + 300 - 50}px;top:${S4.y - 330}px;width:100px;height:100px">${icon("trophy", 100, "#eab308")}</div>`);
+pop("#s4-panel", P("tu") - 0.15, 0.45);
+pop("#s4-cerebro", P("cerebro") - 0.05, 0.35);
+{ // La balanza cae hacia el sofá
+  const t = P("sofa") - 0.1;
+  tw(`tl.fromTo("#s4-viga",{rotation:0},{rotation:-14,duration:0.6,ease:"back.out(2)"},${r(t)});`);
+  tw(`tl.fromTo("#s4-izq",{y:0},{y:74,duration:0.6,ease:"back.out(2)"},${r(t)});`);
+  tw(`tl.fromTo("#s4-der",{y:0},{y:-74,duration:0.6,ease:"back.out(2)"},${r(t)});`);
+}
+pop("#s4-izq-tag", P("elige"), 0.35);
+pop("#s4-premio", P("recompensa"), 0.4);
+tw(`tl.to("#s4-premio",{y:-74,duration:0.6,ease:"back.out(2)"},${r(P("sofa") - 0.1)});`);
+pop("#s4-der-tag", P("tarde") - 0.1, 0.35);
+
+// ======================= ESCENA 5 · Si el plan es enorme, al tercer día lo dejas =======================
+world.push(comic("s5-panel", S5.x, S5.y - 160, 900, 620, `
+  <div id="s5-enorme" class="center" style="position:absolute;left:150px;top:40px;width:600px;height:140px;background:${C.bad};border:7px solid #0b1020;border-radius:24px;font-size:88px;font-weight:900;color:#fff;letter-spacing:-.02em">2 H / DÍA</div>
+  <div style="position:absolute;left:140px;top:240px;width:620px;height:250px;background:#fff;border:6px solid #0b1020;border-radius:26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px" data-layout-allow-overlap>${cells("s5c", DIAS, { title: "TU SEMANA", size: 66 })}</div>`, "#fed7aa"));
+world.push(`<div id="s5-sello" class="abs center" data-layout-allow-overlap data-layout-allow-occlusion style="left:${S5.x - 230}px;top:${S5.y - 120}px;width:460px;height:130px;border:10px solid ${C.bad};border-radius:24px;color:${C.bad};font-size:72px;font-weight:900;background:rgba(255,255,255,.92)">LO DEJAS</div>`);
+world.push(character("nov5", S5.x, S5.y + 520, LOOK.novato, {
+  scale: 0.75, off: 0.8, poses: [[0, "run"], [P("tercer"), "tired"]], mood: [[0, 0.6], [P("tercer"), -1]],
+}));
+pop("#s5-panel", P("plan", 2) - 0.15, 0.45);
+tw(`tl.fromTo("#s5-enorme",{scale:0.3,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(2.2)"},${r(P("enorme"))});`);
+fillCell("s5c", 0, C.novato, "check", P("al") - 0.1);
+fillCell("s5c", 1, C.novato, "check", P("al") + 0.15);
+fillCell("s5c", 2, C.bad, "x", P("dia", 1));
+tw(`tl.fromTo("#s5-sello",{scale:2.4,opacity:0,rotation:-4},{scale:1,opacity:1,rotation:-9,duration:0.3,ease:"power4.out"},${r(P("dejas") - 0.05)});`);
+pop("#nov5", P("plan", 2), 0.4);
+
+// ======================= ESCENA 6-8 · El método (blueprint) =======================
+const fila = (i, kw, ph, ok) => `
+    <div style="display:flex;align-items:center;gap:20px;width:860px;height:150px">
+      <div id="s6-kw${i}" class="center bp-kw" style="width:270px;height:110px">${kw}</div>
+      <div style="position:relative;width:560px;height:120px">
+        <svg class="abs" width="560" height="120" style="left:0;top:0" overflow="visible"><rect id="s6-hueco${i}" x="3" y="3" width="554" height="114" rx="18" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="5" stroke-dasharray="18 12" pathLength="1000"/></svg>
+        <div id="s6-ph${i}" class="abs center bp-ph" style="inset:0">${ph}</div>
+        <div id="s6-ok${i}" class="abs center bp-ok" style="inset:0">${ok}</div>
+      </div>
+    </div>`;
+world.push(`<div id="s6-plano" class="abs blueprint" style="left:${S6.x - 470}px;top:${S6.y - 470}px;width:940px;height:940px">
+    <div class="bp-esq" style="left:16px;top:16px"></div><div class="bp-esq" style="right:16px;top:16px;transform:scaleX(-1)"></div>
+    <div class="bp-esq" style="left:16px;bottom:16px;transform:scaleY(-1)"></div><div class="bp-esq" style="right:16px;bottom:16px;transform:scale(-1)"></div>
+    <div id="s6-metodo" class="center" style="position:absolute;left:40px;top:40px;height:60px;gap:12px;color:#bfdbfe;font-family:'Space Mono',monospace;font-size:34px;font-weight:700">${icon("pencil-ruler", 46, "#bfdbfe")} MÉTODO Nº1</div>
+    <div id="s6-titulo" style="position:absolute;left:40px;right:40px;top:120px;font-family:'Space Mono',monospace;font-weight:700;font-size:56px;line-height:1.1;color:#fff">${typed("INTENCIÓN DE IMPLEMENTACIÓN", P("intencion") - 0.05, E("implementacion") - 0.1)}</div>
+    <div style="position:absolute;left:40px;top:330px;display:flex;flex-direction:column;gap:16px">
+      ${fila(0, "SI", "tal hora", "LAS 7:00")}${fila(1, "EN", "tal sitio", "AL SALIR DEL TRABAJO")}${fila(2, "ENTONCES", "hago esto", "CAMINO 10 MIN")}
+    </div>
+  </div>`);
+pop("#s6-plano", P("el", 2) - 0.1, 0.5);
+tw(`tl.fromTo("#s6-metodo",{opacity:0,x:-40},{opacity:1,x:0,duration:0.3,ease:"power3.out"},${r(P("metodo"))});`);
+const tSlot = [P("si", 2), P("en"), P("entonces")];
+const fill = [["s6-ok0", "LAS 7:00", P("siete")], ["s6-ok1", "AL SALIR DEL TRABAJO", P("salir")], ["s6-ok2", "CAMINO 10 MIN", P("camino")]];
+tSlot.forEach((t, i) => {
+  tw(`tl.fromTo("#s6-kw${i}",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"back.out(2)"},${r(t - 0.05)});`);
+  tw(`tl.fromTo("#s6-hueco${i}",{strokeDashoffset:1000,opacity:0},{strokeDashoffset:0,opacity:1,duration:0.45,ease:"power2.out"},${r(t + 0.05)});`);
+  tw(`tl.fromTo("#s6-ph${i}",{opacity:0},{opacity:1,duration:0.2},${r(t + 0.3)});`);
+});
+fill.forEach(([id, txt, t], i) => {
+  tw(`tl.to("#s6-ph${i}",{opacity:0,duration:0.12},${r(t - 0.05)});`);
+  tw(`tl.fromTo("#${id}",{scaleX:0,opacity:0},{scaleX:1,opacity:1,duration:0.3,ease:"power3.out"},${r(t - 0.05)});`);
+});
+burst(S6.x + 150, S6.y + 300, P("minutos") + 0.1, [C.good, "#86efac", "#ffffff", "#93c5fd"], { count: 30, radius: 360 });
+
+// ======================= ESCENA 9 · El estudio: 91 % frente a menos del 40 % =======================
+world.push(`<div id="s9-panel" class="abs glass" style="left:${S9.x - 460}px;top:${S9.y - 520}px;width:920px;height:1000px">
+    <div id="s9-cab" style="position:absolute;left:44px;top:36px;display:flex;align-items:center;gap:18px">${icon("flask", 70, "#93c5fd")}
+      <div><div class="lbl" style="font-size:46px;color:#fff">UN ESTUDIO</div><div class="lbl" style="font-size:26px;color:#94a3b8">Milne, Orbell y Sheeran · 2002</div></div></div>
+    <div style="position:absolute;left:130px;top:190px">${flapBoard("s9-a", 3, [{ t: 0, text: "   ", color: C.good }, { t: P("noventa") - 0.1, text: "91%", color: C.good }], { w: 92, h: 140, gap: 6, size: 98 })}</div>
+    <div style="position:absolute;left:520px;top:190px">${flapBoard("s9-b", 4, [{ t: 0, text: "    ", color: "#cbd5e1" }, { t: P("menos") - 0.1, text: "<40%", color: "#cbd5e1" }], { w: 72, h: 140, gap: 6, size: 86 })}</div>
+    <div style="position:absolute;left:150px;top:360px;width:240px;height:460px;display:flex;align-items:flex-end"><div id="s9-barA" class="barra" style="height:${Math.round(460 * 0.91)}px;background:${C.good};box-shadow:0 0 18px ${C.good},0 0 50px ${C.good}88"></div></div>
+    <div style="position:absolute;left:530px;top:360px;width:240px;height:460px;display:flex;align-items:flex-end"><div id="s9-barB" class="barra" style="height:${Math.round(460 * 0.38)}px;background:#64748b"></div></div>
+    <div id="s9-labA" class="center lbl" style="position:absolute;left:110px;top:840px;width:320px;height:110px;font-size:36px;color:#fff;text-align:center;line-height:1.1">ESCRIBIÓ<br>SU FRASE</div>
+    <div id="s9-labB" class="center lbl" style="position:absolute;left:490px;top:840px;width:320px;height:110px;font-size:36px;color:#94a3b8;text-align:center;line-height:1.1">EL RESTO</div>
+  </div>`);
+pop("#s9-panel", P("estudio") - 0.2, 0.45);
+tw(`tl.fromTo("#s9-barA",{scaleY:0},{scaleY:1,duration:1.1,ease:"power3.out"},${r(P("noventa"))});`);
+tw(`tl.fromTo("#s9-labA",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},${r(P("escribieron") - 0.1)});`);
+tw(`tl.fromTo("#s9-barB",{scaleY:0},{scaleY:1,duration:0.9,ease:"power3.out"},${r(P("menos"))});`);
+tw(`tl.fromTo("#s9-labB",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},${r(P("resto") - 0.1)});`);
+
+// ======================= ESCENA 10 · La disciplina no se tiene. Se diseña. =======================
+world.push(`
+  <div id="s10-cab" class="abs center" style="left:${S10.x - 480}px;top:${S10.y - 520}px;width:960px;height:120px;font-size:90px;font-weight:900;color:#fff;letter-spacing:-.03em">NO SE TIENE</div>
+  <div class="abs center" style="left:${S10.x - 480}px;top:${S10.y - 360}px;width:960px;height:140px">
+    ${flapBoard("s10-sf", 10, [{ t: 0, text: "DISCIPLINA", color: "#ffffff" }, { t: P("se", 4) - 0.2, text: "SE DISEÑA", color: C.good }], { w: 78, gap: 8, size: 88 })}
+  </div>`);
+neonStrike("s10-tacha", S10.x - 330, S10.y - 466, 660, C.bad, P("tiene") + 0.05);
+world.push(character("nov10", S10.x - 180, S10.y + 440, LOOK.novato, {
+  scale: 0.85, off: 0.3, poses: [[0, "idle"], [P("disena"), "cheer"]], mood: [[0, 0.2], [P("disena"), 1]],
+}));
+world.push(character("pro10", S10.x + 180, S10.y + 440, LOOK.pro, {
+  scale: 0.85, off: 1.3, poses: [[0, "idle"], [P("disena") + 0.1, "cheer"]], mood: [[0, 0.9]],
+}));
+pop("#s10-cab", P("no", 4) - 0.05, 0.35);
+pop("#nov10", P("disciplina", 2) - 0.2, 0.4);
+pop("#pro10", P("disciplina", 2) - 0.1, 0.4);
+// El novato se transforma en su sitio al «diseñar» su disciplina: fuera pijama, cinta puesta
+tw(`tl.to("#nov10-shirt",{attr:{fill:"${C.novato}"},duration:0.35},${r(P("disena"))});`);
+tw(`tl.to("#nov10-armF",{attr:{stroke:"${C.novato}"},duration:0.35},${r(P("disena"))});`);
+tw(`tl.to("#nov10-stripes",{opacity:0,duration:0.3},${r(P("disena"))});`);
+tw(`tl.fromTo("#nov10-band",{opacity:0},{opacity:1,duration:0.3},${r(P("disena"))});`);
+tw(`tl.to("#s10-sf",{filter:"drop-shadow(0 0 26px ${C.good}aa)",duration:0.4},${r(P("disena") + 0.1)});`);
+burst(S10.x, S10.y - 290, P("disena") + 0.15, [C.good, "#86efac", "#ffffff", "#facc15"], { count: 44, radius: 480 });
+
+// ======================= ESCENA 11 · Comentarios + seguir =======================
+world.push(`<div id="s11-caja" class="abs glass" style="left:${S11.x - 440}px;top:${S11.y - 500}px;width:880px;height:400px;padding:34px 40px;display:flex;flex-direction:column;gap:22px">
+    <div style="display:flex;align-items:center;gap:14px">${icon("chat-circle-dots", 54, "#fff")}<span class="lbl" style="font-size:44px;color:#fff">Comentarios</span></div>
+    <div id="s11-campo" style="display:flex;align-items:center;gap:18px;padding:18px 22px;border-radius:26px;background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.25)">
+      <div class="center" style="width:74px;height:74px;border-radius:37px;background:${C.novato};flex:none">${icon("user", 46, "#fff")}</div>
+      <div style="flex:1;font-size:40px;font-weight:700;color:#fff;white-space:nowrap">${typed("Si son las 7, camino 10 min", P("frase", 2), E("comentarios") - 0.1)}</div>
+      <div id="s11-enviar" class="center" style="width:74px;height:74px;border-radius:37px;background:${C.good};flex:none">${icon("paper-plane-tilt", 42, "#04130a")}</div>
+    </div>
+    <div id="s11-publicado" style="display:flex;align-items:center;gap:12px;font-size:34px;font-weight:900;color:${C.good}">${icon("check-circle", 42, C.good)} Publicado: ya tienes tu plan
+      <span id="s11-like" style="margin-left:auto;display:flex;align-items:center;gap:8px;color:#f43f5e">${icon("heart", 46, "#f43f5e")}1</span></div>
+  </div>
+  <div id="s11-boton" class="abs center pill" style="left:${S11.x - 270}px;top:${S11.y - 50}px;width:540px;height:140px;background:${C.bad};color:#fff;font-size:60px">
+    <span id="s11-seguir" class="abs center" style="inset:0;gap:16px">${icon("user-plus", 64, "#fff")} SEGUIR</span>
+    <span id="s11-siguiendo" class="abs center" style="inset:0;gap:16px;opacity:0">${icon("check-fat", 60, "#fff")} SIGUIENDO</span>
+  </div>
+  <div id="s11-cursor" class="abs" style="left:${S11.x + 200}px;top:${S11.y + 50}px;width:90px;height:90px">${icon("cursor", 90, "#fff")}</div>`);
+world.push(character("nov11", S11.x - 200, S11.y + 500, { ...LOOK.novato, shirt: C.novato, stripes: false, band: "#ffffff" }, {
+  scale: 0.8, off: 0.9, poses: [[0, "idle"], [P("sigueme") + 0.4, "cheer"]], mood: [[0, 1]],
+}));
+world.push(character("pro11", S11.x + 200, S11.y + 500, LOOK.pro, {
+  scale: 0.8, off: 1.8, poses: [[0, "idle"], [P("sigueme"), "point"]], mood: [[0, 1]],
+}));
+pop("#s11-caja", P("escribe") - 0.1, 0.45);
+pop("#nov11", P("escribe"), 0.4);
+pop("#pro11", P("escribe") + 0.08, 0.4);
+tw(`tl.fromTo("#s11-enviar",{scale:1},{scale:0.8,duration:0.08,yoyo:true,repeat:1,immediateRender:false},${r(E("comentarios"))});`);
+tw(`tl.to("#s11-campo",{backgroundColor:"rgba(34,197,94,.22)",borderColor:"rgba(34,197,94,.8)",duration:0.3},${r(E("comentarios") + 0.1)});`);
+tw(`tl.fromTo("#s11-publicado",{opacity:0,y:16},{opacity:1,y:0,duration:0.3,ease:"power2.out"},${r(P("tendras") - 0.1)});`);
+tw(`tl.fromTo("#s11-like",{scale:0},{scale:1,duration:0.35,ease:"back.out(3)"},${r(P("plan", 3))});`);
+pop("#s11-boton", P("sigueme") - 0.2, 0.45);
+tw(`tl.fromTo("#s11-cursor",{x:260,y:300,opacity:0},{x:0,y:0,opacity:1,duration:0.35,ease:"power3.out"},${r(P("sigueme"))});`);
+tw(`tl.fromTo("#s11-boton",{scale:1},{scale:0.92,duration:0.08,yoyo:true,repeat:1,immediateRender:false},${r(P("sigueme") + 0.4)});`);
+tw(`tl.to("#s11-boton",{backgroundColor:"#334155",duration:0.25},${r(P("sigueme") + 0.45)});`);
+tw(`tl.to("#s11-seguir",{opacity:0,duration:0.15},${r(P("sigueme") + 0.45)});`);
+tw(`tl.to("#s11-siguiendo",{opacity:1,duration:0.2},${r(P("sigueme") + 0.5)});`);
+
 // ======================= CÁMARA Y CAMINO =======================
 const cam0 = { cx: S1.x, cy: S1.y - 60, z: 1.04 };
 cam(0, 0.55, S1.x, S1.y - 40, 1.0, "out");
@@ -272,8 +467,41 @@ cam(P("plan") - 0.05, P("plan") + 0.12, S1.x, S1.y - 60, 1.07, "out");   // golp
 cam(P("plan") + 0.15, VIAJE1, S1.x, S1.y - 50, 1.0);
 cam(VIAJE1, VIAJE1 + 0.55, S2.x, S2.y + 30, 1.0, "inOut", 0.35);
 cam(P("suficiente") - 0.3, P("suficiente") + 0.25, S2.x, S2.y - 90, 1.05);
+const V3 = E("pereza") + 0.05, V4 = E("ola") + 0.05, V5 = E("tarde") + 0.03;
+cam(V3, V3 + 0.55, S3.x, S3.y + 60, 1.0, "inOut", 0.3);
+cam(P("ola") - 0.1, P("ola") + 0.1, S3.x, S3.y + 60, 1.05, "out");
+cam(V4, V4 + 0.5, S4.x, S4.y - 40, 1.0, "inOut", 0.3);
+cam(V5, V5 + 0.5, S5.x, S5.y + 20, 1.0, "inOut", 0.3);
+cam(P("dejas") - 0.05, P("dejas") + 0.12, S5.x, S5.y + 20, 1.06, "out");
+// Fin del bloque «por qué cuesta»: se aleja para enseñarlo entero
+const A1 = E("dejas") - 0.15;
+cam(A1, A1 + 0.35, 1800, 3280, 0.36);
+const V6 = P("metodo") - 0.25;
+cam(V6, V6 + 0.55, S6.x, S6.y + 20, 1.0, "inOut");
+cam(P("si", 2) - 0.2, P("si", 2) + 0.3, S6.x, S6.y + 60, 1.04);
+cam(P("siete") - 0.2, P("siete") + 0.3, S6.x, S6.y + 80, 1.06);
+const V9 = E("minutos") + 0.25;
+cam(V9, V9 + 0.55, S9.x, S9.y - 30, 1.0, "inOut", 0.3);
+// Antes del cierre: se aleja y enseña todo el camino recorrido
+const A2 = E("resto") - 0.1;
+cam(A2, A2 + 0.45, 1800, 4100, 0.14);
+const V10 = P("disciplina", 2) - 0.1;
+cam(V10, V10 + 0.55, S10.x, S10.y - 30, 1.0, "inOut");
+cam(P("disena") - 0.05, P("disena") + 0.12, S10.x, S10.y - 50, 1.07, "out");
+cam(P("disena") + 0.2, P("disena") + 0.5, S10.x, S10.y - 30, 1.0);
+const V11 = E("disena") + 0.05;
+cam(V11, V11 + 0.5, S11.x, S11.y - 20, 1.0, "inOut", 0.3);
+cam(P("sigueme") + 0.4, P("sigueme") + 0.52, S11.x, S11.y - 20, 1.05, "out");
+cam(P("sigueme") + 0.55, P("sigueme") + 0.9, S11.x, S11.y - 20, 1.0);
 
 link(S1, S2, VIAJE1 - 0.05);
+link(S2, S3, V3);
+link(S3, S4, V4);
+link(S4, S5, V5);
+link(S5, S6, V6);
+link(S6, S9, V9);
+link(S9, S10, V10);
+link(S10, S11, V11);
 
 // ======================= EFECTOS DE SONIDO =======================
 const SFX = [];
@@ -281,15 +509,51 @@ const sfx = (name, t, vol = 1) => SFX.push({ name, t: r(Math.max(0, t)), vol });
 sfx("impact-bass-1", 0, 0.7);
 sfx("glitch-3", P("disciplina"), 0.25);
 sfx("whoosh-short", P("te", 2) - 0.05, 0.45);
-sfx("typing", P("plan") - 0.05, 0.25);                            // las solapas del panel
+sfx("typing", P("un") - 0.15, 0.3);
 sfx("impact-bass-1", P("plan"), 0.6);
 sfx("sparkle", P("plan") + 0.2, 0.45);
-sfx("whoosh", VIAJE1, 0.55);
+for (const t of [VIAJE1, V3, V4, V5, V6, V9, V10, V11]) sfx("whoosh", t, 0.55);
+for (const t of [A1, A2]) sfx("whoosh-short", t, 0.4);
 for (const t of [P("uno"), P("cada"), P("tres")]) sfx("pop", t, 0.45);
 sfx("typing", P("suficiente") - 0.25, 0.2);
 sfx("ping", P("suficiente"), 0.4);
 sfx("pop", P("no", 3), 0.45);
 sfx("whoosh-short", P("pereza") + 0.05, 0.45);
+// Por qué cuesta (cómic)
+sfx("pop", P("la") - 0.1, 0.45);
+sfx("impact-bass-1", P("ola") - 0.05, 0.5);
+sfx("pop", P("cerebro") - 0.05, 0.4);
+sfx("click", P("sofa") - 0.1, 0.5);
+sfx("pop", P("recompensa"), 0.4);
+sfx("pop", P("tarde") - 0.1, 0.35);
+sfx("pop", P("enorme"), 0.5);
+sfx("click-soft", P("al") - 0.1, 0.4);
+sfx("click-soft", P("al") + 0.15, 0.4);
+sfx("error", P("dia", 1), 0.3);
+sfx("impact-bass-1", P("dejas") - 0.05, 0.45);
+// Método (blueprint)
+sfx("pop", P("el", 2) - 0.1, 0.45);
+sfx("typing", P("intencion") - 0.05, 0.35);
+tSlot.forEach((t) => sfx("pop", t - 0.05, 0.4));
+fill.forEach(([, , t]) => sfx("click", t - 0.05, 0.45));
+sfx("sparkle", P("minutos") + 0.1, 0.4);
+// Estudio
+sfx("pop", P("estudio") - 0.2, 0.4);
+sfx("typing", P("noventa") - 0.1, 0.25);
+sfx("ping", P("noventa") + 0.3, 0.45);
+sfx("typing", P("menos") - 0.1, 0.2);
+// Cierre
+sfx("whoosh-short", P("tiene") + 0.05, 0.4);
+sfx("typing", P("se", 4) - 0.2, 0.3);
+sfx("impact-bass-1", P("disena"), 0.85);
+sfx("sparkle", P("disena") + 0.1, 0.5);
+sfx("typing", P("frase", 2), 0.3);
+sfx("click", E("comentarios"), 0.5);
+sfx("notification", P("tendras") - 0.1, 0.3);
+sfx("pop", P("plan", 3), 0.4);
+sfx("pop", P("sigueme") - 0.2, 0.45);
+sfx("click", P("sigueme") + 0.4, 0.6);
+sfx("chime", P("sigueme") + 0.5, 0.3);
 
 // Iconos dentro de las casillas
 const ICON_SVG = { check: icon("check-fat", 38, "#fff"), x: icon("x", 38, "#fff") };
@@ -343,6 +607,20 @@ const mundo = `<template>
     .sf-t { display:block; position:relative; }
     .sf-bot .sf-t { top:-100%; }
     .sf-axle { position:absolute; left:0; right:0; top:50%; height:3px; margin-top:-1px; background:rgba(0,0,0,.7); }
+    .comic { border:8px solid #0b1020; border-radius:22px; box-shadow:16px 16px 0 #0b1020; overflow:hidden; }
+    .halftone { position:absolute; inset:0; pointer-events:none; background-image:radial-gradient(circle, rgba(11,16,32,.16) 2.6px, transparent 3.2px); background-size:18px 18px; }
+    .blueprint { border-radius:18px; border:3px solid rgba(191,219,254,.6); box-shadow:0 30px 80px rgba(0,0,0,.5);
+      background-color:#0b3a82; background-image:
+        linear-gradient(rgba(191,219,254,.22) 2px, transparent 2px), linear-gradient(90deg, rgba(191,219,254,.22) 2px, transparent 2px),
+        linear-gradient(rgba(191,219,254,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(191,219,254,.09) 1px, transparent 1px);
+      background-size:200px 200px, 200px 200px, 40px 40px, 40px 40px; }
+    .bp-esq { position:absolute; width:46px; height:46px; border-left:5px solid #bfdbfe; border-top:5px solid #bfdbfe; }
+    .bp-kw { border:5px solid #fff; border-radius:20px; color:#fff; font-family:'Space Mono',monospace; font-weight:700; font-size:48px; }
+    .bp-ph { color:rgba(255,255,255,.6); font-family:'Space Mono',monospace; font-style:italic; font-size:40px; }
+    .bp-ok { border-radius:18px; background:${C.good}; color:#04130a; font-weight:900; font-size:44px; transform-origin:0 50%; opacity:0; box-shadow:0 0 22px ${C.good}88; }
+    .glass { border-radius:44px; background:rgba(255,255,255,.08); border:2px solid rgba(255,255,255,.22);
+      backdrop-filter:blur(22px); box-shadow:0 30px 80px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.25); }
+    .barra { width:240px; border-radius:22px 22px 8px 8px; transform-origin:50% 100%; }
     .pt { position:absolute; border-radius:3px; opacity:0; }
     .neon { position:absolute; height:12px; border-radius:6px; background:#fff;
       box-shadow:0 0 4px #fff, 0 0 14px var(--c), 0 0 34px var(--c), 0 0 64px var(--c); }
