@@ -28,13 +28,13 @@ Duración aproximada: 50-55 segundos.
 
 **10.** La disciplina no se tiene, *(pausa corta)* se diseña.
 
-**11.** Escribe tu frase en los comentarios y ya tendrás tu plan.
+**11.** No necesitas un gran cambio. *(pausa corta)* Solo no parar.
 
-**12.** Sígueme para más.
+**12.** Cada día, un 0,0001 % mejor. *(pausa corta)* Nos vemos mañana.
 
-**13.** Y recuerda: cada día podemos ser un 0,0001 % mejor.
-
-**14.** Y de eso se trata.
+> **Para el cierre nuevo graba solo las líneas 10, 11 y 12**, cada una dos veces,
+> en el mismo sitio y a la misma distancia del móvil que la grabación anterior.
+> «0,0001 %» se lee «cero coma cero cero cero uno por ciento».
 
 ---
 

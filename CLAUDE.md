@@ -11,8 +11,9 @@ Cada vídeo vive en su carpeta (`video-01/`, `video-02/`…) y se rehace con sus
 3. **Un método conocido y aplicable**: una sola técnica con nombre (p. ej. intención de
    implementación, regla de los 2 minutos, apilar hábitos, «nunca falles dos veces»),
    explicada lo más breve posible y con un ejemplo que se pueda copiar hoy.
-4. **Cierre fuerte**: una frase final memorable + una llamada a la acción ligada al método
-   (p. ej. «escribe tu plan en los comentarios»).
+4. **Cierre fuerte**: una frase final memorable sobre el tema y, siempre, la firma del canal:
+   «Cada día, un 0,0001 % mejor. Nos vemos mañana.» con la animación del logo
+   (`marca/logo-0,0001.png`, insignia verde con barras que suben).
 
 Duración 45–60 s. Frases cortas y de hablar. Datos marcados [COMPROBAR] si no son seguros;
 nunca inventar cifras.
