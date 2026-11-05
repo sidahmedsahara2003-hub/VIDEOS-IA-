@@ -1,0 +1,1079 @@
+[
+ {
+  "bloque": 0,
+  "start": 1.02,
+  "end": 2.56,
+  "texto": "Hoy definitivo para el guión.",
+  "palabras": [
+   {
+    "text": "Hoy",
+    "start": 0.95,
+    "end": 1.27
+   },
+   {
+    "text": "definitivo",
+    "start": 1.27,
+    "end": 1.83
+   },
+   {
+    "text": "para",
+    "start": 1.83,
+    "end": 1.99
+   },
+   {
+    "text": "el",
+    "start": 1.99,
+    "end": 2.23
+   },
+   {
+    "text": "guión.",
+    "start": 2.23,
+    "end": 2.56
+   }
+  ]
+ },
+ {
+  "bloque": 1,
+  "start": 3.55,
+  "end": 4.18,
+  "texto": "Primera frase.",
+  "palabras": [
+   {
+    "text": "Primera",
+    "start": 3.48,
+    "end": 3.88
+   },
+   {
+    "text": "frase.",
+    "start": 3.88,
+    "end": 4.18
+   }
+  ]
+ },
+ {
+  "bloque": 2,
+  "start": 4.71,
+  "end": 6.0,
+  "texto": "No te hace falta disciplina.",
+  "palabras": [
+   {
+    "text": "No",
+    "start": 4.64,
+    "end": 4.8
+   },
+   {
+    "text": "te",
+    "start": 4.8,
+    "end": 4.96
+   },
+   {
+    "text": "hace",
+    "start": 4.96,
+    "end": 5.2
+   },
+   {
+    "text": "falta",
+    "start": 5.2,
+    "end": 5.52
+   },
+   {
+    "text": "disciplina.",
+    "start": 5.52,
+    "end": 6.0
+   }
+  ]
+ },
+ {
+  "bloque": 3,
+  "start": 6.58,
+  "end": 7.46,
+  "texto": "Te falta un plan.",
+  "palabras": [
+   {
+    "text": "Te",
+    "start": 6.51,
+    "end": 6.75
+   },
+   {
+    "text": "falta",
+    "start": 6.75,
+    "end": 7.07
+   },
+   {
+    "text": "un",
+    "start": 7.07,
+    "end": 7.23
+   },
+   {
+    "text": "plan.",
+    "start": 7.23,
+    "end": 7.46
+   }
+  ]
+ },
+ {
+  "bloque": 4,
+  "start": 8.17,
+  "end": 8.79,
+  "texto": "Primera frase.",
+  "palabras": [
+   {
+    "text": "Primera",
+    "start": 8.1,
+    "end": 8.5
+   },
+   {
+    "text": "frase.",
+    "start": 8.5,
+    "end": 8.79
+   }
+  ]
+ },
+ {
+  "bloque": 5,
+  "start": 9.84,
+  "end": 11.43,
+  "texto": "No te hace falta disciplina.",
+  "palabras": [
+   {
+    "text": "No",
+    "start": 9.69,
+    "end": 10.01
+   },
+   {
+    "text": "te",
+    "start": 10.01,
+    "end": 10.17
+   },
+   {
+    "text": "hace",
+    "start": 10.17,
+    "end": 10.41
+   },
+   {
+    "text": "falta",
+    "start": 10.41,
+    "end": 10.81
+   },
+   {
+    "text": "disciplina.",
+    "start": 10.81,
+    "end": 11.43
+   }
+  ]
+ },
+ {
+  "bloque": 6,
+  "start": 12.09,
+  "end": 12.92,
+  "texto": "Te falta un plan.",
+  "palabras": [
+   {
+    "text": "Te",
+    "start": 12.02,
+    "end": 12.18
+   },
+   {
+    "text": "falta",
+    "start": 12.18,
+    "end": 12.58
+   },
+   {
+    "text": "un",
+    "start": 12.58,
+    "end": 12.66
+   },
+   {
+    "text": "plan.",
+    "start": 12.66,
+    "end": 12.92
+   }
+  ]
+ },
+ {
+  "bloque": 7,
+  "start": 13.53,
+  "end": 14.26,
+  "texto": "Segunda frase.",
+  "palabras": [
+   {
+    "text": "Segunda",
+    "start": 13.54,
+    "end": 13.94
+   },
+   {
+    "text": "frase.",
+    "start": 13.94,
+    "end": 14.26
+   }
+  ]
+ },
+ {
+  "bloque": 8,
+  "start": 15.08,
+  "end": 17.39,
+  "texto": "Cassi, uno de tres adultos.",
+  "palabras": [
+   {
+    "text": "Cassi,",
+    "start": 15.01,
+    "end": 15.73
+   },
+   {
+    "text": "uno",
+    "start": 15.73,
+    "end": 16.05
+   },
+   {
+    "text": "de",
+    "start": 16.05,
+    "end": 16.45
+   },
+   {
+    "text": "tres",
+    "start": 16.45,
+    "end": 16.85
+   },
+   {
+    "text": "adultos.",
+    "start": 16.85,
+    "end": 17.39
+   }
+  ]
+ },
+ {
+  "bloque": 9,
+  "start": 17.82,
+  "end": 20.03,
+  "texto": "no se mueve lo suficiente, y no es por esa.",
+  "palabras": [
+   {
+    "text": "no",
+    "start": 17.83,
+    "end": 17.99
+   },
+   {
+    "text": "se",
+    "start": 17.99,
+    "end": 18.07
+   },
+   {
+    "text": "mueve",
+    "start": 18.07,
+    "end": 18.47
+   },
+   {
+    "text": "lo",
+    "start": 18.47,
+    "end": 18.63
+   },
+   {
+    "text": "suficiente,",
+    "start": 18.63,
+    "end": 19.11
+   },
+   {
+    "text": "y",
+    "start": 19.11,
+    "end": 19.27
+   },
+   {
+    "text": "no",
+    "start": 19.27,
+    "end": 19.35
+   },
+   {
+    "text": "es",
+    "start": 19.35,
+    "end": 19.43
+   },
+   {
+    "text": "por",
+    "start": 19.43,
+    "end": 19.91
+   },
+   {
+    "text": "esa.",
+    "start": 19.91,
+    "end": 20.03
+   }
+  ]
+ },
+ {
+  "bloque": 10,
+  "start": 21.21,
+  "end": 24.01,
+  "texto": "la motivación sube y baja como una ola.",
+  "palabras": [
+   {
+    "text": "la",
+    "start": 21.22,
+    "end": 21.38
+   },
+   {
+    "text": "motivación",
+    "start": 21.38,
+    "end": 22.1
+   },
+   {
+    "text": "sube",
+    "start": 22.1,
+    "end": 22.58
+   },
+   {
+    "text": "y",
+    "start": 22.58,
+    "end": 22.66
+   },
+   {
+    "text": "baja",
+    "start": 22.66,
+    "end": 22.98
+   },
+   {
+    "text": "como",
+    "start": 22.98,
+    "end": 23.14
+   },
+   {
+    "text": "una",
+    "start": 23.14,
+    "end": 23.38
+   },
+   {
+    "text": "ola.",
+    "start": 23.38,
+    "end": 24.01
+   }
+  ]
+ },
+ {
+  "bloque": 11,
+  "start": 24.43,
+  "end": 29.15,
+  "texto": "Tu cerebro erige el sofá porque la recompensa del deporte llega tarde.",
+  "palabras": [
+   {
+    "text": "Tu",
+    "start": 24.36,
+    "end": 24.6
+   },
+   {
+    "text": "cerebro",
+    "start": 24.6,
+    "end": 25.08
+   },
+   {
+    "text": "erige",
+    "start": 25.08,
+    "end": 25.64
+   },
+   {
+    "text": "el",
+    "start": 25.64,
+    "end": 25.72
+   },
+   {
+    "text": "sofá",
+    "start": 25.72,
+    "end": 26.28
+   },
+   {
+    "text": "porque",
+    "start": 26.28,
+    "end": 26.6
+   },
+   {
+    "text": "la",
+    "start": 26.6,
+    "end": 26.76
+   },
+   {
+    "text": "recompensa",
+    "start": 26.76,
+    "end": 27.4
+   },
+   {
+    "text": "del",
+    "start": 27.4,
+    "end": 27.56
+   },
+   {
+    "text": "deporte",
+    "start": 27.56,
+    "end": 28.28
+   },
+   {
+    "text": "llega",
+    "start": 28.28,
+    "end": 28.76
+   },
+   {
+    "text": "tarde.",
+    "start": 28.76,
+    "end": 29.15
+   }
+  ]
+ },
+ {
+  "bloque": 12,
+  "start": 29.88,
+  "end": 30.34,
+  "texto": "I see you.",
+  "palabras": [
+   {
+    "text": "I",
+    "start": 29.81,
+    "end": 29.97
+   },
+   {
+    "text": "see",
+    "start": 29.97,
+    "end": 30.13
+   },
+   {
+    "text": "you.",
+    "start": 30.13,
+    "end": 30.34
+   }
+  ]
+ },
+ {
+  "bloque": 13,
+  "start": 31.29,
+  "end": 35.06,
+  "texto": "Y si el plan es enorme, al tercer día lo acabas dejando.",
+  "palabras": [
+   {
+    "text": "Y",
+    "start": 31.14,
+    "end": 31.38
+   },
+   {
+    "text": "si",
+    "start": 31.38,
+    "end": 31.54
+   },
+   {
+    "text": "el",
+    "start": 31.54,
+    "end": 31.7
+   },
+   {
+    "text": "plan",
+    "start": 31.7,
+    "end": 32.02
+   },
+   {
+    "text": "es",
+    "start": 32.02,
+    "end": 32.26
+   },
+   {
+    "text": "enorme,",
+    "start": 32.26,
+    "end": 32.82
+   },
+   {
+    "text": "al",
+    "start": 32.82,
+    "end": 33.06
+   },
+   {
+    "text": "tercer",
+    "start": 33.06,
+    "end": 33.46
+   },
+   {
+    "text": "día",
+    "start": 33.46,
+    "end": 33.94
+   },
+   {
+    "text": "lo",
+    "start": 33.94,
+    "end": 34.18
+   },
+   {
+    "text": "acabas",
+    "start": 34.18,
+    "end": 34.66
+   },
+   {
+    "text": "dejando.",
+    "start": 34.66,
+    "end": 35.06
+   }
+  ]
+ },
+ {
+  "bloque": 14,
+  "start": 35.56,
+  "end": 37.58,
+  "texto": "El método que más funciona se llama",
+  "palabras": [
+   {
+    "text": "El",
+    "start": 35.57,
+    "end": 35.73
+   },
+   {
+    "text": "método",
+    "start": 35.73,
+    "end": 36.13
+   },
+   {
+    "text": "que",
+    "start": 36.13,
+    "end": 36.29
+   },
+   {
+    "text": "más",
+    "start": 36.29,
+    "end": 36.45
+   },
+   {
+    "text": "funciona",
+    "start": 36.45,
+    "end": 36.93
+   },
+   {
+    "text": "se",
+    "start": 36.93,
+    "end": 37.09
+   },
+   {
+    "text": "llama",
+    "start": 37.09,
+    "end": 37.58
+   }
+  ]
+ },
+ {
+  "bloque": 15,
+  "start": 38.08,
+  "end": 39.59,
+  "texto": "Intención de implementación.",
+  "palabras": [
+   {
+    "text": "Intención",
+    "start": 38.09,
+    "end": 38.65
+   },
+   {
+    "text": "de",
+    "start": 38.65,
+    "end": 38.81
+   },
+   {
+    "text": "implementación.",
+    "start": 38.81,
+    "end": 39.59
+   }
+  ]
+ },
+ {
+  "bloque": 16,
+  "start": 40.58,
+  "end": 49.61,
+  "texto": "Es una frase, si a tal hora en tal sitio, entonces hago esto. Por ejemplo, si son las 7 de la tarde al salte de trabajar, voy a ir a entrenar.",
+  "palabras": [
+   {
+    "text": "Es",
+    "start": 40.51,
+    "end": 40.75
+   },
+   {
+    "text": "una",
+    "start": 40.75,
+    "end": 40.99
+   },
+   {
+    "text": "frase,",
+    "start": 40.99,
+    "end": 41.47
+   },
+   {
+    "text": "si",
+    "start": 41.47,
+    "end": 41.71
+   },
+   {
+    "text": "a",
+    "start": 41.71,
+    "end": 41.87
+   },
+   {
+    "text": "tal",
+    "start": 41.87,
+    "end": 42.11
+   },
+   {
+    "text": "hora",
+    "start": 42.11,
+    "end": 42.51
+   },
+   {
+    "text": "en",
+    "start": 42.51,
+    "end": 42.67
+   },
+   {
+    "text": "tal",
+    "start": 42.67,
+    "end": 42.99
+   },
+   {
+    "text": "sitio,",
+    "start": 42.99,
+    "end": 43.47
+   },
+   {
+    "text": "entonces",
+    "start": 43.47,
+    "end": 43.95
+   },
+   {
+    "text": "hago",
+    "start": 43.95,
+    "end": 44.27
+   },
+   {
+    "text": "esto.",
+    "start": 44.27,
+    "end": 44.75
+   },
+   {
+    "text": "Por",
+    "start": 44.75,
+    "end": 44.91
+   },
+   {
+    "text": "ejemplo,",
+    "start": 44.91,
+    "end": 45.47
+   },
+   {
+    "text": "si",
+    "start": 45.47,
+    "end": 45.71
+   },
+   {
+    "text": "son",
+    "start": 45.71,
+    "end": 45.95
+   },
+   {
+    "text": "las",
+    "start": 45.95,
+    "end": 46.11
+   },
+   {
+    "text": "7",
+    "start": 46.11,
+    "end": 46.43
+   },
+   {
+    "text": "de",
+    "start": 46.43,
+    "end": 46.59
+   },
+   {
+    "text": "la",
+    "start": 46.59,
+    "end": 46.67
+   },
+   {
+    "text": "tarde",
+    "start": 46.67,
+    "end": 47.15
+   },
+   {
+    "text": "al",
+    "start": 47.15,
+    "end": 47.47
+   },
+   {
+    "text": "salte",
+    "start": 47.47,
+    "end": 47.87
+   },
+   {
+    "text": "de",
+    "start": 47.87,
+    "end": 48.03
+   },
+   {
+    "text": "trabajar,",
+    "start": 48.03,
+    "end": 48.59
+   },
+   {
+    "text": "voy",
+    "start": 48.59,
+    "end": 48.83
+   },
+   {
+    "text": "a",
+    "start": 48.83,
+    "end": 48.99
+   },
+   {
+    "text": "ir",
+    "start": 48.99,
+    "end": 49.07
+   },
+   {
+    "text": "a",
+    "start": 49.07,
+    "end": 49.23
+   },
+   {
+    "text": "entrenar.",
+    "start": 49.23,
+    "end": 49.61
+   }
+  ]
+ },
+ {
+  "bloque": 17,
+  "start": 50.36,
+  "end": 56.9,
+  "texto": "En un estudio, el noventa por ciento de quienes lo escriben, lo escribieron, hizo ejercicio cada semana frente.",
+  "palabras": [
+   {
+    "text": "En",
+    "start": 50.21,
+    "end": 50.45
+   },
+   {
+    "text": "un",
+    "start": 50.45,
+    "end": 50.77
+   },
+   {
+    "text": "estudio,",
+    "start": 50.77,
+    "end": 51.33
+   },
+   {
+    "text": "el",
+    "start": 51.33,
+    "end": 51.49
+   },
+   {
+    "text": "noventa",
+    "start": 51.49,
+    "end": 51.81
+   },
+   {
+    "text": "por",
+    "start": 51.81,
+    "end": 51.97
+   },
+   {
+    "text": "ciento",
+    "start": 51.97,
+    "end": 52.13
+   },
+   {
+    "text": "de",
+    "start": 52.13,
+    "end": 52.29
+   },
+   {
+    "text": "quienes",
+    "start": 52.29,
+    "end": 52.61
+   },
+   {
+    "text": "lo",
+    "start": 52.61,
+    "end": 52.77
+   },
+   {
+    "text": "escriben,",
+    "start": 52.77,
+    "end": 53.57
+   },
+   {
+    "text": "lo",
+    "start": 53.57,
+    "end": 53.73
+   },
+   {
+    "text": "escribieron,",
+    "start": 53.73,
+    "end": 54.45
+   },
+   {
+    "text": "hizo",
+    "start": 54.45,
+    "end": 54.77
+   },
+   {
+    "text": "ejercicio",
+    "start": 54.77,
+    "end": 55.33
+   },
+   {
+    "text": "cada",
+    "start": 55.33,
+    "end": 55.57
+   },
+   {
+    "text": "semana",
+    "start": 55.57,
+    "end": 56.21
+   },
+   {
+    "text": "frente.",
+    "start": 56.21,
+    "end": 56.9
+   }
+  ]
+ },
+ {
+  "bloque": 18,
+  "start": 58.42,
+  "end": 60.24,
+  "texto": "a menos del cuarenta por ciento del resto.",
+  "palabras": [
+   {
+    "text": "a",
+    "start": 58.43,
+    "end": 58.59
+   },
+   {
+    "text": "menos",
+    "start": 58.59,
+    "end": 58.83
+   },
+   {
+    "text": "del",
+    "start": 58.83,
+    "end": 58.99
+   },
+   {
+    "text": "cuarenta",
+    "start": 58.99,
+    "end": 59.39
+   },
+   {
+    "text": "por",
+    "start": 59.39,
+    "end": 59.47
+   },
+   {
+    "text": "ciento",
+    "start": 59.47,
+    "end": 59.71
+   },
+   {
+    "text": "del",
+    "start": 59.71,
+    "end": 59.87
+   },
+   {
+    "text": "resto.",
+    "start": 59.87,
+    "end": 60.24
+   }
+  ]
+ },
+ {
+  "bloque": 19,
+  "start": 61.17,
+  "end": 63.02,
+  "texto": "La disciplina no se tiene",
+  "palabras": [
+   {
+    "text": "La",
+    "start": 61.18,
+    "end": 61.34
+   },
+   {
+    "text": "disciplina",
+    "start": 61.34,
+    "end": 62.14
+   },
+   {
+    "text": "no",
+    "start": 62.14,
+    "end": 62.38
+   },
+   {
+    "text": "se",
+    "start": 62.38,
+    "end": 62.62
+   },
+   {
+    "text": "tiene",
+    "start": 62.62,
+    "end": 63.02
+   }
+  ]
+ },
+ {
+  "bloque": 20,
+  "start": 63.94,
+  "end": 64.64,
+  "texto": "",
+  "palabras": []
+ },
+ {
+  "bloque": 21,
+  "start": 65.67,
+  "end": 67.03,
+  "texto": "No necesitas un gran cambio.",
+  "palabras": [
+   {
+    "text": "No",
+    "start": 65.68,
+    "end": 65.84
+   },
+   {
+    "text": "necesitas",
+    "start": 65.84,
+    "end": 66.4
+   },
+   {
+    "text": "un",
+    "start": 66.4,
+    "end": 66.48
+   },
+   {
+    "text": "gran",
+    "start": 66.48,
+    "end": 66.72
+   },
+   {
+    "text": "cambio.",
+    "start": 66.72,
+    "end": 67.03
+   }
+  ]
+ },
+ {
+  "bloque": 22,
+  "start": 67.79,
+  "end": 70.82,
+  "texto": "Solo no parar. Cada día un cero",
+  "palabras": [
+   {
+    "text": "Solo",
+    "start": 67.72,
+    "end": 68.12
+   },
+   {
+    "text": "no",
+    "start": 68.12,
+    "end": 68.28
+   },
+   {
+    "text": "parar.",
+    "start": 68.28,
+    "end": 69.0
+   },
+   {
+    "text": "Cada",
+    "start": 69.0,
+    "end": 69.32
+   },
+   {
+    "text": "día",
+    "start": 69.32,
+    "end": 69.88
+   },
+   {
+    "text": "un",
+    "start": 69.88,
+    "end": 70.12
+   },
+   {
+    "text": "cero",
+    "start": 70.12,
+    "end": 70.82
+   }
+  ]
+ },
+ {
+  "bloque": 23,
+  "start": 71.27,
+  "end": 73.1,
+  "texto": "Zero coma cero cero.",
+  "palabras": [
+   {
+    "text": "Zero",
+    "start": 71.44,
+    "end": 71.92
+   },
+   {
+    "text": "coma",
+    "start": 71.92,
+    "end": 72.32
+   },
+   {
+    "text": "cero",
+    "start": 72.32,
+    "end": 72.72
+   },
+   {
+    "text": "cero.",
+    "start": 72.72,
+    "end": 73.1
+   }
+  ]
+ },
+ {
+  "bloque": 24,
+  "start": 73.53,
+  "end": 74.76,
+  "texto": "Uno por ciento mejor.",
+  "palabras": [
+   {
+    "text": "Uno",
+    "start": 73.54,
+    "end": 73.86
+   },
+   {
+    "text": "por",
+    "start": 73.86,
+    "end": 74.02
+   },
+   {
+    "text": "ciento",
+    "start": 74.02,
+    "end": 74.42
+   },
+   {
+    "text": "mejor.",
+    "start": 74.42,
+    "end": 74.76
+   }
+  ]
+ },
+ {
+  "bloque": 25,
+  "start": 75.94,
+  "end": 76.83,
+  "texto": "Nos vemos mañana.",
+  "palabras": [
+   {
+    "text": "Nos",
+    "start": 75.95,
+    "end": 76.11
+   },
+   {
+    "text": "vemos",
+    "start": 76.11,
+    "end": 76.43
+   },
+   {
+    "text": "mañana.",
+    "start": 76.43,
+    "end": 76.83
+   }
+  ]
+ }
+]

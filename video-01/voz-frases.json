@@ -1,86 +1,92 @@
 [
  {
   "i": 0,
-  "texto": "No te hace falta disciplina, te hace falta un plan.",
+  "texto": "No te hace falta disciplina.",
   "start": 0.0,
-  "end": 2.61
+  "end": 1.63
  },
  {
   "i": 1,
-  "texto": "Casi uno de cada tres adultos no se mueve lo suficiente, y no es por pereza.",
-  "start": 2.83,
-  "end": 7.41
+  "texto": "Te falta un plan.",
+  "start": 1.77,
+  "end": 2.645
  },
  {
   "i": 2,
-  "texto": "La motivación sube y baja como una ola.",
-  "start": 7.63,
-  "end": 10.49
+  "texto": "Casi uno de tres adultos no se mueve lo suficiente, y no es por pereza.",
+  "start": 2.865,
+  "end": 7.61
  },
  {
   "i": 3,
-  "texto": "Tu cerebro elige el sofá porque la recompensa del deporte llega más tarde.",
-  "start": 10.71,
-  "end": 14.995
+  "texto": "La motivación sube y baja como una ola.",
+  "start": 7.83,
+  "end": 10.295
  },
  {
   "i": 4,
-  "texto": "Y si el plan es enorme, al tercer día lo acabas dejando.",
-  "start": 15.215,
-  "end": 18.88
+  "texto": "Tu cerebro elige el sofá porque la recompensa del deporte llega tarde.",
+  "start": 10.515,
+  "end": 14.985
  },
  {
   "i": 5,
-  "texto": "El método que más funciona se llama intención de implementación.",
-  "start": 19.1,
-  "end": 22.835
+  "texto": "Y si el plan es enorme, al tercer día lo acabas dejando.",
+  "start": 15.205,
+  "end": 18.89
  },
  {
   "i": 6,
-  "texto": "Es una frase donde se dice: si a tal hora, en tal sitio, entonces hago esto.",
-  "start": 23.055,
-  "end": 27.745
+  "texto": "El método que más funciona se llama intención de implementación.",
+  "start": 19.11,
+  "end": 22.71
  },
  {
   "i": 7,
-  "texto": "Por ejemplo: si a las siete, al salir de trabajar, voy a entrenar.",
-  "start": 27.965,
-  "end": 31.68
+  "texto": "Es una frase: si a tal hora, en tal sitio, entonces hago esto.",
+  "start": 22.93,
+  "end": 26.865
  },
  {
   "i": 8,
-  "texto": "En un estudio, el 91 % de quienes lo aplican hacen ejercicio cada semana, frente a menos del 40 % del resto.",
-  "start": 31.9,
-  "end": 40.52
+  "texto": "Por ejemplo: si son las 7 de la tarde, al salir de trabajar, voy a ir a entrenar.",
+  "start": 27.085,
+  "end": 31.635
  },
  {
   "i": 9,
-  "texto": "La disciplina no se tiene, se diseña.",
-  "start": 40.74,
-  "end": 42.875
+  "texto": "En un estudio, el 90 % de quienes lo escribieron hizo ejercicio cada semana, frente a menos del 40 % del resto.",
+  "start": 31.855,
+  "end": 39.17
  },
  {
   "i": 10,
-  "texto": "No necesitas un gran cambio.",
-  "start": 43.175,
-  "end": 44.52
+  "texto": "La disciplina no se tiene, se diseña.",
+  "start": 39.39,
+  "end": 42.19
  },
  {
   "i": 11,
-  "texto": "Solo no parar.",
-  "start": 44.66,
-  "end": 45.42
+  "texto": "No necesitas un gran cambio.",
+  "start": 42.41,
+  "end": 43.82
  },
  {
   "i": 12,
-  "texto": "Cada día, un 0,0001 % mejor.",
-  "start": 45.97,
-  "end": 50.005
+  "texto": "Solo no parar.",
+  "start": 43.96,
+  "end": 44.745
  },
  {
   "i": 13,
+  "texto": "Cada día, 0,0001 % mejor.",
+  "start": 45.295,
+  "end": 49.975
+ },
+ {
+  "i": 14,
   "texto": "Nos vemos mañana.",
-  "start": 50.305,
-  "end": 53.105
+  "start": 50.275,
+  "end": 52.805
  }
 ]

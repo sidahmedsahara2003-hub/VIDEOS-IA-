@@ -14,47 +14,52 @@ Uso: MODELO=/ruta/parakeet python3 scripts/montar_voz.py
 import difflib, json, os, re, subprocess
 import numpy as np, soundfile as sf, librosa
 
-SRC = "grabacion/mi-voz-2.m4a"
+SRC = "grabacion/mi-voz-3.m4a"   # grabación definitiva (la más limpia: 40 dB de señal/ruido)
 SR = 48000
 TONO, TIMBRE = 0.86, 0.93      # transformación «media» (ver scripts/transformar.py)
 P_, P_FRASE, P_LEMA = 0.14, 0.22, 0.55
 
 # (inicio, fin, pausa después, texto). La frase acaba en la toma que termina en punto.
 TOMAS = [
-    (4.55, 7.37, P_FRASE, "No te hace falta disciplina, te hace falta un plan."),
-    (8.30, 8.89, P_, "Casi uno"),
-    (9.37, 10.74, P_, "de cada tres adultos"),
-    (11.25, 13.65, P_FRASE, "no se mueve lo suficiente, y no es por pereza."),
-    (14.21, 17.11, P_FRASE, "La motivación sube y baja como una ola."),
-    (17.81, 22.38, P_FRASE, "Tu cerebro elige el sofá porque la recompensa del deporte llega más tarde."),
-    (23.06, 25.74, P_, "Y si el plan es enorme, al tercer día"),
-    (26.20, 27.14, P_FRASE, "lo acabas dejando."),
-    (27.86, 29.91, P_, "El método que más funciona se llama"),
-    (30.65, 32.12, P_FRASE, "intención de implementación."),
-    (34.39, 39.31, P_FRASE, "Es una frase donde se dice: si a tal hora, en tal sitio, entonces hago esto."),
-    (39.96, 41.50, P_, "Por ejemplo: si a las siete,"),              # fuera: «só a trabajar»
-    (42.78, 45.14, P_FRASE, "al salir de trabajar, voy a entrenar."),
-    (66.86, 70.99, P_, "En un estudio, el 91 % de quienes lo aplican"),  # fuera: «Vale, te repito…»
-    (71.50, 75.94, P_FRASE, "hacen ejercicio cada semana, frente a menos del 40 % del resto."),
-    (76.33, 77.58, 0.16, "La disciplina no se tiene,"),
-    (78.35, 79.07, 0.3, "se diseña."),
-    # Cierre nuevo (grabacion/cierre.m4a)
-    (4.82, 6.30, P_, "No necesitas un gran cambio.", "cierre"),
-    (6.62, 7.62, P_LEMA, "Solo no parar.", "cierre"),
-    (7.98, 12.90, 0.3, "Cada día, un 0,0001 % mejor.", "cierre"),
-    (13.30, 14.62, 1.6, "Nos vemos mañana.", "cierre"),            # fuera: «en el día»
+    (9.62, 11.43, P_, "No te hace falta disciplina."),          # 2.ª toma; fuera: «Hoy definitivo…», «Primera frase»
+    (12.00, 12.92, P_FRASE, "Te falta un plan."),
+    (14.90, 17.39, P_, "Casi uno de tres adultos"),              # fuera: «Segunda frase»
+    (17.78, 20.10, P_FRASE, "no se mueve lo suficiente, y no es por pereza."),
+    (21.18, 24.05, P_FRASE, "La motivación sube y baja como una ola."),
+    (24.33, 29.15, P_FRASE, "Tu cerebro elige el sofá porque la recompensa del deporte llega tarde."),
+    (31.10, 35.06, P_FRASE, "Y si el plan es enorme, al tercer día lo acabas dejando."),  # fuera: «I see you»
+    (35.52, 37.58, P_, "El método que más funciona se llama"),
+    (38.05, 39.62, P_FRASE, "intención de implementación."),
+    (40.48, 44.60, P_FRASE, "Es una frase: si a tal hora, en tal sitio, entonces hago esto."),
+    (44.70, 49.61, P_FRASE, "Por ejemplo: si son las 7 de la tarde, al salir de trabajar, voy a ir a entrenar."),
+    (50.18, 52.48, 0.06, "En un estudio, el 90 % de quienes"),
+    (53.52, 56.90, 0.10, "lo escribieron hizo ejercicio cada semana, frente"),   # fuera: «lo escriben,»
+    (58.40, 60.45, P_FRASE, "a menos del 40 % del resto."),
+    (61.10, 63.10, 0.16, "La disciplina no se tiene,"),
+    (63.70, 64.64, P_FRASE, "se diseña."),
+    (65.62, 67.03, P_, "No necesitas un gran cambio."),
+    (67.50, 68.80, P_LEMA, "Solo no parar."),
+    (0.06, 4.90, 0.3, "Cada día, 0,0001 % mejor.", "lema"),              # montado abajo (LEMA_PIEZAS)
+    (75.90, 76.83, 1.6, "Nos vemos mañana."),
 ]
 # Cómo se pronuncian los números (para emparejar con lo que reconoce Parakeet)
-DICHO = {"91": "noventa y uno por ciento", "40": "cuarenta por ciento", "00001": "cero coma cero cero cero uno por ciento"}
+DICHO = {"90": "noventa por ciento", "91": "noventa y uno por ciento", "40": "cuarenta por ciento", "00001": "cero coma cero cero cero uno por ciento"}
 
 norm = lambda s: re.sub(r"[^a-zñ0-9]", "", s.lower().translate(str.maketrans("áéíóúü", "aeiouu")))
 
-FUENTES = {"principal": SRC, "cierre": "grabacion/cierre.m4a"}
+# El lema se dijo «un cero… cero coma cero cero… uno»: se reordena para que suene
+# «un cero coma cero cero cero uno por ciento mejor» (0,0001 %), con la propia voz.
+LEMA_PIEZAS = [(69.00, 70.06), (71.28, 73.12), (70.28, 70.85), (73.50, 74.80)]  # «Cada día» + «cero coma cero cero» + «cero» + «uno por ciento mejor»
+FUENTES = {"principal": SRC}
 AUDIO, RMS = {}, {}
 for nombre, ruta in FUENTES.items():
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", ruta, "-ac", "1", "-ar", str(SR), f"grabacion/fuente-{nombre}.wav"], check=True)
     AUDIO[nombre], _ = sf.read(f"grabacion/fuente-{nombre}.wav", dtype="float32")
     RMS[nombre] = librosa.feature.rms(y=AUDIO[nombre], hop_length=240, frame_length=960)[0]
+_p = AUDIO["principal"]
+_g = np.zeros(int(0.05 * SR), np.float32)
+AUDIO["lema"] = np.concatenate(sum([[_p[int(a * SR):int(b * SR)], _g] for a, b in LEMA_PIEZAS], []))
+RMS["lema"] = librosa.feature.rms(y=AUDIO["lema"], hop_length=240, frame_length=960)[0]
 
 def tranquilo(t, fuente, ventana=0.08):
     rms = RMS[fuente]

@@ -211,7 +211,7 @@ const VIAJE1 = E("plan") + 0.15;           // cámara: gancho → dato
 world.push(`
   <div id="s1-cab" class="abs center" style="left:${S1.x - 480}px;top:${S1.y - 520}px;width:960px;height:120px;gap:20px;font-size:76px;font-weight:900;letter-spacing:-.03em;color:#fff">
     <span id="s1-no" style="display:inline-block;color:${C.bad}">NO</span>
-    <span id="s1-tefalta" style="display:inline-block">TE HACE FALTA</span>
+    <span id="s1-tefalta" style="display:inline-block">TE FALTA</span>
     <span id="s1-un" style="display:inline-block;color:${C.good}">UN</span>
   </div>
   <div class="abs center" style="left:${S1.x - 480}px;top:${S1.y - 360}px;width:960px;height:140px">
@@ -255,8 +255,8 @@ world.push(`
 world.push(character("adA", S2.x - 290, S2.y + 490, LOOK.adultoA, { scale: 0.92, poses: [[0, "idle"], [P("mueve"), "run"]], mood: [[0, 0.5], [P("mueve"), 0.9]], off: 0.9 }));
 world.push(character("adB", S2.x, S2.y + 490, LOOK.adultoB, { scale: 0.92, poses: [[0, "idle"], [P("mueve") + 0.12, "run"]], mood: [[0, 0.5], [P("mueve"), 0.9]], off: 1.7 }));
 world.push(character("adC", S2.x + 290, S2.y + 490, LOOK.adultoC, { scale: 0.92, poses: [[0, "idle"], [P("no", 2) + 0.05, "sit"]], mood: [[0, 0.5], [P("no", 2), -0.8], [P("pereza") + 0.2, 0.2]], off: 2.4 }));
-pop("#adA", P("uno"));
-pop("#adB", P("cada"));
+pop("#adA", P("uno") - 0.3);
+pop("#adB", P("de") - 0.05);
 pop("#adC", P("tres"));
 tw(`tl.fromTo("#s2-sofa",{opacity:0,x:260},{opacity:1,x:0,duration:0.4,ease:"power3.out"},${r(P("no", 2) - 0.15)});`);
 tw(`tl.fromTo("#adC",{filter:"grayscale(0) brightness(1)"},{filter:"grayscale(1) brightness(0.62)",duration:0.5,ease:"power2.out"},${r(P("no", 2))});`);
@@ -365,13 +365,13 @@ world.push(`<div id="s6-plano" class="abs blueprint" style="left:${S6.x - 470}px
     <div id="s6-metodo" class="center" style="position:absolute;left:40px;top:40px;height:60px;gap:12px;color:#bfdbfe;font-family:'Space Mono',monospace;font-size:34px;font-weight:700">${icon("pencil-ruler", 46, "#bfdbfe")} MÉTODO Nº1</div>
     <div id="s6-titulo" style="position:absolute;left:40px;right:40px;top:120px;font-family:'Space Mono',monospace;font-weight:700;font-size:56px;line-height:1.1;color:#fff">${typed("INTENCIÓN DE IMPLEMENTACIÓN", P("intencion") - 0.05, E("implementacion") - 0.1)}</div>
     <div style="position:absolute;left:40px;top:330px;display:flex;flex-direction:column;gap:16px">
-      ${fila(0, "SI", "tal hora", "LAS 7:00")}${fila(1, "EN", "tal sitio", "AL SALIR DE TRABAJAR")}${fila(2, "ENTONCES", "hago esto", "VOY A ENTRENAR")}
+      ${fila(0, "SI", "tal hora", "LAS 7 DE LA TARDE")}${fila(1, "EN", "tal sitio", "AL SALIR DE TRABAJAR")}${fila(2, "ENTONCES", "hago esto", "VOY A ENTRENAR")}
     </div>
   </div>`);
 pop("#s6-plano", P("el", 3) - 0.1, 0.5);
 tw(`tl.fromTo("#s6-metodo",{opacity:0,x:-40},{opacity:1,x:0,duration:0.3,ease:"power3.out"},${r(P("metodo"))});`);
 const tSlot = [P("si", 2), P("en"), P("entonces")];
-const fill = [["s6-ok0", "LAS 7:00", P("siete")], ["s6-ok1", "AL SALIR DE TRABAJAR", P("salir")], ["s6-ok2", "VOY A ENTRENAR", P("voy")]];
+const fill = [["s6-ok0", "LAS 7 DE LA TARDE", P("7")], ["s6-ok1", "AL SALIR DE TRABAJAR", P("salir")], ["s6-ok2", "VOY A ENTRENAR", P("voy")]];
 tSlot.forEach((t, i) => {
   tw(`tl.fromTo("#s6-kw${i}",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"back.out(2)"},${r(t - 0.05)});`);
   tw(`tl.fromTo("#s6-hueco${i}",{strokeDashoffset:1000,opacity:0},{strokeDashoffset:0,opacity:1,duration:0.45,ease:"power2.out"},${r(t + 0.05)});`);
@@ -387,24 +387,26 @@ burst(S6.x + 150, S6.y + 300, P("entrenar") + 0.1, [C.good, "#86efac", "#ffffff"
 world.push(`<div id="s9-panel" class="abs glass" style="left:${S9.x - 460}px;top:${S9.y - 520}px;width:920px;height:1000px">
     <div id="s9-cab" style="position:absolute;left:44px;top:36px;display:flex;align-items:center;gap:18px">${icon("flask", 70, "#93c5fd")}
       <div><div class="lbl" style="font-size:46px;color:#fff">UN ESTUDIO</div><div class="lbl" style="font-size:26px;color:#94a3b8">Milne, Orbell y Sheeran · 2002</div></div></div>
-    <div style="position:absolute;left:130px;top:190px">${flapBoard("s9-a", 3, [{ t: 0, text: "   ", color: C.good }, { t: P("91") - 0.1, text: "91%", color: C.good }], { w: 92, h: 140, gap: 6, size: 98 })}</div>
+    <div style="position:absolute;left:130px;top:190px">${flapBoard("s9-a", 3, [{ t: 0, text: "   ", color: C.good }, { t: P("90") - 0.1, text: "90%", color: C.good }], { w: 92, h: 140, gap: 6, size: 98 })}</div>
     <div style="position:absolute;left:520px;top:190px">${flapBoard("s9-b", 4, [{ t: 0, text: "    ", color: "#cbd5e1" }, { t: P("menos") - 0.1, text: "<40%", color: "#cbd5e1" }], { w: 72, h: 140, gap: 6, size: 86 })}</div>
-    <div style="position:absolute;left:150px;top:360px;width:240px;height:460px;display:flex;align-items:flex-end"><div id="s9-barA" class="barra" style="height:${Math.round(460 * 0.91)}px;background:${C.good};box-shadow:0 0 18px ${C.good},0 0 50px ${C.good}88"></div></div>
+    <div style="position:absolute;left:150px;top:360px;width:240px;height:460px;display:flex;align-items:flex-end"><div id="s9-barA" class="barra" style="height:${Math.round(460 * 0.90)}px;background:${C.good};box-shadow:0 0 18px ${C.good},0 0 50px ${C.good}88"></div></div>
     <div style="position:absolute;left:530px;top:360px;width:240px;height:460px;display:flex;align-items:flex-end"><div id="s9-barB" class="barra" style="height:${Math.round(460 * 0.38)}px;background:#64748b"></div></div>
-    <div id="s9-labA" class="center lbl" style="position:absolute;left:110px;top:840px;width:320px;height:110px;font-size:36px;color:#fff;text-align:center;line-height:1.1">LO<br>APLICAN</div>
+    <div id="s9-labA" class="center lbl" style="position:absolute;left:110px;top:840px;width:320px;height:110px;font-size:36px;color:#fff;text-align:center;line-height:1.1">LA<br>ESCRIBIERON</div>
+    <div id="s9-doble" class="center pill" style="position:absolute;left:500px;top:470px;width:380px;height:84px;background:#facc15;color:#0b1020;font-size:40px;box-shadow:0 0 30px #facc1566">MÁS DEL DOBLE</div>
     <div id="s9-labB" class="center lbl" style="position:absolute;left:490px;top:840px;width:320px;height:110px;font-size:36px;color:#94a3b8;text-align:center;line-height:1.1">EL RESTO</div>
   </div>`);
 pop("#s9-panel", P("estudio") - 0.2, 0.45);
-tw(`tl.fromTo("#s9-barA",{scaleY:0},{scaleY:1,duration:1.1,ease:"power3.out"},${r(P("91"))});`);
-tw(`tl.fromTo("#s9-labA",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},${r(P("aplican") - 0.1)});`);
+tw(`tl.fromTo("#s9-barA",{scaleY:0},{scaleY:1,duration:1.1,ease:"power3.out"},${r(P("90"))});`);
+tw(`tl.fromTo("#s9-labA",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},${r(P("escribieron") - 0.1)});`);
 tw(`tl.fromTo("#s9-barB",{scaleY:0},{scaleY:1,duration:0.9,ease:"power3.out"},${r(P("menos"))});`);
+tw(`tl.fromTo("#s9-doble",{scale:0,rotation:-12,opacity:0},{scale:1,rotation:-4,opacity:1,duration:0.4,ease:"back.out(2.5)"},${r(E("resto") + 0.05)});`);
 tw(`tl.fromTo("#s9-labB",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},${r(P("resto") - 0.1)});`);
 
 // ======================= ESCENA 10 · La disciplina no se tiene. Se diseña. =======================
 world.push(`
   <div id="s10-cab" class="abs center" style="left:${S10.x - 480}px;top:${S10.y - 520}px;width:960px;height:120px;font-size:90px;font-weight:900;color:#fff;letter-spacing:-.03em">NO SE TIENE</div>
   <div class="abs center" style="left:${S10.x - 480}px;top:${S10.y - 360}px;width:960px;height:140px">
-    ${flapBoard("s10-sf", 10, [{ t: 0, text: "DISCIPLINA", color: "#ffffff" }, { t: P("se", 5) - 0.2, text: "SE DISEÑA", color: C.good }], { w: 78, gap: 8, size: 88 })}
+    ${flapBoard("s10-sf", 10, [{ t: 0, text: "DISCIPLINA", color: "#ffffff" }, { t: P("se", 4) - 0.2, text: "SE DISEÑA", color: C.good }], { w: 78, gap: 8, size: 88 })}
   </div>`);
 neonStrike("s10-tacha", S10.x - 330, S10.y - 466, 660, C.bad, P("tiene") + 0.05);
 world.push(character("nov10", S10.x - 180, S10.y + 440, LOOK.novato, {
@@ -463,10 +465,10 @@ world.push(`
   <div id="s12-adios" class="abs center pill" style="left:${S12.x - 280}px;top:${S12.y + 360}px;width:560px;height:96px;border:4px solid rgba(255,255,255,.35);color:#fff;font-size:44px;letter-spacing:.06em">NOS VEMOS MAÑANA</div>
   <div id="s12-mejor" class="abs center" style="left:${S12.x - 480}px;top:${S12.y + 150}px;width:960px;height:180px;font-size:170px;font-weight:900;color:${C.good};letter-spacing:-.04em;text-shadow:0 0 30px ${C.good}88">MEJOR</div>
 `);
-tw(`tl.fromTo("#s12-logo",{scale:0,rotation:-120},{scale:1,rotation:0,duration:0.6,ease:"back.out(1.6)"},${r(P("cada", 3) - 0.15)});`);
-[P("cada", 3), P("dia", 2), P("00001") - 0.2, P("mejor") - 0.3].forEach((t, i) =>
+tw(`tl.fromTo("#s12-logo",{scale:0,rotation:-120},{scale:1,rotation:0,duration:0.6,ease:"back.out(1.6)"},${r(P("cada", 2) - 0.15)});`);
+[P("cada", 2), P("dia", 2), P("00001") - 0.2, P("mejor") - 0.3].forEach((t, i) =>
   tw(`tl.fromTo("#s12-b${i}",{scaleY:0},{scaleY:1,duration:0.35,ease:"back.out(2.2)"},${r(t)});`));
-tw(`tl.fromTo("#s12-tag",{opacity:0,y:16,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.3,ease:"power3.out"},${r(P("cada", 3))});`);
+tw(`tl.fromTo("#s12-tag",{opacity:0,y:16,filter:"blur(6px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.3,ease:"power3.out"},${r(P("cada", 2))});`);
 tw(`tl.fromTo("#s12-mejor",{scale:3,opacity:0},{scale:1,opacity:1,duration:0.35,ease:"power4.out"},${r(P("mejor") - 0.05)});`);
 tw(`tl.fromTo("#s12-logo",{scale:1},{scale:1.08,duration:0.15,yoyo:true,repeat:1,ease:"power2.out",immediateRender:false},${r(P("mejor"))});`);
 pop("#s12-adios", P("nos") - 0.05, 0.4);
@@ -491,7 +493,7 @@ cam(A1, A1 + 0.35, 1800, 3280, 0.36);
 const V6 = P("metodo") - 0.25;
 cam(V6, V6 + 0.55, S6.x, S6.y + 20, 1.0, "inOut");
 cam(P("si", 2) - 0.2, P("si", 2) + 0.3, S6.x, S6.y + 60, 1.04);
-cam(P("siete") - 0.2, P("siete") + 0.3, S6.x, S6.y + 80, 1.06);
+cam(P("7") - 0.2, P("7") + 0.3, S6.x, S6.y + 80, 1.06);
 const V9 = E("entrenar") + 0.25;
 cam(V9, V9 + 0.55, S9.x, S9.y - 30, 1.0, "inOut", 0.3);
 // Antes del cierre: se aleja y enseña todo el camino recorrido
@@ -505,7 +507,7 @@ const V11 = E("disena") + 0.05;
 cam(V11, V11 + 0.5, S11.x, S11.y - 20, 1.0, "inOut", 0.3);
 cam(P("parar") - 0.05, P("parar") + 0.12, S11.x, S11.y - 20, 1.05, "out");
 cam(P("parar") + 0.2, P("parar") + 0.5, S11.x, S11.y - 20, 1.0);
-const V12 = P("cada", 3) - 0.45;
+const V12 = P("cada", 2) - 0.45;
 cam(V12, V12 + 0.55, S12.x, S12.y - 40, 1.0, "inOut", 0.3);
 cam(P("mejor") - 0.05, P("mejor") + 0.12, S12.x, S12.y - 60, 1.07, "out");
 cam(P("mejor") + 0.2, P("mejor") + 0.6, S12.x, S12.y - 40, 1.0);
@@ -557,12 +559,12 @@ fill.forEach(([, , t]) => sfx("click", t - 0.05, 0.45));
 sfx("sparkle", P("entrenar") + 0.1, 0.4);
 // Estudio
 sfx("pop", P("estudio") - 0.2, 0.4);
-sfx("typing", P("91") - 0.1, 0.25);
-sfx("ping", P("91") + 0.3, 0.45);
+sfx("typing", P("90") - 0.1, 0.25);
+sfx("ping", P("90") + 0.3, 0.45);
 sfx("typing", P("menos") - 0.1, 0.2);
 // Cierre
 sfx("whoosh-short", P("tiene") + 0.05, 0.4);
-sfx("typing", P("se", 5) - 0.2, 0.3);
+sfx("typing", P("se", 4) - 0.2, 0.3);
 sfx("impact-bass-1", P("disena"), 0.85);
 sfx("sparkle", P("disena") + 0.1, 0.5);
 sfx("pop", P("gran") - 0.2, 0.45);
@@ -571,13 +573,26 @@ sfx("pop", P("solo"), 0.35);
 sfx("pop", P("no", 6), 0.35);
 sfx("impact-bass-1", P("parar"), 0.55);
 sfx("whoosh", V12, 0.55);
-sfx("whoosh-short", P("cada", 3) - 0.15, 0.45);
-[P("cada", 3), P("dia", 2), P("00001") - 0.2, P("mejor") - 0.3].forEach((t) => sfx("click-soft", t, 0.45));
+sfx("whoosh-short", P("cada", 2) - 0.15, 0.45);
+[P("cada", 2), P("dia", 2), P("00001") - 0.2, P("mejor") - 0.3].forEach((t) => sfx("click-soft", t, 0.45));
 sfx("chime", P("nos") + 0.05, 0.4);
 sfx("typing", P("00001") - 0.05, 0.3);
 sfx("impact-bass-1", P("mejor"), 0.85);
 sfx("sparkle", P("mejor") + 0.1, 0.5);
 
+
+// ======================= CAPÍTULOS =======================
+// Etiqueta fija bajo los subtítulos: dice en qué parte del vídeo estás.
+const CAPITULOS = [
+  [0.1, "EL PROBLEMA"], [P("la") - 0.25, "POR QUÉ CUESTA"], [P("metodo") - 0.25, "EL MÉTODO"],
+  [P("estudio") - 0.25, "LA PRUEBA"], [P("disciplina", 2) - 0.25, "RECUERDA"],
+];
+const capHTML = CAPITULOS.map(([, txt], i) =>
+  `<div id="cap-${i}" class="capi"><span class="capn">${i + 1}/${CAPITULOS.length}</span>${txt}</div>`).join("");
+CAPITULOS.forEach(([t], i) => {
+  tw(`tl.fromTo("#cap-${i}",{opacity:0,y:-14},{opacity:1,y:0,duration:0.25,ease:"power3.out"},${r(t)});`);
+  if (i + 1 < CAPITULOS.length) tw(`tl.to("#cap-${i}",{opacity:0,y:14,duration:0.2,ease:"power2.in"},${r(CAPITULOS[i + 1][0] - 0.2)});`);
+});
 // Iconos dentro de las casillas
 const ICON_SVG = { check: icon("check-fat", 38, "#fff"), x: icon("x", 38, "#fff") };
 let worldHTML = world.join("\n");
@@ -644,6 +659,11 @@ const mundo = `<template>
     .glass { border-radius:44px; background:rgba(255,255,255,.08); border:2px solid rgba(255,255,255,.22);
       backdrop-filter:blur(22px); box-shadow:0 30px 80px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.25); }
     .barra { width:240px; border-radius:22px 22px 8px 8px; transform-origin:50% 100%; }
+    #capitulos { position:absolute; left:0; right:0; top:232px; height:46px; pointer-events:none; }
+    .capi { position:absolute; left:50%; top:0; transform:translateX(-50%); display:flex; align-items:center; gap:12px; white-space:nowrap;
+      height:46px; padding:0 20px; border-radius:23px; background:rgba(7,9,13,.7); border:2px solid rgba(255,255,255,.18);
+      color:#fff; font-size:24px; font-weight:900; letter-spacing:.14em; opacity:0; }
+    .capn { color:#04130a; background:${C.good}; border-radius:14px; padding:2px 10px; letter-spacing:.02em; }
     .pt { position:absolute; border-radius:3px; opacity:0; }
     .neon { position:absolute; height:12px; border-radius:6px; background:#fff;
       box-shadow:0 0 4px #fff, 0 0 14px var(--c), 0 0 34px var(--c), 0 0 64px var(--c); }
@@ -657,6 +677,7 @@ const mundo = `<template>
       </svg>
       ${worldHTML}
     </div>
+    <div id="capitulos">${capHTML}</div>
   </div>
   <script>
     const DATA = ${JSON.stringify(DATA)};
@@ -678,7 +699,7 @@ const KEY = {
   sofa: C.bad, tarde: C.bad, enorme: C.bad, dejas: C.bad, metodo: C.good, intencion: C.good, implementacion: C.good,
   frase: C.good, si: C.good, entonces: C.good, siete: C.good, trabajo: C.good, camino: C.good, diez: C.good,
   noventa: C.good, cuarenta: C.bad, tiene: C.bad, disena: C.good, escribe: C.good, comentarios: C.good, sigueme: C.good,
-  dejando: C.bad, entrenar: C.good, "91": C.good, "40": C.bad, "00001": C.good, mejor: C.good, recuerda: C.good, falta: C.bad, aplican: C.good,
+  dejando: C.bad, entrenar: C.good, "90": C.good, "91": C.good, "40": C.bad, "00001": C.good, mejor: C.good, recuerda: C.good, falta: C.bad, aplican: C.good,
 };
 const groups = [];
 let g = [];
@@ -709,13 +730,14 @@ groups.forEach((grp, gi) => {
   grp.forEach((w, wi) => {
     subsTL += `tl.fromTo("#c${gi}-${wi}",{opacity:.35,y:10},{opacity:1,y:0,duration:.1,ease:"power2.out"},${r(Math.max(t0, w.start))});`;
     if (spans.includes(`id="c${gi}-${wi}b"`)) subsTL += `tl.fromTo("#c${gi}-${wi}b",{scaleX:0},{scaleX:1,duration:.16,ease:"power3.out"},${r(Math.max(t0, w.start))});`;
+    if (spans.includes(`id="c${gi}-${wi}b"`)) subsTL += `tl.fromTo("#c${gi}-${wi}",{scale:1.25},{scale:1,duration:.28,ease:"back.out(2.5)",immediateRender:false},${r(Math.max(t0, w.start))});`;
   });
   subsTL += `tl.set("#cap${gi}",{opacity:0,visibility:"hidden"},${r(t1)});\n`;
 });
 const subs = `<template>
   <style>
     #root { position:absolute; inset:0; font-family:Inter, sans-serif; }
-    .cap { isolation:isolate; position:absolute; left:60px; right:60px; top:250px; text-align:center; font-weight:900; color:#fff;
+    .cap { isolation:isolate; position:absolute; left:60px; right:60px; top:298px; text-align:center; font-weight:900; color:#fff;
       line-height:1.2; letter-spacing:-.02em; opacity:0; visibility:hidden; text-shadow:0 6px 24px rgba(0,0,0,.6); }
     .cap > .bgc { position:absolute; left:50%; top:-14px; bottom:-14px; width:var(--bw); transform:translateX(-50%); background:rgba(7,9,13,.62); border-radius:28px; z-index:-1; }
     .w { display:inline-block; position:relative; }
