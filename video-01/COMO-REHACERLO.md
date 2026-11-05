@@ -7,7 +7,7 @@ autor transformada. Todo se genera con scripts.
 
 | Archivo | Qué es |
 |---|---|
-| `grabacion/mi-voz-2.m4a` | La grabación original (la más limpia de las dos) |
+| `grabacion/mi-voz-3.m4a` | La grabación definitiva (la más limpia: 40 dB de señal/ruido) |
 | `scripts/montar_voz.py` | Corta las tomas buenas, quita titubeos y silencios, saca el tiempo de cada palabra y transforma la voz → `voz.wav`, `palabras.json`, `guion.txt` |
 | `scripts/transformar.py` | Cambia el tono y el timbre de la voz (vocoder WORLD) y le da acabado de locutor |
 | `scripts/transcribir.py` | Transcribe una grabación entera con Parakeet (para ver qué se dice y dónde) |
