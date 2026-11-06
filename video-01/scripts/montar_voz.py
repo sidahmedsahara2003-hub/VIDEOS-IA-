@@ -16,7 +16,7 @@ import numpy as np, soundfile as sf, librosa
 
 SRC = "grabacion/mi-voz-3.m4a"   # grabación definitiva (la más limpia: 40 dB de señal/ruido)
 SR = 48000
-TONO, TIMBRE = 0.86, 0.93      # transformación «media» (ver scripts/transformar.py)
+TONO, TIMBRE, METODO = 0.94, 1.0, "natural"   # muestra A «natural suave» (ver scripts/transformar.py)
 P_, P_FRASE, P_LEMA = 0.14, 0.22, 0.55
 
 # (inicio, fin, pausa después, texto). La frase acaba en la toma que termina en punto.
@@ -173,6 +173,6 @@ json.dump(palabras, open("palabras.json", "w", encoding="utf-8"), ensure_ascii=F
 json.dump(frases, open("voz-frases.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 open("guion.txt", "w", encoding="utf-8").write(" ".join(f["texto"] for f in frases) + "\n")
 
-subprocess.run(["python3", "scripts/transformar.py", "voz-limpia.wav", "voz.wav", str(TONO), str(TIMBRE)], check=True)
+subprocess.run(["python3", "scripts/transformar.py", "voz-limpia.wav", "voz.wav", str(TONO), str(TIMBRE), METODO], check=True)
 print(f"OK · {len(v) / SR:.2f} s · {len(palabras)} palabras · {len(frases)} frases · "
       f"{aciertos}/{total} palabras reconocidas por Parakeet (el resto, interpoladas)")
