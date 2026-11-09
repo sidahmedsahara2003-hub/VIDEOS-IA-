@@ -1,18 +1,12 @@
-import { loadFont } from "@remotion/fonts";
 import {
   AbsoluteFill,
   Easing,
   interpolate,
   random,
-  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-
-// Inter en local (public/fonts): el render no depende de internet
-const fontFamily = "Inter";
-loadFont({ family: fontFamily, url: staticFile("fonts/inter-latin-700-normal.woff2"), weight: "700" });
-loadFont({ family: fontFamily, url: staticFile("fonts/inter-latin-900-normal.woff2"), weight: "900" });
+import { FUENTE as fontFamily } from "./serie/base";
 
 // Paleta de la serie
 const VERDE = "#22c55e";
@@ -22,19 +16,25 @@ const TINTA = "#04130a";
 export type CierreProps = {
   readonly lema: string;
   readonly despedida: string;
+  /** Tiempos (s) para sincronizar con la voz; sin ellos usa los del cierre suelto de 4 s. */
+  readonly tiempos?: { logo: number; barras: number[]; numero: number; mejor: number; adios: number };
+  /** Sin fondo propio cuando va dentro de un vídeo (usa el fondo de la serie). */
+  readonly sinFondo?: boolean;
 };
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const muelle = Easing.spring({ damping: 14 });
 
 /** Cierre de la serie: el logo «0,0001 % · CADA DÍA» se construye y se despide. */
-export const Cierre = ({ lema, despedida }: CierreProps) => {
+export const Cierre = ({ lema, despedida, tiempos, sinFondo }: CierreProps) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const s = (seg: number) => seg * fps;
 
   // Tiempos (en segundos)
-  const T_LOGO = 0.1, T_BARRAS = 0.55, T_NUM = 1.2, T_MEJOR = 2.2, T_ADIOS = 2.8;
+  const T_LOGO = tiempos?.logo ?? 0.1, T_BARRAS = tiempos?.barras[0] ?? 0.55;
+  const T_BARRA = tiempos?.barras ?? [0, 1, 2, 3].map((i) => 0.55 + i * 0.15);
+  const T_NUM = tiempos?.numero ?? 1.2, T_MEJOR = tiempos?.mejor ?? 2.2, T_ADIOS = tiempos?.adios ?? 2.8;
   const barras = [70, 120, 180, 250];
   const numero = "0,0001%";
   const letras = Math.floor(interpolate(frame, [s(T_NUM), s(T_NUM + 0.6)], [0, numero.length], clamp));
@@ -45,11 +45,11 @@ export const Cierre = ({ lema, despedida }: CierreProps) => {
     <AbsoluteFill
       style={{
         fontFamily,
-        backgroundColor: OSCURO,
-        backgroundImage: `radial-gradient(circle at 50% 42%, #173a26cc 0%, transparent 62%),
+        backgroundColor: sinFondo ? "transparent" : OSCURO,
+        backgroundImage: sinFondo ? undefined : `radial-gradient(circle at 50% 42%, #173a26cc 0%, transparent 62%),
           linear-gradient(rgba(255,255,255,.05) 2px, transparent 2px),
           linear-gradient(90deg, rgba(255,255,255,.05) 2px, transparent 2px)`,
-        backgroundSize: "100% 100%, 96px 96px, 96px 96px",
+        backgroundSize: sinFondo ? undefined : "100% 100%, 96px 96px, 96px 96px",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -108,7 +108,7 @@ export const Cierre = ({ lema, despedida }: CierreProps) => {
                   background: TINTA,
                   borderRadius: "12px 12px 0 0",
                   transformOrigin: "50% 100%",
-                  scale: `1 ${interpolate(frame, [s(T_BARRAS + i * 0.15), s(T_BARRAS + i * 0.15 + 0.35)], [0, 1], { ...clamp, easing: muelle })}`,
+                  scale: `1 ${interpolate(frame, [s(T_BARRA[i]), s(T_BARRA[i] + 0.35)], [0, 1], { ...clamp, easing: muelle })}`,
                 }}
               />
             ))}

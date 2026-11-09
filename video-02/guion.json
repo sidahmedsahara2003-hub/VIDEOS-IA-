@@ -1,0 +1,16 @@
+{
+  "titulo": "No eres adicto al móvil",
+  "escenas": [
+    {"id": "gancho", "texto": "No eres adicto al móvil: está diseñado para engancharte."},
+    {"id": "veces", "texto": "De media, miramos el móvil unas noventa y seis veces al día."},
+    {"id": "tragaperras", "texto": "Cada notificación funciona como una tragaperras: nunca sabes qué premio toca, y por eso vuelves."},
+    {"id": "ingenieros", "texto": "Y tu fuerza de voluntad compite contra equipos enteros de ingenieros."},
+    {"id": "metodo", "texto": "El método se llama la regla de los veinte segundos."},
+    {"id": "friccion", "texto": "Si algo te cuesta veinte segundos más, lo haces mucho menos."},
+    {"id": "checklist", "texto": "Así que ponle fricción: el móvil cargando en otra habitación, las notificaciones fuera, y las redes fuera de la pantalla de inicio."},
+    {"id": "estudio", "texto": "En un estudio de la Universidad de Texas, quienes dejaron el móvil en otra habitación rindieron mejor que quienes lo tenían en la mesa, aunque estuviera apagado."},
+    {"id": "distancia", "texto": "No necesitas más fuerza de voluntad. Necesitas más distancia."},
+    {"id": "cierre", "texto": "Cada día, un cero coma cero cero cero uno por ciento mejor. Nos vemos mañana."}
+  ],
+  "en_pantalla": {"noventa y seis": "96", "veinte": "20", "cero coma cero cero cero uno por ciento": "0,0001 %"}
+}

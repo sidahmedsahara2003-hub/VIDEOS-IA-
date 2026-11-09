@@ -1,0 +1,1551 @@
+{
+ "fps": 30,
+ "duracion": 50.142,
+ "voz": "kokoro",
+ "escenas": [
+  {
+   "id": "gancho",
+   "texto": "No eres adicto al móvil: está diseñado para engancharte.",
+   "audio": "movil/voz/gancho.wav",
+   "inicio": 0.0,
+   "duracion": 3.519,
+   "palabras": [
+    {
+     "text": "No",
+     "t": 0.0
+    },
+    {
+     "text": "eres",
+     "t": 0.16
+    },
+    {
+     "text": "adicto",
+     "t": 0.48
+    },
+    {
+     "text": "al",
+     "t": 0.88
+    },
+    {
+     "text": "móvil:",
+     "t": 1.04
+    },
+    {
+     "text": "está",
+     "t": 1.6
+    },
+    {
+     "text": "diseñado",
+     "t": 1.92
+    },
+    {
+     "text": "para",
+     "t": 2.32
+    },
+    {
+     "text": "engancharte.",
+     "t": 2.48
+    }
+   ]
+  },
+  {
+   "id": "veces",
+   "texto": "De media, miramos el móvil unas noventa y seis veces al día.",
+   "audio": "movil/voz/veces.wav",
+   "inicio": 3.519,
+   "duracion": 3.693,
+   "palabras": [
+    {
+     "text": "De",
+     "t": 0.08
+    },
+    {
+     "text": "media,",
+     "t": 0.24
+    },
+    {
+     "text": "miramos",
+     "t": 0.64
+    },
+    {
+     "text": "el",
+     "t": 1.04
+    },
+    {
+     "text": "móvil",
+     "t": 1.12
+    },
+    {
+     "text": "unas",
+     "t": 1.52
+    },
+    {
+     "text": "96",
+     "t": 1.76
+    },
+    {
+     "text": "veces",
+     "t": 2.64
+    },
+    {
+     "text": "al",
+     "t": 2.96
+    },
+    {
+     "text": "día.",
+     "t": 3.12
+    }
+   ]
+  },
+  {
+   "id": "tragaperras",
+   "texto": "Cada notificación funciona como una tragaperras: nunca sabes qué premio toca, y por eso vuelves.",
+   "audio": "movil/voz/tragaperras.wav",
+   "inicio": 7.212,
+   "duracion": 5.889,
+   "palabras": [
+    {
+     "text": "Cada",
+     "t": 0.0
+    },
+    {
+     "text": "notificación",
+     "t": 0.32
+    },
+    {
+     "text": "funciona",
+     "t": 1.04
+    },
+    {
+     "text": "como",
+     "t": 1.52
+    },
+    {
+     "text": "una",
+     "t": 1.68
+    },
+    {
+     "text": "tragaperras:",
+     "t": 1.92
+    },
+    {
+     "text": "nunca",
+     "t": 3.04
+    },
+    {
+     "text": "sabes",
+     "t": 3.36
+    },
+    {
+     "text": "qué",
+     "t": 3.68
+    },
+    {
+     "text": "premio",
+     "t": 3.92
+    },
+    {
+     "text": "toca,",
+     "t": 4.32
+    },
+    {
+     "text": "y",
+     "t": 4.64
+    },
+    {
+     "text": "por",
+     "t": 4.8
+    },
+    {
+     "text": "eso",
+     "t": 4.96
+    },
+    {
+     "text": "vuelves.",
+     "t": 5.12
+    }
+   ]
+  },
+  {
+   "id": "ingenieros",
+   "texto": "Y tu fuerza de voluntad compite contra equipos enteros de ingenieros.",
+   "audio": "movil/voz/ingenieros.wav",
+   "inicio": 13.101,
+   "duracion": 4.149,
+   "palabras": [
+    {
+     "text": "Y",
+     "t": 0.0
+    },
+    {
+     "text": "tu",
+     "t": 0.16
+    },
+    {
+     "text": "fuerza",
+     "t": 0.32
+    },
+    {
+     "text": "de",
+     "t": 0.72
+    },
+    {
+     "text": "voluntad",
+     "t": 0.8
+    },
+    {
+     "text": "compite",
+     "t": 1.44
+    },
+    {
+     "text": "contra",
+     "t": 2.0
+    },
+    {
+     "text": "equipos",
+     "t": 2.32
+    },
+    {
+     "text": "enteros",
+     "t": 2.72
+    },
+    {
+     "text": "de",
+     "t": 3.2
+    },
+    {
+     "text": "ingenieros.",
+     "t": 3.28
+    }
+   ]
+  },
+  {
+   "id": "metodo",
+   "texto": "El método se llama la regla de los veinte segundos.",
+   "audio": "movil/voz/metodo.wav",
+   "inicio": 17.251,
+   "duracion": 3.199,
+   "palabras": [
+    {
+     "text": "El",
+     "t": 0.0
+    },
+    {
+     "text": "método",
+     "t": 0.24
+    },
+    {
+     "text": "se",
+     "t": 0.64
+    },
+    {
+     "text": "llama",
+     "t": 0.8
+    },
+    {
+     "text": "la",
+     "t": 1.2
+    },
+    {
+     "text": "regla",
+     "t": 1.36
+    },
+    {
+     "text": "de",
+     "t": 1.76
+    },
+    {
+     "text": "los",
+     "t": 1.84
+    },
+    {
+     "text": "20",
+     "t": 2.12
+    },
+    {
+     "text": "segundos.",
+     "t": 2.4
+    }
+   ]
+  },
+  {
+   "id": "friccion",
+   "texto": "Si algo te cuesta veinte segundos más, lo haces mucho menos.",
+   "audio": "movil/voz/friccion.wav",
+   "inicio": 20.45,
+   "duracion": 3.747,
+   "palabras": [
+    {
+     "text": "Si",
+     "t": 0.0
+    },
+    {
+     "text": "algo",
+     "t": 0.24
+    },
+    {
+     "text": "te",
+     "t": 0.48
+    },
+    {
+     "text": "cuesta",
+     "t": 0.64
+    },
+    {
+     "text": "20",
+     "t": 1.0
+    },
+    {
+     "text": "segundos",
+     "t": 1.36
+    },
+    {
+     "text": "más,",
+     "t": 1.84
+    },
+    {
+     "text": "lo",
+     "t": 2.32
+    },
+    {
+     "text": "haces",
+     "t": 2.48
+    },
+    {
+     "text": "mucho",
+     "t": 2.88
+    },
+    {
+     "text": "menos.",
+     "t": 3.12
+    }
+   ]
+  },
+  {
+   "id": "checklist",
+   "texto": "Así que ponle fricción: el móvil cargando en otra habitación, las notificaciones fuera, y las redes fuera de la pantalla de inicio.",
+   "audio": "movil/voz/checklist.wav",
+   "inicio": 24.197,
+   "duracion": 7.581,
+   "palabras": [
+    {
+     "text": "Así",
+     "t": 0.0
+    },
+    {
+     "text": "que",
+     "t": 0.24
+    },
+    {
+     "text": "ponle",
+     "t": 0.4
+    },
+    {
+     "text": "fricción:",
+     "t": 0.88
+    },
+    {
+     "text": "el",
+     "t": 1.6
+    },
+    {
+     "text": "móvil",
+     "t": 1.76
+    },
+    {
+     "text": "cargando",
+     "t": 2.16
+    },
+    {
+     "text": "en",
+     "t": 2.64
+    },
+    {
+     "text": "otra",
+     "t": 2.8
+    },
+    {
+     "text": "habitación,",
+     "t": 3.04
+    },
+    {
+     "text": "las",
+     "t": 3.76
+    },
+    {
+     "text": "notificaciones",
+     "t": 3.92
+    },
+    {
+     "text": "fuera,",
+     "t": 4.64
+    },
+    {
+     "text": "y",
+     "t": 5.2
+    },
+    {
+     "text": "las",
+     "t": 5.36
+    },
+    {
+     "text": "redes",
+     "t": 5.44
+    },
+    {
+     "text": "fuera",
+     "t": 5.92
+    },
+    {
+     "text": "de",
+     "t": 6.16
+    },
+    {
+     "text": "la",
+     "t": 6.32
+    },
+    {
+     "text": "pantalla",
+     "t": 6.4
+    },
+    {
+     "text": "de",
+     "t": 6.72
+    },
+    {
+     "text": "inicio.",
+     "t": 6.88
+    }
+   ]
+  },
+  {
+   "id": "estudio",
+   "texto": "En un estudio de la Universidad de Texas, quienes dejaron el móvil en otra habitación rindieron mejor que quienes lo tenían en la mesa, aunque estuviera apagado.",
+   "audio": "movil/voz/estudio.wav",
+   "inicio": 31.779,
+   "duracion": 8.675,
+   "palabras": [
+    {
+     "text": "En",
+     "t": 0.0
+    },
+    {
+     "text": "un",
+     "t": 0.16
+    },
+    {
+     "text": "estudio",
+     "t": 0.32
+    },
+    {
+     "text": "de",
+     "t": 0.64
+    },
+    {
+     "text": "la",
+     "t": 0.8
+    },
+    {
+     "text": "Universidad",
+     "t": 0.88
+    },
+    {
+     "text": "de",
+     "t": 1.36
+    },
+    {
+     "text": "Texas,",
+     "t": 1.52
+    },
+    {
+     "text": "quienes",
+     "t": 2.24
+    },
+    {
+     "text": "dejaron",
+     "t": 2.56
+    },
+    {
+     "text": "el",
+     "t": 2.96
+    },
+    {
+     "text": "móvil",
+     "t": 3.12
+    },
+    {
+     "text": "en",
+     "t": 3.52
+    },
+    {
+     "text": "otra",
+     "t": 3.68
+    },
+    {
+     "text": "habitación",
+     "t": 3.92
+    },
+    {
+     "text": "rindieron",
+     "t": 4.52
+    },
+    {
+     "text": "mejor",
+     "t": 5.12
+    },
+    {
+     "text": "que",
+     "t": 5.36
+    },
+    {
+     "text": "quienes",
+     "t": 5.6
+    },
+    {
+     "text": "lo",
+     "t": 5.92
+    },
+    {
+     "text": "tenían",
+     "t": 6.08
+    },
+    {
+     "text": "en",
+     "t": 6.48
+    },
+    {
+     "text": "la",
+     "t": 6.56
+    },
+    {
+     "text": "mesa,",
+     "t": 6.72
+    },
+    {
+     "text": "aunque",
+     "t": 7.2
+    },
+    {
+     "text": "estuviera",
+     "t": 7.52
+    },
+    {
+     "text": "apagado.",
+     "t": 8.0
+    }
+   ]
+  },
+  {
+   "id": "distancia",
+   "texto": "No necesitas más fuerza de voluntad. Necesitas más distancia.",
+   "audio": "movil/voz/distancia.wav",
+   "inicio": 40.454,
+   "duracion": 4.117,
+   "palabras": [
+    {
+     "text": "No",
+     "t": 0.0
+    },
+    {
+     "text": "necesitas",
+     "t": 0.24
+    },
+    {
+     "text": "más",
+     "t": 0.88
+    },
+    {
+     "text": "fuerza",
+     "t": 1.12
+    },
+    {
+     "text": "de",
+     "t": 1.44
+    },
+    {
+     "text": "voluntad.",
+     "t": 1.6
+    },
+    {
+     "text": "Necesitas",
+     "t": 2.4
+    },
+    {
+     "text": "más",
+     "t": 3.04
+    },
+    {
+     "text": "distancia.",
+     "t": 3.28
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "texto": "Cada día, un cero coma cero cero cero uno por ciento mejor. Nos vemos mañana.",
+   "audio": "movil/voz/cierre.wav",
+   "inicio": 44.571,
+   "duracion": 4.971,
+   "palabras": [
+    {
+     "text": "Cada",
+     "t": 0.0
+    },
+    {
+     "text": "día,",
+     "t": 0.32
+    },
+    {
+     "text": "un",
+     "t": 0.64
+    },
+    {
+     "text": "0,0001 %",
+     "t": 0.916
+    },
+    {
+     "text": "mejor.",
+     "t": 3.12
+    },
+    {
+     "text": "Nos",
+     "t": 3.68
+    },
+    {
+     "text": "vemos",
+     "t": 3.92
+    },
+    {
+     "text": "mañana.",
+     "t": 4.24
+    }
+   ]
+  }
+ ],
+ "captions": [
+  {
+   "text": "No",
+   "startMs": 0,
+   "endMs": 160,
+   "timestampMs": 0,
+   "confidence": null
+  },
+  {
+   "text": " eres",
+   "startMs": 160,
+   "endMs": 480,
+   "timestampMs": 160,
+   "confidence": null
+  },
+  {
+   "text": " adicto",
+   "startMs": 480,
+   "endMs": 880,
+   "timestampMs": 480,
+   "confidence": null
+  },
+  {
+   "text": " al",
+   "startMs": 880,
+   "endMs": 1040,
+   "timestampMs": 880,
+   "confidence": null
+  },
+  {
+   "text": " móvil:",
+   "startMs": 1040,
+   "endMs": 1600,
+   "timestampMs": 1040,
+   "confidence": null
+  },
+  {
+   "text": " está",
+   "startMs": 1600,
+   "endMs": 1920,
+   "timestampMs": 1600,
+   "confidence": null
+  },
+  {
+   "text": " diseñado",
+   "startMs": 1920,
+   "endMs": 2320,
+   "timestampMs": 1920,
+   "confidence": null
+  },
+  {
+   "text": " para",
+   "startMs": 2320,
+   "endMs": 2480,
+   "timestampMs": 2320,
+   "confidence": null
+  },
+  {
+   "text": " engancharte.",
+   "startMs": 2480,
+   "endMs": 3269,
+   "timestampMs": 2480,
+   "confidence": null
+  },
+  {
+   "text": " De",
+   "startMs": 3599,
+   "endMs": 3759,
+   "timestampMs": 3599,
+   "confidence": null
+  },
+  {
+   "text": " media,",
+   "startMs": 3759,
+   "endMs": 4159,
+   "timestampMs": 3759,
+   "confidence": null
+  },
+  {
+   "text": " miramos",
+   "startMs": 4159,
+   "endMs": 4559,
+   "timestampMs": 4159,
+   "confidence": null
+  },
+  {
+   "text": " el",
+   "startMs": 4559,
+   "endMs": 4639,
+   "timestampMs": 4559,
+   "confidence": null
+  },
+  {
+   "text": " móvil",
+   "startMs": 4639,
+   "endMs": 5039,
+   "timestampMs": 4639,
+   "confidence": null
+  },
+  {
+   "text": " unas",
+   "startMs": 5039,
+   "endMs": 5279,
+   "timestampMs": 5039,
+   "confidence": null
+  },
+  {
+   "text": " 96",
+   "startMs": 5279,
+   "endMs": 6159,
+   "timestampMs": 5279,
+   "confidence": null
+  },
+  {
+   "text": " veces",
+   "startMs": 6159,
+   "endMs": 6479,
+   "timestampMs": 6159,
+   "confidence": null
+  },
+  {
+   "text": " al",
+   "startMs": 6479,
+   "endMs": 6639,
+   "timestampMs": 6479,
+   "confidence": null
+  },
+  {
+   "text": " día.",
+   "startMs": 6639,
+   "endMs": 6962,
+   "timestampMs": 6639,
+   "confidence": null
+  },
+  {
+   "text": " Cada",
+   "startMs": 7212,
+   "endMs": 7532,
+   "timestampMs": 7212,
+   "confidence": null
+  },
+  {
+   "text": " notificación",
+   "startMs": 7532,
+   "endMs": 8252,
+   "timestampMs": 7532,
+   "confidence": null
+  },
+  {
+   "text": " funciona",
+   "startMs": 8252,
+   "endMs": 8732,
+   "timestampMs": 8252,
+   "confidence": null
+  },
+  {
+   "text": " como",
+   "startMs": 8732,
+   "endMs": 8892,
+   "timestampMs": 8732,
+   "confidence": null
+  },
+  {
+   "text": " una",
+   "startMs": 8892,
+   "endMs": 9132,
+   "timestampMs": 8892,
+   "confidence": null
+  },
+  {
+   "text": " tragaperras:",
+   "startMs": 9132,
+   "endMs": 10252,
+   "timestampMs": 9132,
+   "confidence": null
+  },
+  {
+   "text": " nunca",
+   "startMs": 10252,
+   "endMs": 10572,
+   "timestampMs": 10252,
+   "confidence": null
+  },
+  {
+   "text": " sabes",
+   "startMs": 10572,
+   "endMs": 10892,
+   "timestampMs": 10572,
+   "confidence": null
+  },
+  {
+   "text": " qué",
+   "startMs": 10892,
+   "endMs": 11132,
+   "timestampMs": 10892,
+   "confidence": null
+  },
+  {
+   "text": " premio",
+   "startMs": 11132,
+   "endMs": 11532,
+   "timestampMs": 11132,
+   "confidence": null
+  },
+  {
+   "text": " toca,",
+   "startMs": 11532,
+   "endMs": 11852,
+   "timestampMs": 11532,
+   "confidence": null
+  },
+  {
+   "text": " y",
+   "startMs": 11852,
+   "endMs": 12012,
+   "timestampMs": 11852,
+   "confidence": null
+  },
+  {
+   "text": " por",
+   "startMs": 12012,
+   "endMs": 12172,
+   "timestampMs": 12012,
+   "confidence": null
+  },
+  {
+   "text": " eso",
+   "startMs": 12172,
+   "endMs": 12332,
+   "timestampMs": 12172,
+   "confidence": null
+  },
+  {
+   "text": " vuelves.",
+   "startMs": 12332,
+   "endMs": 12851,
+   "timestampMs": 12332,
+   "confidence": null
+  },
+  {
+   "text": " Y",
+   "startMs": 13101,
+   "endMs": 13261,
+   "timestampMs": 13101,
+   "confidence": null
+  },
+  {
+   "text": " tu",
+   "startMs": 13261,
+   "endMs": 13421,
+   "timestampMs": 13261,
+   "confidence": null
+  },
+  {
+   "text": " fuerza",
+   "startMs": 13421,
+   "endMs": 13821,
+   "timestampMs": 13421,
+   "confidence": null
+  },
+  {
+   "text": " de",
+   "startMs": 13821,
+   "endMs": 13901,
+   "timestampMs": 13821,
+   "confidence": null
+  },
+  {
+   "text": " voluntad",
+   "startMs": 13901,
+   "endMs": 14541,
+   "timestampMs": 13901,
+   "confidence": null
+  },
+  {
+   "text": " compite",
+   "startMs": 14541,
+   "endMs": 15101,
+   "timestampMs": 14541,
+   "confidence": null
+  },
+  {
+   "text": " contra",
+   "startMs": 15101,
+   "endMs": 15421,
+   "timestampMs": 15101,
+   "confidence": null
+  },
+  {
+   "text": " equipos",
+   "startMs": 15421,
+   "endMs": 15821,
+   "timestampMs": 15421,
+   "confidence": null
+  },
+  {
+   "text": " enteros",
+   "startMs": 15821,
+   "endMs": 16301,
+   "timestampMs": 15821,
+   "confidence": null
+  },
+  {
+   "text": " de",
+   "startMs": 16301,
+   "endMs": 16381,
+   "timestampMs": 16301,
+   "confidence": null
+  },
+  {
+   "text": " ingenieros.",
+   "startMs": 16381,
+   "endMs": 17001,
+   "timestampMs": 16381,
+   "confidence": null
+  },
+  {
+   "text": " El",
+   "startMs": 17251,
+   "endMs": 17491,
+   "timestampMs": 17251,
+   "confidence": null
+  },
+  {
+   "text": " método",
+   "startMs": 17491,
+   "endMs": 17891,
+   "timestampMs": 17491,
+   "confidence": null
+  },
+  {
+   "text": " se",
+   "startMs": 17891,
+   "endMs": 18051,
+   "timestampMs": 17891,
+   "confidence": null
+  },
+  {
+   "text": " llama",
+   "startMs": 18051,
+   "endMs": 18451,
+   "timestampMs": 18051,
+   "confidence": null
+  },
+  {
+   "text": " la",
+   "startMs": 18451,
+   "endMs": 18611,
+   "timestampMs": 18451,
+   "confidence": null
+  },
+  {
+   "text": " regla",
+   "startMs": 18611,
+   "endMs": 19011,
+   "timestampMs": 18611,
+   "confidence": null
+  },
+  {
+   "text": " de",
+   "startMs": 19011,
+   "endMs": 19091,
+   "timestampMs": 19011,
+   "confidence": null
+  },
+  {
+   "text": " los",
+   "startMs": 19091,
+   "endMs": 19371,
+   "timestampMs": 19091,
+   "confidence": null
+  },
+  {
+   "text": " 20",
+   "startMs": 19371,
+   "endMs": 19651,
+   "timestampMs": 19371,
+   "confidence": null
+  },
+  {
+   "text": " segundos.",
+   "startMs": 19651,
+   "endMs": 20200,
+   "timestampMs": 19651,
+   "confidence": null
+  },
+  {
+   "text": " Si",
+   "startMs": 20450,
+   "endMs": 20690,
+   "timestampMs": 20450,
+   "confidence": null
+  },
+  {
+   "text": " algo",
+   "startMs": 20690,
+   "endMs": 20930,
+   "timestampMs": 20690,
+   "confidence": null
+  },
+  {
+   "text": " te",
+   "startMs": 20930,
+   "endMs": 21090,
+   "timestampMs": 20930,
+   "confidence": null
+  },
+  {
+   "text": " cuesta",
+   "startMs": 21090,
+   "endMs": 21450,
+   "timestampMs": 21090,
+   "confidence": null
+  },
+  {
+   "text": " 20",
+   "startMs": 21450,
+   "endMs": 21810,
+   "timestampMs": 21450,
+   "confidence": null
+  },
+  {
+   "text": " segundos",
+   "startMs": 21810,
+   "endMs": 22290,
+   "timestampMs": 21810,
+   "confidence": null
+  },
+  {
+   "text": " más,",
+   "startMs": 22290,
+   "endMs": 22770,
+   "timestampMs": 22290,
+   "confidence": null
+  },
+  {
+   "text": " lo",
+   "startMs": 22770,
+   "endMs": 22930,
+   "timestampMs": 22770,
+   "confidence": null
+  },
+  {
+   "text": " haces",
+   "startMs": 22930,
+   "endMs": 23330,
+   "timestampMs": 22930,
+   "confidence": null
+  },
+  {
+   "text": " mucho",
+   "startMs": 23330,
+   "endMs": 23570,
+   "timestampMs": 23330,
+   "confidence": null
+  },
+  {
+   "text": " menos.",
+   "startMs": 23570,
+   "endMs": 23947,
+   "timestampMs": 23570,
+   "confidence": null
+  },
+  {
+   "text": " Así",
+   "startMs": 24197,
+   "endMs": 24437,
+   "timestampMs": 24197,
+   "confidence": null
+  },
+  {
+   "text": " que",
+   "startMs": 24437,
+   "endMs": 24597,
+   "timestampMs": 24437,
+   "confidence": null
+  },
+  {
+   "text": " ponle",
+   "startMs": 24597,
+   "endMs": 25077,
+   "timestampMs": 24597,
+   "confidence": null
+  },
+  {
+   "text": " fricción:",
+   "startMs": 25077,
+   "endMs": 25797,
+   "timestampMs": 25077,
+   "confidence": null
+  },
+  {
+   "text": " el",
+   "startMs": 25797,
+   "endMs": 25957,
+   "timestampMs": 25797,
+   "confidence": null
+  },
+  {
+   "text": " móvil",
+   "startMs": 25957,
+   "endMs": 26357,
+   "timestampMs": 25957,
+   "confidence": null
+  },
+  {
+   "text": " cargando",
+   "startMs": 26357,
+   "endMs": 26837,
+   "timestampMs": 26357,
+   "confidence": null
+  },
+  {
+   "text": " en",
+   "startMs": 26837,
+   "endMs": 26997,
+   "timestampMs": 26837,
+   "confidence": null
+  },
+  {
+   "text": " otra",
+   "startMs": 26997,
+   "endMs": 27237,
+   "timestampMs": 26997,
+   "confidence": null
+  },
+  {
+   "text": " habitación,",
+   "startMs": 27237,
+   "endMs": 27957,
+   "timestampMs": 27237,
+   "confidence": null
+  },
+  {
+   "text": " las",
+   "startMs": 27957,
+   "endMs": 28117,
+   "timestampMs": 27957,
+   "confidence": null
+  },
+  {
+   "text": " notificaciones",
+   "startMs": 28117,
+   "endMs": 28837,
+   "timestampMs": 28117,
+   "confidence": null
+  },
+  {
+   "text": " fuera,",
+   "startMs": 28837,
+   "endMs": 29397,
+   "timestampMs": 28837,
+   "confidence": null
+  },
+  {
+   "text": " y",
+   "startMs": 29397,
+   "endMs": 29557,
+   "timestampMs": 29397,
+   "confidence": null
+  },
+  {
+   "text": " las",
+   "startMs": 29557,
+   "endMs": 29637,
+   "timestampMs": 29557,
+   "confidence": null
+  },
+  {
+   "text": " redes",
+   "startMs": 29637,
+   "endMs": 30117,
+   "timestampMs": 29637,
+   "confidence": null
+  },
+  {
+   "text": " fuera",
+   "startMs": 30117,
+   "endMs": 30357,
+   "timestampMs": 30117,
+   "confidence": null
+  },
+  {
+   "text": " de",
+   "startMs": 30357,
+   "endMs": 30517,
+   "timestampMs": 30357,
+   "confidence": null
+  },
+  {
+   "text": " la",
+   "startMs": 30517,
+   "endMs": 30597,
+   "timestampMs": 30517,
+   "confidence": null
+  },
+  {
+   "text": " pantalla",
+   "startMs": 30597,
+   "endMs": 30917,
+   "timestampMs": 30597,
+   "confidence": null
+  },
+  {
+   "text": " de",
+   "startMs": 30917,
+   "endMs": 31077,
+   "timestampMs": 30917,
+   "confidence": null
+  },
+  {
+   "text": " inicio.",
+   "startMs": 31077,
+   "endMs": 31529,
+   "timestampMs": 31077,
+   "confidence": null
+  },
+  {
+   "text": " En",
+   "startMs": 31779,
+   "endMs": 31939,
+   "timestampMs": 31779,
+   "confidence": null
+  },
+  {
+   "text": " un",
+   "startMs": 31939,
+   "endMs": 32099,
+   "timestampMs": 31939,
+   "confidence": null
+  },
+  {
+   "text": " estudio",
+   "startMs": 32099,
+   "endMs": 32419,
+   "timestampMs": 32099,
+   "confidence": null
+  },
+  {
+   "text": " de",
+   "startMs": 32419,
+   "endMs": 32579,
+   "timestampMs": 32419,
+   "confidence": null
+  },
+  {
+   "text": " la",
+   "startMs": 32579,
+   "endMs": 32659,
+   "timestampMs": 32579,
+   "confidence": null
+  },
+  {
+   "text": " Universidad",
+   "startMs": 32659,
+   "endMs": 33139,
+   "timestampMs": 32659,
+   "confidence": null
+  },
+  {
+   "text": " de",
+   "startMs": 33139,
+   "endMs": 33299,
+   "timestampMs": 33139,
+   "confidence": null
+  },
+  {
+   "text": " Texas,",
+   "startMs": 33299,
+   "endMs": 34019,
+   "timestampMs": 33299,
+   "confidence": null
+  },
+  {
+   "text": " quienes",
+   "startMs": 34019,
+   "endMs": 34339,
+   "timestampMs": 34019,
+   "confidence": null
+  },
+  {
+   "text": " dejaron",
+   "startMs": 34339,
+   "endMs": 34739,
+   "timestampMs": 34339,
+   "confidence": null
+  },
+  {
+   "text": " el",
+   "startMs": 34739,
+   "endMs": 34899,
+   "timestampMs": 34739,
+   "confidence": null
+  },
+  {
+   "text": " móvil",
+   "startMs": 34899,
+   "endMs": 35299,
+   "timestampMs": 34899,
+   "confidence": null
+  },
+  {
+   "text": " en",
+   "startMs": 35299,
+   "endMs": 35459,
+   "timestampMs": 35299,
+   "confidence": null
+  },
+  {
+   "text": " otra",
+   "startMs": 35459,
+   "endMs": 35699,
+   "timestampMs": 35459,
+   "confidence": null
+  },
+  {
+   "text": " habitación",
+   "startMs": 35699,
+   "endMs": 36299,
+   "timestampMs": 35699,
+   "confidence": null
+  },
+  {
+   "text": " rindieron",
+   "startMs": 36299,
+   "endMs": 36899,
+   "timestampMs": 36299,
+   "confidence": null
+  },
+  {
+   "text": " mejor",
+   "startMs": 36899,
+   "endMs": 37139,
+   "timestampMs": 36899,
+   "confidence": null
+  },
+  {
+   "text": " que",
+   "startMs": 37139,
+   "endMs": 37379,
+   "timestampMs": 37139,
+   "confidence": null
+  },
+  {
+   "text": " quienes",
+   "startMs": 37379,
+   "endMs": 37699,
+   "timestampMs": 37379,
+   "confidence": null
+  },
+  {
+   "text": " lo",
+   "startMs": 37699,
+   "endMs": 37859,
+   "timestampMs": 37699,
+   "confidence": null
+  },
+  {
+   "text": " tenían",
+   "startMs": 37859,
+   "endMs": 38259,
+   "timestampMs": 37859,
+   "confidence": null
+  },
+  {
+   "text": " en",
+   "startMs": 38259,
+   "endMs": 38339,
+   "timestampMs": 38259,
+   "confidence": null
+  },
+  {
+   "text": " la",
+   "startMs": 38339,
+   "endMs": 38499,
+   "timestampMs": 38339,
+   "confidence": null
+  },
+  {
+   "text": " mesa,",
+   "startMs": 38499,
+   "endMs": 38979,
+   "timestampMs": 38499,
+   "confidence": null
+  },
+  {
+   "text": " aunque",
+   "startMs": 38979,
+   "endMs": 39299,
+   "timestampMs": 38979,
+   "confidence": null
+  },
+  {
+   "text": " estuviera",
+   "startMs": 39299,
+   "endMs": 39779,
+   "timestampMs": 39299,
+   "confidence": null
+  },
+  {
+   "text": " apagado.",
+   "startMs": 39779,
+   "endMs": 40204,
+   "timestampMs": 39779,
+   "confidence": null
+  },
+  {
+   "text": " No",
+   "startMs": 40454,
+   "endMs": 40694,
+   "timestampMs": 40454,
+   "confidence": null
+  },
+  {
+   "text": " necesitas",
+   "startMs": 40694,
+   "endMs": 41334,
+   "timestampMs": 40694,
+   "confidence": null
+  },
+  {
+   "text": " más",
+   "startMs": 41334,
+   "endMs": 41574,
+   "timestampMs": 41334,
+   "confidence": null
+  },
+  {
+   "text": " fuerza",
+   "startMs": 41574,
+   "endMs": 41894,
+   "timestampMs": 41574,
+   "confidence": null
+  },
+  {
+   "text": " de",
+   "startMs": 41894,
+   "endMs": 42054,
+   "timestampMs": 41894,
+   "confidence": null
+  },
+  {
+   "text": " voluntad.",
+   "startMs": 42054,
+   "endMs": 42854,
+   "timestampMs": 42054,
+   "confidence": null
+  },
+  {
+   "text": " Necesitas",
+   "startMs": 42854,
+   "endMs": 43494,
+   "timestampMs": 42854,
+   "confidence": null
+  },
+  {
+   "text": " más",
+   "startMs": 43494,
+   "endMs": 43734,
+   "timestampMs": 43494,
+   "confidence": null
+  },
+  {
+   "text": " distancia.",
+   "startMs": 43734,
+   "endMs": 44321,
+   "timestampMs": 43734,
+   "confidence": null
+  },
+  {
+   "text": " Cada",
+   "startMs": 44571,
+   "endMs": 44891,
+   "timestampMs": 44571,
+   "confidence": null
+  },
+  {
+   "text": " día,",
+   "startMs": 44891,
+   "endMs": 45211,
+   "timestampMs": 44891,
+   "confidence": null
+  },
+  {
+   "text": " un",
+   "startMs": 45211,
+   "endMs": 45487,
+   "timestampMs": 45211,
+   "confidence": null
+  },
+  {
+   "text": " 0,0001 %",
+   "startMs": 45487,
+   "endMs": 47691,
+   "timestampMs": 45487,
+   "confidence": null
+  },
+  {
+   "text": " mejor.",
+   "startMs": 47691,
+   "endMs": 48251,
+   "timestampMs": 47691,
+   "confidence": null
+  },
+  {
+   "text": " Nos",
+   "startMs": 48251,
+   "endMs": 48491,
+   "timestampMs": 48251,
+   "confidence": null
+  },
+  {
+   "text": " vemos",
+   "startMs": 48491,
+   "endMs": 48811,
+   "timestampMs": 48491,
+   "confidence": null
+  },
+  {
+   "text": " mañana.",
+   "startMs": 48811,
+   "endMs": 49292,
+   "timestampMs": 48811,
+   "confidence": null
+  }
+ ]
+}
