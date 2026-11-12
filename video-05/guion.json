@@ -1,0 +1,24 @@
+{
+  "titulo": "El premio pegado",
+  "metodo": "Método nº 4 — Premio pegado / temptation bundling (Milkman, Minson y Volpp, 2014)",
+  "patron_gancho": "Tiny Change, Big Impact",
+  "escenas": [
+    {"id": "gancho", "texto": "Hay un truco para ir al gimnasio que funciona con tu serie favorita."},
+    {"id": "problema", "texto": "El problema del ejercicio es que el premio llega tarde. Y el sofá te paga ahora."},
+    {"id": "cerebro", "texto": "Tu cerebro siempre elige lo que paga ahora."},
+    {"id": "metodo", "texto": "El método se llama el premio pegado: un capricho que solo te das mientras haces lo que te cuesta."},
+    {"id": "estudio", "texto": "En la Universidad de Pensilvania, a un grupo solo le dejaban escuchar sus audiolibros favoritos en el gimnasio."},
+    {"id": "resultado", "texto": "Fueron bastante más al gimnasio que los demás… para no quedarse sin saber cómo seguía la historia."},
+    {"id": "ejemplos", "texto": "Tu pódcast favorito, solo caminando. Tu serie, solo en la bici estática. Tu café especial, solo mientras estudias."},
+    {"id": "regla", "texto": "La clave: ese premio no existe fuera del hábito."},
+    {"id": "frase", "texto": "Haz que lo difícil venga con regalo."},
+    {"id": "cierre", "texto": "Cada día, un cero coma cero cero cero uno por ciento mejor. Nos vemos mañana."}
+  ],
+  "en_pantalla": {
+    "bastante más": "+51 % [COMPROBAR en el estudio antes de mostrar la cifra]",
+    "cero coma cero cero cero uno por ciento": "0,0001 %"
+  },
+  "fuentes": [
+    "Milkman, K. L., Minson, J. A. y Volpp, K. G. M. (2014). Holding the Hunger Games Hostage at the Gym. Management Science, 60(2), 283–299. [COMPROBAR el +51 % del grupo con acceso solo en el gimnasio]"
+  ]
+}

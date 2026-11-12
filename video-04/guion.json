@@ -1,0 +1,63 @@
+{
+ "titulo": "Los 66 días",
+ "metodo": "Método nº 3 — Los 66 días (Lally y col., 2010)",
+ "patron_gancho": "Myth-Busting",
+ "escenas": [
+  {
+   "id": "gancho",
+   "texto": "Te mintieron con lo de los veintiún días."
+  },
+  {
+   "id": "origen",
+   "texto": "Ese número salió de un cirujano de los años sesenta: sus pacientes tardaban unas tres semanas en acostumbrarse a su nueva cara."
+  },
+  {
+   "id": "estudio",
+   "texto": "Pero cuando la ciencia lo midió, en el University College London, noventa y seis personas repitieron un hábito cada día durante doce semanas."
+  },
+  {
+   "id": "resultado",
+   "texto": "De media, tardaron sesenta y seis días en hacerlo automático."
+  },
+  {
+   "id": "rango",
+   "texto": "Y hubo quien tardó dieciocho… y quien tardó doscientos cincuenta y cuatro."
+  },
+  {
+   "id": "porque",
+   "texto": "Por eso el día veintidós te sigue costando, y crees que has fallado."
+  },
+  {
+   "id": "metodo",
+   "texto": "El método: la regla de los sesenta y seis días. Misma hora, mismo sitio, y cuentas hasta sesenta y seis."
+  },
+  {
+   "id": "fallar",
+   "texto": "Y en el estudio, fallar un día no lo estropeó. Si fallas, no empiezas de cero: sigues mañana."
+  },
+  {
+   "id": "frase",
+   "texto": "Hoy es tu día uno de sesenta y seis."
+  },
+  {
+   "id": "cierre",
+   "texto": "Cada día, un cero coma cero cero cero uno por ciento mejor. Nos vemos mañana."
+  }
+ ],
+ "en_pantalla": {
+  "veintiún": "21",
+  "tres semanas": "21 días",
+  "noventa y seis": "96",
+  "doce": "12",
+  "sesenta y seis": "66",
+  "dieciocho": "18",
+  "doscientos cincuenta y cuatro": "254",
+  "veintidós": "22",
+  "uno": "1",
+  "cero coma cero cero cero uno por ciento": "0,0001 %"
+ },
+ "fuentes": [
+  "Lally, P., van Jaarsveld, C., Potts, H. y Wardle, J. (2010). How are habits formed. European Journal of Social Psychology, 40(6), 998–1009. [COMPROBAR que 66 es la mediana y el rango 18–254]",
+  "Maltz, M. (1960). Psycho-Cybernetics (el «mínimo de unos 21 días»)."
+ ]
+}

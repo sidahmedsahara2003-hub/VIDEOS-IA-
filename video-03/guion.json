@@ -1,0 +1,22 @@
+{
+  "titulo": "Apilar hábitos",
+  "metodo": "Método nº 2 — Apilar hábitos (BJ Fogg, Tiny Habits)",
+  "patron_gancho": "The Unexpected (pregunta en la voz del espectador)",
+  "escenas": [
+    {"id": "gancho", "texto": "¿Por qué nunca se te olvida lavarte los dientes… y leer sí?"},
+    {"id": "automatico", "texto": "Porque casi la mitad de lo que haces cada día lo haces en automático."},
+    {"id": "disparador", "texto": "Lavarte los dientes tiene un disparador fijo: te levantas, vas al baño, y pasa solo."},
+    {"id": "flota", "texto": "El hábito nuevo no tiene disparador. Flota. Y lo que flota, se olvida."},
+    {"id": "metodo", "texto": "El método se llama apilar hábitos."},
+    {"id": "formula", "texto": "Después de algo que ya haces, haces lo nuevo."},
+    {"id": "ejemplos", "texto": "Después del café, leo una página. Después de lavarme los dientes, diez flexiones. Después de cenar, preparo la mochila."},
+    {"id": "fogg", "texto": "BJ Fogg, de la Universidad de Stanford, lo llama anclar: el hábito viejo es el recordatorio del nuevo."},
+    {"id": "frase", "texto": "Engancha lo nuevo a algo que ya haces."},
+    {"id": "cierre", "texto": "Cada día, un cero coma cero cero cero uno por ciento mejor. Nos vemos mañana."}
+  ],
+  "en_pantalla": {
+    "casi la mitad": "≈ 43 % [COMPROBAR: Wood, Quinn y Kashy, 2002]",
+    "diez": "10",
+    "cero coma cero cero cero uno por ciento": "0,0001 %"
+  }
+}
