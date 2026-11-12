@@ -1,0 +1,1584 @@
+{
+ "fps": 30,
+ "duracion": 47.38,
+ "voz": "kokoro",
+ "escenas": [
+  {
+   "id": "gancho",
+   "texto": "Hay un truco para ir al gimnasio que funciona con tu serie favorita.",
+   "audio": "premio/voz/gancho.wav",
+   "inicio": 0.0,
+   "duracion": 4.03,
+   "palabras": [
+    {
+     "text": "Hay",
+     "t": 0.0
+    },
+    {
+     "text": "un",
+     "t": 0.24
+    },
+    {
+     "text": "truco",
+     "t": 0.32
+    },
+    {
+     "text": "para",
+     "t": 0.72
+    },
+    {
+     "text": "ir",
+     "t": 0.88
+    },
+    {
+     "text": "al",
+     "t": 1.04
+    },
+    {
+     "text": "gimnasio",
+     "t": 1.2
+    },
+    {
+     "text": "que",
+     "t": 1.84
+    },
+    {
+     "text": "funciona",
+     "t": 2.0
+    },
+    {
+     "text": "con",
+     "t": 2.48
+    },
+    {
+     "text": "tu",
+     "t": 2.64
+    },
+    {
+     "text": "serie",
+     "t": 2.88
+    },
+    {
+     "text": "favorita.",
+     "t": 3.2
+    }
+   ]
+  },
+  {
+   "id": "problema",
+   "texto": "El problema del ejercicio es que el premio llega tarde. Y el sofá te paga ahora.",
+   "audio": "premio/voz/problema.wav",
+   "inicio": 4.03,
+   "duracion": 4.695,
+   "palabras": [
+    {
+     "text": "El",
+     "t": 0.0
+    },
+    {
+     "text": "problema",
+     "t": 0.24
+    },
+    {
+     "text": "del",
+     "t": 0.48
+    },
+    {
+     "text": "ejercicio",
+     "t": 0.72
+    },
+    {
+     "text": "es",
+     "t": 1.36
+    },
+    {
+     "text": "que",
+     "t": 1.52
+    },
+    {
+     "text": "el",
+     "t": 1.68
+    },
+    {
+     "text": "premio",
+     "t": 1.76
+    },
+    {
+     "text": "llega",
+     "t": 2.16
+    },
+    {
+     "text": "tarde.",
+     "t": 2.56
+    },
+    {
+     "text": "Y",
+     "t": 2.96
+    },
+    {
+     "text": "el",
+     "t": 3.12
+    },
+    {
+     "text": "sofá",
+     "t": 3.28
+    },
+    {
+     "text": "te",
+     "t": 3.76
+    },
+    {
+     "text": "paga",
+     "t": 3.92
+    },
+    {
+     "text": "ahora.",
+     "t": 4.24
+    }
+   ]
+  },
+  {
+   "id": "cerebro",
+   "texto": "Tu cerebro siempre elige lo que paga ahora.",
+   "audio": "premio/voz/cerebro.wav",
+   "inicio": 8.726,
+   "duracion": 2.642,
+   "palabras": [
+    {
+     "text": "Tu",
+     "t": 0.0
+    },
+    {
+     "text": "cerebro",
+     "t": 0.24
+    },
+    {
+     "text": "siempre",
+     "t": 0.72
+    },
+    {
+     "text": "elige",
+     "t": 1.04
+    },
+    {
+     "text": "lo",
+     "t": 1.52
+    },
+    {
+     "text": "que",
+     "t": 1.6
+    },
+    {
+     "text": "paga",
+     "t": 1.76
+    },
+    {
+     "text": "ahora.",
+     "t": 2.08
+    }
+   ]
+  },
+  {
+   "id": "metodo",
+   "texto": "El método se llama el premio pegado: un capricho que solo te das mientras haces lo que te cuesta.",
+   "audio": "premio/voz/metodo.wav",
+   "inicio": 11.367,
+   "duracion": 5.735,
+   "palabras": [
+    {
+     "text": "El",
+     "t": 0.0
+    },
+    {
+     "text": "método",
+     "t": 0.16
+    },
+    {
+     "text": "se",
+     "t": 0.56
+    },
+    {
+     "text": "llama",
+     "t": 0.64
+    },
+    {
+     "text": "el",
+     "t": 0.96
+    },
+    {
+     "text": "premio",
+     "t": 1.12
+    },
+    {
+     "text": "pegado:",
+     "t": 1.52
+    },
+    {
+     "text": "un",
+     "t": 2.16
+    },
+    {
+     "text": "capricho",
+     "t": 2.32
+    },
+    {
+     "text": "que",
+     "t": 3.04
+    },
+    {
+     "text": "solo",
+     "t": 3.2
+    },
+    {
+     "text": "te",
+     "t": 3.44
+    },
+    {
+     "text": "das",
+     "t": 3.6
+    },
+    {
+     "text": "mientras",
+     "t": 3.92
+    },
+    {
+     "text": "haces",
+     "t": 4.24
+    },
+    {
+     "text": "lo",
+     "t": 4.64
+    },
+    {
+     "text": "que",
+     "t": 4.8
+    },
+    {
+     "text": "te",
+     "t": 4.88
+    },
+    {
+     "text": "cuesta.",
+     "t": 5.04
+    }
+   ]
+  },
+  {
+   "id": "estudio",
+   "texto": "En la Universidad de Pensilvania, a un grupo solo le dejaban escuchar sus audiolibros favoritos en el gimnasio.",
+   "audio": "premio/voz/estudio.wav",
+   "inicio": 17.102,
+   "duracion": 6.513,
+   "palabras": [
+    {
+     "text": "En",
+     "t": 0.0
+    },
+    {
+     "text": "la",
+     "t": 0.16
+    },
+    {
+     "text": "Universidad",
+     "t": 0.32
+    },
+    {
+     "text": "de",
+     "t": 0.72
+    },
+    {
+     "text": "Pensilvania,",
+     "t": 0.88
+    },
+    {
+     "text": "a",
+     "t": 1.92
+    },
+    {
+     "text": "un",
+     "t": 2.08
+    },
+    {
+     "text": "grupo",
+     "t": 2.24
+    },
+    {
+     "text": "solo",
+     "t": 2.56
+    },
+    {
+     "text": "le",
+     "t": 2.8
+    },
+    {
+     "text": "dejaban",
+     "t": 2.96
+    },
+    {
+     "text": "escuchar",
+     "t": 3.52
+    },
+    {
+     "text": "sus",
+     "t": 3.92
+    },
+    {
+     "text": "audiolibros",
+     "t": 4.16
+    },
+    {
+     "text": "favoritos",
+     "t": 4.88
+    },
+    {
+     "text": "en",
+     "t": 5.44
+    },
+    {
+     "text": "el",
+     "t": 5.52
+    },
+    {
+     "text": "gimnasio.",
+     "t": 5.68
+    }
+   ]
+  },
+  {
+   "id": "resultado",
+   "texto": "Y ese grupo fue bastante más al gimnasio que los demás… para no quedarse sin saber cómo seguía la historia.",
+   "audio": "premio/voz/resultado.wav",
+   "inicio": 23.615,
+   "duracion": 6.209,
+   "palabras": [
+    {
+     "text": "Y",
+     "t": 0.0
+    },
+    {
+     "text": "ese",
+     "t": 0.16
+    },
+    {
+     "text": "grupo",
+     "t": 0.4
+    },
+    {
+     "text": "fue",
+     "t": 0.72
+    },
+    {
+     "text": "+51 % [COMPROBAR en el estudio antes de mostrar la cifra]",
+     "t": 0.96
+    },
+    {
+     "text": "al",
+     "t": 1.6
+    },
+    {
+     "text": "gimnasio",
+     "t": 1.84
+    },
+    {
+     "text": "que",
+     "t": 2.48
+    },
+    {
+     "text": "los",
+     "t": 2.64
+    },
+    {
+     "text": "demás…",
+     "t": 2.8
+    },
+    {
+     "text": "para",
+     "t": 3.36
+    },
+    {
+     "text": "no",
+     "t": 3.6
+    },
+    {
+     "text": "quedarse",
+     "t": 3.76
+    },
+    {
+     "text": "sin",
+     "t": 4.32
+    },
+    {
+     "text": "saber",
+     "t": 4.48
+    },
+    {
+     "text": "cómo",
+     "t": 4.8
+    },
+    {
+     "text": "seguía",
+     "t": 5.04
+    },
+    {
+     "text": "la",
+     "t": 5.52
+    },
+    {
+     "text": "historia.",
+     "t": 5.6
+    }
+   ]
+  },
+  {
+   "id": "ejemplos",
+   "texto": "Tu pódcast favorito, solo caminando. Tu serie, solo en la bici estática. Tu café especial, solo mientras estudias.",
+   "audio": "premio/voz/ejemplos.wav",
+   "inicio": 29.824,
+   "duracion": 6.86,
+   "palabras": [
+    {
+     "text": "Tu",
+     "t": 0.0
+    },
+    {
+     "text": "pódcast",
+     "t": 0.24
+    },
+    {
+     "text": "favorito,",
+     "t": 0.64
+    },
+    {
+     "text": "solo",
+     "t": 1.2
+    },
+    {
+     "text": "caminando.",
+     "t": 1.44
+    },
+    {
+     "text": "Tu",
+     "t": 2.24
+    },
+    {
+     "text": "serie,",
+     "t": 2.4
+    },
+    {
+     "text": "solo",
+     "t": 2.88
+    },
+    {
+     "text": "en",
+     "t": 3.04
+    },
+    {
+     "text": "la",
+     "t": 3.12
+    },
+    {
+     "text": "bici",
+     "t": 3.28
+    },
+    {
+     "text": "estática.",
+     "t": 3.76
+    },
+    {
+     "text": "Tu",
+     "t": 4.4
+    },
+    {
+     "text": "café",
+     "t": 4.56
+    },
+    {
+     "text": "especial,",
+     "t": 4.96
+    },
+    {
+     "text": "solo",
+     "t": 5.44
+    },
+    {
+     "text": "mientras",
+     "t": 5.68
+    },
+    {
+     "text": "estudias.",
+     "t": 6.08
+    }
+   ]
+  },
+  {
+   "id": "regla",
+   "texto": "La clave: ese premio no existe fuera del hábito.",
+   "audio": "premio/voz/regla.wav",
+   "inicio": 36.684,
+   "duracion": 2.838,
+   "palabras": [
+    {
+     "text": "La",
+     "t": 0.0
+    },
+    {
+     "text": "clave:",
+     "t": 0.16
+    },
+    {
+     "text": "ese",
+     "t": 0.72
+    },
+    {
+     "text": "premio",
+     "t": 0.96
+    },
+    {
+     "text": "no",
+     "t": 1.28
+    },
+    {
+     "text": "existe",
+     "t": 1.44
+    },
+    {
+     "text": "fuera",
+     "t": 1.84
+    },
+    {
+     "text": "del",
+     "t": 2.0
+    },
+    {
+     "text": "hábito.",
+     "t": 2.16
+    }
+   ]
+  },
+  {
+   "id": "frase",
+   "texto": "Haz que lo difícil venga con regalo.",
+   "audio": "premio/voz/frase.wav",
+   "inicio": 39.521,
+   "duracion": 2.288,
+   "palabras": [
+    {
+     "text": "Haz",
+     "t": 0.0
+    },
+    {
+     "text": "que",
+     "t": 0.24
+    },
+    {
+     "text": "lo",
+     "t": 0.4
+    },
+    {
+     "text": "difícil",
+     "t": 0.56
+    },
+    {
+     "text": "venga",
+     "t": 1.04
+    },
+    {
+     "text": "con",
+     "t": 1.44
+    },
+    {
+     "text": "regalo.",
+     "t": 1.6
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "texto": "Cada día, un cero coma cero cero cero uno por ciento mejor. Nos vemos mañana.",
+   "audio": "premio/voz/cierre.wav",
+   "inicio": 41.809,
+   "duracion": 4.971,
+   "palabras": [
+    {
+     "text": "Cada",
+     "t": 0.0
+    },
+    {
+     "text": "día,",
+     "t": 0.32
+    },
+    {
+     "text": "un",
+     "t": 0.64
+    },
+    {
+     "text": "0,0001 %",
+     "t": 0.916
+    },
+    {
+     "text": "mejor.",
+     "t": 3.12
+    },
+    {
+     "text": "Nos",
+     "t": 3.68
+    },
+    {
+     "text": "vemos",
+     "t": 3.92
+    },
+    {
+     "text": "mañana.",
+     "t": 4.24
+    }
+   ]
+  }
+ ],
+ "captions": [
+  {
+   "text": "Hay",
+   "startMs": 0,
+   "endMs": 240,
+   "timestampMs": 0,
+   "confidence": null
+  },
+  {
+   "text": " un",
+   "startMs": 240,
+   "endMs": 320,
+   "timestampMs": 240,
+   "confidence": null
+  },
+  {
+   "text": " truco",
+   "startMs": 320,
+   "endMs": 720,
+   "timestampMs": 320,
+   "confidence": null
+  },
+  {
+   "text": " para",
+   "startMs": 720,
+   "endMs": 880,
+   "timestampMs": 720,
+   "confidence": null
+  },
+  {
+   "text": " ir",
+   "startMs": 880,
+   "endMs": 1040,
+   "timestampMs": 880,
+   "confidence": null
+  },
+  {
+   "text": " al",
+   "startMs": 1040,
+   "endMs": 1200,
+   "timestampMs": 1040,
+   "confidence": null
+  },
+  {
+   "text": " gimnasio",
+   "startMs": 1200,
+   "endMs": 1840,
+   "timestampMs": 1200,
+   "confidence": null
+  },
+  {
+   "text": " que",
+   "startMs": 1840,
+   "endMs": 2000,
+   "timestampMs": 1840,
+   "confidence": null
+  },
+  {
+   "text": " funciona",
+   "startMs": 2000,
+   "endMs": 2480,
+   "timestampMs": 2000,
+   "confidence": null
+  },
+  {
+   "text": " con",
+   "startMs": 2480,
+   "endMs": 2640,
+   "timestampMs": 2480,
+   "confidence": null
+  },
+  {
+   "text": " tu",
+   "startMs": 2640,
+   "endMs": 2880,
+   "timestampMs": 2640,
+   "confidence": null
+  },
+  {
+   "text": " serie",
+   "startMs": 2880,
+   "endMs": 3200,
+   "timestampMs": 2880,
+   "confidence": null
+  },
+  {
+   "text": " favorita.",
+   "startMs": 3200,
+   "endMs": 3780,
+   "timestampMs": 3200,
+   "confidence": null
+  },
+  {
+   "text": " El",
+   "startMs": 4030,
+   "endMs": 4270,
+   "timestampMs": 4030,
+   "confidence": null
+  },
+  {
+   "text": " problema",
+   "startMs": 4270,
+   "endMs": 4510,
+   "timestampMs": 4270,
+   "confidence": null
+  },
+  {
+   "text": " del",
+   "startMs": 4510,
+   "endMs": 4750,
+   "timestampMs": 4510,
+   "confidence": null
+  },
+  {
+   "text": " ejercicio",
+   "startMs": 4750,
+   "endMs": 5390,
+   "timestampMs": 4750,
+   "confidence": null
+  },
+  {
+   "text": " es",
+   "startMs": 5390,
+   "endMs": 5550,
+   "timestampMs": 5390,
+   "confidence": null
+  },
+  {
+   "text": " que",
+   "startMs": 5550,
+   "endMs": 5710,
+   "timestampMs": 5550,
+   "confidence": null
+  },
+  {
+   "text": " el",
+   "startMs": 5710,
+   "endMs": 5790,
+   "timestampMs": 5710,
+   "confidence": null
+  },
+  {
+   "text": " premio",
+   "startMs": 5790,
+   "endMs": 6190,
+   "timestampMs": 5790,
+   "confidence": null
+  },
+  {
+   "text": " llega",
+   "startMs": 6190,
+   "endMs": 6590,
+   "timestampMs": 6190,
+   "confidence": null
+  },
+  {
+   "text": " tarde.",
+   "startMs": 6590,
+   "endMs": 6990,
+   "timestampMs": 6590,
+   "confidence": null
+  },
+  {
+   "text": " Y",
+   "startMs": 6990,
+   "endMs": 7150,
+   "timestampMs": 6990,
+   "confidence": null
+  },
+  {
+   "text": " el",
+   "startMs": 7150,
+   "endMs": 7310,
+   "timestampMs": 7150,
+   "confidence": null
+  },
+  {
+   "text": " sofá",
+   "startMs": 7310,
+   "endMs": 7790,
+   "timestampMs": 7310,
+   "confidence": null
+  },
+  {
+   "text": " te",
+   "startMs": 7790,
+   "endMs": 7950,
+   "timestampMs": 7790,
+   "confidence": null
+  },
+  {
+   "text": " paga",
+   "startMs": 7950,
+   "endMs": 8270,
+   "timestampMs": 7950,
+   "confidence": null
+  },
+  {
+   "text": " ahora.",
+   "startMs": 8270,
+   "endMs": 8476,
+   "timestampMs": 8270,
+   "confidence": null
+  },
+  {
+   "text": " Tu",
+   "startMs": 8726,
+   "endMs": 8966,
+   "timestampMs": 8726,
+   "confidence": null
+  },
+  {
+   "text": " cerebro",
+   "startMs": 8966,
+   "endMs": 9446,
+   "timestampMs": 8966,
+   "confidence": null
+  },
+  {
+   "text": " siempre",
+   "startMs": 9446,
+   "endMs": 9766,
+   "timestampMs": 9446,
+   "confidence": null
+  },
+  {
+   "text": " elige",
+   "startMs": 9766,
+   "endMs": 10246,
+   "timestampMs": 9766,
+   "confidence": null
+  },
+  {
+   "text": " lo",
+   "startMs": 10246,
+   "endMs": 10326,
+   "timestampMs": 10246,
+   "confidence": null
+  },
+  {
+   "text": " que",
+   "startMs": 10326,
+   "endMs": 10486,
+   "timestampMs": 10326,
+   "confidence": null
+  },
+  {
+   "text": " paga",
+   "startMs": 10486,
+   "endMs": 10806,
+   "timestampMs": 10486,
+   "confidence": null
+  },
+  {
+   "text": " ahora.",
+   "startMs": 10806,
+   "endMs": 11117,
+   "timestampMs": 10806,
+   "confidence": null
+  },
+  {
+   "text": " El",
+   "startMs": 11367,
+   "endMs": 11527,
+   "timestampMs": 11367,
+   "confidence": null
+  },
+  {
+   "text": " método",
+   "startMs": 11527,
+   "endMs": 11927,
+   "timestampMs": 11527,
+   "confidence": null
+  },
+  {
+   "text": " se",
+   "startMs": 11927,
+   "endMs": 12007,
+   "timestampMs": 11927,
+   "confidence": null
+  },
+  {
+   "text": " llama",
+   "startMs": 12007,
+   "endMs": 12327,
+   "timestampMs": 12007,
+   "confidence": null
+  },
+  {
+   "text": " el",
+   "startMs": 12327,
+   "endMs": 12487,
+   "timestampMs": 12327,
+   "confidence": null
+  },
+  {
+   "text": " premio",
+   "startMs": 12487,
+   "endMs": 12887,
+   "timestampMs": 12487,
+   "confidence": null
+  },
+  {
+   "text": " pegado:",
+   "startMs": 12887,
+   "endMs": 13527,
+   "timestampMs": 12887,
+   "confidence": null
+  },
+  {
+   "text": " un",
+   "startMs": 13527,
+   "endMs": 13687,
+   "timestampMs": 13527,
+   "confidence": null
+  },
+  {
+   "text": " capricho",
+   "startMs": 13687,
+   "endMs": 14407,
+   "timestampMs": 13687,
+   "confidence": null
+  },
+  {
+   "text": " que",
+   "startMs": 14407,
+   "endMs": 14567,
+   "timestampMs": 14407,
+   "confidence": null
+  },
+  {
+   "text": " solo",
+   "startMs": 14567,
+   "endMs": 14807,
+   "timestampMs": 14567,
+   "confidence": null
+  },
+  {
+   "text": " te",
+   "startMs": 14807,
+   "endMs": 14967,
+   "timestampMs": 14807,
+   "confidence": null
+  },
+  {
+   "text": " das",
+   "startMs": 14967,
+   "endMs": 15287,
+   "timestampMs": 14967,
+   "confidence": null
+  },
+  {
+   "text": " mientras",
+   "startMs": 15287,
+   "endMs": 15607,
+   "timestampMs": 15287,
+   "confidence": null
+  },
+  {
+   "text": " haces",
+   "startMs": 15607,
+   "endMs": 16007,
+   "timestampMs": 15607,
+   "confidence": null
+  },
+  {
+   "text": " lo",
+   "startMs": 16007,
+   "endMs": 16167,
+   "timestampMs": 16007,
+   "confidence": null
+  },
+  {
+   "text": " que",
+   "startMs": 16167,
+   "endMs": 16247,
+   "timestampMs": 16167,
+   "confidence": null
+  },
+  {
+   "text": " te",
+   "startMs": 16247,
+   "endMs": 16407,
+   "timestampMs": 16247,
+   "confidence": null
+  },
+  {
+   "text": " cuesta.",
+   "startMs": 16407,
+   "endMs": 16852,
+   "timestampMs": 16407,
+   "confidence": null
+  },
+  {
+   "text": " En",
+   "startMs": 17102,
+   "endMs": 17262,
+   "timestampMs": 17102,
+   "confidence": null
+  },
+  {
+   "text": " la",
+   "startMs": 17262,
+   "endMs": 17422,
+   "timestampMs": 17262,
+   "confidence": null
+  },
+  {
+   "text": " Universidad",
+   "startMs": 17422,
+   "endMs": 17822,
+   "timestampMs": 17422,
+   "confidence": null
+  },
+  {
+   "text": " de",
+   "startMs": 17822,
+   "endMs": 17982,
+   "timestampMs": 17822,
+   "confidence": null
+  },
+  {
+   "text": " Pensilvania,",
+   "startMs": 17982,
+   "endMs": 19022,
+   "timestampMs": 17982,
+   "confidence": null
+  },
+  {
+   "text": " a",
+   "startMs": 19022,
+   "endMs": 19182,
+   "timestampMs": 19022,
+   "confidence": null
+  },
+  {
+   "text": " un",
+   "startMs": 19182,
+   "endMs": 19342,
+   "timestampMs": 19182,
+   "confidence": null
+  },
+  {
+   "text": " grupo",
+   "startMs": 19342,
+   "endMs": 19662,
+   "timestampMs": 19342,
+   "confidence": null
+  },
+  {
+   "text": " solo",
+   "startMs": 19662,
+   "endMs": 19902,
+   "timestampMs": 19662,
+   "confidence": null
+  },
+  {
+   "text": " le",
+   "startMs": 19902,
+   "endMs": 20062,
+   "timestampMs": 19902,
+   "confidence": null
+  },
+  {
+   "text": " dejaban",
+   "startMs": 20062,
+   "endMs": 20622,
+   "timestampMs": 20062,
+   "confidence": null
+  },
+  {
+   "text": " escuchar",
+   "startMs": 20622,
+   "endMs": 21022,
+   "timestampMs": 20622,
+   "confidence": null
+  },
+  {
+   "text": " sus",
+   "startMs": 21022,
+   "endMs": 21262,
+   "timestampMs": 21022,
+   "confidence": null
+  },
+  {
+   "text": " audiolibros",
+   "startMs": 21262,
+   "endMs": 21982,
+   "timestampMs": 21262,
+   "confidence": null
+  },
+  {
+   "text": " favoritos",
+   "startMs": 21982,
+   "endMs": 22542,
+   "timestampMs": 21982,
+   "confidence": null
+  },
+  {
+   "text": " en",
+   "startMs": 22542,
+   "endMs": 22622,
+   "timestampMs": 22542,
+   "confidence": null
+  },
+  {
+   "text": " el",
+   "startMs": 22622,
+   "endMs": 22782,
+   "timestampMs": 22622,
+   "confidence": null
+  },
+  {
+   "text": " gimnasio.",
+   "startMs": 22782,
+   "endMs": 23365,
+   "timestampMs": 22782,
+   "confidence": null
+  },
+  {
+   "text": " Y",
+   "startMs": 23615,
+   "endMs": 23775,
+   "timestampMs": 23615,
+   "confidence": null
+  },
+  {
+   "text": " ese",
+   "startMs": 23775,
+   "endMs": 24015,
+   "timestampMs": 23775,
+   "confidence": null
+  },
+  {
+   "text": " grupo",
+   "startMs": 24015,
+   "endMs": 24335,
+   "timestampMs": 24015,
+   "confidence": null
+  },
+  {
+   "text": " fue",
+   "startMs": 24335,
+   "endMs": 24575,
+   "timestampMs": 24335,
+   "confidence": null
+  },
+  {
+   "text": " +51 % [COMPROBAR en el estudio antes de mostrar la cifra]",
+   "startMs": 24575,
+   "endMs": 25215,
+   "timestampMs": 24575,
+   "confidence": null
+  },
+  {
+   "text": " al",
+   "startMs": 25215,
+   "endMs": 25455,
+   "timestampMs": 25215,
+   "confidence": null
+  },
+  {
+   "text": " gimnasio",
+   "startMs": 25455,
+   "endMs": 26095,
+   "timestampMs": 25455,
+   "confidence": null
+  },
+  {
+   "text": " que",
+   "startMs": 26095,
+   "endMs": 26255,
+   "timestampMs": 26095,
+   "confidence": null
+  },
+  {
+   "text": " los",
+   "startMs": 26255,
+   "endMs": 26415,
+   "timestampMs": 26255,
+   "confidence": null
+  },
+  {
+   "text": " demás…",
+   "startMs": 26415,
+   "endMs": 26975,
+   "timestampMs": 26415,
+   "confidence": null
+  },
+  {
+   "text": " para",
+   "startMs": 26975,
+   "endMs": 27215,
+   "timestampMs": 26975,
+   "confidence": null
+  },
+  {
+   "text": " no",
+   "startMs": 27215,
+   "endMs": 27375,
+   "timestampMs": 27215,
+   "confidence": null
+  },
+  {
+   "text": " quedarse",
+   "startMs": 27375,
+   "endMs": 27935,
+   "timestampMs": 27375,
+   "confidence": null
+  },
+  {
+   "text": " sin",
+   "startMs": 27935,
+   "endMs": 28095,
+   "timestampMs": 27935,
+   "confidence": null
+  },
+  {
+   "text": " saber",
+   "startMs": 28095,
+   "endMs": 28415,
+   "timestampMs": 28095,
+   "confidence": null
+  },
+  {
+   "text": " cómo",
+   "startMs": 28415,
+   "endMs": 28655,
+   "timestampMs": 28415,
+   "confidence": null
+  },
+  {
+   "text": " seguía",
+   "startMs": 28655,
+   "endMs": 29135,
+   "timestampMs": 28655,
+   "confidence": null
+  },
+  {
+   "text": " la",
+   "startMs": 29135,
+   "endMs": 29215,
+   "timestampMs": 29135,
+   "confidence": null
+  },
+  {
+   "text": " historia.",
+   "startMs": 29215,
+   "endMs": 29574,
+   "timestampMs": 29215,
+   "confidence": null
+  },
+  {
+   "text": " Tu",
+   "startMs": 29824,
+   "endMs": 30064,
+   "timestampMs": 29824,
+   "confidence": null
+  },
+  {
+   "text": " pódcast",
+   "startMs": 30064,
+   "endMs": 30464,
+   "timestampMs": 30064,
+   "confidence": null
+  },
+  {
+   "text": " favorito,",
+   "startMs": 30464,
+   "endMs": 31024,
+   "timestampMs": 30464,
+   "confidence": null
+  },
+  {
+   "text": " solo",
+   "startMs": 31024,
+   "endMs": 31264,
+   "timestampMs": 31024,
+   "confidence": null
+  },
+  {
+   "text": " caminando.",
+   "startMs": 31264,
+   "endMs": 32064,
+   "timestampMs": 31264,
+   "confidence": null
+  },
+  {
+   "text": " Tu",
+   "startMs": 32064,
+   "endMs": 32224,
+   "timestampMs": 32064,
+   "confidence": null
+  },
+  {
+   "text": " serie,",
+   "startMs": 32224,
+   "endMs": 32704,
+   "timestampMs": 32224,
+   "confidence": null
+  },
+  {
+   "text": " solo",
+   "startMs": 32704,
+   "endMs": 32864,
+   "timestampMs": 32704,
+   "confidence": null
+  },
+  {
+   "text": " en",
+   "startMs": 32864,
+   "endMs": 32944,
+   "timestampMs": 32864,
+   "confidence": null
+  },
+  {
+   "text": " la",
+   "startMs": 32944,
+   "endMs": 33104,
+   "timestampMs": 32944,
+   "confidence": null
+  },
+  {
+   "text": " bici",
+   "startMs": 33104,
+   "endMs": 33584,
+   "timestampMs": 33104,
+   "confidence": null
+  },
+  {
+   "text": " estática.",
+   "startMs": 33584,
+   "endMs": 34224,
+   "timestampMs": 33584,
+   "confidence": null
+  },
+  {
+   "text": " Tu",
+   "startMs": 34224,
+   "endMs": 34384,
+   "timestampMs": 34224,
+   "confidence": null
+  },
+  {
+   "text": " café",
+   "startMs": 34384,
+   "endMs": 34784,
+   "timestampMs": 34384,
+   "confidence": null
+  },
+  {
+   "text": " especial,",
+   "startMs": 34784,
+   "endMs": 35264,
+   "timestampMs": 34784,
+   "confidence": null
+  },
+  {
+   "text": " solo",
+   "startMs": 35264,
+   "endMs": 35504,
+   "timestampMs": 35264,
+   "confidence": null
+  },
+  {
+   "text": " mientras",
+   "startMs": 35504,
+   "endMs": 35904,
+   "timestampMs": 35504,
+   "confidence": null
+  },
+  {
+   "text": " estudias.",
+   "startMs": 35904,
+   "endMs": 36434,
+   "timestampMs": 35904,
+   "confidence": null
+  },
+  {
+   "text": " La",
+   "startMs": 36684,
+   "endMs": 36844,
+   "timestampMs": 36684,
+   "confidence": null
+  },
+  {
+   "text": " clave:",
+   "startMs": 36844,
+   "endMs": 37404,
+   "timestampMs": 36844,
+   "confidence": null
+  },
+  {
+   "text": " ese",
+   "startMs": 37404,
+   "endMs": 37644,
+   "timestampMs": 37404,
+   "confidence": null
+  },
+  {
+   "text": " premio",
+   "startMs": 37644,
+   "endMs": 37964,
+   "timestampMs": 37644,
+   "confidence": null
+  },
+  {
+   "text": " no",
+   "startMs": 37964,
+   "endMs": 38124,
+   "timestampMs": 37964,
+   "confidence": null
+  },
+  {
+   "text": " existe",
+   "startMs": 38124,
+   "endMs": 38524,
+   "timestampMs": 38124,
+   "confidence": null
+  },
+  {
+   "text": " fuera",
+   "startMs": 38524,
+   "endMs": 38684,
+   "timestampMs": 38524,
+   "confidence": null
+  },
+  {
+   "text": " del",
+   "startMs": 38684,
+   "endMs": 38844,
+   "timestampMs": 38684,
+   "confidence": null
+  },
+  {
+   "text": " hábito.",
+   "startMs": 38844,
+   "endMs": 39271,
+   "timestampMs": 38844,
+   "confidence": null
+  },
+  {
+   "text": " Haz",
+   "startMs": 39521,
+   "endMs": 39761,
+   "timestampMs": 39521,
+   "confidence": null
+  },
+  {
+   "text": " que",
+   "startMs": 39761,
+   "endMs": 39921,
+   "timestampMs": 39761,
+   "confidence": null
+  },
+  {
+   "text": " lo",
+   "startMs": 39921,
+   "endMs": 40081,
+   "timestampMs": 39921,
+   "confidence": null
+  },
+  {
+   "text": " difícil",
+   "startMs": 40081,
+   "endMs": 40561,
+   "timestampMs": 40081,
+   "confidence": null
+  },
+  {
+   "text": " venga",
+   "startMs": 40561,
+   "endMs": 40961,
+   "timestampMs": 40561,
+   "confidence": null
+  },
+  {
+   "text": " con",
+   "startMs": 40961,
+   "endMs": 41121,
+   "timestampMs": 40961,
+   "confidence": null
+  },
+  {
+   "text": " regalo.",
+   "startMs": 41121,
+   "endMs": 41559,
+   "timestampMs": 41121,
+   "confidence": null
+  },
+  {
+   "text": " Cada",
+   "startMs": 41809,
+   "endMs": 42129,
+   "timestampMs": 41809,
+   "confidence": null
+  },
+  {
+   "text": " día,",
+   "startMs": 42129,
+   "endMs": 42449,
+   "timestampMs": 42129,
+   "confidence": null
+  },
+  {
+   "text": " un",
+   "startMs": 42449,
+   "endMs": 42725,
+   "timestampMs": 42449,
+   "confidence": null
+  },
+  {
+   "text": " 0,0001 %",
+   "startMs": 42725,
+   "endMs": 44929,
+   "timestampMs": 42725,
+   "confidence": null
+  },
+  {
+   "text": " mejor.",
+   "startMs": 44929,
+   "endMs": 45489,
+   "timestampMs": 44929,
+   "confidence": null
+  },
+  {
+   "text": " Nos",
+   "startMs": 45489,
+   "endMs": 45729,
+   "timestampMs": 45489,
+   "confidence": null
+  },
+  {
+   "text": " vemos",
+   "startMs": 45729,
+   "endMs": 46049,
+   "timestampMs": 45729,
+   "confidence": null
+  },
+  {
+   "text": " mañana.",
+   "startMs": 46049,
+   "endMs": 46530,
+   "timestampMs": 46049,
+   "confidence": null
+  }
+ ]
+}
