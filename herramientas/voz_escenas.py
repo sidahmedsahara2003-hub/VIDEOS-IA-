@@ -88,7 +88,7 @@ for esc in G["escenas"]:
     generar(esc, crudo)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", crudo, "-af",
                     "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse"
-                    + (",loudnorm=I=-14:TP=-1:LRA=9" if VOZ == "natural" else "," + ACABADO), "-ar", str(SR), "-ac", "1", final], check=True)
+                    + (f",atempo={os.environ.get('TEMPO', '1.1')},loudnorm=I=-14:TP=-1:LRA=9" if VOZ == "natural" else "," + ACABADO), "-ar", str(SR), "-ac", "1", final], check=True)
     os.remove(crudo)
     if os.path.exists(crudo.replace(".wav", ".mp3")): os.remove(crudo.replace(".wav", ".mp3"))
     x, _ = sf.read(final, dtype="float32")

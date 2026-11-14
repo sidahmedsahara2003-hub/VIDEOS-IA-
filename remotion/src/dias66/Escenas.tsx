@@ -136,7 +136,7 @@ export const Rango: React.FC<{ e: Escena }> = ({ e }) => {
       </div>
       <div style={{ position: "absolute", left: 640, bottom: 470, width: 300, display: "flex", flexDirection: "column", alignItems: "center", gap: 20 }}>
         <div style={{ ...txt(110, C.naranja), opacity: prog(t, w("254") - 0.1, 0.3) }}>254</div>
-        <div style={{ width: 220, height: 1100 * b254, borderRadius: "26px 26px 8px 8px", background: `linear-gradient(${C.naranja}, #c2410c)` }} />
+        <div style={{ width: 220, height: 720 * b254, borderRadius: "26px 26px 8px 8px", background: `linear-gradient(${C.naranja}, #c2410c)` }} />
         <div style={txt(36, C.gris)}>EL MÁS LENTO</div>
       </div>
     </AbsoluteFill>
