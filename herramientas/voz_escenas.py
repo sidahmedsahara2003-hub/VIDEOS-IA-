@@ -7,6 +7,7 @@ Fuente de la voz (VOZ=…):
   kokoro      voz provisional local (em_alex)            [por defecto]
   elevenlabs  ElevenLabs (la clave la pone el proxy; ELEVENLABS_VOICE=<voice_id>)
   grabacion   grabaciones del usuario ya cortadas en grabacion/<id>.wav
+  natural     voz Chatterbox ya editada por herramientas/voz_natural.py en <video>/voz-natural/<id>.wav
 
 Escribe en remotion/public/<salida>/:
   voz/<id>.wav        audio de cada escena, limpio y a volumen de Shorts
@@ -47,6 +48,8 @@ def generar(esc, crudo):
         mp3 = crudo.replace(".wav", ".mp3")
         open(mp3, "wb").write(urllib.request.urlopen(req, timeout=120).read())
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, crudo], check=True)
+    elif VOZ == "natural":
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(BASE, "voz-natural", f"{esc['id']}.wav"), crudo], check=True)
     else:
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(BASE, "grabacion", f"{esc['id']}.wav"), crudo], check=True)
 
@@ -84,8 +87,8 @@ for esc in G["escenas"]:
     final = os.path.join(OUT, "voz", f"{esc['id']}.wav")
     generar(esc, crudo)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", crudo, "-af",
-                    "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-                    + ACABADO, "-ar", str(SR), "-ac", "1", final], check=True)
+                    "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse"
+                    + (",loudnorm=I=-14:TP=-1:LRA=9" if VOZ == "natural" else "," + ACABADO), "-ar", str(SR), "-ac", "1", final], check=True)
     os.remove(crudo)
     if os.path.exists(crudo.replace(".wav", ".mp3")): os.remove(crudo.replace(".wav", ".mp3"))
     x, _ = sf.read(final, dtype="float32")

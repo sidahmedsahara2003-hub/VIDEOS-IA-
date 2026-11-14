@@ -45,8 +45,10 @@
   }
  ],
  "en_pantalla": {
-  "casi la mitad": "≈ 43 % [COMPROBAR: Wood, Quinn y Kashy, 2002]",
   "diez": "10",
   "cero coma cero cero cero uno por ciento": "0,0001 %"
- }
+ },
+ "pendiente_comprobar": [
+  "≈ 43 % de acciones diarias habituales (Wood, Quinn y Kashy, 2002)"
+ ]
 }

@@ -108,8 +108,12 @@
      "t": 4.56
     },
     {
-     "text": "21 días",
+     "text": "tres",
      "t": 4.88
+    },
+    {
+     "text": "semanas",
+     "t": 5.18
     },
     {
      "text": "en",
@@ -555,7 +559,7 @@
      "t": 0.56
     },
     {
-     "text": "1",
+     "text": "uno",
      "t": 0.8
     },
     {
@@ -588,36 +592,8 @@
      "t": 0.64
     },
     {
-     "text": "cero",
+     "text": "0,0001 %",
      "t": 0.916
-    },
-    {
-     "text": "coma",
-     "t": 1.191
-    },
-    {
-     "text": "cero",
-     "t": 1.467
-    },
-    {
-     "text": "cero",
-     "t": 1.742
-    },
-    {
-     "text": "cero",
-     "t": 2.018
-    },
-    {
-     "text": "1",
-     "t": 2.293
-    },
-    {
-     "text": "por",
-     "t": 2.569
-    },
-    {
-     "text": "ciento",
-     "t": 2.844
     },
     {
      "text": "mejor.",
@@ -794,7 +770,7 @@
    "confidence": null
   },
   {
-   "text": " 21 días",
+   "text": " tres semanas",
    "startMs": 7382,
    "endMs": 8102,
    "timestampMs": 7382,

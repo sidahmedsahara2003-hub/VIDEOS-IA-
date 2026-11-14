@@ -45,10 +45,12 @@
   }
  ],
  "en_pantalla": {
-  "bastante más": "+51 % [COMPROBAR en el estudio antes de mostrar la cifra]",
   "cero coma cero cero cero uno por ciento": "0,0001 %"
  },
  "fuentes": [
   "Milkman, K. L., Minson, J. A. y Volpp, K. G. M. (2014). Holding the Hunger Games Hostage at the Gym. Management Science, 60(2), 283–299. [COMPROBAR el +51 % del grupo con acceso solo en el gimnasio]"
+ ],
+ "pendiente_comprobar": [
+  "+51 % de visitas al gimnasio (Milkman, Minson y Volpp, 2014)"
  ]
 }
