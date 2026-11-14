@@ -1,14 +1,14 @@
 {
  "fps": 30,
- "duracion": 46.578,
- "voz": "kokoro",
+ "duracion": 60.812,
+ "voz": "natural",
  "escenas": [
   {
    "id": "gancho",
    "texto": "¿Por qué nunca se te olvida lavarte los dientes… y leer sí?",
    "audio": "apilar/voz/gancho.wav",
    "inicio": 0.0,
-   "duracion": 3.356,
+   "duracion": 4.897,
    "palabras": [
     {
      "text": "¿Por",
@@ -16,47 +16,47 @@
     },
     {
      "text": "qué",
-     "t": 0.24
+     "t": 0.16
     },
     {
      "text": "nunca",
-     "t": 0.4
+     "t": 0.24
     },
     {
      "text": "se",
-     "t": 0.72
+     "t": 0.4
     },
     {
      "text": "te",
-     "t": 0.8
+     "t": 0.48
     },
     {
      "text": "olvida",
-     "t": 0.96
+     "t": 0.64
     },
     {
      "text": "lavarte",
-     "t": 1.44
+     "t": 1.0
     },
     {
      "text": "los",
-     "t": 1.92
+     "t": 1.36
     },
     {
      "text": "dientes…",
-     "t": 2.0
+     "t": 1.52
     },
     {
      "text": "y",
-     "t": 2.32
+     "t": 2.8
     },
     {
      "text": "leer",
-     "t": 2.549
+     "t": 3.12
     },
     {
      "text": "sí?",
-     "t": 2.777
+     "t": 3.76
     }
    ]
   },
@@ -64,56 +64,64 @@
    "id": "automatico",
    "texto": "Porque casi la mitad de lo que haces cada día lo haces en automático.",
    "audio": "apilar/voz/automatico.wav",
-   "inicio": 3.356,
-   "duracion": 4.107,
+   "inicio": 4.897,
+   "duracion": 3.607,
    "palabras": [
     {
      "text": "Porque",
      "t": 0.0
     },
     {
-     "text": "≈ 43 % [COMPROBAR: Wood, Quinn y Kashy, 2002]",
-     "t": 0.4
+     "text": "casi",
+     "t": 0.24
+    },
+    {
+     "text": "la",
+     "t": 0.48
+    },
+    {
+     "text": "mitad",
+     "t": 0.56
     },
     {
      "text": "de",
-     "t": 1.2
+     "t": 0.8
     },
     {
      "text": "lo",
-     "t": 1.36
+     "t": 0.88
     },
     {
      "text": "que",
-     "t": 1.44
+     "t": 0.96
     },
     {
      "text": "haces",
-     "t": 1.6
+     "t": 1.12
     },
     {
      "text": "cada",
-     "t": 2.0
+     "t": 1.36
     },
     {
      "text": "día",
-     "t": 2.24
+     "t": 1.6
     },
     {
      "text": "lo",
-     "t": 2.56
+     "t": 1.84
     },
     {
      "text": "haces",
-     "t": 2.72
+     "t": 2.0
     },
     {
      "text": "en",
-     "t": 3.04
+     "t": 2.24
     },
     {
      "text": "automático.",
-     "t": 3.2
+     "t": 2.4
     }
    ]
   },
@@ -121,8 +129,8 @@
    "id": "disparador",
    "texto": "Lavarte los dientes tiene un disparador fijo: te levantas, vas al baño, y pasa solo.",
    "audio": "apilar/voz/disparador.wav",
-   "inicio": 7.464,
-   "duracion": 5.09,
+   "inicio": 8.505,
+   "duracion": 4.94,
    "palabras": [
     {
      "text": "Lavarte",
@@ -130,39 +138,39 @@
     },
     {
      "text": "los",
-     "t": 0.56
+     "t": 0.48
     },
     {
      "text": "dientes",
-     "t": 0.64
+     "t": 0.56
     },
     {
      "text": "tiene",
-     "t": 0.96
+     "t": 0.88
     },
     {
      "text": "un",
-     "t": 1.2
+     "t": 1.12
     },
     {
      "text": "disparador",
-     "t": 1.28
+     "t": 1.2
     },
     {
      "text": "fijo:",
-     "t": 1.92
+     "t": 1.76
     },
     {
      "text": "te",
-     "t": 2.4
+     "t": 2.64
     },
     {
      "text": "levantas,",
-     "t": 2.56
+     "t": 2.8
     },
     {
      "text": "vas",
-     "t": 3.28
+     "t": 3.36
     },
     {
      "text": "al",
@@ -174,15 +182,15 @@
     },
     {
      "text": "y",
-     "t": 4.08
+     "t": 3.92
     },
     {
      "text": "pasa",
-     "t": 4.32
+     "t": 4.0
     },
     {
      "text": "solo.",
-     "t": 4.56
+     "t": 4.32
     }
    ]
   },
@@ -190,8 +198,8 @@
    "id": "flota",
    "texto": "El hábito nuevo no tiene disparador: va flotando. Y lo que flota, se olvida. Por eso tus buenos propósitos se quedan en una lista.",
    "audio": "apilar/voz/flota.wav",
-   "inicio": 12.554,
-   "duracion": 7.589,
+   "inicio": 13.445,
+   "duracion": 11.654,
    "palabras": [
     {
      "text": "El",
@@ -203,91 +211,91 @@
     },
     {
      "text": "nuevo",
-     "t": 0.56
+     "t": 0.4
     },
     {
      "text": "no",
-     "t": 0.88
+     "t": 0.64
     },
     {
      "text": "tiene",
-     "t": 0.96
+     "t": 0.72
     },
     {
      "text": "disparador:",
-     "t": 1.28
+     "t": 0.96
     },
     {
      "text": "va",
-     "t": 2.0
+     "t": 2.4
     },
     {
      "text": "flotando.",
-     "t": 2.24
+     "t": 2.8
     },
     {
      "text": "Y",
-     "t": 2.88
+     "t": 4.96
     },
     {
      "text": "lo",
-     "t": 3.04
-    },
-    {
-     "text": "que",
-     "t": 3.12
-    },
-    {
-     "text": "flota,",
-     "t": 3.44
-    },
-    {
-     "text": "se",
-     "t": 3.76
-    },
-    {
-     "text": "olvida.",
-     "t": 3.92
-    },
-    {
-     "text": "Por",
-     "t": 4.64
-    },
-    {
-     "text": "eso",
-     "t": 4.8
-    },
-    {
-     "text": "tus",
-     "t": 5.04
-    },
-    {
-     "text": "buenos",
      "t": 5.28
     },
     {
-     "text": "propósitos",
-     "t": 5.68
+     "text": "que",
+     "t": 5.44
+    },
+    {
+     "text": "flota,",
+     "t": 5.8
     },
     {
      "text": "se",
-     "t": 6.24
+     "t": 6.16
     },
     {
-     "text": "quedan",
+     "text": "olvida.",
      "t": 6.4
     },
     {
+     "text": "Por",
+     "t": 8.16
+    },
+    {
+     "text": "eso",
+     "t": 8.48
+    },
+    {
+     "text": "tus",
+     "t": 8.8
+    },
+    {
+     "text": "buenos",
+     "t": 8.96
+    },
+    {
+     "text": "propósitos",
+     "t": 9.28
+    },
+    {
+     "text": "se",
+     "t": 9.6
+    },
+    {
+     "text": "quedan",
+     "t": 9.92
+    },
+    {
      "text": "en",
-     "t": 6.72
+     "t": 10.24
     },
     {
      "text": "una",
-     "t": 6.88
+     "t": 10.32
     },
     {
      "text": "lista.",
-     "t": 7.04
+     "t": 10.48
     }
    ]
   },
@@ -295,8 +303,8 @@
    "id": "metodo",
    "texto": "El método se llama apilar hábitos.",
    "audio": "apilar/voz/metodo.wav",
-   "inicio": 20.143,
-   "duracion": 2.33,
+   "inicio": 25.099,
+   "duracion": 3.058,
    "palabras": [
     {
      "text": "El",
@@ -308,19 +316,19 @@
     },
     {
      "text": "se",
-     "t": 0.64
+     "t": 0.48
     },
     {
      "text": "llama",
-     "t": 0.8
+     "t": 0.56
     },
     {
      "text": "apilar",
-     "t": 1.12
+     "t": 0.88
     },
     {
      "text": "hábitos.",
-     "t": 1.6
+     "t": 1.44
     }
    ]
   },
@@ -328,8 +336,8 @@
    "id": "formula",
    "texto": "Después de algo que ya haces, haces lo nuevo.",
    "audio": "apilar/voz/formula.wav",
-   "inicio": 22.473,
-   "duracion": 2.826,
+   "inicio": 28.157,
+   "duracion": 3.186,
    "palabras": [
     {
      "text": "Después",
@@ -337,35 +345,35 @@
     },
     {
      "text": "de",
-     "t": 0.4
+     "t": 0.32
     },
     {
      "text": "algo",
-     "t": 0.56
+     "t": 0.4
     },
     {
      "text": "que",
-     "t": 0.88
+     "t": 0.56
     },
     {
      "text": "ya",
-     "t": 1.04
+     "t": 0.72
     },
     {
      "text": "haces,",
-     "t": 1.28
+     "t": 0.88
     },
     {
      "text": "haces",
-     "t": 1.76
+     "t": 1.28
     },
     {
      "text": "lo",
-     "t": 2.08
+     "t": 1.6
     },
     {
      "text": "nuevo.",
-     "t": 2.24
+     "t": 1.76
     }
    ]
   },
@@ -373,8 +381,8 @@
    "id": "ejemplos",
    "texto": "Después del café, leo una página. Después de lavarme los dientes, diez flexiones. Después de cenar, preparo la mochila.",
    "audio": "apilar/voz/ejemplos.wav",
-   "inicio": 25.299,
-   "duracion": 6.944,
+   "inicio": 31.342,
+   "duracion": 10.677,
    "palabras": [
     {
      "text": "Después",
@@ -390,7 +398,7 @@
     },
     {
      "text": "leo",
-     "t": 0.96
+     "t": 0.88
     },
     {
      "text": "una",
@@ -402,55 +410,55 @@
     },
     {
      "text": "Después",
-     "t": 2.08
+     "t": 3.6
     },
     {
      "text": "de",
-     "t": 2.32
+     "t": 4.08
     },
     {
      "text": "lavarme",
-     "t": 2.48
+     "t": 4.24
     },
     {
      "text": "los",
-     "t": 3.04
-    },
-    {
-     "text": "dientes,",
-     "t": 3.12
-    },
-    {
-     "text": "10",
-     "t": 3.52
-    },
-    {
-     "text": "flexiones.",
-     "t": 3.92
-    },
-    {
-     "text": "Después",
      "t": 4.72
     },
     {
-     "text": "de",
-     "t": 5.04
+     "text": "dientes,",
+     "t": 4.88
     },
     {
-     "text": "cenar,",
-     "t": 5.2
+     "text": "10",
+     "t": 5.28
     },
     {
-     "text": "preparo",
+     "text": "flexiones.",
      "t": 5.68
     },
     {
+     "text": "Después",
+     "t": 7.44
+    },
+    {
+     "text": "de",
+     "t": 7.92
+    },
+    {
+     "text": "cenar,",
+     "t": 8.08
+    },
+    {
+     "text": "preparo",
+     "t": 8.56
+    },
+    {
      "text": "la",
-     "t": 6.08
+     "t": 8.96
     },
     {
      "text": "mochila.",
-     "t": 6.16
+     "t": 9.12
     }
    ]
   },
@@ -458,8 +466,8 @@
    "id": "fogg",
    "texto": "BJ Fogg, de la Universidad de Stanford, lo explica así: el hábito viejo es el recordatorio del nuevo.",
    "audio": "apilar/voz/fogg.wav",
-   "inicio": 32.243,
-   "duracion": 6.214,
+   "inicio": 42.019,
+   "duracion": 7.964,
    "palabras": [
     {
      "text": "BJ",
@@ -471,15 +479,15 @@
     },
     {
      "text": "de",
-     "t": 0.88
-    },
-    {
-     "text": "la",
      "t": 0.96
     },
     {
+     "text": "la",
+     "t": 1.04
+    },
+    {
      "text": "Universidad",
-     "t": 1.12
+     "t": 1.2
     },
     {
      "text": "de",
@@ -491,47 +499,47 @@
     },
     {
      "text": "lo",
-     "t": 2.32
+     "t": 2.24
     },
     {
      "text": "explica",
-     "t": 2.48
+     "t": 2.4
     },
     {
      "text": "así:",
-     "t": 2.96
+     "t": 2.88
     },
     {
      "text": "el",
-     "t": 3.52
+     "t": 4.0
     },
     {
      "text": "hábito",
-     "t": 3.76
+     "t": 4.24
     },
     {
      "text": "viejo",
-     "t": 4.16
+     "t": 4.64
     },
     {
      "text": "es",
-     "t": 4.56
+     "t": 4.96
     },
     {
      "text": "el",
-     "t": 4.72
+     "t": 5.12
     },
     {
      "text": "recordatorio",
-     "t": 4.8
+     "t": 5.2
     },
     {
      "text": "del",
-     "t": 5.44
+     "t": 5.64
     },
     {
      "text": "nuevo.",
-     "t": 5.6
+     "t": 6.08
     }
    ]
   },
@@ -539,40 +547,40 @@
    "id": "frase",
    "texto": "Engancha lo nuevo a algo que ya haces.",
    "audio": "apilar/voz/frase.wav",
-   "inicio": 38.456,
-   "duracion": 2.551,
+   "inicio": 49.984,
+   "duracion": 3.128,
    "palabras": [
     {
      "text": "Engancha",
-     "t": 0.08
+     "t": 0.207
     },
     {
      "text": "lo",
-     "t": 0.64
+     "t": 0.383
     },
     {
      "text": "nuevo",
-     "t": 0.8
+     "t": 0.56
     },
     {
      "text": "a",
-     "t": 1.12
+     "t": 0.8
     },
     {
      "text": "algo",
-     "t": 1.28
+     "t": 0.96
     },
     {
      "text": "que",
-     "t": 1.52
+     "t": 1.12
     },
     {
      "text": "ya",
-     "t": 1.68
+     "t": 1.2
     },
     {
      "text": "haces.",
-     "t": 1.84
+     "t": 1.44
     }
    ]
   },
@@ -580,16 +588,16 @@
    "id": "cierre",
    "texto": "Cada día, un cero coma cero cero cero uno por ciento mejor. Nos vemos mañana.",
    "audio": "apilar/voz/cierre.wav",
-   "inicio": 41.007,
-   "duracion": 4.971,
+   "inicio": 53.112,
+   "duracion": 7.1,
    "palabras": [
     {
      "text": "Cada",
-     "t": 0.0
+     "t": 0.233
     },
     {
      "text": "día,",
-     "t": 0.32
+     "t": 0.437
     },
     {
      "text": "un",
@@ -597,23 +605,23 @@
     },
     {
      "text": "0,0001 %",
-     "t": 0.916
+     "t": 0.907
     },
     {
      "text": "mejor.",
-     "t": 3.12
+     "t": 3.04
     },
     {
      "text": "Nos",
-     "t": 3.68
+     "t": 4.48
     },
     {
      "text": "vemos",
-     "t": 3.92
+     "t": 4.8
     },
     {
      "text": "mañana.",
-     "t": 4.24
+     "t": 5.28
     }
    ]
   }
@@ -622,918 +630,932 @@
   {
    "text": "¿Por",
    "startMs": 0,
-   "endMs": 240,
+   "endMs": 160,
    "timestampMs": 0,
    "confidence": null
   },
   {
    "text": " qué",
+   "startMs": 160,
+   "endMs": 240,
+   "timestampMs": 160,
+   "confidence": null
+  },
+  {
+   "text": " nunca",
    "startMs": 240,
    "endMs": 400,
    "timestampMs": 240,
    "confidence": null
   },
   {
-   "text": " nunca",
+   "text": " se",
    "startMs": 400,
-   "endMs": 720,
+   "endMs": 480,
    "timestampMs": 400,
    "confidence": null
   },
   {
-   "text": " se",
-   "startMs": 720,
-   "endMs": 800,
-   "timestampMs": 720,
-   "confidence": null
-  },
-  {
    "text": " te",
-   "startMs": 800,
-   "endMs": 960,
-   "timestampMs": 800,
+   "startMs": 480,
+   "endMs": 640,
+   "timestampMs": 480,
    "confidence": null
   },
   {
    "text": " olvida",
-   "startMs": 960,
-   "endMs": 1440,
-   "timestampMs": 960,
+   "startMs": 640,
+   "endMs": 1000,
+   "timestampMs": 640,
    "confidence": null
   },
   {
    "text": " lavarte",
-   "startMs": 1440,
-   "endMs": 1920,
-   "timestampMs": 1440,
+   "startMs": 1000,
+   "endMs": 1360,
+   "timestampMs": 1000,
    "confidence": null
   },
   {
    "text": " los",
-   "startMs": 1920,
-   "endMs": 2000,
-   "timestampMs": 1920,
+   "startMs": 1360,
+   "endMs": 1520,
+   "timestampMs": 1360,
    "confidence": null
   },
   {
    "text": " dientes…",
-   "startMs": 2000,
-   "endMs": 2320,
-   "timestampMs": 2000,
+   "startMs": 1520,
+   "endMs": 2800,
+   "timestampMs": 1520,
    "confidence": null
   },
   {
    "text": " y",
-   "startMs": 2320,
-   "endMs": 2549,
-   "timestampMs": 2320,
+   "startMs": 2800,
+   "endMs": 3120,
+   "timestampMs": 2800,
    "confidence": null
   },
   {
    "text": " leer",
-   "startMs": 2549,
-   "endMs": 2777,
-   "timestampMs": 2549,
+   "startMs": 3120,
+   "endMs": 3760,
+   "timestampMs": 3120,
    "confidence": null
   },
   {
    "text": " sí?",
-   "startMs": 2777,
-   "endMs": 3106,
-   "timestampMs": 2777,
+   "startMs": 3760,
+   "endMs": 4647,
+   "timestampMs": 3760,
    "confidence": null
   },
   {
    "text": " Porque",
-   "startMs": 3356,
-   "endMs": 3756,
-   "timestampMs": 3356,
+   "startMs": 4897,
+   "endMs": 5137,
+   "timestampMs": 4897,
    "confidence": null
   },
   {
-   "text": " ≈ 43 % [COMPROBAR: Wood, Quinn y Kashy, 2002]",
-   "startMs": 3756,
-   "endMs": 4556,
-   "timestampMs": 3756,
+   "text": " casi",
+   "startMs": 5137,
+   "endMs": 5377,
+   "timestampMs": 5137,
+   "confidence": null
+  },
+  {
+   "text": " la",
+   "startMs": 5377,
+   "endMs": 5457,
+   "timestampMs": 5377,
+   "confidence": null
+  },
+  {
+   "text": " mitad",
+   "startMs": 5457,
+   "endMs": 5697,
+   "timestampMs": 5457,
    "confidence": null
   },
   {
    "text": " de",
-   "startMs": 4556,
-   "endMs": 4716,
-   "timestampMs": 4556,
+   "startMs": 5697,
+   "endMs": 5777,
+   "timestampMs": 5697,
    "confidence": null
   },
   {
    "text": " lo",
-   "startMs": 4716,
-   "endMs": 4796,
-   "timestampMs": 4716,
+   "startMs": 5777,
+   "endMs": 5857,
+   "timestampMs": 5777,
    "confidence": null
   },
   {
    "text": " que",
-   "startMs": 4796,
-   "endMs": 4956,
-   "timestampMs": 4796,
+   "startMs": 5857,
+   "endMs": 6017,
+   "timestampMs": 5857,
    "confidence": null
   },
   {
    "text": " haces",
-   "startMs": 4956,
-   "endMs": 5356,
-   "timestampMs": 4956,
+   "startMs": 6017,
+   "endMs": 6257,
+   "timestampMs": 6017,
    "confidence": null
   },
   {
    "text": " cada",
-   "startMs": 5356,
-   "endMs": 5596,
-   "timestampMs": 5356,
+   "startMs": 6257,
+   "endMs": 6497,
+   "timestampMs": 6257,
    "confidence": null
   },
   {
    "text": " día",
-   "startMs": 5596,
-   "endMs": 5916,
-   "timestampMs": 5596,
+   "startMs": 6497,
+   "endMs": 6737,
+   "timestampMs": 6497,
    "confidence": null
   },
   {
    "text": " lo",
-   "startMs": 5916,
-   "endMs": 6076,
-   "timestampMs": 5916,
+   "startMs": 6737,
+   "endMs": 6897,
+   "timestampMs": 6737,
    "confidence": null
   },
   {
    "text": " haces",
-   "startMs": 6076,
-   "endMs": 6396,
-   "timestampMs": 6076,
+   "startMs": 6897,
+   "endMs": 7137,
+   "timestampMs": 6897,
    "confidence": null
   },
   {
    "text": " en",
-   "startMs": 6396,
-   "endMs": 6556,
-   "timestampMs": 6396,
+   "startMs": 7137,
+   "endMs": 7297,
+   "timestampMs": 7137,
    "confidence": null
   },
   {
    "text": " automático.",
-   "startMs": 6556,
-   "endMs": 7214,
-   "timestampMs": 6556,
+   "startMs": 7297,
+   "endMs": 8255,
+   "timestampMs": 7297,
    "confidence": null
   },
   {
    "text": " Lavarte",
-   "startMs": 7464,
-   "endMs": 8024,
-   "timestampMs": 7464,
+   "startMs": 8505,
+   "endMs": 8985,
+   "timestampMs": 8505,
    "confidence": null
   },
   {
    "text": " los",
-   "startMs": 8024,
-   "endMs": 8104,
-   "timestampMs": 8024,
+   "startMs": 8985,
+   "endMs": 9065,
+   "timestampMs": 8985,
    "confidence": null
   },
   {
    "text": " dientes",
-   "startMs": 8104,
-   "endMs": 8424,
-   "timestampMs": 8104,
+   "startMs": 9065,
+   "endMs": 9385,
+   "timestampMs": 9065,
    "confidence": null
   },
   {
    "text": " tiene",
-   "startMs": 8424,
-   "endMs": 8664,
-   "timestampMs": 8424,
+   "startMs": 9385,
+   "endMs": 9625,
+   "timestampMs": 9385,
    "confidence": null
   },
   {
    "text": " un",
-   "startMs": 8664,
-   "endMs": 8744,
-   "timestampMs": 8664,
+   "startMs": 9625,
+   "endMs": 9705,
+   "timestampMs": 9625,
    "confidence": null
   },
   {
    "text": " disparador",
-   "startMs": 8744,
-   "endMs": 9384,
-   "timestampMs": 8744,
+   "startMs": 9705,
+   "endMs": 10265,
+   "timestampMs": 9705,
    "confidence": null
   },
   {
    "text": " fijo:",
-   "startMs": 9384,
-   "endMs": 9864,
-   "timestampMs": 9384,
+   "startMs": 10265,
+   "endMs": 11145,
+   "timestampMs": 10265,
    "confidence": null
   },
   {
    "text": " te",
-   "startMs": 9864,
-   "endMs": 10024,
-   "timestampMs": 9864,
+   "startMs": 11145,
+   "endMs": 11305,
+   "timestampMs": 11145,
    "confidence": null
   },
   {
    "text": " levantas,",
-   "startMs": 10024,
-   "endMs": 10744,
-   "timestampMs": 10024,
+   "startMs": 11305,
+   "endMs": 11865,
+   "timestampMs": 11305,
    "confidence": null
   },
   {
    "text": " vas",
-   "startMs": 10744,
-   "endMs": 10984,
-   "timestampMs": 10744,
+   "startMs": 11865,
+   "endMs": 12025,
+   "timestampMs": 11865,
    "confidence": null
   },
   {
    "text": " al",
-   "startMs": 10984,
-   "endMs": 11144,
-   "timestampMs": 10984,
+   "startMs": 12025,
+   "endMs": 12185,
+   "timestampMs": 12025,
    "confidence": null
   },
   {
    "text": " baño,",
-   "startMs": 11144,
-   "endMs": 11544,
-   "timestampMs": 11144,
+   "startMs": 12185,
+   "endMs": 12425,
+   "timestampMs": 12185,
    "confidence": null
   },
   {
    "text": " y",
-   "startMs": 11544,
-   "endMs": 11784,
-   "timestampMs": 11544,
+   "startMs": 12425,
+   "endMs": 12505,
+   "timestampMs": 12425,
    "confidence": null
   },
   {
    "text": " pasa",
-   "startMs": 11784,
-   "endMs": 12024,
-   "timestampMs": 11784,
+   "startMs": 12505,
+   "endMs": 12825,
+   "timestampMs": 12505,
    "confidence": null
   },
   {
    "text": " solo.",
-   "startMs": 12024,
-   "endMs": 12304,
-   "timestampMs": 12024,
+   "startMs": 12825,
+   "endMs": 13195,
+   "timestampMs": 12825,
    "confidence": null
   },
   {
    "text": " El",
-   "startMs": 12554,
-   "endMs": 12714,
-   "timestampMs": 12554,
+   "startMs": 13445,
+   "endMs": 13605,
+   "timestampMs": 13445,
    "confidence": null
   },
   {
    "text": " hábito",
-   "startMs": 12714,
-   "endMs": 13114,
-   "timestampMs": 12714,
+   "startMs": 13605,
+   "endMs": 13845,
+   "timestampMs": 13605,
    "confidence": null
   },
   {
    "text": " nuevo",
-   "startMs": 13114,
-   "endMs": 13434,
-   "timestampMs": 13114,
+   "startMs": 13845,
+   "endMs": 14085,
+   "timestampMs": 13845,
    "confidence": null
   },
   {
    "text": " no",
-   "startMs": 13434,
-   "endMs": 13514,
-   "timestampMs": 13434,
+   "startMs": 14085,
+   "endMs": 14165,
+   "timestampMs": 14085,
    "confidence": null
   },
   {
    "text": " tiene",
-   "startMs": 13514,
-   "endMs": 13834,
-   "timestampMs": 13514,
+   "startMs": 14165,
+   "endMs": 14405,
+   "timestampMs": 14165,
    "confidence": null
   },
   {
    "text": " disparador:",
-   "startMs": 13834,
-   "endMs": 14554,
-   "timestampMs": 13834,
+   "startMs": 14405,
+   "endMs": 15845,
+   "timestampMs": 14405,
    "confidence": null
   },
   {
    "text": " va",
-   "startMs": 14554,
-   "endMs": 14794,
-   "timestampMs": 14554,
+   "startMs": 15845,
+   "endMs": 16245,
+   "timestampMs": 15845,
    "confidence": null
   },
   {
    "text": " flotando.",
-   "startMs": 14794,
-   "endMs": 15434,
-   "timestampMs": 14794,
+   "startMs": 16245,
+   "endMs": 18405,
+   "timestampMs": 16245,
    "confidence": null
   },
   {
    "text": " Y",
-   "startMs": 15434,
-   "endMs": 15594,
-   "timestampMs": 15434,
+   "startMs": 18405,
+   "endMs": 18725,
+   "timestampMs": 18405,
    "confidence": null
   },
   {
    "text": " lo",
-   "startMs": 15594,
-   "endMs": 15674,
-   "timestampMs": 15594,
+   "startMs": 18725,
+   "endMs": 18885,
+   "timestampMs": 18725,
    "confidence": null
   },
   {
    "text": " que",
-   "startMs": 15674,
-   "endMs": 15994,
-   "timestampMs": 15674,
+   "startMs": 18885,
+   "endMs": 19245,
+   "timestampMs": 18885,
    "confidence": null
   },
   {
    "text": " flota,",
-   "startMs": 15994,
-   "endMs": 16314,
-   "timestampMs": 15994,
+   "startMs": 19245,
+   "endMs": 19605,
+   "timestampMs": 19245,
    "confidence": null
   },
   {
    "text": " se",
-   "startMs": 16314,
-   "endMs": 16474,
-   "timestampMs": 16314,
+   "startMs": 19605,
+   "endMs": 19845,
+   "timestampMs": 19605,
    "confidence": null
   },
   {
    "text": " olvida.",
-   "startMs": 16474,
-   "endMs": 17194,
-   "timestampMs": 16474,
+   "startMs": 19845,
+   "endMs": 21605,
+   "timestampMs": 19845,
    "confidence": null
   },
   {
    "text": " Por",
-   "startMs": 17194,
-   "endMs": 17354,
-   "timestampMs": 17194,
+   "startMs": 21605,
+   "endMs": 21925,
+   "timestampMs": 21605,
    "confidence": null
   },
   {
    "text": " eso",
-   "startMs": 17354,
-   "endMs": 17594,
-   "timestampMs": 17354,
+   "startMs": 21925,
+   "endMs": 22245,
+   "timestampMs": 21925,
    "confidence": null
   },
   {
    "text": " tus",
-   "startMs": 17594,
-   "endMs": 17834,
-   "timestampMs": 17594,
+   "startMs": 22245,
+   "endMs": 22405,
+   "timestampMs": 22245,
    "confidence": null
   },
   {
    "text": " buenos",
-   "startMs": 17834,
-   "endMs": 18234,
-   "timestampMs": 17834,
+   "startMs": 22405,
+   "endMs": 22725,
+   "timestampMs": 22405,
    "confidence": null
   },
   {
    "text": " propósitos",
-   "startMs": 18234,
-   "endMs": 18794,
-   "timestampMs": 18234,
+   "startMs": 22725,
+   "endMs": 23045,
+   "timestampMs": 22725,
    "confidence": null
   },
   {
    "text": " se",
-   "startMs": 18794,
-   "endMs": 18954,
-   "timestampMs": 18794,
+   "startMs": 23045,
+   "endMs": 23365,
+   "timestampMs": 23045,
    "confidence": null
   },
   {
    "text": " quedan",
-   "startMs": 18954,
-   "endMs": 19274,
-   "timestampMs": 18954,
+   "startMs": 23365,
+   "endMs": 23685,
+   "timestampMs": 23365,
    "confidence": null
   },
   {
    "text": " en",
-   "startMs": 19274,
-   "endMs": 19434,
-   "timestampMs": 19274,
+   "startMs": 23685,
+   "endMs": 23765,
+   "timestampMs": 23685,
    "confidence": null
   },
   {
    "text": " una",
-   "startMs": 19434,
-   "endMs": 19594,
-   "timestampMs": 19434,
+   "startMs": 23765,
+   "endMs": 23925,
+   "timestampMs": 23765,
    "confidence": null
   },
   {
    "text": " lista.",
-   "startMs": 19594,
-   "endMs": 19893,
-   "timestampMs": 19594,
+   "startMs": 23925,
+   "endMs": 24849,
+   "timestampMs": 23925,
    "confidence": null
   },
   {
    "text": " El",
-   "startMs": 20143,
-   "endMs": 20303,
-   "timestampMs": 20143,
+   "startMs": 25099,
+   "endMs": 25259,
+   "timestampMs": 25099,
    "confidence": null
   },
   {
    "text": " método",
-   "startMs": 20303,
-   "endMs": 20783,
-   "timestampMs": 20303,
+   "startMs": 25259,
+   "endMs": 25579,
+   "timestampMs": 25259,
    "confidence": null
   },
   {
    "text": " se",
-   "startMs": 20783,
-   "endMs": 20943,
-   "timestampMs": 20783,
+   "startMs": 25579,
+   "endMs": 25659,
+   "timestampMs": 25579,
    "confidence": null
   },
   {
    "text": " llama",
-   "startMs": 20943,
-   "endMs": 21263,
-   "timestampMs": 20943,
+   "startMs": 25659,
+   "endMs": 25979,
+   "timestampMs": 25659,
    "confidence": null
   },
   {
    "text": " apilar",
-   "startMs": 21263,
-   "endMs": 21743,
-   "timestampMs": 21263,
+   "startMs": 25979,
+   "endMs": 26539,
+   "timestampMs": 25979,
    "confidence": null
   },
   {
    "text": " hábitos.",
-   "startMs": 21743,
-   "endMs": 22223,
-   "timestampMs": 21743,
+   "startMs": 26539,
+   "endMs": 27907,
+   "timestampMs": 26539,
    "confidence": null
   },
   {
    "text": " Después",
-   "startMs": 22473,
-   "endMs": 22873,
-   "timestampMs": 22473,
+   "startMs": 28157,
+   "endMs": 28477,
+   "timestampMs": 28157,
    "confidence": null
   },
   {
    "text": " de",
-   "startMs": 22873,
-   "endMs": 23033,
-   "timestampMs": 22873,
+   "startMs": 28477,
+   "endMs": 28557,
+   "timestampMs": 28477,
    "confidence": null
   },
   {
    "text": " algo",
-   "startMs": 23033,
-   "endMs": 23353,
-   "timestampMs": 23033,
+   "startMs": 28557,
+   "endMs": 28717,
+   "timestampMs": 28557,
    "confidence": null
   },
   {
    "text": " que",
-   "startMs": 23353,
-   "endMs": 23513,
-   "timestampMs": 23353,
+   "startMs": 28717,
+   "endMs": 28877,
+   "timestampMs": 28717,
    "confidence": null
   },
   {
    "text": " ya",
-   "startMs": 23513,
-   "endMs": 23753,
-   "timestampMs": 23513,
+   "startMs": 28877,
+   "endMs": 29037,
+   "timestampMs": 28877,
    "confidence": null
   },
   {
    "text": " haces,",
-   "startMs": 23753,
-   "endMs": 24233,
-   "timestampMs": 23753,
+   "startMs": 29037,
+   "endMs": 29437,
+   "timestampMs": 29037,
    "confidence": null
   },
   {
    "text": " haces",
-   "startMs": 24233,
-   "endMs": 24553,
-   "timestampMs": 24233,
+   "startMs": 29437,
+   "endMs": 29757,
+   "timestampMs": 29437,
    "confidence": null
   },
   {
    "text": " lo",
-   "startMs": 24553,
-   "endMs": 24713,
-   "timestampMs": 24553,
+   "startMs": 29757,
+   "endMs": 29917,
+   "timestampMs": 29757,
    "confidence": null
   },
   {
    "text": " nuevo.",
-   "startMs": 24713,
-   "endMs": 25049,
-   "timestampMs": 24713,
+   "startMs": 29917,
+   "endMs": 31092,
+   "timestampMs": 29917,
    "confidence": null
   },
   {
    "text": " Después",
-   "startMs": 25299,
-   "endMs": 25619,
-   "timestampMs": 25299,
+   "startMs": 31342,
+   "endMs": 31662,
+   "timestampMs": 31342,
    "confidence": null
   },
   {
    "text": " del",
-   "startMs": 25619,
-   "endMs": 25779,
-   "timestampMs": 25619,
+   "startMs": 31662,
+   "endMs": 31822,
+   "timestampMs": 31662,
    "confidence": null
   },
   {
    "text": " café,",
-   "startMs": 25779,
-   "endMs": 26259,
-   "timestampMs": 25779,
+   "startMs": 31822,
+   "endMs": 32222,
+   "timestampMs": 31822,
    "confidence": null
   },
   {
    "text": " leo",
-   "startMs": 26259,
-   "endMs": 26579,
-   "timestampMs": 26259,
+   "startMs": 32222,
+   "endMs": 32622,
+   "timestampMs": 32222,
    "confidence": null
   },
   {
    "text": " una",
-   "startMs": 26579,
-   "endMs": 26739,
-   "timestampMs": 26579,
+   "startMs": 32622,
+   "endMs": 32782,
+   "timestampMs": 32622,
    "confidence": null
   },
   {
    "text": " página.",
-   "startMs": 26739,
-   "endMs": 27379,
-   "timestampMs": 26739,
+   "startMs": 32782,
+   "endMs": 34942,
+   "timestampMs": 32782,
    "confidence": null
   },
   {
    "text": " Después",
-   "startMs": 27379,
-   "endMs": 27619,
-   "timestampMs": 27379,
+   "startMs": 34942,
+   "endMs": 35422,
+   "timestampMs": 34942,
    "confidence": null
   },
   {
    "text": " de",
-   "startMs": 27619,
-   "endMs": 27779,
-   "timestampMs": 27619,
+   "startMs": 35422,
+   "endMs": 35582,
+   "timestampMs": 35422,
    "confidence": null
   },
   {
    "text": " lavarme",
-   "startMs": 27779,
-   "endMs": 28339,
-   "timestampMs": 27779,
+   "startMs": 35582,
+   "endMs": 36062,
+   "timestampMs": 35582,
    "confidence": null
   },
   {
    "text": " los",
-   "startMs": 28339,
-   "endMs": 28419,
-   "timestampMs": 28339,
+   "startMs": 36062,
+   "endMs": 36222,
+   "timestampMs": 36062,
    "confidence": null
   },
   {
    "text": " dientes,",
-   "startMs": 28419,
-   "endMs": 28819,
-   "timestampMs": 28419,
+   "startMs": 36222,
+   "endMs": 36622,
+   "timestampMs": 36222,
    "confidence": null
   },
   {
    "text": " 10",
-   "startMs": 28819,
-   "endMs": 29219,
-   "timestampMs": 28819,
+   "startMs": 36622,
+   "endMs": 37022,
+   "timestampMs": 36622,
    "confidence": null
   },
   {
    "text": " flexiones.",
-   "startMs": 29219,
-   "endMs": 30019,
-   "timestampMs": 29219,
+   "startMs": 37022,
+   "endMs": 38782,
+   "timestampMs": 37022,
    "confidence": null
   },
   {
    "text": " Después",
-   "startMs": 30019,
-   "endMs": 30339,
-   "timestampMs": 30019,
+   "startMs": 38782,
+   "endMs": 39262,
+   "timestampMs": 38782,
    "confidence": null
   },
   {
    "text": " de",
-   "startMs": 30339,
-   "endMs": 30499,
-   "timestampMs": 30339,
+   "startMs": 39262,
+   "endMs": 39422,
+   "timestampMs": 39262,
    "confidence": null
   },
   {
    "text": " cenar,",
-   "startMs": 30499,
-   "endMs": 30979,
-   "timestampMs": 30499,
+   "startMs": 39422,
+   "endMs": 39902,
+   "timestampMs": 39422,
    "confidence": null
   },
   {
    "text": " preparo",
-   "startMs": 30979,
-   "endMs": 31379,
-   "timestampMs": 30979,
+   "startMs": 39902,
+   "endMs": 40302,
+   "timestampMs": 39902,
    "confidence": null
   },
   {
    "text": " la",
-   "startMs": 31379,
-   "endMs": 31459,
-   "timestampMs": 31379,
+   "startMs": 40302,
+   "endMs": 40462,
+   "timestampMs": 40302,
    "confidence": null
   },
   {
    "text": " mochila.",
-   "startMs": 31459,
-   "endMs": 31993,
-   "timestampMs": 31459,
+   "startMs": 40462,
+   "endMs": 41769,
+   "timestampMs": 40462,
    "confidence": null
   },
   {
    "text": " BJ",
-   "startMs": 32498,
-   "endMs": 32723,
-   "timestampMs": 32498,
+   "startMs": 42274,
+   "endMs": 42499,
+   "timestampMs": 42274,
    "confidence": null
   },
   {
    "text": " Fogg,",
-   "startMs": 32723,
-   "endMs": 33123,
-   "timestampMs": 32723,
+   "startMs": 42499,
+   "endMs": 42979,
+   "timestampMs": 42499,
    "confidence": null
   },
   {
    "text": " de",
-   "startMs": 33123,
-   "endMs": 33203,
-   "timestampMs": 33123,
+   "startMs": 42979,
+   "endMs": 43059,
+   "timestampMs": 42979,
    "confidence": null
   },
   {
    "text": " la",
-   "startMs": 33203,
-   "endMs": 33363,
-   "timestampMs": 33203,
+   "startMs": 43059,
+   "endMs": 43219,
+   "timestampMs": 43059,
    "confidence": null
   },
   {
    "text": " Universidad",
-   "startMs": 33363,
-   "endMs": 33763,
-   "timestampMs": 33363,
+   "startMs": 43219,
+   "endMs": 43539,
+   "timestampMs": 43219,
    "confidence": null
   },
   {
    "text": " de",
-   "startMs": 33763,
-   "endMs": 33843,
-   "timestampMs": 33763,
+   "startMs": 43539,
+   "endMs": 43619,
+   "timestampMs": 43539,
    "confidence": null
   },
   {
    "text": " Stanford,",
-   "startMs": 33843,
-   "endMs": 34563,
-   "timestampMs": 33843,
+   "startMs": 43619,
+   "endMs": 44259,
+   "timestampMs": 43619,
    "confidence": null
   },
   {
    "text": " lo",
-   "startMs": 34563,
-   "endMs": 34723,
-   "timestampMs": 34563,
+   "startMs": 44259,
+   "endMs": 44419,
+   "timestampMs": 44259,
    "confidence": null
   },
   {
    "text": " explica",
-   "startMs": 34723,
-   "endMs": 35203,
-   "timestampMs": 34723,
+   "startMs": 44419,
+   "endMs": 44899,
+   "timestampMs": 44419,
    "confidence": null
   },
   {
    "text": " así:",
-   "startMs": 35203,
-   "endMs": 35763,
-   "timestampMs": 35203,
+   "startMs": 44899,
+   "endMs": 46019,
+   "timestampMs": 44899,
    "confidence": null
   },
   {
    "text": " el",
-   "startMs": 35763,
-   "endMs": 36003,
-   "timestampMs": 35763,
+   "startMs": 46019,
+   "endMs": 46259,
+   "timestampMs": 46019,
    "confidence": null
   },
   {
    "text": " hábito",
-   "startMs": 36003,
-   "endMs": 36403,
-   "timestampMs": 36003,
+   "startMs": 46259,
+   "endMs": 46659,
+   "timestampMs": 46259,
    "confidence": null
   },
   {
    "text": " viejo",
-   "startMs": 36403,
-   "endMs": 36803,
-   "timestampMs": 36403,
+   "startMs": 46659,
+   "endMs": 46979,
+   "timestampMs": 46659,
    "confidence": null
   },
   {
    "text": " es",
-   "startMs": 36803,
-   "endMs": 36963,
-   "timestampMs": 36803,
+   "startMs": 46979,
+   "endMs": 47139,
+   "timestampMs": 46979,
    "confidence": null
   },
   {
    "text": " el",
-   "startMs": 36963,
-   "endMs": 37043,
-   "timestampMs": 36963,
+   "startMs": 47139,
+   "endMs": 47219,
+   "timestampMs": 47139,
    "confidence": null
   },
   {
    "text": " recordatorio",
-   "startMs": 37043,
-   "endMs": 37683,
-   "timestampMs": 37043,
+   "startMs": 47219,
+   "endMs": 47659,
+   "timestampMs": 47219,
    "confidence": null
   },
   {
    "text": " del",
-   "startMs": 37683,
-   "endMs": 37843,
-   "timestampMs": 37683,
+   "startMs": 47659,
+   "endMs": 48099,
+   "timestampMs": 47659,
    "confidence": null
   },
   {
    "text": " nuevo.",
-   "startMs": 37843,
-   "endMs": 38206,
-   "timestampMs": 37843,
+   "startMs": 48099,
+   "endMs": 49734,
+   "timestampMs": 48099,
    "confidence": null
   },
   {
    "text": " Engancha",
-   "startMs": 38536,
-   "endMs": 39096,
-   "timestampMs": 38536,
+   "startMs": 50190,
+   "endMs": 50367,
+   "timestampMs": 50190,
    "confidence": null
   },
   {
    "text": " lo",
-   "startMs": 39096,
-   "endMs": 39256,
-   "timestampMs": 39096,
+   "startMs": 50367,
+   "endMs": 50544,
+   "timestampMs": 50367,
    "confidence": null
   },
   {
    "text": " nuevo",
-   "startMs": 39256,
-   "endMs": 39576,
-   "timestampMs": 39256,
+   "startMs": 50544,
+   "endMs": 50784,
+   "timestampMs": 50544,
    "confidence": null
   },
   {
    "text": " a",
-   "startMs": 39576,
-   "endMs": 39736,
-   "timestampMs": 39576,
+   "startMs": 50784,
+   "endMs": 50944,
+   "timestampMs": 50784,
    "confidence": null
   },
   {
    "text": " algo",
-   "startMs": 39736,
-   "endMs": 39976,
-   "timestampMs": 39736,
+   "startMs": 50944,
+   "endMs": 51104,
+   "timestampMs": 50944,
    "confidence": null
   },
   {
    "text": " que",
-   "startMs": 39976,
-   "endMs": 40136,
-   "timestampMs": 39976,
+   "startMs": 51104,
+   "endMs": 51184,
+   "timestampMs": 51104,
    "confidence": null
   },
   {
    "text": " ya",
-   "startMs": 40136,
-   "endMs": 40296,
-   "timestampMs": 40136,
+   "startMs": 51184,
+   "endMs": 51424,
+   "timestampMs": 51184,
    "confidence": null
   },
   {
    "text": " haces.",
-   "startMs": 40296,
-   "endMs": 40757,
-   "timestampMs": 40296,
+   "startMs": 51424,
+   "endMs": 52862,
+   "timestampMs": 51424,
    "confidence": null
   },
   {
    "text": " Cada",
-   "startMs": 41007,
-   "endMs": 41327,
-   "timestampMs": 41007,
+   "startMs": 53345,
+   "endMs": 53548,
+   "timestampMs": 53345,
    "confidence": null
   },
   {
    "text": " día,",
-   "startMs": 41327,
-   "endMs": 41647,
-   "timestampMs": 41327,
+   "startMs": 53548,
+   "endMs": 53752,
+   "timestampMs": 53548,
    "confidence": null
   },
   {
    "text": " un",
-   "startMs": 41647,
-   "endMs": 41923,
-   "timestampMs": 41647,
+   "startMs": 53752,
+   "endMs": 54018,
+   "timestampMs": 53752,
    "confidence": null
   },
   {
    "text": " 0,0001 %",
-   "startMs": 41923,
-   "endMs": 44127,
-   "timestampMs": 41923,
+   "startMs": 54018,
+   "endMs": 56152,
+   "timestampMs": 54018,
    "confidence": null
   },
   {
    "text": " mejor.",
-   "startMs": 44127,
-   "endMs": 44687,
-   "timestampMs": 44127,
+   "startMs": 56152,
+   "endMs": 57592,
+   "timestampMs": 56152,
    "confidence": null
   },
   {
    "text": " Nos",
-   "startMs": 44687,
-   "endMs": 44927,
-   "timestampMs": 44687,
+   "startMs": 57592,
+   "endMs": 57912,
+   "timestampMs": 57592,
    "confidence": null
   },
   {
    "text": " vemos",
-   "startMs": 44927,
-   "endMs": 45247,
-   "timestampMs": 44927,
+   "startMs": 57912,
+   "endMs": 58392,
+   "timestampMs": 57912,
    "confidence": null
   },
   {
    "text": " mañana.",
-   "startMs": 45247,
-   "endMs": 45728,
-   "timestampMs": 45247,
+   "startMs": 58392,
+   "endMs": 59962,
+   "timestampMs": 58392,
    "confidence": null
   }
  ]
